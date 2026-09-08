@@ -1,0 +1,22 @@
+protein_name_original,protein_name_cleaned,batch,n_cells,min,q25,median,q75,max,mean,fraction_zero,note
+CD3_TotalSeqB,CD3,PBMC10k,6855,2.0,25.0,812.0,2050.0,7958.0,1147.470897155361,0.0,exploratory marker summary only; not a cell-type label
+CD3_TotalSeqB,CD3,PBMC5k,3994,0.0,12.0,142.0,608.75,3099.0,338.7543815723585,0.0007511266900350526,exploratory marker summary only; not a cell-type label
+CD3_TotalSeqB,CD3,all,10849,0.0,19.0,319.0,1454.0,7958.0,849.7463360678404,0.0002765231818600793,exploratory marker summary only; not a cell-type label
+CD4_TotalSeqB,CD4,PBMC10k,6855,2.0,23.0,320.0,2272.0,7068.0,1068.4827133479212,0.0,exploratory marker summary only; not a cell-type label
+CD4_TotalSeqB,CD4,PBMC5k,3994,0.0,19.0,204.0,911.75,2837.0,478.92363545317977,0.0030045067601402104,exploratory marker summary only; not a cell-type label
+CD4_TotalSeqB,CD4,all,10849,0.0,23.0,263.0,1263.0,7068.0,851.4397640335515,0.0011060927274403171,exploratory marker summary only; not a cell-type label
+CD8a_TotalSeqB,CD8a,PBMC10k,6855,1.0,17.0,27.0,50.0,12121.0,848.6603938730854,0.0,exploratory marker summary only; not a cell-type label
+CD8a_TotalSeqB,CD8a,PBMC5k,3994,0.0,4.0,6.0,10.0,1431.0,46.555833750625936,0.010766149223835753,exploratory marker summary only; not a cell-type label
+CD8a_TotalSeqB,CD8a,all,10849,0.0,7.0,18.0,36.0,12121.0,553.3699880173288,0.00396349893999447,exploratory marker summary only; not a cell-type label
+CD14_TotalSeqB,CD14,PBMC10k,6855,2.0,25.0,36.0,93.0,4224.0,322.8325309992706,0.0,exploratory marker summary only; not a cell-type label
+CD14_TotalSeqB,CD14,PBMC5k,3994,0.0,8.0,12.0,376.75,2136.0,199.37856785177766,0.0017526289434151227,exploratory marker summary only; not a cell-type label
+CD14_TotalSeqB,CD14,all,10849,0.0,15.0,31.0,323.0,4224.0,277.3836298276339,0.0006452207576735183,exploratory marker summary only; not a cell-type label
+CD16_TotalSeqB,CD16,PBMC10k,6855,2.0,26.0,40.0,82.0,12908.0,279.06739606126916,0.0,exploratory marker summary only; not a cell-type label
+CD16_TotalSeqB,CD16,PBMC5k,3994,0.0,1.0,3.0,4.0,1064.0,29.72558838257386,0.11091637456184276,exploratory marker summary only; not a cell-type label
+CD16_TotalSeqB,CD16,all,10849,0.0,4.0,26.0,56.0,12908.0,187.27357360125356,0.040833256521338374,exploratory marker summary only; not a cell-type label
+CD56_TotalSeqB,CD56,PBMC10k,6855,1.0,14.0,19.0,32.5,2466.0,80.68037928519328,0.0,exploratory marker summary only; not a cell-type label
+CD56_TotalSeqB,CD56,PBMC5k,3994,0.0,2.0,4.0,6.0,918.0,17.57586379569354,0.048823234852278415,exploratory marker summary only; not a cell-type label
+CD56_TotalSeqB,CD56,all,10849,0.0,5.0,14.0,25.0,2466.0,57.44879712415891,0.017974006820905154,exploratory marker summary only; not a cell-type label
+CD19_TotalSeqB,CD19,PBMC10k,6855,0.0,3.0,4.0,7.0,3384.0,54.8436177972283,0.02202771699489424,exploratory marker summary only; not a cell-type label
+CD19_TotalSeqB,CD19,PBMC5k,3994,0.0,2.0,3.0,6.0,2095.0,39.75563345017526,0.0643465197796695,exploratory marker summary only; not a cell-type label
+CD19_TotalSeqB,CD19,all,10849,0.0,2.0,4.0,6.0,3384.0,49.289058899437734,0.03760715273297078,exploratory marker summary only; not a cell-type label

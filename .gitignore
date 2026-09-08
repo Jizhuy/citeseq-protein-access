@@ -1,0 +1,32 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+.env
+
+# Large data objects are downloaded, not versioned
+data/raw/*.h5ad
+data/processed/*.h5ad
+data/processed/*.csv
+data/processed/*.json
+data/processed/*.npz
+
+# Experiment outputs
+results/tables/*.csv
+results/tables/*.json
+results/figures/*.png
+results/figures/*.pdf
+results/embeddings/*
+results/logs/*
+results/models/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/tables/.gitkeep
+!results/figures/.gitkeep
+!results/embeddings/.gitkeep
+!results/logs/.gitkeep
+!results/models/.gitkeep

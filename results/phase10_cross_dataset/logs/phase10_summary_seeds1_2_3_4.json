@@ -1,0 +1,32 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "directions": [
+    "pbmc10k_to_pbmc5k",
+    "pbmc5k_to_pbmc10k"
+  ],
+  "tables": {
+    "cross_dataset_primary.csv": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/tables/cross_dataset_primary.csv",
+    "cross_dataset_primary_delta.csv": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/tables/cross_dataset_primary_delta.csv",
+    "cross_dataset_celltype_specific.csv": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/tables/cross_dataset_celltype_specific.csv",
+    "cross_dataset_neighbor_agreement.csv": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/tables/cross_dataset_neighbor_agreement.csv",
+    "cross_dataset_generalization_gap.csv": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/tables/cross_dataset_generalization_gap.csv",
+    "cross_dataset_confusion.csv": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/tables/cross_dataset_confusion.csv"
+  },
+  "cuda": true,
+  "query_procedure": "scArches prepare_query_anndata + load_query_data",
+  "zero_shot": false,
+  "phase9_not_run": true,
+  "historical_mps_untouched": true,
+  "ram": {
+    "total_mb": 7792.6328125,
+    "available_mb": 1731.1484375,
+    "percent": 77.8,
+    "process_rss_mb": 6783.3671875
+  },
+  "timestamp_utc": "2026-09-08T07:36:18.954498+00:00"
+}

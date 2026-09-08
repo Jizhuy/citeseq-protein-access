@@ -1,0 +1,148 @@
+{
+  "scvi_tools": "1.3.3",
+  "torch": "2.14.0+cu126",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "timestamp_utc": "2026-09-08T06:10:55.002073+00:00",
+  "tests": {
+    "scvi_class": {
+      "class": "SCVI",
+      "mro": [
+        "SCVI",
+        "EmbeddingMixin",
+        "RNASeqMixin",
+        "VAEMixin",
+        "ArchesMixin",
+        "UnsupervisedTrainingMixin",
+        "BaseMinifiedModeModelClass",
+        "BaseModelClass",
+        "object"
+      ],
+      "has_prepare_query_anndata": true,
+      "has_load_query_data": true,
+      "has_prepare_query_mudata": true,
+      "load_query_data_signature": "(adata: 'AnnOrMuData' = None, reference_model: 'str | BaseModelClass' = None, registry: 'dict' = None, inplace_subset_query_vars: 'bool' = False, accelerator: 'str' = 'auto', device: 'int | str' = 'auto', unfrozen: 'bool' = False, freeze_dropout: 'bool' = False, freeze_expression: 'bool' = True, freeze_decoder_first_layer: 'bool' = True, freeze_batchnorm_encoder: 'bool' = True, freeze_batchnorm_decoder: 'bool' = False, freeze_classifier: 'bool' = True, datamodule: 'LightningDataModule | None' = None)",
+      "prepare_query_anndata_signature": "(adata: 'AnnData', reference_model: 'str | BaseModelClass', return_reference_var_names: 'bool' = False, inplace: 'bool' = True) -> 'AnnData | pd.Index | None'",
+      "arches_mixin": true
+    },
+    "totalvi_class": {
+      "class": "TOTALVI",
+      "mro": [
+        "TOTALVI",
+        "RNASeqMixin",
+        "VAEMixin",
+        "ArchesMixin",
+        "BaseMinifiedModeModelClass",
+        "BaseMudataMinifiedModeModelClass",
+        "BaseModelClass",
+        "object"
+      ],
+      "has_prepare_query_anndata": true,
+      "has_load_query_data": true,
+      "has_prepare_query_mudata": true,
+      "load_query_data_signature": "(adata: 'AnnOrMuData' = None, reference_model: 'str | BaseModelClass' = None, registry: 'dict' = None, inplace_subset_query_vars: 'bool' = False, accelerator: 'str' = 'auto', device: 'int | str' = 'auto', unfrozen: 'bool' = False, freeze_dropout: 'bool' = False, freeze_expression: 'bool' = True, freeze_decoder_first_layer: 'bool' = True, freeze_batchnorm_encoder: 'bool' = True, freeze_batchnorm_decoder: 'bool' = False, freeze_classifier: 'bool' = True, datamodule: 'LightningDataModule | None' = None)",
+      "prepare_query_anndata_signature": "(adata: 'AnnData', reference_model: 'str | BaseModelClass', return_reference_var_names: 'bool' = False, inplace: 'bool' = True) -> 'AnnData | pd.Index | None'",
+      "arches_mixin": true
+    },
+    "scvi_query": {
+      "ok": true,
+      "adapted_model_can_encode_source": true,
+      "source_drift_under_adaptation": 0.0,
+      "source_latent_shape": [
+        250,
+        4
+      ],
+      "target_latent_shape": [
+        200,
+        4
+      ],
+      "source_finite": true,
+      "target_finite": true,
+      "same_latent_dim": true,
+      "trainable_parameter_names": [
+        "z_encoder.encoder.fc_layers.Layer 0.0.weight",
+        "z_encoder.encoder.fc_layers.Layer 0.0.bias",
+        "l_encoder.encoder.fc_layers.Layer 0.0.weight",
+        "l_encoder.encoder.fc_layers.Layer 0.0.bias",
+        "l_encoder.encoder.fc_layers.Layer 0.1.weight",
+        "l_encoder.encoder.fc_layers.Layer 0.1.bias",
+        "l_encoder.mean_encoder.weight",
+        "l_encoder.mean_encoder.bias",
+        "l_encoder.var_encoder.weight",
+        "l_encoder.var_encoder.bias",
+        "decoder.px_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.px_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.px_decoder.fc_layers.Layer 0.1.weight",
+        "decoder.px_decoder.fc_layers.Layer 0.1.bias"
+      ],
+      "n_trainable": 14,
+      "query_parameter_device": "cuda:0",
+      "new_batch_registered": true,
+      "zero_shot": false,
+      "procedure": "scArches query adaptation via prepare_query_anndata + load_query_data + train"
+    },
+    "totalvi_query": {
+      "ok": true,
+      "adapted_model_can_encode_source": true,
+      "source_drift_under_adaptation": 0.001799366669729352,
+      "source_latent_shape": [
+        250,
+        4
+      ],
+      "target_latent_shape": [
+        200,
+        4
+      ],
+      "source_finite": true,
+      "target_finite": true,
+      "protein_norm_finite": true,
+      "same_latent_dim": true,
+      "trainable_parameter_names": [
+        "background_pro_alpha",
+        "background_pro_log_beta",
+        "encoder.encoder.fc_layers.Layer 0.0.weight",
+        "encoder.encoder.fc_layers.Layer 0.0.bias",
+        "encoder.l_gene_encoder.fc_layers.Layer 0.0.weight",
+        "encoder.l_gene_encoder.fc_layers.Layer 0.0.bias",
+        "decoder.px_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.px_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.px_decoder.fc_layers.Layer 0.1.weight",
+        "decoder.px_decoder.fc_layers.Layer 0.1.bias",
+        "decoder.px_scale_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.px_scale_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.py_back_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.py_back_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.py_back_decoder.fc_layers.Layer 0.1.weight",
+        "decoder.py_back_decoder.fc_layers.Layer 0.1.bias",
+        "decoder.py_back_mean_log_alpha.fc_layers.Layer 0.0.weight",
+        "decoder.py_back_mean_log_alpha.fc_layers.Layer 0.0.bias",
+        "decoder.py_back_mean_log_beta.fc_layers.Layer 0.0.weight",
+        "decoder.py_back_mean_log_beta.fc_layers.Layer 0.0.bias",
+        "decoder.py_fore_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.py_fore_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.py_fore_decoder.fc_layers.Layer 0.1.weight",
+        "decoder.py_fore_decoder.fc_layers.Layer 0.1.bias",
+        "decoder.py_fore_scale_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.py_fore_scale_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.sigmoid_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.sigmoid_decoder.fc_layers.Layer 0.0.bias",
+        "decoder.sigmoid_decoder.fc_layers.Layer 0.1.weight",
+        "decoder.sigmoid_decoder.fc_layers.Layer 0.1.bias",
+        "decoder.px_dropout_decoder_gene.fc_layers.Layer 0.0.weight",
+        "decoder.px_dropout_decoder_gene.fc_layers.Layer 0.0.bias",
+        "decoder.py_background_decoder.fc_layers.Layer 0.0.weight",
+        "decoder.py_background_decoder.fc_layers.Layer 0.0.bias"
+      ],
+      "n_trainable": 34,
+      "query_parameter_device": "cuda:0",
+      "zero_shot": false,
+      "procedure": "scArches query adaptation via prepare_query_anndata + load_query_data + train",
+      "query_uses_protein": true
+    },
+    "comparable": true,
+    "terminology": "cross-dataset transfer / query generalization (scArches). Not strict zero-shot: unlabeled target RNA (and protein for totalVI) update new-batch / unfrozen parameters.",
+    "zero_shot_supported": false,
+    "zero_shot_reason": "load_query_data expands batch embeddings for unseen categories with random padding. Embedding query cells without adaptation would use untrained batch parameters. Mapping query cells as the source batch would ignore dataset identity. Neither is a documented zero-shot mode."
+  },
+  "phase9_note": "PHASE 9 was not empirically executed: totalVI 1.3.3 has no honest cell-level missing-protein mask. That is an API limitation, not a failed scientific result."
+}

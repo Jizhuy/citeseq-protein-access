@@ -1,0 +1,31 @@
+celltype.l2,celltype.l1
+ASDC,DC
+B intermediate,B
+B memory,B
+B naive,B
+CD14 Mono,Mono
+CD16 Mono,Mono
+CD4 CTL,CD4 T
+CD4 Naive,CD4 T
+CD4 Proliferating,CD4 T
+CD4 TCM,CD4 T
+CD4 TEM,CD4 T
+CD8 Naive,CD8 T
+CD8 Proliferating,CD8 T
+CD8 TCM,CD8 T
+CD8 TEM,CD8 T
+Eryth,other
+HSPC,other
+ILC,other
+MAIT,other T
+NK,NK
+NK Proliferating,NK
+NK_CD56bright,NK
+Plasmablast,B
+Platelet,other
+Treg,CD4 T
+cDC1,DC
+cDC2,DC
+dnT,other T
+gdT,other T
+pDC,DC

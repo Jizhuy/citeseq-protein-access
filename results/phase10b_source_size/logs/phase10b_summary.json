@@ -1,0 +1,28 @@
+{
+  "subsample_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model_seed": 0,
+  "subsample_n": 3994,
+  "n_common_l2_classes": 19,
+  "n_common_l1_classes": 8,
+  "tables": [
+    "source_size_celltype_specific.csv",
+    "source_size_delta.csv",
+    "source_size_primary.csv",
+    "source_size_rare_class_stability.csv",
+    "source_size_summary.csv",
+    "source_subsample_composition.csv"
+  ],
+  "ram": {
+    "total_mb": 7792.6328125,
+    "available_mb": 3274.24609375,
+    "percent": 58.0,
+    "process_rss_mb": 4199.21484375
+  },
+  "timestamp_utc": "2026-09-08T10:51:32.061967+00:00"
+}

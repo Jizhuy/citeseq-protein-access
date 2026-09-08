@@ -1,0 +1,104 @@
+project:
+  name: multiomics_robustness
+  title: Robust and Uncertainty-Aware Deep Generative Modeling for Single-Cell Multi-Omics Integration
+  stage: 5A-5C
+  current_phase: 8
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  results_dir: results
+  tables_dir: results/tables
+  figures_dir: results/figures
+  embeddings_dir: results/embeddings
+  logs_dir: results/logs
+  models_dir: results/models
+
+data:
+  # Official scvi-tools CITE-seq example files (same URLs used by
+  # scvi.data.pbmcs_10x_cite_seq). We load each dataset separately first
+  # and document the protein-panel join instead of calling that helper
+  # directly, because the helper silently intersects genes and, for an
+  # outer protein join, fills missing proteins with 0.
+  sources:
+    pbmc10k:
+      key: PBMC10k
+      filename: pbmc_10k_protein_v3.h5ad
+      url: https://exampledata.scverse.org/scvi-tools/pbmc_10k_protein_v3.h5ad
+      fallback_url: https://github.com/YosefLab/scVI-data/raw/master/pbmc_10k_protein_v3.h5ad
+    pbmc5k:
+      key: PBMC5k
+      filename: pbmc_5k_protein_v3.h5ad
+      url: https://exampledata.scverse.org/scvi-tools/pbmc_5k_protein_v3.h5ad
+      fallback_url: https://github.com/YosefLab/scVI-data/raw/master/pbmc_5k_protein_v3.h5ad
+  combined_name: pbmc_cite_combined
+  # Inner join is the fair shared-feature analysis set.
+  # Outer join is retained with an explicit missingness mask; missing
+  # proteins are NOT recoded as zeros.
+  protein_join: inner
+  preserve_raw_counts: true
+  rna_layer: counts
+  protein_obsm_key: protein_counts
+  protein_mask_obsm_key: protein_observed_mask
+  batch_key: batch
+  celltype_key: cell_type
+
+reproducibility:
+  default_seed: 0
+  seeds: [0, 1, 2, 3, 4]
+
+preprocessing:
+  # Source files were already filtered for doublets/low-quality cells
+  # following the totalVI reproducibility scripts. Phase 2 does not
+  # apply additional cell or gene filters.
+  additional_cell_filter: false
+  n_top_genes: 4000
+  hvg_flavor: seurat_v3
+  store_log1p_layer: false
+  overwrite_X_with_normalized: false
+
+splits:
+  test_fraction: 0.20
+  stratify_by: batch
+
+sparsity_stress:
+  levels: [0.0, 0.10, 0.25, 0.40, 0.55, 0.70, 0.85]
+  mode: mask_nonzero_protein_to_zero
+  perturbation_seeds: [0, 1, 2, 3, 4]
+  model_seed: 0
+  primary_metric: logreg_macro_f1
+  primary_label_level: l2
+  primary_subset: high_confidence
+
+missing_modality:
+  levels: [0.0, 0.25, 0.50, 0.75, 0.90]
+
+models:
+  latent_dim: 20
+  max_epochs: 200
+  early_stopping: true
+  batch_size: 256
+  # scVI_default (PHASE 3). Do not change these when running scVI_matched.
+  n_layers: 1
+  n_hidden: 128
+  scvi_matched:
+    n_hidden: 256
+    n_layers: 2
+    dropout_rate: 0.2
+    gene_likelihood: nb
+
+device:
+  prefer_cuda: true
+  prefer_mps: true
+  fallback_cpu: true
+  preferred_accelerator: cuda
+  preferred_device: 0
+  allow_cpu_fallback: true
+
+phase10:
+  query_max_epochs: 200
+  query_weight_decay: 0.0
+  min_source_support: 20
+  min_target_support: 10
+  n_boot: 500
+  knn_ks: [15, 30, 50]

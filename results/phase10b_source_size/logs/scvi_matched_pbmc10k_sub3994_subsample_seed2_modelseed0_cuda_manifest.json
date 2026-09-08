@@ -1,0 +1,92 @@
+{
+  "phase": "10B",
+  "model": "scvi_matched",
+  "direction": "pbmc10k_to_pbmc5k",
+  "condition": "size_matched_A",
+  "subsample_seed": 2,
+  "model_seed": 0,
+  "source_n": 3994,
+  "target_n": 3994,
+  "source_training_epochs": 200,
+  "query_adaptation_epochs": 200,
+  "source_training_runtime": 65.26615481099725,
+  "query_runtime": 53.81743649700002,
+  "source_batch_size": 256,
+  "query_batch_size": 256,
+  "source_device": "cuda:0",
+  "query_device": "cuda:0",
+  "source_gpu": {
+    "cuda_available": true,
+    "cuda_allocated_mb": 88.95751953125,
+    "cuda_reserved_mb": 126.0,
+    "peak_cuda_allocated_mb": 406.35498046875,
+    "peak_cuda_reserved_mb": 420.0
+  },
+  "query_gpu": {
+    "cuda_available": true,
+    "cuda_allocated_mb": 88.96142578125,
+    "cuda_reserved_mb": 122.0,
+    "peak_cuda_allocated_mb": 309.50439453125,
+    "peak_cuda_reserved_mb": 320.0
+  },
+  "source_ram_before": {
+    "total_mb": 7792.6328125,
+    "available_mb": 4685.890625,
+    "percent": 39.9,
+    "process_rss_mb": 2835.48828125
+  },
+  "source_ram_after": {
+    "total_mb": 7792.6328125,
+    "available_mb": 4651.16015625,
+    "percent": 40.3,
+    "process_rss_mb": 2856.921875
+  },
+  "query_ram_before": {
+    "total_mb": 7792.6328125,
+    "available_mb": 4651.16015625,
+    "percent": 40.3,
+    "process_rss_mb": 2856.921875
+  },
+  "query_ram_after": {
+    "total_mb": 7792.6328125,
+    "available_mb": 4475.24609375,
+    "percent": 42.6,
+    "process_rss_mb": 2978.90625
+  },
+  "n_trainable_query_params": 20,
+  "trainable_query_params": [
+    "z_encoder.encoder.fc_layers.Layer 0.0.weight",
+    "z_encoder.encoder.fc_layers.Layer 0.0.bias",
+    "z_encoder.encoder.fc_layers.Layer 1.0.weight",
+    "z_encoder.encoder.fc_layers.Layer 1.0.bias",
+    "l_encoder.encoder.fc_layers.Layer 0.0.weight",
+    "l_encoder.encoder.fc_layers.Layer 0.0.bias",
+    "l_encoder.encoder.fc_layers.Layer 0.1.weight",
+    "l_encoder.encoder.fc_layers.Layer 0.1.bias",
+    "l_encoder.mean_encoder.weight",
+    "l_encoder.mean_encoder.bias",
+    "l_encoder.var_encoder.weight",
+    "l_encoder.var_encoder.bias",
+    "decoder.px_decoder.fc_layers.Layer 0.0.weight",
+    "decoder.px_decoder.fc_layers.Layer 0.0.bias",
+    "decoder.px_decoder.fc_layers.Layer 0.1.weight",
+    "decoder.px_decoder.fc_layers.Layer 0.1.bias",
+    "decoder.px_decoder.fc_layers.Layer 1.0.weight",
+    "decoder.px_decoder.fc_layers.Layer 1.0.bias",
+    "decoder.px_decoder.fc_layers.Layer 1.1.weight",
+    "decoder.px_decoder.fc_layers.Layer 1.1.bias"
+  ],
+  "source_embedding_used_for_metrics": "adapted_model",
+  "adapted_source_drift_vs_source_model": {
+    "mean_euclidean_shift": 0.0,
+    "median_euclidean_shift": 0.0,
+    "max_euclidean_shift": 0.0,
+    "mean_source_latent_norm": 4.442022323608398,
+    "relative_shift": 0.0
+  },
+  "query_api": "prepare_query_anndata + load_query_data",
+  "zero_shot": false,
+  "target_labels_used_in_fitting": false,
+  "phase10_artifact_overwritten": false,
+  "timestamp_utc": "2026-09-08T10:36:17.216917+00:00"
+}

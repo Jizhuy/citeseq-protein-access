@@ -1,0 +1,211 @@
+label_level,predicted_cell_type,protein_marker,protein_column,n_cells,median,q25,q75,mean,detection_fraction,source,note
+l2,ASDC,CD3,CD3_TotalSeqB,6,19.0,11.75,30.0,21.166666666666668,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD3,CD3_TotalSeqB,150,16.0,10.0,23.0,27.3,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD3,CD3_TotalSeqB,187,17.0,11.5,28.0,21.155080213903744,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD3,CD3_TotalSeqB,449,14.0,9.0,20.0,19.599109131403118,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD3,CD3_TotalSeqB,2331,20.0,12.0,33.0,30.635349635349634,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD3,CD3_TotalSeqB,245,17.0,10.0,33.0,37.689795918367345,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD3,CD3_TotalSeqB,69,802.0,523.0,1659.0,1145.2898550724638,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD3,CD3_TotalSeqB,1381,2169.0,825.0,2948.0,2069.624185372918,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD3,CD3_TotalSeqB,11,1598.0,1063.0,2733.0,1844.2727272727273,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD3,CD3_TotalSeqB,1142,1140.5,621.25,2077.75,1462.4352014010508,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD3,CD3_TotalSeqB,638,964.0,526.25,1759.25,1225.8918495297805,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD3,CD3_TotalSeqB,397,1554.0,1156.0,1932.0,1524.2569269521412,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD3,CD3_TotalSeqB,42,1314.5,646.0,2038.5,1420.452380952381,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD3,CD3_TotalSeqB,145,1019.0,621.0,1607.0,1158.8275862068965,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD3,CD3_TotalSeqB,464,1210.0,714.0,1905.5,1363.2629310344828,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD3,CD3_TotalSeqB,332,20.0,10.0,36.0,35.95783132530121,0.9969879518072289,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD3,CD3_TotalSeqB,7,12.0,7.5,22.0,30.428571428571427,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD3,CD3_TotalSeqB,253,584.0,339.0,1065.0,809.8063241106719,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD3,CD3_TotalSeqB,397,1429.0,1031.0,1922.0,1591.5869017632242,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD3,CD3_TotalSeqB,1055,17.0,11.0,25.0,25.623696682464455,0.9990521327014218,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD3,CD3_TotalSeqB,46,18.0,11.0,29.75,96.76086956521739,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD3,CD3_TotalSeqB,71,10.0,7.0,16.5,40.774647887323944,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD3,CD3_TotalSeqB,12,45.5,20.75,50.5,38.666666666666664,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD3,CD3_TotalSeqB,7,8.0,7.0,22.5,18.142857142857142,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD3,CD3_TotalSeqB,372,1803.0,895.25,2503.0,1837.52688172043,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD3,CD3_TotalSeqB,4,21.5,17.75,24.75,21.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD3,CD3_TotalSeqB,272,28.0,17.0,51.5,86.95588235294117,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD3,CD3_TotalSeqB,168,1795.0,744.75,2584.5,1830.8214285714287,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD3,CD3_TotalSeqB,146,1622.5,1037.75,3102.0,2354.0890410958905,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD3,CD3_TotalSeqB,50,11.0,6.25,17.0,75.72,0.98,original observed protein counts,sanity check only; labels were not edited
+l2,ASDC,CD4,CD4_TotalSeqB,6,140.0,108.5,568.25,587.8333333333334,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD4,CD4_TotalSeqB,150,14.0,8.0,19.0,24.35333333333333,0.9933333333333333,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD4,CD4_TotalSeqB,187,14.0,8.0,21.0,16.272727272727273,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD4,CD4_TotalSeqB,449,12.0,8.0,18.0,22.322939866369712,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD4,CD4_TotalSeqB,2331,248.0,153.0,406.0,304.16001716001716,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD4,CD4_TotalSeqB,245,240.0,142.0,472.0,347.26938775510206,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD4,CD4_TotalSeqB,69,1310.0,877.0,2344.0,1569.7536231884058,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD4,CD4_TotalSeqB,1381,2113.0,1089.0,2600.0,1964.925416364953,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD4,CD4_TotalSeqB,11,3011.0,1482.0,3318.0,2447.5454545454545,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD4,CD4_TotalSeqB,1142,2154.0,1061.25,3115.25,2197.630472854641,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD4,CD4_TotalSeqB,638,1856.5,1156.0,3214.0,2169.9780564263324,0.9984326018808778,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD4,CD4_TotalSeqB,397,26.0,18.0,35.0,42.00755667506297,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD4,CD4_TotalSeqB,42,20.0,9.0,27.75,73.78571428571429,0.9761904761904762,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD4,CD4_TotalSeqB,145,17.0,7.0,29.0,64.67586206896551,0.9862068965517241,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD4,CD4_TotalSeqB,464,19.0,8.0,29.0,43.27370689655172,0.9956896551724138,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD4,CD4_TotalSeqB,332,161.5,101.75,266.0,206.9879518072289,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD4,CD4_TotalSeqB,7,21.0,9.5,37.0,23.714285714285715,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD4,CD4_TotalSeqB,253,1034.0,754.0,2053.0,1456.197628458498,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD4,CD4_TotalSeqB,397,19.0,13.0,27.0,86.32997481108312,0.9974811083123426,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD4,CD4_TotalSeqB,1055,14.0,9.0,20.0,20.767772511848342,0.9981042654028436,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD4,CD4_TotalSeqB,46,13.0,9.0,20.75,70.91304347826087,0.9782608695652174,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD4,CD4_TotalSeqB,71,9.0,4.5,12.0,47.816901408450704,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD4,CD4_TotalSeqB,12,31.5,17.0,41.5,33.583333333333336,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD4,CD4_TotalSeqB,7,39.0,22.5,55.0,38.285714285714285,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD4,CD4_TotalSeqB,372,2101.0,1501.75,2670.5,2089.9489247311826,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD4,CD4_TotalSeqB,4,357.5,274.25,474.25,391.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD4,CD4_TotalSeqB,272,302.5,194.0,509.25,406.7242647058824,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD4,CD4_TotalSeqB,168,846.0,27.0,2268.0,1239.0535714285713,0.9940476190476191,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD4,CD4_TotalSeqB,146,12.0,7.0,24.75,54.68493150684932,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD4,CD4_TotalSeqB,50,387.0,173.5,603.5,483.22,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,ASDC,CD8a,CD8a_TotalSeqB,6,12.5,7.0,18.0,14.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD8a,CD8a_TotalSeqB,150,10.5,6.0,16.0,13.873333333333333,0.9933333333333333,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD8a,CD8a_TotalSeqB,187,12.0,8.0,19.0,15.967914438502675,0.9946524064171123,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD8a,CD8a_TotalSeqB,449,9.0,6.0,14.0,11.628062360801781,0.9955456570155902,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD8a,CD8a_TotalSeqB,2331,13.0,8.0,25.0,20.844701844701845,0.9982839982839983,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD8a,CD8a_TotalSeqB,245,11.0,6.0,21.0,20.787755102040816,0.9836734693877551,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD8a,CD8a_TotalSeqB,69,8.0,4.0,25.0,197.69565217391303,0.9855072463768116,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD8a,CD8a_TotalSeqB,1381,21.0,7.0,28.0,20.67342505430847,0.9949312092686459,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD8a,CD8a_TotalSeqB,11,25.0,18.0,37.5,27.272727272727273,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD8a,CD8a_TotalSeqB,1142,18.0,6.0,29.0,24.357267950963223,0.9964973730297724,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD8a,CD8a_TotalSeqB,638,18.0,6.0,34.0,136.86363636363637,0.9968652037617555,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD8a,CD8a_TotalSeqB,397,5902.0,4123.0,7088.0,5260.115869017633,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD8a,CD8a_TotalSeqB,42,4704.5,632.0,6160.5,3950.3809523809523,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD8a,CD8a_TotalSeqB,145,3348.0,355.0,5915.0,3550.6068965517243,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD8a,CD8a_TotalSeqB,464,3743.5,605.5,6207.75,3763.896551724138,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD8a,CD8a_TotalSeqB,332,14.0,7.0,27.0,38.90963855421687,0.9909638554216867,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD8a,CD8a_TotalSeqB,7,6.0,5.0,8.5,21.142857142857142,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD8a,CD8a_TotalSeqB,253,7.0,4.0,26.0,81.19762845849803,0.9920948616600791,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD8a,CD8a_TotalSeqB,397,2142.0,757.0,3838.0,2508.3979848866497,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD8a,CD8a_TotalSeqB,1055,13.0,8.0,25.0,55.854976303317535,0.995260663507109,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD8a,CD8a_TotalSeqB,46,16.0,9.25,29.75,82.73913043478261,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD8a,CD8a_TotalSeqB,71,12.0,6.0,41.0,99.53521126760563,0.971830985915493,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD8a,CD8a_TotalSeqB,12,17.0,11.5,30.5,20.833333333333332,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD8a,CD8a_TotalSeqB,7,6.0,5.0,10.0,15.428571428571429,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD8a,CD8a_TotalSeqB,372,23.0,14.0,29.25,42.255376344086024,0.9973118279569892,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD8a,CD8a_TotalSeqB,4,10.5,8.0,12.5,10.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD8a,CD8a_TotalSeqB,272,9.0,5.0,20.0,87.7095588235294,0.9889705882352942,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD8a,CD8a_TotalSeqB,168,23.5,9.75,43.5,621.5833333333334,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD8a,CD8a_TotalSeqB,146,12.0,6.0,35.0,152.1164383561644,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD8a,CD8a_TotalSeqB,50,7.0,3.0,11.75,10.22,0.98,original observed protein counts,sanity check only; labels were not edited
+l2,ASDC,CD14,CD14_TotalSeqB,6,13.0,9.25,24.25,180.5,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD14,CD14_TotalSeqB,150,16.5,11.0,23.0,18.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD14,CD14_TotalSeqB,187,17.0,10.0,22.5,16.855614973262032,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD14,CD14_TotalSeqB,449,17.0,11.0,23.0,17.616926503340757,0.9977728285077951,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD14,CD14_TotalSeqB,2331,924.0,634.5,1309.0,1008.1514371514371,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD14,CD14_TotalSeqB,245,241.0,58.0,697.0,498.53061224489795,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD14,CD14_TotalSeqB,69,13.0,7.0,34.0,19.463768115942027,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD14,CD14_TotalSeqB,1381,32.0,12.0,42.0,29.034757422157856,0.999275887038378,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD14,CD14_TotalSeqB,11,34.0,16.0,43.0,31.454545454545453,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD14,CD14_TotalSeqB,1142,28.0,10.0,41.0,26.873029772329247,0.9982486865148862,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD14,CD14_TotalSeqB,638,20.5,10.0,40.0,26.307210031347964,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD14,CD14_TotalSeqB,397,27.0,21.0,33.0,26.042821158690177,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD14,CD14_TotalSeqB,42,22.0,10.25,28.0,21.761904761904763,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD14,CD14_TotalSeqB,145,20.0,11.0,27.0,20.337931034482757,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD14,CD14_TotalSeqB,464,21.0,11.0,30.0,21.103448275862068,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD14,CD14_TotalSeqB,332,782.0,554.25,1157.25,848.4186746987951,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD14,CD14_TotalSeqB,7,14.0,8.5,18.5,13.285714285714286,0.8571428571428571,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD14,CD14_TotalSeqB,253,12.0,8.0,27.0,19.324110671936758,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD14,CD14_TotalSeqB,397,23.0,18.0,29.0,23.720403022670027,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD14,CD14_TotalSeqB,1055,19.0,13.0,24.0,19.00379146919431,0.9990521327014218,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD14,CD14_TotalSeqB,46,17.0,9.0,24.75,17.369565217391305,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD14,CD14_TotalSeqB,71,14.0,8.5,20.0,14.422535211267606,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD14,CD14_TotalSeqB,12,22.0,14.5,28.25,22.333333333333332,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD14,CD14_TotalSeqB,7,56.0,40.5,144.0,110.57142857142857,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD14,CD14_TotalSeqB,372,33.0,20.0,40.0,30.52956989247312,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD14,CD14_TotalSeqB,4,20.5,16.25,25.75,21.5,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD14,CD14_TotalSeqB,272,42.0,15.0,227.75,258.69117647058823,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD14,CD14_TotalSeqB,168,27.0,14.0,39.25,27.785714285714285,0.9940476190476191,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD14,CD14_TotalSeqB,146,15.0,10.0,24.75,17.89041095890411,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD14,CD14_TotalSeqB,50,16.0,7.0,28.75,20.42,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,ASDC,CD16,CD16_TotalSeqB,6,11.0,2.25,20.5,16.5,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD16,CD16_TotalSeqB,150,15.0,2.0,30.0,141.96,0.9333333333333333,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD16,CD16_TotalSeqB,187,18.0,3.0,32.0,47.032085561497325,0.946524064171123,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD16,CD16_TotalSeqB,449,21.0,5.0,31.0,58.25612472160356,0.9643652561247216,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD16,CD16_TotalSeqB,2331,25.0,3.0,55.5,81.3015873015873,0.9635349635349635,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD16,CD16_TotalSeqB,245,94.0,21.0,957.0,653.1755102040817,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD16,CD16_TotalSeqB,69,4.0,1.0,29.0,136.31884057971016,0.8405797101449275,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD16,CD16_TotalSeqB,1381,24.0,3.0,38.0,51.41998551774077,0.9616220130340333,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD16,CD16_TotalSeqB,11,31.0,10.5,37.0,26.09090909090909,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD16,CD16_TotalSeqB,1142,19.0,2.0,37.0,81.97285464098074,0.9378283712784589,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD16,CD16_TotalSeqB,638,14.0,2.0,36.0,72.65047021943573,0.932601880877743,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD16,CD16_TotalSeqB,397,29.0,21.0,37.0,56.14609571788413,0.9672544080604534,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD16,CD16_TotalSeqB,42,27.5,11.0,81.5,452.45238095238096,0.9523809523809523,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD16,CD16_TotalSeqB,145,26.0,4.0,43.0,50.93103448275862,0.9379310344827586,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD16,CD16_TotalSeqB,464,25.0,4.0,42.0,60.21551724137931,0.9612068965517241,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD16,CD16_TotalSeqB,332,26.0,3.0,54.0,163.90060240963857,0.9457831325301205,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD16,CD16_TotalSeqB,7,13.0,5.0,25.5,19.142857142857142,0.8571428571428571,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD16,CD16_TotalSeqB,253,3.0,1.0,22.0,117.23715415019763,0.9011857707509882,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD16,CD16_TotalSeqB,397,27.0,19.0,39.0,121.62468513853904,0.9874055415617129,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD16,CD16_TotalSeqB,1055,921.0,478.5,1282.0,959.9469194312796,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD16,CD16_TotalSeqB,46,582.0,251.5,1043.5,1232.7391304347825,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD16,CD16_TotalSeqB,71,46.0,10.5,171.5,182.57746478873239,0.9859154929577465,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD16,CD16_TotalSeqB,12,22.0,15.75,37.5,357.25,0.9166666666666666,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD16,CD16_TotalSeqB,7,346.0,136.0,1189.0,1002.4285714285714,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD16,CD16_TotalSeqB,372,24.0,14.0,39.0,132.3763440860215,0.9865591397849462,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD16,CD16_TotalSeqB,4,46.5,9.0,413.5,376.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD16,CD16_TotalSeqB,272,11.5,2.0,43.0,96.19852941176471,0.9117647058823529,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD16,CD16_TotalSeqB,168,24.0,13.0,36.25,81.98214285714286,0.9226190476190477,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD16,CD16_TotalSeqB,146,16.0,3.0,37.0,53.93835616438356,0.9726027397260274,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD16,CD16_TotalSeqB,50,14.0,2.0,58.0,75.68,0.9,original observed protein counts,sanity check only; labels were not edited
+l2,ASDC,CD19,CD19_TotalSeqB,6,4.0,3.25,4.75,4.166666666666667,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD19,CD19_TotalSeqB,150,606.0,462.75,914.75,753.8866666666667,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD19,CD19_TotalSeqB,187,610.0,456.5,791.0,629.620320855615,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD19,CD19_TotalSeqB,449,523.0,397.0,663.0,562.2316258351893,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD19,CD19_TotalSeqB,2331,4.0,2.5,6.0,5.256542256542256,0.9746889746889746,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD19,CD19_TotalSeqB,245,5.0,3.0,8.0,11.612244897959183,0.9836734693877551,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD19,CD19_TotalSeqB,69,3.0,2.0,4.0,3.3768115942028984,0.8840579710144928,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD19,CD19_TotalSeqB,1381,4.0,2.0,6.0,4.211440984793628,0.9666908037653874,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD19,CD19_TotalSeqB,11,4.0,3.0,7.0,4.636363636363637,0.9090909090909091,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD19,CD19_TotalSeqB,1142,3.0,2.0,5.0,3.8003502626970227,0.9395796847635727,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD19,CD19_TotalSeqB,638,3.0,2.0,5.0,4.009404388714733,0.9545454545454546,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD19,CD19_TotalSeqB,397,5.0,3.0,7.0,5.224181360201511,0.9722921914357683,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD19,CD19_TotalSeqB,42,3.0,2.0,4.75,3.4285714285714284,0.8571428571428571,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD19,CD19_TotalSeqB,145,4.0,2.0,6.0,3.9379310344827587,0.9172413793103448,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD19,CD19_TotalSeqB,464,4.0,2.0,6.0,4.387931034482759,0.9461206896551724,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD19,CD19_TotalSeqB,332,4.0,2.0,6.0,6.47289156626506,0.9608433734939759,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD19,CD19_TotalSeqB,7,1.0,0.5,3.0,1.7142857142857142,0.7142857142857143,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD19,CD19_TotalSeqB,253,3.0,1.0,5.0,3.5652173913043477,0.9288537549407114,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD19,CD19_TotalSeqB,397,4.0,2.0,6.0,4.329974811083123,0.9672544080604534,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD19,CD19_TotalSeqB,1055,4.0,2.0,6.0,5.242654028436019,0.9582938388625593,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD19,CD19_TotalSeqB,46,5.0,2.0,6.75,4.934782608695652,0.9782608695652174,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD19,CD19_TotalSeqB,71,3.0,2.0,5.0,4.112676056338028,0.9577464788732394,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD19,CD19_TotalSeqB,12,177.0,117.0,433.75,258.0,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD19,CD19_TotalSeqB,7,3.0,1.5,4.5,3.142857142857143,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD19,CD19_TotalSeqB,372,3.0,2.0,5.0,3.9408602150537635,0.9650537634408602,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD19,CD19_TotalSeqB,4,1.5,0.75,2.25,1.5,0.75,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD19,CD19_TotalSeqB,272,3.0,1.0,5.0,3.4816176470588234,0.9375,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD19,CD19_TotalSeqB,168,4.0,2.0,6.0,8.571428571428571,0.9464285714285714,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD19,CD19_TotalSeqB,146,3.0,2.0,5.0,3.8219178082191783,0.9794520547945206,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD19,CD19_TotalSeqB,50,2.0,1.0,4.0,3.2,0.98,original observed protein counts,sanity check only; labels were not edited
+l2,ASDC,CD56,CD56_TotalSeqB,6,73.5,14.75,106.0,87.16666666666667,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,B intermediate,CD56,CD56_TotalSeqB,150,11.0,4.0,22.0,16.986666666666668,0.9866666666666667,original observed protein counts,sanity check only; labels were not edited
+l2,B memory,CD56,CD56_TotalSeqB,187,12.0,4.0,22.0,14.411764705882353,0.9893048128342246,original observed protein counts,sanity check only; labels were not edited
+l2,B naive,CD56,CD56_TotalSeqB,449,14.0,6.0,20.0,14.182628062360802,0.977728285077951,original observed protein counts,sanity check only; labels were not edited
+l2,CD14 Mono,CD56,CD56_TotalSeqB,2331,13.0,5.0,23.0,27.428571428571427,0.9862719862719863,original observed protein counts,sanity check only; labels were not edited
+l2,CD16 Mono,CD56,CD56_TotalSeqB,245,8.0,4.0,20.0,12.844897959183674,0.9795918367346939,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 CTL,CD56,CD56_TotalSeqB,69,6.0,3.0,18.0,40.21739130434783,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Naive,CD56,CD56_TotalSeqB,1381,13.0,4.0,18.0,12.16220130340333,0.9855177407675597,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 Proliferating,CD56,CD56_TotalSeqB,11,13.0,8.0,13.5,12.090909090909092,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TCM,CD56,CD56_TotalSeqB,1142,9.0,3.0,15.0,10.800350262697023,0.9746059544658494,original observed protein counts,sanity check only; labels were not edited
+l2,CD4 TEM,CD56,CD56_TotalSeqB,638,8.0,3.0,15.0,12.456112852664576,0.9717868338557993,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Naive,CD56,CD56_TotalSeqB,397,23.0,17.0,28.0,21.40050377833753,0.982367758186398,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 Proliferating,CD56,CD56_TotalSeqB,42,17.5,9.0,27.0,58.476190476190474,0.9523809523809523,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TCM,CD56,CD56_TotalSeqB,145,14.0,4.0,21.0,13.96551724137931,0.9517241379310345,original observed protein counts,sanity check only; labels were not edited
+l2,CD8 TEM,CD56,CD56_TotalSeqB,464,17.0,4.0,24.0,23.17241379310345,0.9633620689655172,original observed protein counts,sanity check only; labels were not edited
+l2,Eryth,CD56,CD56_TotalSeqB,332,12.0,4.0,20.0,18.903614457831324,0.9728915662650602,original observed protein counts,sanity check only; labels were not edited
+l2,HSPC,CD56,CD56_TotalSeqB,7,11.0,4.5,13.5,9.142857142857142,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,ILC,CD56,CD56_TotalSeqB,253,4.0,2.0,12.0,14.596837944664031,0.9486166007905138,original observed protein counts,sanity check only; labels were not edited
+l2,MAIT,CD56,CD56_TotalSeqB,397,35.0,16.0,110.0,103.76574307304786,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK,CD56,CD56_TotalSeqB,1055,306.0,186.5,435.0,321.9582938388626,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK Proliferating,CD56,CD56_TotalSeqB,46,239.0,102.0,368.75,294.30434782608694,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,NK_CD56bright,CD56,CD56_TotalSeqB,71,546.0,209.0,879.0,677.5774647887324,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Plasmablast,CD56,CD56_TotalSeqB,12,23.0,12.0,32.5,32.25,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Platelet,CD56,CD56_TotalSeqB,7,9.0,5.0,16.0,66.57142857142857,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,Treg,CD56,CD56_TotalSeqB,372,13.0,8.0,17.0,21.47043010752688,0.9919354838709677,original observed protein counts,sanity check only; labels were not edited
+l2,cDC1,CD56,CD56_TotalSeqB,4,15.5,10.0,21.25,15.75,1.0,original observed protein counts,sanity check only; labels were not edited
+l2,cDC2,CD56,CD56_TotalSeqB,272,8.5,3.0,22.0,40.283088235294116,0.9632352941176471,original observed protein counts,sanity check only; labels were not edited
+l2,dnT,CD56,CD56_TotalSeqB,168,14.0,6.75,19.0,18.601190476190474,0.9821428571428571,original observed protein counts,sanity check only; labels were not edited
+l2,gdT,CD56,CD56_TotalSeqB,146,12.0,4.0,20.0,26.69178082191781,0.9794520547945206,original observed protein counts,sanity check only; labels were not edited
+l2,pDC,CD56,CD56_TotalSeqB,50,8.0,2.0,16.0,18.18,0.94,original observed protein counts,sanity check only; labels were not edited

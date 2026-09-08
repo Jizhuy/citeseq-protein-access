@@ -1,0 +1,31 @@
+# Curated protein-to-gene mapping used in the totalVI reproducibility
+# filtering script for 10x PBMC CITE-seq:
+# https://github.com/YosefLab/totalVI_reproducibility/blob/master/data/data_filtering_scripts/pbmc_10k/pbmc_10k.py
+#
+# This mapping is literature-derived, not stored in the h5ad files.
+# CD45RA and CD45RO both map to PTPRC (isoform-level protein products of
+# the same gene). Isoform ambiguity is retained rather than dropped.
+#
+# Keys are cleaned protein symbols after stripping TotalSeq suffixes.
+protein_to_gene:
+  CD8a: CD8A
+  CD3: CD3G
+  CD127: IL7R
+  CD25: IL2RA
+  CD16: FCGR3A
+  CD4: CD4
+  CD14: CD14
+  CD15: FUT4
+  CD56: NCAM1
+  CD19: CD19
+  CD45RA: PTPRC
+  CD45RO: PTPRC
+  PD-1: PDCD1
+  TIGIT: TIGIT
+
+notes:
+  - CD3 is mapped to CD3G, not the CD3D/CD3E complex, following the totalVI script.
+  - PBMC5k-only proteins observed in PHASE 2 and left unmapped on purpose:
+    CD11b, CD137, CD197, CD20, CD274, CD278, CD27, CD28, CD335, CD34,
+    CD62L, CD69, CD80, CD86, HLA-DR.
+    Do not invent gene mappings for these until a documented source is added.

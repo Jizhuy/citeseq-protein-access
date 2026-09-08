@@ -1,0 +1,96 @@
+{
+  "model": "scvi_matched",
+  "direction": "pbmc10k_to_pbmc5k",
+  "model_seed": 3,
+  "cuda_name_suffix": "_cuda",
+  "historical_artifact_overwritten": false,
+  "query_api": "prepare_query_anndata + load_query_data",
+  "procedure": "cross-dataset transfer / query generalization (scArches)",
+  "zero_shot": false,
+  "target_labels_used_in_fitting": false,
+  "source_n": 6855,
+  "target_n": 3994,
+  "source_training_epochs": 200,
+  "query_adaptation_epochs": 200,
+  "source_training_runtime": 117.87426249700002,
+  "query_runtime": 59.34506134399999,
+  "source_batch_size": 256,
+  "query_batch_size": 256,
+  "source_device": "cuda:0",
+  "query_device": "cuda:0",
+  "source_gpu": {
+    "cuda_available": true,
+    "cuda_allocated_mb": 88.95751953125,
+    "cuda_reserved_mb": 126.0,
+    "peak_cuda_allocated_mb": 406.35498046875,
+    "peak_cuda_reserved_mb": 412.0
+  },
+  "query_gpu": {
+    "cuda_available": true,
+    "cuda_allocated_mb": 88.96142578125,
+    "cuda_reserved_mb": 122.0,
+    "peak_cuda_allocated_mb": 309.50439453125,
+    "peak_cuda_reserved_mb": 320.0
+  },
+  "source_ram_before": {
+    "total_mb": 7792.6328125,
+    "available_mb": 2661.1484375,
+    "percent": 65.9,
+    "process_rss_mb": 6476.11328125
+  },
+  "source_ram_after": {
+    "total_mb": 7792.6328125,
+    "available_mb": 2648.40234375,
+    "percent": 66.0,
+    "process_rss_mb": 6476.11328125
+  },
+  "query_ram_before": {
+    "total_mb": 7792.6328125,
+    "available_mb": 2648.40234375,
+    "percent": 66.0,
+    "process_rss_mb": 6476.11328125
+  },
+  "query_ram_after": {
+    "total_mb": 7792.6328125,
+    "available_mb": 2475.15234375,
+    "percent": 68.2,
+    "process_rss_mb": 6476.11328125
+  },
+  "n_trainable_query_params": 20,
+  "trainable_query_params": [
+    "z_encoder.encoder.fc_layers.Layer 0.0.weight",
+    "z_encoder.encoder.fc_layers.Layer 0.0.bias",
+    "z_encoder.encoder.fc_layers.Layer 1.0.weight",
+    "z_encoder.encoder.fc_layers.Layer 1.0.bias",
+    "l_encoder.encoder.fc_layers.Layer 0.0.weight",
+    "l_encoder.encoder.fc_layers.Layer 0.0.bias",
+    "l_encoder.encoder.fc_layers.Layer 0.1.weight",
+    "l_encoder.encoder.fc_layers.Layer 0.1.bias",
+    "l_encoder.mean_encoder.weight",
+    "l_encoder.mean_encoder.bias",
+    "l_encoder.var_encoder.weight",
+    "l_encoder.var_encoder.bias",
+    "decoder.px_decoder.fc_layers.Layer 0.0.weight",
+    "decoder.px_decoder.fc_layers.Layer 0.0.bias",
+    "decoder.px_decoder.fc_layers.Layer 0.1.weight",
+    "decoder.px_decoder.fc_layers.Layer 0.1.bias",
+    "decoder.px_decoder.fc_layers.Layer 1.0.weight",
+    "decoder.px_decoder.fc_layers.Layer 1.0.bias",
+    "decoder.px_decoder.fc_layers.Layer 1.1.weight",
+    "decoder.px_decoder.fc_layers.Layer 1.1.bias"
+  ],
+  "source_embedding_used_for_metrics": "adapted_model",
+  "latent_alignment": "Source and target cells are both encoded by the post-adaptation model, so they share one coordinate system (documented scvi-tools scArches procedure).",
+  "adapted_source_drift_vs_source_model": {
+    "mean_euclidean_shift": 0.0,
+    "median_euclidean_shift": 0.0,
+    "max_euclidean_shift": 0.0,
+    "mean_source_latent_norm": 3.9235806465148926,
+    "relative_shift": 0.0
+  },
+  "source_latent_source_model_path": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/embeddings/pbmc10k_to_pbmc5k/scvi_matched_pbmc10k_to_pbmc5k_seed3_cuda_source_latent_source_model.npy",
+  "source_latent_path": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/embeddings/pbmc10k_to_pbmc5k/scvi_matched_pbmc10k_to_pbmc5k_seed3_cuda_source_latent.npy",
+  "target_latent_path": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/embeddings/pbmc10k_to_pbmc5k/scvi_matched_pbmc10k_to_pbmc5k_seed3_cuda_target_latent.npy",
+  "model_dir": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/models/pbmc10k_to_pbmc5k/scvi_matched/seed3_cuda",
+  "timestamp_utc": "2026-09-08T07:07:42.957307+00:00"
+}

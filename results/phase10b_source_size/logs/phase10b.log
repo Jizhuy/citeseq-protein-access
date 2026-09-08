@@ -1,0 +1,38 @@
+2026-09-08 20:12:58,080 | INFO | phase10b | PHASE 10B env: Jizhu torch=2.14.0+cu126 scvi=1.3.3 gpu=['NVIDIA GeForce RTX 4060 Laptop GPU'] ram={'total_mb': 7792.6328125, 'available_mb': 6363.984375, 'percent': 18.3, 'process_rss_mb': 997.13671875}
+2026-09-08 20:13:02,295 | INFO | phase10b | subsample seed 0: n=3994 eligible_l2=20 TVD_l2=0.0237 TVD_l1=0.0153
+2026-09-08 20:13:02,310 | INFO | phase10b | common l2 classes: 19 -> ['B intermediate', 'B memory', 'B naive', 'CD14 Mono', 'CD16 Mono', 'CD4 Naive', 'CD4 TCM', 'CD4 TEM', 'CD8 Naive', 'CD8 TCM', 'CD8 TEM', 'Eryth', 'ILC', 'MAIT', 'NK', 'NK_CD56bright', 'Treg', 'cDC2', 'gdT']
+2026-09-08 20:13:02,310 | INFO | phase10b | common l1 classes: 8 -> ['B', 'CD4 T', 'CD8 T', 'DC', 'Mono', 'NK', 'other', 'other T']
+2026-09-08 20:13:35,070 | INFO | phase10b | original_A l2 re-scored on 19 common classes
+2026-09-08 20:13:40,387 | INFO | phase10b | original_A l1 re-scored on 8 common classes
+2026-09-08 20:14:28,147 | INFO | phase10b | original_B l2 re-scored on 19 common classes
+2026-09-08 20:14:32,918 | INFO | phase10b | original_B l1 re-scored on 8 common classes
+2026-09-08 20:14:32,920 | INFO | phase10b | === size-matched subsample seed 0 ===
+2026-09-08 20:16:34,921 | INFO | phase10b | scvi_matched_pbmc10k_sub3994_subsample_seed0_modelseed0_cuda drift=0.0000 src_ep=200 q_ep=200 src_s=65.1 q_s=53.7
+2026-09-08 20:19:54,189 | INFO | phase10b | totalvi_pbmc10k_sub3994_subsample_seed0_modelseed0_cuda drift=0.0163 src_ep=200 q_ep=200 src_s=98.3 q_s=99.1
+2026-09-08 20:26:37,391 | INFO | phase10b | PHASE 10B env: Jizhu torch=2.14.0+cu126 scvi=1.3.3 gpu=['NVIDIA GeForce RTX 4060 Laptop GPU'] ram={'total_mb': 7792.6328125, 'available_mb': 6348.97265625, 'percent': 18.5, 'process_rss_mb': 1000.42578125}
+2026-09-08 20:26:41,890 | INFO | phase10b | subsample seed 0: n=3994 eligible_l2=20 TVD_l2=0.0237 TVD_l1=0.0153
+2026-09-08 20:26:41,912 | INFO | phase10b | subsample seed 1: n=3994 eligible_l2=20 TVD_l2=0.0156 TVD_l1=0.0081
+2026-09-08 20:26:41,935 | INFO | phase10b | subsample seed 2: n=3994 eligible_l2=20 TVD_l2=0.0192 TVD_l1=0.0103
+2026-09-08 20:26:41,964 | INFO | phase10b | subsample seed 3: n=3994 eligible_l2=20 TVD_l2=0.0180 TVD_l1=0.0090
+2026-09-08 20:26:41,983 | INFO | phase10b | subsample seed 4: n=3994 eligible_l2=20 TVD_l2=0.0171 TVD_l1=0.0097
+2026-09-08 20:26:42,000 | INFO | phase10b | common l2 classes: 19 -> ['B intermediate', 'B memory', 'B naive', 'CD14 Mono', 'CD16 Mono', 'CD4 Naive', 'CD4 TCM', 'CD4 TEM', 'CD8 Naive', 'CD8 TCM', 'CD8 TEM', 'Eryth', 'ILC', 'MAIT', 'NK', 'NK_CD56bright', 'Treg', 'cDC2', 'gdT']
+2026-09-08 20:26:42,000 | INFO | phase10b | common l1 classes: 8 -> ['B', 'CD4 T', 'CD8 T', 'DC', 'Mono', 'NK', 'other', 'other T']
+2026-09-08 20:27:14,293 | INFO | phase10b | original_A l2 re-scored on 19 common classes
+2026-09-08 20:27:19,705 | INFO | phase10b | original_A l1 re-scored on 8 common classes
+2026-09-08 20:28:07,266 | INFO | phase10b | original_B l2 re-scored on 19 common classes
+2026-09-08 20:28:12,042 | INFO | phase10b | original_B l1 re-scored on 8 common classes
+2026-09-08 20:28:12,044 | INFO | phase10b | === size-matched subsample seed 0 ===
+2026-09-08 20:28:12,107 | INFO | phase10b | Reusing completed PHASE 10B artifacts for scvi_matched_pbmc10k_sub3994_subsample_seed0_modelseed0_cuda
+2026-09-08 20:28:12,108 | INFO | phase10b | Reusing completed PHASE 10B artifacts for totalvi_pbmc10k_sub3994_subsample_seed0_modelseed0_cuda
+2026-09-08 20:28:35,398 | INFO | phase10b | === size-matched subsample seed 1 ===
+2026-09-08 20:30:34,281 | INFO | phase10b | scvi_matched_pbmc10k_sub3994_subsample_seed1_modelseed0_cuda drift=0.0000 src_ep=200 q_ep=200 src_s=63.8 q_s=52.2
+2026-09-08 20:33:52,589 | INFO | phase10b | totalvi_pbmc10k_sub3994_subsample_seed1_modelseed0_cuda drift=0.0173 src_ep=200 q_ep=200 src_s=100.5 q_s=96.0
+2026-09-08 20:34:16,985 | INFO | phase10b | === size-matched subsample seed 2 ===
+2026-09-08 20:36:17,217 | INFO | phase10b | scvi_matched_pbmc10k_sub3994_subsample_seed2_modelseed0_cuda drift=0.0000 src_ep=200 q_ep=200 src_s=65.3 q_s=53.8
+2026-09-08 20:39:36,139 | INFO | phase10b | totalvi_pbmc10k_sub3994_subsample_seed2_modelseed0_cuda drift=0.0198 src_ep=200 q_ep=200 src_s=100.2 q_s=96.8
+2026-09-08 20:40:00,922 | INFO | phase10b | === size-matched subsample seed 3 ===
+2026-09-08 20:42:00,729 | INFO | phase10b | scvi_matched_pbmc10k_sub3994_subsample_seed3_modelseed0_cuda drift=0.0000 src_ep=200 q_ep=200 src_s=65.0 q_s=53.6
+2026-09-08 20:45:18,130 | INFO | phase10b | totalvi_pbmc10k_sub3994_subsample_seed3_modelseed0_cuda drift=0.0176 src_ep=200 q_ep=200 src_s=98.6 q_s=96.9
+2026-09-08 20:45:43,187 | INFO | phase10b | === size-matched subsample seed 4 ===
+2026-09-08 20:47:43,470 | INFO | phase10b | scvi_matched_pbmc10k_sub3994_subsample_seed4_modelseed0_cuda drift=0.0000 src_ep=200 q_ep=200 src_s=65.1 q_s=54.1
+2026-09-08 20:51:04,625 | INFO | phase10b | totalvi_pbmc10k_sub3994_subsample_seed4_modelseed0_cuda drift=0.0195 src_ep=200 q_ep=200 src_s=101.8 q_s=97.5

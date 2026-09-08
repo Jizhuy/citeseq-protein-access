@@ -1,0 +1,15 @@
+{
+  "high_threshold": 0.85,
+  "medium_threshold": 0.9732567667961121,
+  "quantiles": {
+    "q25": 0.9732567667961121,
+    "q50": 0.9991720914840698,
+    "q75": 0.9999679327011108,
+    "q90": 0.9999986886978149,
+    "min": 0.33212170004844666,
+    "max": 1.0,
+    "mean": 0.9479703634485626
+  },
+  "rule": "high: l2_confidence >= 0.850; medium: [0.973, 0.850); low: < 0.973. Thresholds taken from the observed SCANVI max-class probability distribution.",
+  "justification": "0.5 was not used because the observed score mass is far above 0.5. High confidence uses 0.85 when the 75th percentile supports it, otherwise the 75th percentile."
+}
