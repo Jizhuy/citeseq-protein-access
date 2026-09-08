@@ -23,6 +23,7 @@ results/figures/*.pdf
 results/embeddings/*
 results/logs/*
 results/models/*
+results/perturbations/*.npz
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !results/tables/.gitkeep
@@ -30,3 +31,4 @@ results/models/*
 !results/embeddings/.gitkeep
 !results/logs/.gitkeep
 !results/models/.gitkeep
+!results/perturbations/.gitkeep
