@@ -1,0 +1,8 @@
+{
+  "stage": "crossed",
+  "n_jobs": 50,
+  "n_completed_now": 50,
+  "n_failed": 0,
+  "failures": [],
+  "timestamp_utc": "2026-09-09T08:12:49.165111+00:00"
+}

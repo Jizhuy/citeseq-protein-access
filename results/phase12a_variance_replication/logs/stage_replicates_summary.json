@@ -1,0 +1,8 @@
+{
+  "phase": "12A",
+  "n_jobs": 50,
+  "n_completed_now": 45,
+  "n_failed": 0,
+  "failures": [],
+  "timestamp_utc": "2026-09-09T17:27:57.815155+00:00"
+}

@@ -1,0 +1,15 @@
+current_protein,external_match,external_name,match_type,confidence
+CD3,YES,CD3,exact,high
+CD4,YES,CD4,exact,high
+CD8a,YES,CD8a,exact,high
+CD14,YES,CD14,exact,high
+CD15,NO,,none,n/a
+CD16,YES,CD16,exact,high
+CD56,YES,CD56,exact,high
+CD19,YES,CD19,exact,high
+CD25,YES,CD25,exact,high
+CD45RA,YES,CD45RA,exact,high
+CD45RO,YES,CD45RO,exact,high
+PD-1,YES,CD279_PD1,alias,high
+TIGIT,NO,,none,n/a
+CD127,YES,CD127_IL7Ra,alias,high

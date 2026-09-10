@@ -1,0 +1,5 @@
+| dataset | role | n_cells | n_genes | n_proteins | labels | primary_experiments |
+| --- | --- | --- | --- | --- | --- | --- |
+| PBMC10k CITE-seq | Development / source or target in transfer | as in project manifests (query annotation ~10k-scale) | shared PBMC gene universe | 14-protein primary panel (development) | Independent Seurat-v4-derived labels (dev only) | Representation; protein corruption; transfer; uncertainty |
+| PBMC5k CITE-seq | Development / reciprocal transfer partner | as in project manifests | shared with PBMC10k | overlapping development panel | Independent transferred labels (dev only) | Transfer Directions A/B; uncertainty |
+| Lawlor Baseline CITE-seq | Independent external validation | 16,175 Baseline SNG (5,207 author-labeled) | 12,776 shared symbols | 12 matched (CD15/TIGIT absent) | Author protein-gated labels only | 5-fold donor-held-out; 10 seeds; 100 runs |

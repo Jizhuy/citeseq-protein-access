@@ -1,0 +1,14 @@
+method,citation,year,fusion_rule,modality_specific_encoders,per_modality_posterior_variance,precision_weighted_fusion,cell_specific_weighting,missing_modality_support,calibration_evaluated,domain_shift_evaluated,selective_prediction_evaluated,source_composition_perturbation
+MVAE (PoE),Wu & Goodman NeurIPS,2018,Gaussian product-of-experts,1,1,1,1,1,0,0,0,0
+MMVAE,Shi et al. NeurIPS,2019,Mixture-of-experts alpha=1/M,1,1,0,0,1,0,0,0,0
+MoPoE-VAE,Sutter et al. ICLR,2021,Mixture over subset PoEs,1,1,1,1,1,0,0,0,0
+gPoE-VAE,Joshi et al. ICMI,2022,PoE with per-sample learned alpha,1,1,1,1,1,0,0,0,0
+gPoE-normVAE,Lawry Aguila et al. MICCAI,2023,PoE with per-latent-dim learned alpha,1,1,1,0,1,0,0,0,0
+COLD Fusion,Tellamekala et al. TPAMI,2023,Calibrated inverse-variance-norm weights,1,1,1,1,0,1,0,0,0
+totalVI,Gayoso et al. Nat Methods,2021,Input concatenation (single joint encoder),0,0,0,0,1,1,0,0,0
+MultiVI,Ashuach et al. Nat Methods,2023,Weighted average of mu and var (learned w),1,1,0,1,1,0,1,0,0
+Cobolt,Gong et al. Genome Biol,2021,Gaussian product-of-experts,1,1,1,1,1,0,1,0,0
+scMM,Minoura et al. Cell Rep Methods,2021,Mixture-of-experts alpha=1/M,1,1,0,0,1,0,0,0,0
+scMaui,Jeong et al. BMC Bioinformatics,2024,Gaussian product-of-experts,1,1,1,1,1,0,0,0,0
+UniVI,bioRxiv preprint,2025,Precision-weighted PoE + optional gate,1,1,1,1,1,0,1,0,0
+MOFA+,Argelaguet et al. Genome Biol,2020,Shared factors + view loadings,0,0,0,0,1,0,0,0,0

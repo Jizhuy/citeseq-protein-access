@@ -1,0 +1,126 @@
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/scvi_matched/seed0_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc10k_to_pbmc5k scvi_matched seed0: mean qzv=0.08733 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/scvi_matched/seed1_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc10k_to_pbmc5k scvi_matched seed1: mean qzv=0.09709 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/scvi_matched/seed2_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc10k_to_pbmc5k scvi_matched seed2: mean qzv=0.13672 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/scvi_matched/seed3_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc10k_to_pbmc5k scvi_matched seed3: mean qzv=0.19019 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/scvi_matched/seed4_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc10k_to_pbmc5k scvi_matched seed4: mean qzv=0.12974 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/totalvi/seed0_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc10k_to_pbmc5k totalvi seed0: mean qzv=0.02304 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/totalvi/seed1_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc10k_to_pbmc5k totalvi seed1: mean qzv=0.02344 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/totalvi/seed2_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc10k_to_pbmc5k totalvi seed2: mean qzv=0.02588 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/totalvi/seed3_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc10k_to_pbmc5k totalvi seed3: mean qzv=0.02250 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc10k_to_pbmc5k/totalvi/seed4_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc10k_to_pbmc5k totalvi seed4: mean qzv=0.02300 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/scvi_matched/seed0_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc5k_to_pbmc10k scvi_matched seed0: mean qzv=0.07336 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/scvi_matched/seed1_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc5k_to_pbmc10k scvi_matched seed1: mean qzv=0.08465 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/scvi_matched/seed2_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc5k_to_pbmc10k scvi_matched seed2: mean qzv=0.09349 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/scvi_matched/seed3_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc5k_to_pbmc10k scvi_matched seed3: mean qzv=0.08301 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/scvi_matched/seed4_cuda/[0m[95mmodel.pt[0m already    
+         downloaded                                                             
+  pbmc5k_to_pbmc10k scvi_matched seed4: mean qzv=0.06915 valid_post=True
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/totalvi/seed0_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc5k_to_pbmc10k totalvi seed0: mean qzv=0.03067 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/totalvi/seed1_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc5k_to_pbmc10k totalvi seed1: mean qzv=0.03023 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/totalvi/seed2_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc5k_to_pbmc10k totalvi seed2: mean qzv=0.03100 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/totalvi/seed3_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc5k_to_pbmc10k totalvi seed3: mean qzv=0.03330 valid_post=False
+[34mINFO    [0m File                                                                   
+         [35m/home/jizhu/research/multiomics_robustness/results/phase10_cross_datase[0m
+         [35mt/models/pbmc5k_to_pbmc10k/totalvi/seed4_cuda/[0m[95mmodel.pt[0m already         
+         downloaded                                                             
+[34mINFO    [0m Computing empirical prior initialization for protein background.       
+  pbmc5k_to_pbmc10k totalvi seed4: mean qzv=0.03274 valid_post=False
+
+stage latent complete

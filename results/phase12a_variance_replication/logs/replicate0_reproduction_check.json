@@ -1,0 +1,13 @@
+{
+  "max_abs_difference_vs_phase11b": {
+    "macro_f1": 0.0,
+    "error_auroc": 0.0,
+    "error_auprc": 5.551115123125783e-17,
+    "nll": 0.0,
+    "brier": 5.551115123125783e-17,
+    "ece": 9.71445146547012e-17,
+    "aurc": 9.71445146547012e-17
+  },
+  "n_rows_compared": 50,
+  "timestamp_utc": "2026-09-10T03:51:56.488893+00:00"
+}

@@ -1,0 +1,56 @@
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+2026-09-09 15:59:22,125 | INFO | phase11b_analysis | === stage delta (2026-09-09T05:59:22.125295+00:00) ===
+2026-09-09 15:59:37,072 | INFO | phase11b_analysis | direction_A seed 0 target-cell bootstrap done
+2026-09-09 15:59:43,978 | INFO | phase11b_analysis | direction_A seed 1 target-cell bootstrap done
+2026-09-09 15:59:50,466 | INFO | phase11b_analysis | direction_A seed 2 target-cell bootstrap done
+2026-09-09 15:59:57,185 | INFO | phase11b_analysis | direction_A seed 3 target-cell bootstrap done
+2026-09-09 16:00:04,000 | INFO | phase11b_analysis | direction_A seed 4 target-cell bootstrap done
+2026-09-09 16:00:10,584 | INFO | phase11b_analysis | direction_A seed 5 target-cell bootstrap done
+2026-09-09 16:00:16,928 | INFO | phase11b_analysis | direction_A seed 6 target-cell bootstrap done
+2026-09-09 16:00:23,123 | INFO | phase11b_analysis | direction_A seed 7 target-cell bootstrap done
+2026-09-09 16:00:29,262 | INFO | phase11b_analysis | direction_A seed 8 target-cell bootstrap done
+2026-09-09 16:00:35,693 | INFO | phase11b_analysis | direction_A seed 9 target-cell bootstrap done
+2026-09-09 16:00:42,404 | INFO | phase11b_analysis | direction_A seed 10 target-cell bootstrap done
+2026-09-09 16:00:49,153 | INFO | phase11b_analysis | direction_A seed 11 target-cell bootstrap done
+2026-09-09 16:00:55,745 | INFO | phase11b_analysis | direction_A seed 12 target-cell bootstrap done
+2026-09-09 16:01:01,827 | INFO | phase11b_analysis | direction_A seed 13 target-cell bootstrap done
+2026-09-09 16:01:07,987 | INFO | phase11b_analysis | direction_A seed 14 target-cell bootstrap done
+2026-09-09 16:01:14,210 | INFO | phase11b_analysis | direction_A seed 15 target-cell bootstrap done
+2026-09-09 16:01:20,352 | INFO | phase11b_analysis | direction_A seed 16 target-cell bootstrap done
+2026-09-09 16:01:26,603 | INFO | phase11b_analysis | direction_A seed 17 target-cell bootstrap done
+2026-09-09 16:01:32,704 | INFO | phase11b_analysis | direction_A seed 18 target-cell bootstrap done
+2026-09-09 16:01:38,954 | INFO | phase11b_analysis | direction_A seed 19 target-cell bootstrap done
+2026-09-09 16:01:54,724 | INFO | phase11b_analysis | direction_B seed 0 target-cell bootstrap done
+2026-09-09 16:02:03,923 | INFO | phase11b_analysis | direction_B seed 1 target-cell bootstrap done
+2026-09-09 16:02:13,053 | INFO | phase11b_analysis | direction_B seed 2 target-cell bootstrap done
+2026-09-09 16:02:22,061 | INFO | phase11b_analysis | direction_B seed 3 target-cell bootstrap done
+2026-09-09 16:02:31,154 | INFO | phase11b_analysis | direction_B seed 4 target-cell bootstrap done
+2026-09-09 16:02:40,163 | INFO | phase11b_analysis | direction_B seed 5 target-cell bootstrap done
+2026-09-09 16:02:49,067 | INFO | phase11b_analysis | direction_B seed 6 target-cell bootstrap done
+2026-09-09 16:02:57,872 | INFO | phase11b_analysis | direction_B seed 7 target-cell bootstrap done
+2026-09-09 16:03:06,672 | INFO | phase11b_analysis | direction_B seed 8 target-cell bootstrap done
+2026-09-09 16:03:15,702 | INFO | phase11b_analysis | direction_B seed 9 target-cell bootstrap done
+2026-09-09 16:03:24,566 | INFO | phase11b_analysis | direction_B seed 10 target-cell bootstrap done
+2026-09-09 16:03:34,935 | INFO | phase11b_analysis | direction_B seed 11 target-cell bootstrap done
+2026-09-09 16:03:44,065 | INFO | phase11b_analysis | direction_B seed 12 target-cell bootstrap done
+2026-09-09 16:03:53,221 | INFO | phase11b_analysis | direction_B seed 13 target-cell bootstrap done
+2026-09-09 16:04:02,422 | INFO | phase11b_analysis | direction_B seed 14 target-cell bootstrap done
+2026-09-09 16:04:10,751 | INFO | phase11b_analysis | direction_B seed 15 target-cell bootstrap done
+2026-09-09 16:04:18,916 | INFO | phase11b_analysis | direction_B seed 16 target-cell bootstrap done
+2026-09-09 16:04:27,328 | INFO | phase11b_analysis | direction_B seed 17 target-cell bootstrap done
+2026-09-09 16:04:35,971 | INFO | phase11b_analysis | direction_B seed 18 target-cell bootstrap done
+2026-09-09 16:04:44,831 | INFO | phase11b_analysis | direction_B seed 19 target-cell bootstrap done
+2026-09-09 16:04:45,197 | INFO | phase11b_analysis | delta done

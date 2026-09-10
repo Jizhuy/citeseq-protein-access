@@ -1,0 +1,390 @@
+2026-09-10 14:40:21,162 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0)]
+2026-09-10 14:40:23,334 | INFO | phase12b_gate | === fold0__scvi_matched__seed00 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 14:42:25,812 | INFO | phase12b_gate | done fold0__scvi_matched__seed00 macro_f1=0.7970 pred_auroc=0.8095 lat_auroc=0.5938
+2026-09-10 14:42:26,160 | INFO | phase12b_gate | === fold0__totalvi__seed00 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 14:45:54,617 | INFO | phase12b_gate | done fold0__totalvi__seed00 macro_f1=0.9000 pred_auroc=0.7915 lat_auroc=0.6284
+2026-09-10 14:45:54,916 | INFO | phase12b_gate | gate complete
+2026-09-10 14:49:03,999 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0)]
+2026-09-10 14:49:04,450 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 14:49:06,375 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 14:49:06,658 | INFO | phase12b_gate | gate complete
+2026-09-10 14:49:11,455 | INFO | phase12b_gate | jobs=[(1, 'scvi_matched', 0), (1, 'totalvi', 0)]
+2026-09-10 14:49:12,468 | INFO | phase12b_gate | === fold1__scvi_matched__seed00 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 14:51:19,230 | INFO | phase12b_gate | done fold1__scvi_matched__seed00 macro_f1=0.8043 pred_auroc=0.8231 lat_auroc=0.6315
+2026-09-10 14:51:19,587 | INFO | phase12b_gate | === fold1__totalvi__seed00 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 14:55:00,409 | INFO | phase12b_gate | done fold1__totalvi__seed00 macro_f1=0.8952 pred_auroc=0.8464 lat_auroc=0.6430
+2026-09-10 14:55:00,696 | INFO | phase12b_gate | gate complete
+2026-09-10 14:55:05,212 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0), (1, 'scvi_matched', 0), (1, 'totalvi', 0), (2, 'scvi_matched', 0), (2, 'totalvi', 0), (3, 'scvi_matched', 0), (3, 'totalvi', 0), (4, 'scvi_matched', 0), (4, 'totalvi', 0)]
+2026-09-10 14:55:05,677 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 14:55:06,537 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 14:55:06,831 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 14:55:07,117 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 14:55:07,497 | INFO | phase12b_gate | === fold2__scvi_matched__seed00 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 14:57:23,231 | INFO | phase12b_gate | done fold2__scvi_matched__seed00 macro_f1=0.7741 pred_auroc=0.7720 lat_auroc=0.6549
+2026-09-10 14:57:23,574 | INFO | phase12b_gate | === fold2__totalvi__seed00 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 15:01:29,071 | INFO | phase12b_gate | done fold2__totalvi__seed00 macro_f1=0.8922 pred_auroc=0.8424 lat_auroc=0.6249
+2026-09-10 15:01:29,419 | INFO | phase12b_gate | === fold3__scvi_matched__seed00 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 15:03:44,553 | INFO | phase12b_gate | done fold3__scvi_matched__seed00 macro_f1=0.7619 pred_auroc=0.7742 lat_auroc=0.6033
+2026-09-10 15:03:44,883 | INFO | phase12b_gate | === fold3__totalvi__seed00 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 15:07:28,524 | INFO | phase12b_gate | done fold3__totalvi__seed00 macro_f1=0.8663 pred_auroc=0.8274 lat_auroc=0.6578
+2026-09-10 15:07:28,888 | INFO | phase12b_gate | === fold4__scvi_matched__seed00 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 15:09:43,631 | INFO | phase12b_gate | done fold4__scvi_matched__seed00 macro_f1=0.8250 pred_auroc=0.8137 lat_auroc=0.6439
+2026-09-10 15:09:43,988 | INFO | phase12b_gate | === fold4__totalvi__seed00 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 15:13:29,722 | INFO | phase12b_gate | done fold4__totalvi__seed00 macro_f1=0.8936 pred_auroc=0.8534 lat_auroc=0.6387
+2026-09-10 15:13:29,990 | INFO | phase12b_gate | gate complete
+2026-09-10 15:13:34,611 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'scvi_matched', 1), (0, 'scvi_matched', 2), (0, 'scvi_matched', 3), (0, 'scvi_matched', 4), (0, 'scvi_matched', 5), (0, 'scvi_matched', 6), (0, 'scvi_matched', 7), (0, 'scvi_matched', 8), (0, 'scvi_matched', 9), (0, 'totalvi', 0), (0, 'totalvi', 1), (0, 'totalvi', 2), (0, 'totalvi', 3), (0, 'totalvi', 4), (0, 'totalvi', 5), (0, 'totalvi', 6), (0, 'totalvi', 7), (0, 'totalvi', 8), (0, 'totalvi', 9), (1, 'scvi_matched', 0), (1, 'scvi_matched', 1), (1, 'scvi_matched', 2), (1, 'scvi_matched', 3), (1, 'scvi_matched', 4), (1, 'scvi_matched', 5), (1, 'scvi_matched', 6), (1, 'scvi_matched', 7), (1, 'scvi_matched', 8), (1, 'scvi_matched', 9), (1, 'totalvi', 0), (1, 'totalvi', 1), (1, 'totalvi', 2), (1, 'totalvi', 3), (1, 'totalvi', 4), (1, 'totalvi', 5), (1, 'totalvi', 6), (1, 'totalvi', 7), (1, 'totalvi', 8), (1, 'totalvi', 9), (2, 'scvi_matched', 0), (2, 'scvi_matched', 1), (2, 'scvi_matched', 2), (2, 'scvi_matched', 3), (2, 'scvi_matched', 4), (2, 'scvi_matched', 5), (2, 'scvi_matched', 6), (2, 'scvi_matched', 7), (2, 'scvi_matched', 8), (2, 'scvi_matched', 9), (2, 'totalvi', 0), (2, 'totalvi', 1), (2, 'totalvi', 2), (2, 'totalvi', 3), (2, 'totalvi', 4), (2, 'totalvi', 5), (2, 'totalvi', 6), (2, 'totalvi', 7), (2, 'totalvi', 8), (2, 'totalvi', 9), (3, 'scvi_matched', 0), (3, 'scvi_matched', 1), (3, 'scvi_matched', 2), (3, 'scvi_matched', 3), (3, 'scvi_matched', 4), (3, 'scvi_matched', 5), (3, 'scvi_matched', 6), (3, 'scvi_matched', 7), (3, 'scvi_matched', 8), (3, 'scvi_matched', 9), (3, 'totalvi', 0), (3, 'totalvi', 1), (3, 'totalvi', 2), (3, 'totalvi', 3), (3, 'totalvi', 4), (3, 'totalvi', 5), (3, 'totalvi', 6), (3, 'totalvi', 7), (3, 'totalvi', 8), (3, 'totalvi', 9), (4, 'scvi_matched', 0), (4, 'scvi_matched', 1), (4, 'scvi_matched', 2), (4, 'scvi_matched', 3), (4, 'scvi_matched', 4), (4, 'scvi_matched', 5), (4, 'scvi_matched', 6), (4, 'scvi_matched', 7), (4, 'scvi_matched', 8), (4, 'scvi_matched', 9), (4, 'totalvi', 0), (4, 'totalvi', 1), (4, 'totalvi', 2), (4, 'totalvi', 3), (4, 'totalvi', 4), (4, 'totalvi', 5), (4, 'totalvi', 6), (4, 'totalvi', 7), (4, 'totalvi', 8), (4, 'totalvi', 9)]
+2026-09-10 15:13:35,112 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 15:13:36,111 | INFO | phase12b_gate | === fold0__scvi_matched__seed01 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:15:36,778 | INFO | phase12b_gate | done fold0__scvi_matched__seed01 macro_f1=0.7919 pred_auroc=0.8139 lat_auroc=0.5990
+2026-09-10 15:15:37,134 | INFO | phase12b_gate | === fold0__scvi_matched__seed02 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:17:46,404 | INFO | phase12b_gate | done fold0__scvi_matched__seed02 macro_f1=0.8135 pred_auroc=0.8075 lat_auroc=0.6007
+2026-09-10 15:17:46,761 | INFO | phase12b_gate | === fold0__scvi_matched__seed03 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:19:56,335 | INFO | phase12b_gate | done fold0__scvi_matched__seed03 macro_f1=0.7956 pred_auroc=0.8393 lat_auroc=0.6056
+2026-09-10 15:19:56,691 | INFO | phase12b_gate | === fold0__scvi_matched__seed04 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:22:09,142 | INFO | phase12b_gate | done fold0__scvi_matched__seed04 macro_f1=0.8138 pred_auroc=0.7992 lat_auroc=0.5693
+2026-09-10 15:22:09,491 | INFO | phase12b_gate | === fold0__scvi_matched__seed05 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:24:19,279 | INFO | phase12b_gate | done fold0__scvi_matched__seed05 macro_f1=0.8152 pred_auroc=0.7941 lat_auroc=0.4094
+2026-09-10 15:24:19,637 | INFO | phase12b_gate | === fold0__scvi_matched__seed06 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:26:30,144 | INFO | phase12b_gate | done fold0__scvi_matched__seed06 macro_f1=0.8046 pred_auroc=0.8159 lat_auroc=0.5979
+2026-09-10 15:26:30,515 | INFO | phase12b_gate | === fold0__scvi_matched__seed07 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:28:37,928 | INFO | phase12b_gate | done fold0__scvi_matched__seed07 macro_f1=0.7944 pred_auroc=0.8091 lat_auroc=0.6442
+2026-09-10 15:28:38,295 | INFO | phase12b_gate | === fold0__scvi_matched__seed08 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:30:54,202 | INFO | phase12b_gate | done fold0__scvi_matched__seed08 macro_f1=0.7885 pred_auroc=0.8291 lat_auroc=0.5378
+2026-09-10 15:30:54,569 | INFO | phase12b_gate | === fold0__scvi_matched__seed09 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:33:02,074 | INFO | phase12b_gate | done fold0__scvi_matched__seed09 macro_f1=0.8115 pred_auroc=0.8099 lat_auroc=0.6721
+2026-09-10 15:33:02,371 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 15:33:02,732 | INFO | phase12b_gate | === fold0__totalvi__seed01 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:37:12,334 | INFO | phase12b_gate | done fold0__totalvi__seed01 macro_f1=0.8990 pred_auroc=0.8019 lat_auroc=0.6146
+2026-09-10 15:37:12,692 | INFO | phase12b_gate | === fold0__totalvi__seed02 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:40:50,766 | INFO | phase12b_gate | done fold0__totalvi__seed02 macro_f1=0.8916 pred_auroc=0.8210 lat_auroc=0.6507
+2026-09-10 15:40:51,123 | INFO | phase12b_gate | === fold0__totalvi__seed03 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:44:35,168 | INFO | phase12b_gate | done fold0__totalvi__seed03 macro_f1=0.8826 pred_auroc=0.8363 lat_auroc=0.6169
+2026-09-10 15:44:35,568 | INFO | phase12b_gate | === fold0__totalvi__seed04 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:48:12,057 | INFO | phase12b_gate | done fold0__totalvi__seed04 macro_f1=0.8878 pred_auroc=0.8293 lat_auroc=0.6499
+2026-09-10 15:48:12,406 | INFO | phase12b_gate | === fold0__totalvi__seed05 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:51:52,165 | INFO | phase12b_gate | done fold0__totalvi__seed05 macro_f1=0.8841 pred_auroc=0.8511 lat_auroc=0.7056
+2026-09-10 15:51:52,527 | INFO | phase12b_gate | === fold0__totalvi__seed06 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:55:27,956 | INFO | phase12b_gate | done fold0__totalvi__seed06 macro_f1=0.8937 pred_auroc=0.8239 lat_auroc=0.5749
+2026-09-10 15:55:28,323 | INFO | phase12b_gate | === fold0__totalvi__seed07 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 15:59:08,102 | INFO | phase12b_gate | done fold0__totalvi__seed07 macro_f1=0.8904 pred_auroc=0.8312 lat_auroc=0.6315
+2026-09-10 15:59:08,471 | INFO | phase12b_gate | === fold0__totalvi__seed08 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 16:02:34,795 | INFO | phase12b_gate | done fold0__totalvi__seed08 macro_f1=0.8894 pred_auroc=0.8389 lat_auroc=0.7091
+2026-09-10 16:02:35,161 | INFO | phase12b_gate | === fold0__totalvi__seed09 source=13818 target=2357 genes=12776 proteins=12 ===
+2026-09-10 16:06:15,838 | INFO | phase12b_gate | done fold0__totalvi__seed09 macro_f1=0.9136 pred_auroc=0.7938 lat_auroc=0.6134
+2026-09-10 16:06:16,134 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 16:06:16,473 | INFO | phase12b_gate | === fold1__scvi_matched__seed01 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:08:36,401 | INFO | phase12b_gate | done fold1__scvi_matched__seed01 macro_f1=0.8071 pred_auroc=0.8143 lat_auroc=0.6561
+2026-09-10 16:08:36,770 | INFO | phase12b_gate | === fold1__scvi_matched__seed02 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:10:51,870 | INFO | phase12b_gate | done fold1__scvi_matched__seed02 macro_f1=0.7991 pred_auroc=0.8163 lat_auroc=0.5654
+2026-09-10 16:10:52,241 | INFO | phase12b_gate | === fold1__scvi_matched__seed03 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:13:04,957 | INFO | phase12b_gate | done fold1__scvi_matched__seed03 macro_f1=0.8236 pred_auroc=0.7956 lat_auroc=0.6761
+2026-09-10 16:13:05,341 | INFO | phase12b_gate | === fold1__scvi_matched__seed04 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:15:21,037 | INFO | phase12b_gate | done fold1__scvi_matched__seed04 macro_f1=0.8103 pred_auroc=0.8071 lat_auroc=0.6391
+2026-09-10 16:15:21,399 | INFO | phase12b_gate | === fold1__scvi_matched__seed05 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:17:36,597 | INFO | phase12b_gate | done fold1__scvi_matched__seed05 macro_f1=0.7996 pred_auroc=0.8043 lat_auroc=0.6259
+2026-09-10 16:17:36,953 | INFO | phase12b_gate | === fold1__scvi_matched__seed06 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:19:59,559 | INFO | phase12b_gate | done fold1__scvi_matched__seed06 macro_f1=0.8063 pred_auroc=0.8121 lat_auroc=0.5481
+2026-09-10 16:19:59,949 | INFO | phase12b_gate | === fold1__scvi_matched__seed07 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:22:06,143 | INFO | phase12b_gate | done fold1__scvi_matched__seed07 macro_f1=0.8137 pred_auroc=0.8029 lat_auroc=0.6354
+2026-09-10 16:22:06,506 | INFO | phase12b_gate | === fold1__scvi_matched__seed08 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:24:17,475 | INFO | phase12b_gate | done fold1__scvi_matched__seed08 macro_f1=0.8177 pred_auroc=0.8088 lat_auroc=0.6313
+2026-09-10 16:24:17,839 | INFO | phase12b_gate | === fold1__scvi_matched__seed09 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:26:33,691 | INFO | phase12b_gate | done fold1__scvi_matched__seed09 macro_f1=0.8039 pred_auroc=0.8050 lat_auroc=0.6266
+2026-09-10 16:26:34,012 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 16:26:34,353 | INFO | phase12b_gate | === fold1__totalvi__seed01 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:30:36,178 | INFO | phase12b_gate | done fold1__totalvi__seed01 macro_f1=0.9002 pred_auroc=0.8507 lat_auroc=0.6329
+2026-09-10 16:30:36,579 | INFO | phase12b_gate | === fold1__totalvi__seed02 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:34:06,466 | INFO | phase12b_gate | done fold1__totalvi__seed02 macro_f1=0.8959 pred_auroc=0.8610 lat_auroc=0.6586
+2026-09-10 16:34:06,823 | INFO | phase12b_gate | === fold1__totalvi__seed03 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:38:12,289 | INFO | phase12b_gate | done fold1__totalvi__seed03 macro_f1=0.8944 pred_auroc=0.8619 lat_auroc=0.6155
+2026-09-10 16:38:12,653 | INFO | phase12b_gate | === fold1__totalvi__seed04 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:42:09,886 | INFO | phase12b_gate | done fold1__totalvi__seed04 macro_f1=0.8993 pred_auroc=0.8547 lat_auroc=0.6748
+2026-09-10 16:42:10,242 | INFO | phase12b_gate | === fold1__totalvi__seed05 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:46:12,621 | INFO | phase12b_gate | done fold1__totalvi__seed05 macro_f1=0.8949 pred_auroc=0.8469 lat_auroc=0.6492
+2026-09-10 16:46:12,990 | INFO | phase12b_gate | === fold1__totalvi__seed06 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:50:08,866 | INFO | phase12b_gate | done fold1__totalvi__seed06 macro_f1=0.8852 pred_auroc=0.8643 lat_auroc=0.6268
+2026-09-10 16:50:09,240 | INFO | phase12b_gate | === fold1__totalvi__seed07 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:54:06,377 | INFO | phase12b_gate | done fold1__totalvi__seed07 macro_f1=0.8920 pred_auroc=0.8581 lat_auroc=0.6607
+2026-09-10 16:54:06,759 | INFO | phase12b_gate | === fold1__totalvi__seed08 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 16:58:05,383 | INFO | phase12b_gate | done fold1__totalvi__seed08 macro_f1=0.8976 pred_auroc=0.8575 lat_auroc=0.6525
+2026-09-10 16:58:05,750 | INFO | phase12b_gate | === fold1__totalvi__seed09 source=12971 target=3204 genes=12776 proteins=12 ===
+2026-09-10 17:01:43,685 | INFO | phase12b_gate | done fold1__totalvi__seed09 macro_f1=0.8939 pred_auroc=0.8588 lat_auroc=0.6388
+2026-09-10 17:01:44,007 | INFO | phase12b_gate | skip (done): fold2__scvi_matched__seed00
+2026-09-10 17:01:44,371 | INFO | phase12b_gate | === fold2__scvi_matched__seed01 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:04:05,464 | INFO | phase12b_gate | done fold2__scvi_matched__seed01 macro_f1=0.7868 pred_auroc=0.8126 lat_auroc=0.6408
+2026-09-10 17:04:05,871 | INFO | phase12b_gate | === fold2__scvi_matched__seed02 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:06:06,821 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0)]
+2026-09-10 17:06:07,335 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 17:06:09,352 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 17:06:09,645 | INFO | phase12b_gate | gate complete
+2026-09-10 17:06:15,000 | INFO | phase12b_gate | jobs=[(1, 'scvi_matched', 0), (1, 'totalvi', 0)]
+2026-09-10 17:06:15,500 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 17:06:16,331 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 17:06:16,627 | INFO | phase12b_gate | gate complete
+2026-09-10 17:06:21,645 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0), (1, 'scvi_matched', 0), (1, 'totalvi', 0), (2, 'scvi_matched', 0), (2, 'totalvi', 0), (3, 'scvi_matched', 0), (3, 'totalvi', 0), (4, 'scvi_matched', 0), (4, 'totalvi', 0)]
+2026-09-10 17:06:22,114 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 17:06:22,928 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 17:06:23,229 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 17:06:23,530 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 17:06:23,833 | INFO | phase12b_gate | skip (done): fold2__scvi_matched__seed00
+2026-09-10 17:06:24,143 | INFO | phase12b_gate | skip (done): fold2__totalvi__seed00
+2026-09-10 17:06:24,447 | INFO | phase12b_gate | skip (done): fold3__scvi_matched__seed00
+2026-09-10 17:06:24,757 | INFO | phase12b_gate | skip (done): fold3__totalvi__seed00
+2026-09-10 17:06:25,067 | INFO | phase12b_gate | skip (done): fold4__scvi_matched__seed00
+2026-09-10 17:06:25,379 | INFO | phase12b_gate | skip (done): fold4__totalvi__seed00
+2026-09-10 17:06:25,680 | INFO | phase12b_gate | gate complete
+2026-09-10 17:06:30,470 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'scvi_matched', 1), (0, 'scvi_matched', 2), (0, 'scvi_matched', 3), (0, 'scvi_matched', 4), (0, 'scvi_matched', 5), (0, 'scvi_matched', 6), (0, 'scvi_matched', 7), (0, 'scvi_matched', 8), (0, 'scvi_matched', 9), (0, 'totalvi', 0), (0, 'totalvi', 1), (0, 'totalvi', 2), (0, 'totalvi', 3), (0, 'totalvi', 4), (0, 'totalvi', 5), (0, 'totalvi', 6), (0, 'totalvi', 7), (0, 'totalvi', 8), (0, 'totalvi', 9), (1, 'scvi_matched', 0), (1, 'scvi_matched', 1), (1, 'scvi_matched', 2), (1, 'scvi_matched', 3), (1, 'scvi_matched', 4), (1, 'scvi_matched', 5), (1, 'scvi_matched', 6), (1, 'scvi_matched', 7), (1, 'scvi_matched', 8), (1, 'scvi_matched', 9), (1, 'totalvi', 0), (1, 'totalvi', 1), (1, 'totalvi', 2), (1, 'totalvi', 3), (1, 'totalvi', 4), (1, 'totalvi', 5), (1, 'totalvi', 6), (1, 'totalvi', 7), (1, 'totalvi', 8), (1, 'totalvi', 9), (2, 'scvi_matched', 0), (2, 'scvi_matched', 1), (2, 'scvi_matched', 2), (2, 'scvi_matched', 3), (2, 'scvi_matched', 4), (2, 'scvi_matched', 5), (2, 'scvi_matched', 6), (2, 'scvi_matched', 7), (2, 'scvi_matched', 8), (2, 'scvi_matched', 9), (2, 'totalvi', 0), (2, 'totalvi', 1), (2, 'totalvi', 2), (2, 'totalvi', 3), (2, 'totalvi', 4), (2, 'totalvi', 5), (2, 'totalvi', 6), (2, 'totalvi', 7), (2, 'totalvi', 8), (2, 'totalvi', 9), (3, 'scvi_matched', 0), (3, 'scvi_matched', 1), (3, 'scvi_matched', 2), (3, 'scvi_matched', 3), (3, 'scvi_matched', 4), (3, 'scvi_matched', 5), (3, 'scvi_matched', 6), (3, 'scvi_matched', 7), (3, 'scvi_matched', 8), (3, 'scvi_matched', 9), (3, 'totalvi', 0), (3, 'totalvi', 1), (3, 'totalvi', 2), (3, 'totalvi', 3), (3, 'totalvi', 4), (3, 'totalvi', 5), (3, 'totalvi', 6), (3, 'totalvi', 7), (3, 'totalvi', 8), (3, 'totalvi', 9), (4, 'scvi_matched', 0), (4, 'scvi_matched', 1), (4, 'scvi_matched', 2), (4, 'scvi_matched', 3), (4, 'scvi_matched', 4), (4, 'scvi_matched', 5), (4, 'scvi_matched', 6), (4, 'scvi_matched', 7), (4, 'scvi_matched', 8), (4, 'scvi_matched', 9), (4, 'totalvi', 0), (4, 'totalvi', 1), (4, 'totalvi', 2), (4, 'totalvi', 3), (4, 'totalvi', 4), (4, 'totalvi', 5), (4, 'totalvi', 6), (4, 'totalvi', 7), (4, 'totalvi', 8), (4, 'totalvi', 9)]
+2026-09-10 17:06:30,940 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 17:06:31,710 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed01
+2026-09-10 17:06:31,997 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed02
+2026-09-10 17:06:32,298 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed03
+2026-09-10 17:06:32,600 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed04
+2026-09-10 17:06:32,904 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed05
+2026-09-10 17:06:33,209 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed06
+2026-09-10 17:06:33,513 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed07
+2026-09-10 17:06:33,815 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed08
+2026-09-10 17:06:34,118 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed09
+2026-09-10 17:06:34,419 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 17:06:34,718 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed01
+2026-09-10 17:06:35,022 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed02
+2026-09-10 17:06:35,326 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed03
+2026-09-10 17:06:35,628 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed04
+2026-09-10 17:06:35,932 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed05
+2026-09-10 17:06:36,238 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed06
+2026-09-10 17:06:36,540 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed07
+2026-09-10 17:06:36,833 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed08
+2026-09-10 17:06:37,128 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed09
+2026-09-10 17:06:37,426 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 17:06:37,722 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed01
+2026-09-10 17:06:38,035 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed02
+2026-09-10 17:06:38,332 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed03
+2026-09-10 17:06:38,623 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed04
+2026-09-10 17:06:38,919 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed05
+2026-09-10 17:06:39,218 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed06
+2026-09-10 17:06:39,513 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed07
+2026-09-10 17:06:39,817 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed08
+2026-09-10 17:06:40,122 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed09
+2026-09-10 17:06:40,418 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 17:06:40,724 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed01
+2026-09-10 17:06:41,028 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed02
+2026-09-10 17:06:41,329 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed03
+2026-09-10 17:06:41,628 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed04
+2026-09-10 17:06:41,930 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed05
+2026-09-10 17:06:42,226 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed06
+2026-09-10 17:06:42,527 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed07
+2026-09-10 17:06:42,832 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed08
+2026-09-10 17:06:43,129 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed09
+2026-09-10 17:06:43,429 | INFO | phase12b_gate | skip (done): fold2__scvi_matched__seed00
+2026-09-10 17:06:43,721 | INFO | phase12b_gate | skip (done): fold2__scvi_matched__seed01
+2026-09-10 17:06:44,105 | INFO | phase12b_gate | === fold2__scvi_matched__seed02 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:08:56,522 | INFO | phase12b_gate | done fold2__scvi_matched__seed02 macro_f1=0.7998 pred_auroc=0.7882 lat_auroc=0.4786
+2026-09-10 17:08:56,873 | INFO | phase12b_gate | === fold2__scvi_matched__seed03 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:11:16,163 | INFO | phase12b_gate | done fold2__scvi_matched__seed03 macro_f1=0.7943 pred_auroc=0.7851 lat_auroc=0.6255
+2026-09-10 17:11:16,526 | INFO | phase12b_gate | === fold2__scvi_matched__seed04 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:13:27,218 | INFO | phase12b_gate | done fold2__scvi_matched__seed04 macro_f1=0.7914 pred_auroc=0.8045 lat_auroc=0.6388
+2026-09-10 17:13:27,593 | INFO | phase12b_gate | === fold2__scvi_matched__seed05 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:15:49,142 | INFO | phase12b_gate | done fold2__scvi_matched__seed05 macro_f1=0.7947 pred_auroc=0.7731 lat_auroc=0.5973
+2026-09-10 17:15:49,492 | INFO | phase12b_gate | === fold2__scvi_matched__seed06 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:18:10,003 | INFO | phase12b_gate | done fold2__scvi_matched__seed06 macro_f1=0.7987 pred_auroc=0.7824 lat_auroc=0.6391
+2026-09-10 17:18:10,361 | INFO | phase12b_gate | === fold2__scvi_matched__seed07 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:20:27,353 | INFO | phase12b_gate | done fold2__scvi_matched__seed07 macro_f1=0.7902 pred_auroc=0.7933 lat_auroc=0.6480
+2026-09-10 17:20:27,698 | INFO | phase12b_gate | === fold2__scvi_matched__seed08 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:22:47,460 | INFO | phase12b_gate | done fold2__scvi_matched__seed08 macro_f1=0.7820 pred_auroc=0.7951 lat_auroc=0.5927
+2026-09-10 17:22:47,831 | INFO | phase12b_gate | === fold2__scvi_matched__seed09 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:25:00,618 | INFO | phase12b_gate | done fold2__scvi_matched__seed09 macro_f1=0.7865 pred_auroc=0.7897 lat_auroc=0.6076
+2026-09-10 17:25:00,896 | INFO | phase12b_gate | skip (done): fold2__totalvi__seed00
+2026-09-10 17:25:01,248 | INFO | phase12b_gate | === fold2__totalvi__seed01 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:29:12,275 | INFO | phase12b_gate | done fold2__totalvi__seed01 macro_f1=0.8934 pred_auroc=0.8368 lat_auroc=0.6199
+2026-09-10 17:29:12,641 | INFO | phase12b_gate | === fold2__totalvi__seed02 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:33:11,018 | INFO | phase12b_gate | done fold2__totalvi__seed02 macro_f1=0.8846 pred_auroc=0.8578 lat_auroc=0.6573
+2026-09-10 17:33:11,384 | INFO | phase12b_gate | === fold2__totalvi__seed03 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:36:49,932 | INFO | phase12b_gate | done fold2__totalvi__seed03 macro_f1=0.8878 pred_auroc=0.8633 lat_auroc=0.6153
+2026-09-10 17:36:50,280 | INFO | phase12b_gate | === fold2__totalvi__seed04 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:38:41,283 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0)]
+2026-09-10 17:38:41,759 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 17:38:43,733 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 17:38:44,038 | INFO | phase12b_gate | gate complete
+2026-09-10 17:38:48,847 | INFO | phase12b_gate | jobs=[(1, 'scvi_matched', 0), (1, 'totalvi', 0)]
+2026-09-10 17:38:49,296 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 17:38:50,067 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 17:38:50,352 | INFO | phase12b_gate | gate complete
+2026-09-10 17:38:55,136 | INFO | phase12b_gate | jobs=[(0, 'scvi_matched', 0), (0, 'totalvi', 0), (1, 'scvi_matched', 0), (1, 'totalvi', 0), (2, 'scvi_matched', 0), (2, 'totalvi', 0), (3, 'scvi_matched', 0), (3, 'totalvi', 0), (4, 'scvi_matched', 0), (4, 'totalvi', 0)]
+2026-09-10 17:38:55,592 | INFO | phase12b_gate | skip (done): fold0__scvi_matched__seed00
+2026-09-10 17:38:56,371 | INFO | phase12b_gate | skip (done): fold0__totalvi__seed00
+2026-09-10 17:38:56,665 | INFO | phase12b_gate | skip (done): fold1__scvi_matched__seed00
+2026-09-10 17:38:56,968 | INFO | phase12b_gate | skip (done): fold1__totalvi__seed00
+2026-09-10 17:38:57,265 | INFO | phase12b_gate | skip (done): fold2__scvi_matched__seed00
+2026-09-10 17:38:57,559 | INFO | phase12b_gate | skip (done): fold2__totalvi__seed00
+2026-09-10 17:38:57,855 | INFO | phase12b_gate | skip (done): fold3__scvi_matched__seed00
+2026-09-10 17:38:58,151 | INFO | phase12b_gate | skip (done): fold3__totalvi__seed00
+2026-09-10 17:38:58,447 | INFO | phase12b_gate | skip (done): fold4__scvi_matched__seed00
+2026-09-10 17:38:58,742 | INFO | phase12b_gate | skip (done): fold4__totalvi__seed00
+2026-09-10 17:38:59,048 | INFO | phase12b_gate | gate complete
+2026-09-10 17:39:03,805 | INFO | phase12b_gate | jobs=[(2, 'totalvi', 4)]
+2026-09-10 17:39:04,848 | INFO | phase12b_gate | === fold2__totalvi__seed04 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:42:47,859 | INFO | phase12b_gate | done fold2__totalvi__seed04 macro_f1=0.8637 pred_auroc=0.8636 lat_auroc=0.6359
+2026-09-10 17:42:48,161 | INFO | phase12b_gate | gate complete
+2026-09-10 17:42:52,690 | INFO | phase12b_gate | jobs=[(2, 'totalvi', 5)]
+2026-09-10 17:42:53,773 | INFO | phase12b_gate | === fold2__totalvi__seed05 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:46:36,482 | INFO | phase12b_gate | done fold2__totalvi__seed05 macro_f1=0.8864 pred_auroc=0.8317 lat_auroc=0.6606
+2026-09-10 17:46:36,789 | INFO | phase12b_gate | gate complete
+2026-09-10 17:46:41,241 | INFO | phase12b_gate | jobs=[(2, 'totalvi', 6)]
+2026-09-10 17:46:42,319 | INFO | phase12b_gate | === fold2__totalvi__seed06 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:50:41,334 | INFO | phase12b_gate | done fold2__totalvi__seed06 macro_f1=0.8933 pred_auroc=0.8587 lat_auroc=0.6140
+2026-09-10 17:50:41,642 | INFO | phase12b_gate | gate complete
+2026-09-10 17:50:46,148 | INFO | phase12b_gate | jobs=[(2, 'totalvi', 7)]
+2026-09-10 17:50:47,229 | INFO | phase12b_gate | === fold2__totalvi__seed07 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:54:46,854 | INFO | phase12b_gate | done fold2__totalvi__seed07 macro_f1=0.8798 pred_auroc=0.8465 lat_auroc=0.6451
+2026-09-10 17:54:47,165 | INFO | phase12b_gate | gate complete
+2026-09-10 17:54:51,714 | INFO | phase12b_gate | jobs=[(2, 'totalvi', 8)]
+2026-09-10 17:54:52,845 | INFO | phase12b_gate | === fold2__totalvi__seed08 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 17:58:39,046 | INFO | phase12b_gate | done fold2__totalvi__seed08 macro_f1=0.8809 pred_auroc=0.8502 lat_auroc=0.6734
+2026-09-10 17:58:39,351 | INFO | phase12b_gate | gate complete
+2026-09-10 17:58:43,829 | INFO | phase12b_gate | jobs=[(2, 'totalvi', 9)]
+2026-09-10 17:58:44,834 | INFO | phase12b_gate | === fold2__totalvi__seed09 source=12633 target=3542 genes=12776 proteins=12 ===
+2026-09-10 18:02:52,172 | INFO | phase12b_gate | done fold2__totalvi__seed09 macro_f1=0.8740 pred_auroc=0.8460 lat_auroc=0.6361
+2026-09-10 18:02:52,477 | INFO | phase12b_gate | gate complete
+2026-09-10 18:02:56,997 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 1)]
+2026-09-10 18:02:58,064 | INFO | phase12b_gate | === fold3__scvi_matched__seed01 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:05:10,764 | INFO | phase12b_gate | done fold3__scvi_matched__seed01 macro_f1=0.7875 pred_auroc=0.7640 lat_auroc=0.5896
+2026-09-10 18:05:11,074 | INFO | phase12b_gate | gate complete
+2026-09-10 18:05:15,496 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 2)]
+2026-09-10 18:05:16,614 | INFO | phase12b_gate | === fold3__scvi_matched__seed02 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:07:31,208 | INFO | phase12b_gate | done fold3__scvi_matched__seed02 macro_f1=0.7769 pred_auroc=0.7690 lat_auroc=0.6411
+2026-09-10 18:07:31,517 | INFO | phase12b_gate | gate complete
+2026-09-10 18:07:35,956 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 3)]
+2026-09-10 18:07:37,051 | INFO | phase12b_gate | === fold3__scvi_matched__seed03 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:09:47,496 | INFO | phase12b_gate | done fold3__scvi_matched__seed03 macro_f1=0.7847 pred_auroc=0.7919 lat_auroc=0.6386
+2026-09-10 18:09:47,806 | INFO | phase12b_gate | gate complete
+2026-09-10 18:09:52,331 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 4)]
+2026-09-10 18:09:53,492 | INFO | phase12b_gate | === fold3__scvi_matched__seed04 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:12:10,307 | INFO | phase12b_gate | done fold3__scvi_matched__seed04 macro_f1=0.7877 pred_auroc=0.7818 lat_auroc=0.6022
+2026-09-10 18:12:10,615 | INFO | phase12b_gate | gate complete
+2026-09-10 18:12:15,059 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 5)]
+2026-09-10 18:12:16,137 | INFO | phase12b_gate | === fold3__scvi_matched__seed05 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:14:37,865 | INFO | phase12b_gate | done fold3__scvi_matched__seed05 macro_f1=0.7789 pred_auroc=0.7647 lat_auroc=0.5729
+2026-09-10 18:14:38,168 | INFO | phase12b_gate | gate complete
+2026-09-10 18:14:42,741 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 6)]
+2026-09-10 18:14:43,878 | INFO | phase12b_gate | === fold3__scvi_matched__seed06 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:16:55,091 | INFO | phase12b_gate | done fold3__scvi_matched__seed06 macro_f1=0.7987 pred_auroc=0.7654 lat_auroc=0.5929
+2026-09-10 18:16:55,400 | INFO | phase12b_gate | gate complete
+2026-09-10 18:16:59,949 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 7)]
+2026-09-10 18:17:01,112 | INFO | phase12b_gate | === fold3__scvi_matched__seed07 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:19:14,757 | INFO | phase12b_gate | done fold3__scvi_matched__seed07 macro_f1=0.8004 pred_auroc=0.7820 lat_auroc=0.6121
+2026-09-10 18:19:15,062 | INFO | phase12b_gate | gate complete
+2026-09-10 18:19:19,549 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 8)]
+2026-09-10 18:19:20,624 | INFO | phase12b_gate | === fold3__scvi_matched__seed08 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:21:35,182 | INFO | phase12b_gate | done fold3__scvi_matched__seed08 macro_f1=0.7779 pred_auroc=0.7808 lat_auroc=0.6486
+2026-09-10 18:21:35,489 | INFO | phase12b_gate | gate complete
+2026-09-10 18:21:39,968 | INFO | phase12b_gate | jobs=[(3, 'scvi_matched', 9)]
+2026-09-10 18:21:41,044 | INFO | phase12b_gate | === fold3__scvi_matched__seed09 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:23:59,924 | INFO | phase12b_gate | done fold3__scvi_matched__seed09 macro_f1=0.7762 pred_auroc=0.7636 lat_auroc=0.5332
+2026-09-10 18:24:00,232 | INFO | phase12b_gate | gate complete
+2026-09-10 18:24:04,724 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 1)]
+2026-09-10 18:24:05,873 | INFO | phase12b_gate | === fold3__totalvi__seed01 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:27:45,944 | INFO | phase12b_gate | done fold3__totalvi__seed01 macro_f1=0.8690 pred_auroc=0.8237 lat_auroc=0.6628
+2026-09-10 18:27:46,248 | INFO | phase12b_gate | gate complete
+2026-09-10 18:27:50,757 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 2)]
+2026-09-10 18:27:51,921 | INFO | phase12b_gate | === fold3__totalvi__seed02 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:31:40,797 | INFO | phase12b_gate | done fold3__totalvi__seed02 macro_f1=0.8694 pred_auroc=0.8240 lat_auroc=0.6476
+2026-09-10 18:31:41,106 | INFO | phase12b_gate | gate complete
+2026-09-10 18:31:45,680 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 3)]
+2026-09-10 18:31:46,740 | INFO | phase12b_gate | === fold3__totalvi__seed03 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:35:38,123 | INFO | phase12b_gate | done fold3__totalvi__seed03 macro_f1=0.8771 pred_auroc=0.8236 lat_auroc=0.6509
+2026-09-10 18:35:38,429 | INFO | phase12b_gate | gate complete
+2026-09-10 18:35:43,060 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 4)]
+2026-09-10 18:35:44,221 | INFO | phase12b_gate | === fold3__totalvi__seed04 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:39:31,627 | INFO | phase12b_gate | done fold3__totalvi__seed04 macro_f1=0.8689 pred_auroc=0.8139 lat_auroc=0.6840
+2026-09-10 18:39:31,938 | INFO | phase12b_gate | gate complete
+2026-09-10 18:39:36,931 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 5)]
+2026-09-10 18:39:38,170 | INFO | phase12b_gate | === fold3__totalvi__seed05 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:43:44,169 | INFO | phase12b_gate | done fold3__totalvi__seed05 macro_f1=0.8739 pred_auroc=0.8305 lat_auroc=0.6598
+2026-09-10 18:43:44,472 | INFO | phase12b_gate | gate complete
+2026-09-10 18:43:49,002 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 6)]
+2026-09-10 18:43:50,126 | INFO | phase12b_gate | === fold3__totalvi__seed06 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:47:34,320 | INFO | phase12b_gate | done fold3__totalvi__seed06 macro_f1=0.8774 pred_auroc=0.8011 lat_auroc=0.6923
+2026-09-10 18:47:34,629 | INFO | phase12b_gate | gate complete
+2026-09-10 18:47:39,232 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 7)]
+2026-09-10 18:47:40,347 | INFO | phase12b_gate | === fold3__totalvi__seed07 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:51:32,781 | INFO | phase12b_gate | done fold3__totalvi__seed07 macro_f1=0.8695 pred_auroc=0.8243 lat_auroc=0.6631
+2026-09-10 18:51:33,089 | INFO | phase12b_gate | gate complete
+2026-09-10 18:51:37,656 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 8)]
+2026-09-10 18:51:38,811 | INFO | phase12b_gate | === fold3__totalvi__seed08 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:55:28,364 | INFO | phase12b_gate | done fold3__totalvi__seed08 macro_f1=0.8625 pred_auroc=0.8512 lat_auroc=0.6722
+2026-09-10 18:55:28,672 | INFO | phase12b_gate | gate complete
+2026-09-10 18:55:33,340 | INFO | phase12b_gate | jobs=[(3, 'totalvi', 9)]
+2026-09-10 18:55:34,467 | INFO | phase12b_gate | === fold3__totalvi__seed09 source=12593 target=3582 genes=12776 proteins=12 ===
+2026-09-10 18:59:26,158 | INFO | phase12b_gate | done fold3__totalvi__seed09 macro_f1=0.8713 pred_auroc=0.8443 lat_auroc=0.6972
+2026-09-10 18:59:26,465 | INFO | phase12b_gate | gate complete
+2026-09-10 18:59:31,075 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 1)]
+2026-09-10 18:59:32,216 | INFO | phase12b_gate | === fold4__scvi_matched__seed01 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:01:44,376 | INFO | phase12b_gate | done fold4__scvi_matched__seed01 macro_f1=0.8092 pred_auroc=0.8264 lat_auroc=0.6001
+2026-09-10 19:01:44,685 | INFO | phase12b_gate | gate complete
+2026-09-10 19:01:49,269 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 2)]
+2026-09-10 19:01:50,419 | INFO | phase12b_gate | === fold4__scvi_matched__seed02 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:04:07,099 | INFO | phase12b_gate | done fold4__scvi_matched__seed02 macro_f1=0.8113 pred_auroc=0.8309 lat_auroc=0.6075
+2026-09-10 19:04:07,416 | INFO | phase12b_gate | gate complete
+2026-09-10 19:04:11,985 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 3)]
+2026-09-10 19:04:13,099 | INFO | phase12b_gate | === fold4__scvi_matched__seed03 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:06:27,030 | INFO | phase12b_gate | done fold4__scvi_matched__seed03 macro_f1=0.8029 pred_auroc=0.8227 lat_auroc=0.6356
+2026-09-10 19:06:27,331 | INFO | phase12b_gate | gate complete
+2026-09-10 19:06:31,977 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 4)]
+2026-09-10 19:06:33,143 | INFO | phase12b_gate | === fold4__scvi_matched__seed04 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:08:47,774 | INFO | phase12b_gate | done fold4__scvi_matched__seed04 macro_f1=0.8061 pred_auroc=0.8304 lat_auroc=0.6028
+2026-09-10 19:08:48,082 | INFO | phase12b_gate | gate complete
+2026-09-10 19:08:52,737 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 5)]
+2026-09-10 19:08:53,884 | INFO | phase12b_gate | === fold4__scvi_matched__seed05 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:11:12,254 | INFO | phase12b_gate | done fold4__scvi_matched__seed05 macro_f1=0.8077 pred_auroc=0.8201 lat_auroc=0.5748
+2026-09-10 19:11:12,570 | INFO | phase12b_gate | gate complete
+2026-09-10 19:11:17,110 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 6)]
+2026-09-10 19:11:18,236 | INFO | phase12b_gate | === fold4__scvi_matched__seed06 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:13:31,199 | INFO | phase12b_gate | done fold4__scvi_matched__seed06 macro_f1=0.8210 pred_auroc=0.8164 lat_auroc=0.5032
+2026-09-10 19:13:31,519 | INFO | phase12b_gate | gate complete
+2026-09-10 19:13:36,168 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 7)]
+2026-09-10 19:13:37,375 | INFO | phase12b_gate | === fold4__scvi_matched__seed07 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:15:53,214 | INFO | phase12b_gate | done fold4__scvi_matched__seed07 macro_f1=0.8184 pred_auroc=0.8282 lat_auroc=0.6191
+2026-09-10 19:15:53,522 | INFO | phase12b_gate | gate complete
+2026-09-10 19:15:58,075 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 8)]
+2026-09-10 19:15:59,222 | INFO | phase12b_gate | === fold4__scvi_matched__seed08 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:18:16,104 | INFO | phase12b_gate | done fold4__scvi_matched__seed08 macro_f1=0.8307 pred_auroc=0.8025 lat_auroc=0.6137
+2026-09-10 19:18:16,428 | INFO | phase12b_gate | gate complete
+2026-09-10 19:18:21,376 | INFO | phase12b_gate | jobs=[(4, 'scvi_matched', 9)]
+2026-09-10 19:18:22,594 | INFO | phase12b_gate | === fold4__scvi_matched__seed09 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:20:45,230 | INFO | phase12b_gate | done fold4__scvi_matched__seed09 macro_f1=0.8178 pred_auroc=0.8180 lat_auroc=0.6232
+2026-09-10 19:20:45,545 | INFO | phase12b_gate | gate complete
+2026-09-10 19:20:50,295 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 1)]
+2026-09-10 19:20:51,443 | INFO | phase12b_gate | === fold4__totalvi__seed01 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:24:39,783 | INFO | phase12b_gate | done fold4__totalvi__seed01 macro_f1=0.9018 pred_auroc=0.8269 lat_auroc=0.6474
+2026-09-10 19:24:40,100 | INFO | phase12b_gate | gate complete
+2026-09-10 19:24:44,789 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 2)]
+2026-09-10 19:24:45,946 | INFO | phase12b_gate | === fold4__totalvi__seed02 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:28:34,051 | INFO | phase12b_gate | done fold4__totalvi__seed02 macro_f1=0.9003 pred_auroc=0.8266 lat_auroc=0.6762
+2026-09-10 19:28:34,360 | INFO | phase12b_gate | gate complete
+2026-09-10 19:28:38,912 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 3)]
+2026-09-10 19:28:40,036 | INFO | phase12b_gate | === fold4__totalvi__seed03 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:32:23,880 | INFO | phase12b_gate | done fold4__totalvi__seed03 macro_f1=0.8949 pred_auroc=0.8332 lat_auroc=0.6613
+2026-09-10 19:32:24,191 | INFO | phase12b_gate | gate complete
+2026-09-10 19:32:28,735 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 4)]
+2026-09-10 19:32:29,841 | INFO | phase12b_gate | === fold4__totalvi__seed04 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:36:29,279 | INFO | phase12b_gate | done fold4__totalvi__seed04 macro_f1=0.8969 pred_auroc=0.8306 lat_auroc=0.6284
+2026-09-10 19:36:29,587 | INFO | phase12b_gate | gate complete
+2026-09-10 19:36:34,116 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 5)]
+2026-09-10 19:36:35,255 | INFO | phase12b_gate | === fold4__totalvi__seed05 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:40:40,799 | INFO | phase12b_gate | done fold4__totalvi__seed05 macro_f1=0.9055 pred_auroc=0.8343 lat_auroc=0.6651
+2026-09-10 19:40:41,110 | INFO | phase12b_gate | gate complete
+2026-09-10 19:40:45,747 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 6)]
+2026-09-10 19:40:46,913 | INFO | phase12b_gate | === fold4__totalvi__seed06 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:44:30,904 | INFO | phase12b_gate | done fold4__totalvi__seed06 macro_f1=0.9002 pred_auroc=0.8309 lat_auroc=0.6622
+2026-09-10 19:44:31,203 | INFO | phase12b_gate | gate complete
+2026-09-10 19:44:35,754 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 7)]
+2026-09-10 19:44:36,856 | INFO | phase12b_gate | === fold4__totalvi__seed07 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:48:23,394 | INFO | phase12b_gate | done fold4__totalvi__seed07 macro_f1=0.8972 pred_auroc=0.8445 lat_auroc=0.6468
+2026-09-10 19:48:23,699 | INFO | phase12b_gate | gate complete
+2026-09-10 19:48:28,248 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 8)]
+2026-09-10 19:48:29,337 | INFO | phase12b_gate | === fold4__totalvi__seed08 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:52:11,774 | INFO | phase12b_gate | done fold4__totalvi__seed08 macro_f1=0.8982 pred_auroc=0.8343 lat_auroc=0.6575
+2026-09-10 19:52:12,085 | INFO | phase12b_gate | gate complete
+2026-09-10 19:52:16,714 | INFO | phase12b_gate | jobs=[(4, 'totalvi', 9)]
+2026-09-10 19:52:17,811 | INFO | phase12b_gate | === fold4__totalvi__seed09 source=12685 target=3490 genes=12776 proteins=12 ===
+2026-09-10 19:56:02,937 | INFO | phase12b_gate | done fold4__totalvi__seed09 macro_f1=0.9046 pred_auroc=0.8519 lat_auroc=0.6835
+2026-09-10 19:56:03,249 | INFO | phase12b_gate | gate complete

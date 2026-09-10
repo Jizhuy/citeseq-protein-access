@@ -1,0 +1,58 @@
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+
+########## pbmc10k_to_pbmc5k ##########
+  scvi_matched seed0: macroF1=0.6510 errAUROC=0.8270 ECE=0.0354 AURC=0.0646 T=0.966
+  scvi_matched seed1: macroF1=0.6442 errAUROC=0.8502 ECE=0.0337 AURC=0.0635 T=0.945
+  scvi_matched seed2: macroF1=0.6851 errAUROC=0.8435 ECE=0.0197 AURC=0.0506 T=0.885
+  scvi_matched seed3: macroF1=0.6651 errAUROC=0.8594 ECE=0.0120 AURC=0.0515 T=0.925
+  scvi_matched seed4: macroF1=0.6577 errAUROC=0.8452 ECE=0.0346 AURC=0.0573 T=0.945
+  totalvi seed0: macroF1=0.6358 errAUROC=0.8682 ECE=0.0253 AURC=0.0449 T=0.885
+  totalvi seed1: macroF1=0.6554 errAUROC=0.8339 ECE=0.0251 AURC=0.0546 T=0.866
+  totalvi seed2: macroF1=0.6647 errAUROC=0.8373 ECE=0.0210 AURC=0.0513 T=0.885
+  totalvi seed3: macroF1=0.6403 errAUROC=0.8487 ECE=0.0238 AURC=0.0503 T=0.885
+  totalvi seed4: macroF1=0.6679 errAUROC=0.8479 ECE=0.0147 AURC=0.0546 T=0.885
+  [ensemble] scvi_matched: macroF1=0.6873 errAUROC=0.8508 disagreeAUROC=0.8119
+  [ensemble] totalvi: macroF1=0.6595 errAUROC=0.8699 disagreeAUROC=0.8269
+  [boot] error_auroc: delta=+0.0412 CI=[+0.0245,+0.0567]
+  [boot] error_auprc: delta=+0.0408 CI=[-0.0159,+0.0961]
+  [boot] ece: delta=-0.0102 CI=[-0.0217,+0.0042]
+  [boot] brier: delta=-0.0443 CI=[-0.0554,-0.0344]
+  [boot] aurc: delta=-0.0197 CI=[-0.0242,-0.0156]
+  RSS=1067 MB
+
+########## pbmc5k_to_pbmc10k ##########
+  scvi_matched seed0: macroF1=0.6402 errAUROC=0.8627 ECE=0.0196 AURC=0.0593 T=0.847
+  scvi_matched seed1: macroF1=0.5708 errAUROC=0.8510 ECE=0.0495 AURC=0.0753 T=0.885
+  scvi_matched seed2: macroF1=0.6115 errAUROC=0.8546 ECE=0.0244 AURC=0.0629 T=0.847
+  scvi_matched seed3: macroF1=0.5845 errAUROC=0.8743 ECE=0.0456 AURC=0.0669 T=0.905
+  scvi_matched seed4: macroF1=0.6208 errAUROC=0.8450 ECE=0.0378 AURC=0.0777 T=0.905
+  totalvi seed0: macroF1=0.6157 errAUROC=0.8733 ECE=0.0372 AURC=0.0560 T=0.811
+  totalvi seed1: macroF1=0.6102 errAUROC=0.8124 ECE=0.0564 AURC=0.0984 T=0.794
+  totalvi seed2: macroF1=0.6869 errAUROC=0.8402 ECE=0.0501 AURC=0.0605 T=0.811
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+  totalvi seed3: macroF1=0.6715 errAUROC=0.8704 ECE=0.0276 AURC=0.0434 T=0.777
+  totalvi seed4: macroF1=0.6596 errAUROC=0.8801 ECE=0.0284 AURC=0.0448 T=0.866
+  [ensemble] scvi_matched: macroF1=0.6121 errAUROC=0.8801 disagreeAUROC=0.8409
+  [ensemble] totalvi: macroF1=0.6839 errAUROC=0.8872 disagreeAUROC=0.7014
+  [boot] error_auroc: delta=+0.0106 CI=[+0.0002,+0.0216]
+  [boot] error_auprc: delta=+0.0066 CI=[-0.0275,+0.0458]
+  [boot] ece: delta=+0.0176 CI=[+0.0060,+0.0267]
+  [boot] brier: delta=-0.0109 CI=[-0.0184,-0.0033]
+  [boot] aurc: delta=-0.0034 CI=[-0.0068,-0.0004]
+  RSS=1105 MB
+
+stage main complete

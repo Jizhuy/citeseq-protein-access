@@ -1,0 +1,23 @@
+# Human review checklist (author / supervisor)
+
+- [ ] scientific framing approved
+- [ ] author order approved
+- [ ] affiliations confirmed
+- [ ] funding confirmed
+- [ ] acknowledgements confirmed
+- [ ] corresponding author / contact confirmed
+- [ ] competing interests confirmed
+- [ ] ethics / data-use statement confirmed (if institution requires more than “not applicable”)
+- [ ] all figures visually inspected (full size + ~single-column + ~double-column)
+- [ ] all tables inspected against frozen results
+- [ ] bibliography checked (authors, DOI, published version preferred)
+- [ ] code release plan approved
+- [ ] data availability checked (accessions + no false Zenodo DOI)
+- [ ] supplement reviewed
+- [ ] cover letter reviewed
+- [ ] Genome Biology live author guidelines re-checked on Springer/BMC site
+- [ ] final manuscript proofread
+- [ ] no PHASE 10 mixed-coordinate numbers
+- [ ] PHASE 12A residual-dominance wording intact
+- [ ] missing-modality language = corruption/limitation only
+- [ ] Lawlor = author labels; not Hao; not GSE164378

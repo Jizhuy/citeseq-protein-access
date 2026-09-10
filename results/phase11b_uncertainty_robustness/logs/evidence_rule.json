@@ -1,0 +1,8 @@
+{
+  "robust": "seed-level paired bootstrap 95% CI excludes 0 AND at least 16/20 seeds share the sign of the mean delta",
+  "seed_sensitive": "the majority of per-seed target-cell bootstrap CIs exclude 0, but fewer than 16/20 seeds agree in sign OR the seed-level CI includes 0: the apparent effect depends on which model seed was drawn",
+  "cell_sampling_sensitive": "seed-level CI excludes 0 and signs are consistent, but fewer than half of the per-seed target-cell bootstrap CIs exclude 0: the effect is stable across seeds yet small relative to target-cell sampling noise",
+  "inconclusive": "neither the seed-level nor the target-cell evidence separates the models",
+  "sign_consistency_threshold": 16,
+  "n_seeds": 20
+}

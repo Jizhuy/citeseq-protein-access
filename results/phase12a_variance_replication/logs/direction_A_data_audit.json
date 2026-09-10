@@ -1,0 +1,19 @@
+{
+  "source_h5ad": "/home/jizhu/research/multiomics_robustness/data/processed/pbmc_cite_combined_inner_annotated.h5ad",
+  "source_batch": "PBMC10k",
+  "target_batch": "PBMC5k",
+  "source_n": 6855,
+  "target_n": 3994,
+  "n_genes": 15792,
+  "n_proteins": 14,
+  "gene_order_identical": true,
+  "protein_order_identical": true,
+  "disjoint_cells": true,
+  "rna_sum_source": 28458612.0,
+  "rna_sum_target": 27565420.0,
+  "protein_sum_source": 40167067.0,
+  "protein_sum_target": 6126771.0,
+  "source_has_labels": true,
+  "target_has_labels": true,
+  "counts_csr": true
+}

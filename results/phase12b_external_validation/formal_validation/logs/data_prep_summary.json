@@ -1,0 +1,30 @@
+{
+  "n_baseline_sng": 16175,
+  "n_author_labeled": 5207,
+  "n_genes": 12776,
+  "n_proteins": 12,
+  "gene_report": {
+    "n_external_ensembl_ids": 32738,
+    "n_mapped_to_any_symbol": 32709,
+    "n_mapped_to_current_universe": 12831,
+    "n_uniquely_mapped_symbols_in_intersection": 12776,
+    "n_duplicated_symbols_aggregated": 55,
+    "n_extra_ensembl_rows_summed": 55,
+    "n_shared_current_external_genes": 12776,
+    "mapping_pct_of_external": 99.911,
+    "intersection_pct_of_current": 80.902
+  },
+  "primary_classes": [
+    "B",
+    "CD14_Mono",
+    "CD4T_Mem",
+    "CD4T_Naive",
+    "CD8T_Mem",
+    "CD8T_Naive",
+    "NK"
+  ],
+  "removed_classes": [],
+  "batch_key": "batch (= run_identifier / sequencing lane)",
+  "donor_not_batch": true,
+  "h5ad": "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase12b_external_validation/formal_validation/processed/lawlor_baseline_sng_shared.h5ad"
+}

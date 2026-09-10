@@ -1,0 +1,60 @@
+{
+  "n_completed": 100,
+  "n_expected": 100,
+  "macro_f1_by_model": {
+    "scvi_matched": 0.7998201961469218,
+    "totalvi": 0.8883042103541375
+  },
+  "delta_macro_f1_mean": 0.0884840142072157,
+  "primary_classes": [
+    "B",
+    "CD14_Mono",
+    "CD4T_Mem",
+    "CD4T_Naive",
+    "CD8T_Mem",
+    "CD8T_Naive",
+    "NK"
+  ],
+  "variability_preview": [
+    {
+      "model": "scvi_matched",
+      "metric": "macro_f1",
+      "overall_mean": 0.7998201961469218,
+      "between_fold_sd": 0.013179619080102038,
+      "within_fold_seed_sd": 0.009270044309311417,
+      "fold_fraction_if_identifiable": NaN,
+      "seed_fraction_if_identifiable": NaN,
+      "limitations": "descriptive only; 5 folds x 10 seeds; not a formal REML fit"
+    },
+    {
+      "model": "scvi_matched",
+      "metric": "predictive_error_auroc",
+      "overall_mean": 0.8011960487278382,
+      "between_fold_sd": 0.019181732098842445,
+      "within_fold_seed_sd": 0.010488049053099562,
+      "fold_fraction_if_identifiable": NaN,
+      "seed_fraction_if_identifiable": NaN,
+      "limitations": "descriptive only; 5 folds x 10 seeds; not a formal REML fit"
+    },
+    {
+      "model": "scvi_matched",
+      "metric": "latent_error_auroc",
+      "overall_mean": 0.6049427370706109,
+      "between_fold_sd": 0.014932249891493587,
+      "within_fold_seed_sd": 0.04720623723152556,
+      "fold_fraction_if_identifiable": NaN,
+      "seed_fraction_if_identifiable": NaN,
+      "limitations": "descriptive only; 5 folds x 10 seeds; not a formal REML fit"
+    },
+    {
+      "model": "scvi_matched",
+      "metric": "nll",
+      "overall_mean": 0.5799089062213898,
+      "between_fold_sd": 0.04916859542128882,
+      "within_fold_seed_sd": 0.011913406477767972,
+      "fold_fraction_if_identifiable": NaN,
+      "seed_fraction_if_identifiable": NaN,
+      "limitations": "descriptive only; 5 folds x 10 seeds; not a formal REML fit"
+    }
+  ]
+}

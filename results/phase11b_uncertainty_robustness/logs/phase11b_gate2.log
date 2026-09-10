@@ -1,0 +1,11 @@
+2026-09-08 23:33:45,246 | INFO | phase11b | stage=gate2 jobs=2 pending=2 start=2026-09-08T13:33:45.246731+00:00
+2026-09-08 23:33:45,246 | INFO | phase11b | loading direction_A (PBMC10k -> PBMC5k)
+2026-09-08 23:33:50,668 | INFO | phase11b | direction_A l2: 22 eligible classes, 3369 target cells in eval
+2026-09-08 23:33:50,671 | INFO | phase11b | direction_A l1: 8 eligible classes, 3392 target cells in eval
+2026-09-08 23:33:50,672 | INFO | phase11b | === direction_A__scvi_matched__seed00 (source n=6855 target n=3994) ===
+2026-09-08 23:36:32,999 | INFO | phase11b | direction_A__scvi_matched__seed00 done: src_ep=200 q_ep=200 runtime=160s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08329
+2026-09-08 23:36:33,293 | INFO | phase11b | RAM available 5166 MB (33.7% used)
+2026-09-08 23:36:33,293 | INFO | phase11b | === direction_A__totalvi__seed00 (source n=6855 target n=3994) ===
+2026-09-08 23:40:57,211 | INFO | phase11b | direction_A__totalvi__seed00 done: src_ep=200 q_ep=200 runtime=261s drift_mean=0.016174 integrity=0.00e+00 u_latent=0.02577
+2026-09-08 23:40:57,499 | INFO | phase11b | RAM available 4674 MB (40.0% used)
+2026-09-08 23:40:57,649 | INFO | phase11b | stage gate2 finished: 2 completed, 0 failed

@@ -1,0 +1,194 @@
+2026-09-08 23:32:29,452 | INFO | phase11b_analysis | === stage perseed (2026-09-08T13:32:29.452293+00:00) ===
+2026-09-08 23:32:35,004 | INFO | phase11b_analysis | direction_A: 3369 eval cells, 22 classes
+2026-09-08 23:32:39,374 | INFO | phase11b_analysis | direction_B: 5964 eval cells, 21 classes
+2026-09-08 23:32:39,834 | INFO | phase11b_analysis | direction_B__scvi_matched__seed00 macroF1=0.6402 errAUROC=0.8627 latAUROC=0.4310 ECE=0.0196
+2026-09-08 23:32:40,454 | INFO | phase11b_analysis | direction_B__totalvi__seed00 macroF1=0.6157 errAUROC=0.8733 latAUROC=0.6636 ECE=0.0372
+2026-09-08 23:32:40,755 | INFO | phase11b_analysis | perseed done: 2 rows
+2026-09-09 11:55:54,064 | INFO | phase11b_analysis | === stage perseed (2026-09-09T01:55:54.064081+00:00) ===
+2026-09-09 11:55:59,857 | INFO | phase11b_analysis | direction_A: 3369 eval cells, 22 classes
+2026-09-09 11:56:00,411 | INFO | phase11b_analysis | direction_A__scvi_matched__seed00 macroF1=0.6510 errAUROC=0.8270 latAUROC=0.5812 ECE=0.0354
+2026-09-09 11:56:01,114 | INFO | phase11b_analysis | direction_A__scvi_matched__seed01 macroF1=0.6442 errAUROC=0.8502 latAUROC=0.4998 ECE=0.0337
+2026-09-09 11:56:02,009 | INFO | phase11b_analysis | direction_A__scvi_matched__seed02 macroF1=0.6851 errAUROC=0.8435 latAUROC=0.5558 ECE=0.0197
+2026-09-09 11:56:02,704 | INFO | phase11b_analysis | direction_A__scvi_matched__seed03 macroF1=0.6651 errAUROC=0.8594 latAUROC=0.5560 ECE=0.0120
+2026-09-09 11:56:03,338 | INFO | phase11b_analysis | direction_A__scvi_matched__seed04 macroF1=0.6577 errAUROC=0.8452 latAUROC=0.6577 ECE=0.0346
+2026-09-09 11:56:04,151 | INFO | phase11b_analysis | direction_A__totalvi__seed00 macroF1=0.6358 errAUROC=0.8682 latAUROC=0.6378 ECE=0.0253
+2026-09-09 11:56:05,065 | INFO | phase11b_analysis | direction_A__totalvi__seed01 macroF1=0.6554 errAUROC=0.8339 latAUROC=0.6733 ECE=0.0251
+2026-09-09 11:56:05,916 | INFO | phase11b_analysis | direction_A__totalvi__seed02 macroF1=0.6647 errAUROC=0.8373 latAUROC=0.6599 ECE=0.0210
+2026-09-09 11:56:06,733 | INFO | phase11b_analysis | direction_A__totalvi__seed03 macroF1=0.6403 errAUROC=0.8487 latAUROC=0.6670 ECE=0.0238
+2026-09-09 11:56:07,566 | INFO | phase11b_analysis | direction_A__totalvi__seed04 macroF1=0.6679 errAUROC=0.8479 latAUROC=0.6747 ECE=0.0147
+2026-09-09 11:56:11,918 | INFO | phase11b_analysis | direction_B: 5964 eval cells, 21 classes
+2026-09-09 11:56:12,361 | INFO | phase11b_analysis | direction_B__scvi_matched__seed00 macroF1=0.6402 errAUROC=0.8627 latAUROC=0.4310 ECE=0.0196
+2026-09-09 11:56:12,890 | INFO | phase11b_analysis | direction_B__scvi_matched__seed01 macroF1=0.5708 errAUROC=0.8510 latAUROC=0.4617 ECE=0.0495
+2026-09-09 11:56:13,414 | INFO | phase11b_analysis | direction_B__scvi_matched__seed02 macroF1=0.6115 errAUROC=0.8546 latAUROC=0.5143 ECE=0.0244
+2026-09-09 11:56:13,994 | INFO | phase11b_analysis | direction_B__scvi_matched__seed03 macroF1=0.5845 errAUROC=0.8743 latAUROC=0.4567 ECE=0.0456
+2026-09-09 11:56:14,565 | INFO | phase11b_analysis | direction_B__scvi_matched__seed04 macroF1=0.6208 errAUROC=0.8450 latAUROC=0.4665 ECE=0.0378
+2026-09-09 11:56:15,191 | INFO | phase11b_analysis | direction_B__totalvi__seed00 macroF1=0.6157 errAUROC=0.8733 latAUROC=0.6636 ECE=0.0372
+2026-09-09 11:56:15,884 | INFO | phase11b_analysis | direction_B__totalvi__seed01 macroF1=0.6102 errAUROC=0.8124 latAUROC=0.6563 ECE=0.0564
+2026-09-09 11:56:16,524 | INFO | phase11b_analysis | direction_B__totalvi__seed02 macroF1=0.6869 errAUROC=0.8402 latAUROC=0.6017 ECE=0.0501
+2026-09-09 11:56:17,147 | INFO | phase11b_analysis | direction_B__totalvi__seed03 macroF1=0.6715 errAUROC=0.8704 latAUROC=0.5926 ECE=0.0276
+2026-09-09 11:56:17,757 | INFO | phase11b_analysis | direction_B__totalvi__seed04 macroF1=0.6596 errAUROC=0.8801 latAUROC=0.5841 ECE=0.0284
+2026-09-09 11:56:18,061 | INFO | phase11b_analysis | perseed done: 20 rows
+2026-09-09 11:56:24,408 | INFO | phase11b_analysis | === stage repro (2026-09-09T01:56:24.408731+00:00) ===
+2026-09-09 11:56:24,446 | INFO | phase11b_analysis | replication difference summary:
+                                   mean  std  min  max
+direction   model        metric                       
+direction_A scvi_matched accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+            totalvi      accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+direction_B scvi_matched accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+            totalvi      accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+2026-09-09 11:56:24,446 | INFO | phase11b_analysis | repro done
+2026-09-09 15:57:19,244 | INFO | phase11b_analysis | === stage perseed (2026-09-09T05:57:19.244174+00:00) ===
+2026-09-09 15:57:30,514 | INFO | phase11b_analysis | direction_A: 3369 eval cells, 22 classes
+2026-09-09 15:57:31,140 | INFO | phase11b_analysis | direction_A__scvi_matched__seed00 macroF1=0.6510 errAUROC=0.8270 latAUROC=0.5812 ECE=0.0354
+2026-09-09 15:57:32,094 | INFO | phase11b_analysis | direction_A__scvi_matched__seed01 macroF1=0.6442 errAUROC=0.8502 latAUROC=0.4998 ECE=0.0337
+2026-09-09 15:57:33,271 | INFO | phase11b_analysis | direction_A__scvi_matched__seed02 macroF1=0.6851 errAUROC=0.8435 latAUROC=0.5558 ECE=0.0197
+2026-09-09 15:57:34,272 | INFO | phase11b_analysis | direction_A__scvi_matched__seed03 macroF1=0.6651 errAUROC=0.8594 latAUROC=0.5560 ECE=0.0120
+2026-09-09 15:57:35,034 | INFO | phase11b_analysis | direction_A__scvi_matched__seed04 macroF1=0.6577 errAUROC=0.8452 latAUROC=0.6577 ECE=0.0346
+2026-09-09 15:57:36,010 | INFO | phase11b_analysis | direction_A__scvi_matched__seed05 macroF1=0.6364 errAUROC=0.8274 latAUROC=0.5154 ECE=0.0441
+2026-09-09 15:57:36,754 | INFO | phase11b_analysis | direction_A__scvi_matched__seed06 macroF1=0.6309 errAUROC=0.8462 latAUROC=0.4703 ECE=0.0337
+2026-09-09 15:57:37,538 | INFO | phase11b_analysis | direction_A__scvi_matched__seed07 macroF1=0.6317 errAUROC=0.8432 latAUROC=0.5513 ECE=0.0330
+2026-09-09 15:57:38,319 | INFO | phase11b_analysis | direction_A__scvi_matched__seed08 macroF1=0.6606 errAUROC=0.8338 latAUROC=0.5864 ECE=0.0359
+2026-09-09 15:57:39,028 | INFO | phase11b_analysis | direction_A__scvi_matched__seed09 macroF1=0.6216 errAUROC=0.8523 latAUROC=0.4616 ECE=0.0336
+2026-09-09 15:57:39,809 | INFO | phase11b_analysis | direction_A__scvi_matched__seed10 macroF1=0.6498 errAUROC=0.8560 latAUROC=0.5312 ECE=0.0341
+2026-09-09 15:57:40,616 | INFO | phase11b_analysis | direction_A__scvi_matched__seed11 macroF1=0.6561 errAUROC=0.8551 latAUROC=0.5642 ECE=0.0207
+2026-09-09 15:57:41,377 | INFO | phase11b_analysis | direction_A__scvi_matched__seed12 macroF1=0.6633 errAUROC=0.8385 latAUROC=0.5730 ECE=0.0358
+2026-09-09 15:57:42,111 | INFO | phase11b_analysis | direction_A__scvi_matched__seed13 macroF1=0.6708 errAUROC=0.8296 latAUROC=0.5503 ECE=0.0342
+2026-09-09 15:57:42,860 | INFO | phase11b_analysis | direction_A__scvi_matched__seed14 macroF1=0.6604 errAUROC=0.8506 latAUROC=0.4970 ECE=0.0339
+2026-09-09 15:57:43,617 | INFO | phase11b_analysis | direction_A__scvi_matched__seed15 macroF1=0.6548 errAUROC=0.8280 latAUROC=0.5105 ECE=0.0391
+2026-09-09 15:57:44,340 | INFO | phase11b_analysis | direction_A__scvi_matched__seed16 macroF1=0.6509 errAUROC=0.8433 latAUROC=0.5548 ECE=0.0235
+2026-09-09 15:57:45,047 | INFO | phase11b_analysis | direction_A__scvi_matched__seed17 macroF1=0.6539 errAUROC=0.8387 latAUROC=0.4633 ECE=0.0296
+2026-09-09 15:57:45,784 | INFO | phase11b_analysis | direction_A__scvi_matched__seed18 macroF1=0.6871 errAUROC=0.8471 latAUROC=0.5401 ECE=0.0242
+2026-09-09 15:57:46,559 | INFO | phase11b_analysis | direction_A__scvi_matched__seed19 macroF1=0.6810 errAUROC=0.8463 latAUROC=0.6585 ECE=0.0212
+2026-09-09 15:57:47,577 | INFO | phase11b_analysis | direction_A__totalvi__seed00 macroF1=0.6358 errAUROC=0.8682 latAUROC=0.6378 ECE=0.0253
+2026-09-09 15:57:48,715 | INFO | phase11b_analysis | direction_A__totalvi__seed01 macroF1=0.6554 errAUROC=0.8339 latAUROC=0.6733 ECE=0.0251
+2026-09-09 15:57:49,756 | INFO | phase11b_analysis | direction_A__totalvi__seed02 macroF1=0.6647 errAUROC=0.8373 latAUROC=0.6599 ECE=0.0210
+2026-09-09 15:57:50,822 | INFO | phase11b_analysis | direction_A__totalvi__seed03 macroF1=0.6403 errAUROC=0.8487 latAUROC=0.6670 ECE=0.0238
+2026-09-09 15:57:51,912 | INFO | phase11b_analysis | direction_A__totalvi__seed04 macroF1=0.6679 errAUROC=0.8479 latAUROC=0.6747 ECE=0.0147
+2026-09-09 15:57:52,997 | INFO | phase11b_analysis | direction_A__totalvi__seed05 macroF1=0.6844 errAUROC=0.8498 latAUROC=0.6647 ECE=0.0154
+2026-09-09 15:57:54,057 | INFO | phase11b_analysis | direction_A__totalvi__seed06 macroF1=0.6677 errAUROC=0.8549 latAUROC=0.6880 ECE=0.0205
+2026-09-09 15:57:55,190 | INFO | phase11b_analysis | direction_A__totalvi__seed07 macroF1=0.6387 errAUROC=0.8553 latAUROC=0.6284 ECE=0.0387
+2026-09-09 15:57:56,090 | INFO | phase11b_analysis | direction_A__totalvi__seed08 macroF1=0.6607 errAUROC=0.8553 latAUROC=0.6593 ECE=0.0174
+2026-09-09 15:57:57,153 | INFO | phase11b_analysis | direction_A__totalvi__seed09 macroF1=0.6440 errAUROC=0.8566 latAUROC=0.6670 ECE=0.0204
+2026-09-09 15:57:58,338 | INFO | phase11b_analysis | direction_A__totalvi__seed10 macroF1=0.6435 errAUROC=0.8435 latAUROC=0.6756 ECE=0.0168
+2026-09-09 15:57:59,417 | INFO | phase11b_analysis | direction_A__totalvi__seed11 macroF1=0.6632 errAUROC=0.8507 latAUROC=0.6426 ECE=0.0166
+2026-09-09 15:58:00,523 | INFO | phase11b_analysis | direction_A__totalvi__seed12 macroF1=0.6531 errAUROC=0.8625 latAUROC=0.6677 ECE=0.0264
+2026-09-09 15:58:01,652 | INFO | phase11b_analysis | direction_A__totalvi__seed13 macroF1=0.6311 errAUROC=0.8526 latAUROC=0.6844 ECE=0.0306
+2026-09-09 15:58:02,760 | INFO | phase11b_analysis | direction_A__totalvi__seed14 macroF1=0.6500 errAUROC=0.8412 latAUROC=0.6620 ECE=0.0355
+2026-09-09 15:58:03,770 | INFO | phase11b_analysis | direction_A__totalvi__seed15 macroF1=0.6614 errAUROC=0.8421 latAUROC=0.6707 ECE=0.0149
+2026-09-09 15:58:04,882 | INFO | phase11b_analysis | direction_A__totalvi__seed16 macroF1=0.6545 errAUROC=0.8526 latAUROC=0.6911 ECE=0.0320
+2026-09-09 15:58:05,970 | INFO | phase11b_analysis | direction_A__totalvi__seed17 macroF1=0.6598 errAUROC=0.8459 latAUROC=0.6906 ECE=0.0168
+2026-09-09 15:58:06,893 | INFO | phase11b_analysis | direction_A__totalvi__seed18 macroF1=0.6234 errAUROC=0.8715 latAUROC=0.7269 ECE=0.0348
+2026-09-09 15:58:07,906 | INFO | phase11b_analysis | direction_A__totalvi__seed19 macroF1=0.6481 errAUROC=0.8510 latAUROC=0.6568 ECE=0.0301
+2026-09-09 15:58:14,763 | INFO | phase11b_analysis | direction_B: 5964 eval cells, 21 classes
+2026-09-09 15:58:15,414 | INFO | phase11b_analysis | direction_B__scvi_matched__seed00 macroF1=0.6402 errAUROC=0.8627 latAUROC=0.4310 ECE=0.0196
+2026-09-09 15:58:16,338 | INFO | phase11b_analysis | direction_B__scvi_matched__seed01 macroF1=0.5708 errAUROC=0.8510 latAUROC=0.4617 ECE=0.0495
+2026-09-09 15:58:17,108 | INFO | phase11b_analysis | direction_B__scvi_matched__seed02 macroF1=0.6115 errAUROC=0.8546 latAUROC=0.5143 ECE=0.0244
+2026-09-09 15:58:17,848 | INFO | phase11b_analysis | direction_B__scvi_matched__seed03 macroF1=0.5845 errAUROC=0.8743 latAUROC=0.4567 ECE=0.0456
+2026-09-09 15:58:18,634 | INFO | phase11b_analysis | direction_B__scvi_matched__seed04 macroF1=0.6208 errAUROC=0.8450 latAUROC=0.4665 ECE=0.0378
+2026-09-09 15:58:19,534 | INFO | phase11b_analysis | direction_B__scvi_matched__seed05 macroF1=0.5683 errAUROC=0.8432 latAUROC=0.4963 ECE=0.0663
+2026-09-09 15:58:20,293 | INFO | phase11b_analysis | direction_B__scvi_matched__seed06 macroF1=0.5814 errAUROC=0.8520 latAUROC=0.4267 ECE=0.0525
+2026-09-09 15:58:21,121 | INFO | phase11b_analysis | direction_B__scvi_matched__seed07 macroF1=0.6265 errAUROC=0.8499 latAUROC=0.4580 ECE=0.0350
+2026-09-09 15:58:21,892 | INFO | phase11b_analysis | direction_B__scvi_matched__seed08 macroF1=0.6271 errAUROC=0.8733 latAUROC=0.4842 ECE=0.0325
+2026-09-09 15:58:22,597 | INFO | phase11b_analysis | direction_B__scvi_matched__seed09 macroF1=0.6133 errAUROC=0.8690 latAUROC=0.5682 ECE=0.0330
+2026-09-09 15:58:23,457 | INFO | phase11b_analysis | direction_B__scvi_matched__seed10 macroF1=0.6009 errAUROC=0.8628 latAUROC=0.4126 ECE=0.0308
+2026-09-09 15:58:24,173 | INFO | phase11b_analysis | direction_B__scvi_matched__seed11 macroF1=0.5956 errAUROC=0.8462 latAUROC=0.3502 ECE=0.0357
+2026-09-09 15:58:24,937 | INFO | phase11b_analysis | direction_B__scvi_matched__seed12 macroF1=0.6062 errAUROC=0.8689 latAUROC=0.5331 ECE=0.0325
+2026-09-09 15:58:25,667 | INFO | phase11b_analysis | direction_B__scvi_matched__seed13 macroF1=0.6070 errAUROC=0.8562 latAUROC=0.3501 ECE=0.0382
+2026-09-09 15:58:26,375 | INFO | phase11b_analysis | direction_B__scvi_matched__seed14 macroF1=0.5852 errAUROC=0.8497 latAUROC=0.5816 ECE=0.0640
+2026-09-09 15:58:27,103 | INFO | phase11b_analysis | direction_B__scvi_matched__seed15 macroF1=0.6157 errAUROC=0.8341 latAUROC=0.4322 ECE=0.0505
+2026-09-09 15:58:27,891 | INFO | phase11b_analysis | direction_B__scvi_matched__seed16 macroF1=0.5882 errAUROC=0.8483 latAUROC=0.5220 ECE=0.0608
+2026-09-09 15:58:28,588 | INFO | phase11b_analysis | direction_B__scvi_matched__seed17 macroF1=0.5836 errAUROC=0.8472 latAUROC=0.6036 ECE=0.0443
+2026-09-09 15:58:29,348 | INFO | phase11b_analysis | direction_B__scvi_matched__seed18 macroF1=0.6070 errAUROC=0.8446 latAUROC=0.3347 ECE=0.0285
+2026-09-09 15:58:30,064 | INFO | phase11b_analysis | direction_B__scvi_matched__seed19 macroF1=0.5960 errAUROC=0.8576 latAUROC=0.4929 ECE=0.0373
+2026-09-09 15:58:30,920 | INFO | phase11b_analysis | direction_B__totalvi__seed00 macroF1=0.6157 errAUROC=0.8733 latAUROC=0.6636 ECE=0.0372
+2026-09-09 15:58:31,758 | INFO | phase11b_analysis | direction_B__totalvi__seed01 macroF1=0.6102 errAUROC=0.8124 latAUROC=0.6563 ECE=0.0564
+2026-09-09 15:58:32,690 | INFO | phase11b_analysis | direction_B__totalvi__seed02 macroF1=0.6869 errAUROC=0.8402 latAUROC=0.6017 ECE=0.0501
+2026-09-09 15:58:33,590 | INFO | phase11b_analysis | direction_B__totalvi__seed03 macroF1=0.6715 errAUROC=0.8704 latAUROC=0.5926 ECE=0.0276
+2026-09-09 15:58:34,532 | INFO | phase11b_analysis | direction_B__totalvi__seed04 macroF1=0.6596 errAUROC=0.8801 latAUROC=0.5841 ECE=0.0284
+2026-09-09 15:58:35,514 | INFO | phase11b_analysis | direction_B__totalvi__seed05 macroF1=0.6905 errAUROC=0.8689 latAUROC=0.5573 ECE=0.0237
+2026-09-09 15:58:36,342 | INFO | phase11b_analysis | direction_B__totalvi__seed06 macroF1=0.6401 errAUROC=0.8585 latAUROC=0.6036 ECE=0.0321
+2026-09-09 15:58:37,292 | INFO | phase11b_analysis | direction_B__totalvi__seed07 macroF1=0.6383 errAUROC=0.8471 latAUROC=0.6208 ECE=0.0170
+2026-09-09 15:58:38,150 | INFO | phase11b_analysis | direction_B__totalvi__seed08 macroF1=0.6714 errAUROC=0.8616 latAUROC=0.6158 ECE=0.0413
+2026-09-09 15:58:38,969 | INFO | phase11b_analysis | direction_B__totalvi__seed09 macroF1=0.6620 errAUROC=0.8663 latAUROC=0.5843 ECE=0.0441
+2026-09-09 15:58:39,864 | INFO | phase11b_analysis | direction_B__totalvi__seed10 macroF1=0.6618 errAUROC=0.8760 latAUROC=0.5942 ECE=0.0486
+2026-09-09 15:58:40,726 | INFO | phase11b_analysis | direction_B__totalvi__seed11 macroF1=0.6174 errAUROC=0.8315 latAUROC=0.6798 ECE=0.0370
+2026-09-09 15:58:41,565 | INFO | phase11b_analysis | direction_B__totalvi__seed12 macroF1=0.6846 errAUROC=0.8496 latAUROC=0.6430 ECE=0.0224
+2026-09-09 15:58:42,380 | INFO | phase11b_analysis | direction_B__totalvi__seed13 macroF1=0.6624 errAUROC=0.8669 latAUROC=0.6367 ECE=0.0299
+2026-09-09 15:58:43,224 | INFO | phase11b_analysis | direction_B__totalvi__seed14 macroF1=0.6112 errAUROC=0.8548 latAUROC=0.6448 ECE=0.0184
+2026-09-09 15:58:44,094 | INFO | phase11b_analysis | direction_B__totalvi__seed15 macroF1=0.6577 errAUROC=0.8457 latAUROC=0.5508 ECE=0.0382
+2026-09-09 15:58:44,963 | INFO | phase11b_analysis | direction_B__totalvi__seed16 macroF1=0.6440 errAUROC=0.8575 latAUROC=0.5923 ECE=0.0401
+2026-09-09 15:58:45,860 | INFO | phase11b_analysis | direction_B__totalvi__seed17 macroF1=0.6487 errAUROC=0.8432 latAUROC=0.5931 ECE=0.0197
+2026-09-09 15:58:46,719 | INFO | phase11b_analysis | direction_B__totalvi__seed18 macroF1=0.6842 errAUROC=0.8591 latAUROC=0.6371 ECE=0.0282
+2026-09-09 15:58:47,617 | INFO | phase11b_analysis | direction_B__totalvi__seed19 macroF1=0.6610 errAUROC=0.8571 latAUROC=0.5463 ECE=0.0519
+2026-09-09 15:58:48,028 | INFO | phase11b_analysis | perseed done: 80 rows
+2026-09-09 15:59:22,125 | INFO | phase11b_analysis | === stage delta (2026-09-09T05:59:22.125295+00:00) ===
+2026-09-09 15:59:37,072 | INFO | phase11b_analysis | direction_A seed 0 target-cell bootstrap done
+2026-09-09 15:59:43,978 | INFO | phase11b_analysis | direction_A seed 1 target-cell bootstrap done
+2026-09-09 15:59:50,466 | INFO | phase11b_analysis | direction_A seed 2 target-cell bootstrap done
+2026-09-09 15:59:57,185 | INFO | phase11b_analysis | direction_A seed 3 target-cell bootstrap done
+2026-09-09 16:00:04,000 | INFO | phase11b_analysis | direction_A seed 4 target-cell bootstrap done
+2026-09-09 16:00:10,584 | INFO | phase11b_analysis | direction_A seed 5 target-cell bootstrap done
+2026-09-09 16:00:16,928 | INFO | phase11b_analysis | direction_A seed 6 target-cell bootstrap done
+2026-09-09 16:00:23,123 | INFO | phase11b_analysis | direction_A seed 7 target-cell bootstrap done
+2026-09-09 16:00:29,262 | INFO | phase11b_analysis | direction_A seed 8 target-cell bootstrap done
+2026-09-09 16:00:35,693 | INFO | phase11b_analysis | direction_A seed 9 target-cell bootstrap done
+2026-09-09 16:00:42,404 | INFO | phase11b_analysis | direction_A seed 10 target-cell bootstrap done
+2026-09-09 16:00:49,153 | INFO | phase11b_analysis | direction_A seed 11 target-cell bootstrap done
+2026-09-09 16:00:55,745 | INFO | phase11b_analysis | direction_A seed 12 target-cell bootstrap done
+2026-09-09 16:01:01,827 | INFO | phase11b_analysis | direction_A seed 13 target-cell bootstrap done
+2026-09-09 16:01:07,987 | INFO | phase11b_analysis | direction_A seed 14 target-cell bootstrap done
+2026-09-09 16:01:14,210 | INFO | phase11b_analysis | direction_A seed 15 target-cell bootstrap done
+2026-09-09 16:01:20,352 | INFO | phase11b_analysis | direction_A seed 16 target-cell bootstrap done
+2026-09-09 16:01:26,603 | INFO | phase11b_analysis | direction_A seed 17 target-cell bootstrap done
+2026-09-09 16:01:32,704 | INFO | phase11b_analysis | direction_A seed 18 target-cell bootstrap done
+2026-09-09 16:01:38,954 | INFO | phase11b_analysis | direction_A seed 19 target-cell bootstrap done
+2026-09-09 16:01:54,724 | INFO | phase11b_analysis | direction_B seed 0 target-cell bootstrap done
+2026-09-09 16:02:03,923 | INFO | phase11b_analysis | direction_B seed 1 target-cell bootstrap done
+2026-09-09 16:02:13,053 | INFO | phase11b_analysis | direction_B seed 2 target-cell bootstrap done
+2026-09-09 16:02:22,061 | INFO | phase11b_analysis | direction_B seed 3 target-cell bootstrap done
+2026-09-09 16:02:31,154 | INFO | phase11b_analysis | direction_B seed 4 target-cell bootstrap done
+2026-09-09 16:02:40,163 | INFO | phase11b_analysis | direction_B seed 5 target-cell bootstrap done
+2026-09-09 16:02:49,067 | INFO | phase11b_analysis | direction_B seed 6 target-cell bootstrap done
+2026-09-09 16:02:57,872 | INFO | phase11b_analysis | direction_B seed 7 target-cell bootstrap done
+2026-09-09 16:03:06,672 | INFO | phase11b_analysis | direction_B seed 8 target-cell bootstrap done
+2026-09-09 16:03:15,702 | INFO | phase11b_analysis | direction_B seed 9 target-cell bootstrap done
+2026-09-09 16:03:24,566 | INFO | phase11b_analysis | direction_B seed 10 target-cell bootstrap done
+2026-09-09 16:03:34,935 | INFO | phase11b_analysis | direction_B seed 11 target-cell bootstrap done
+2026-09-09 16:03:44,065 | INFO | phase11b_analysis | direction_B seed 12 target-cell bootstrap done
+2026-09-09 16:03:53,221 | INFO | phase11b_analysis | direction_B seed 13 target-cell bootstrap done
+2026-09-09 16:04:02,422 | INFO | phase11b_analysis | direction_B seed 14 target-cell bootstrap done
+2026-09-09 16:04:10,751 | INFO | phase11b_analysis | direction_B seed 15 target-cell bootstrap done
+2026-09-09 16:04:18,916 | INFO | phase11b_analysis | direction_B seed 16 target-cell bootstrap done
+2026-09-09 16:04:27,328 | INFO | phase11b_analysis | direction_B seed 17 target-cell bootstrap done
+2026-09-09 16:04:35,971 | INFO | phase11b_analysis | direction_B seed 18 target-cell bootstrap done
+2026-09-09 16:04:44,831 | INFO | phase11b_analysis | direction_B seed 19 target-cell bootstrap done
+2026-09-09 16:04:45,197 | INFO | phase11b_analysis | delta done
+2026-09-09 16:04:52,404 | INFO | phase11b_analysis | === stage ensemble (2026-09-09T06:04:52.404340+00:00) ===
+2026-09-09 16:04:59,673 | INFO | phase11b_analysis | direction_A scvi_matched ensemble over 20 seeds done
+2026-09-09 16:05:01,287 | INFO | phase11b_analysis | direction_A totalvi ensemble over 20 seeds done
+2026-09-09 16:05:09,638 | INFO | phase11b_analysis | direction_B scvi_matched ensemble over 20 seeds done
+2026-09-09 16:05:12,118 | INFO | phase11b_analysis | direction_B totalvi ensemble over 20 seeds done
+2026-09-09 16:05:12,609 | INFO | phase11b_analysis | ensemble done
+2026-09-09 16:05:20,004 | INFO | phase11b_analysis | === stage retention (2026-09-09T06:05:20.004470+00:00) ===
+2026-09-09 16:05:26,614 | INFO | phase11b_analysis | direction_A scvi_matched retention done
+2026-09-09 16:05:26,785 | INFO | phase11b_analysis | direction_A totalvi retention done
+2026-09-09 16:05:33,301 | INFO | phase11b_analysis | direction_B scvi_matched retention done
+2026-09-09 16:05:33,530 | INFO | phase11b_analysis | direction_B totalvi retention done
+2026-09-09 16:05:33,729 | INFO | phase11b_analysis | retention done
+2026-09-09 16:05:41,479 | INFO | phase11b_analysis | === stage repro (2026-09-09T06:05:41.479330+00:00) ===
+2026-09-09 16:05:41,542 | INFO | phase11b_analysis | replication difference summary:
+                                   mean  std  min  max
+direction   model        metric                       
+direction_A scvi_matched accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+            totalvi      accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+direction_B scvi_matched accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+            totalvi      accuracy   0.0  0.0  0.0  0.0
+                         macro_f1   0.0  0.0  0.0  0.0
+2026-09-09 16:05:41,542 | INFO | phase11b_analysis | repro done

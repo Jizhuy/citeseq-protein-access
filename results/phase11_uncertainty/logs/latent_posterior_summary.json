@@ -1,0 +1,8 @@
+{
+  "target_latent_posterior": "UNSUPPORTED - adapted query model not persisted",
+  "source_latent_posterior": "extracted via get_latent_representation(return_dist=True)",
+  "valid_rows": 10,
+  "total_rows": 20,
+  "note": "scVI source rows are exactly valid in the PHASE 10 coordinate system (scArches drift 0.0). totalVI reference models define the pre-adaptation space, so their source posterior is not in the PHASE 11 coordinate system.",
+  "timestamp_utc": "2026-09-08T13:01:02.344970+00:00"
+}

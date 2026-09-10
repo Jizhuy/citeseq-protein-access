@@ -1,0 +1,10 @@
+2026-09-09 23:10:45,313 | INFO | phase12a_probe | loading Direction A source/target
+2026-09-09 23:10:51,087 | INFO | phase12a_probe | probe source subset0 n=3994
+2026-09-09 23:10:51,087 | INFO | phase12a_probe | === scvi_matched: run A (model_seed=0) ===
+2026-09-09 23:11:57,973 | INFO | phase12a_probe | === scvi_matched: run B (identical call) ===
+2026-09-09 23:13:03,786 | INFO | phase12a_probe | === scvi_matched: run C (model_seed=0, run_replicate_seed=9000) ===
+2026-09-09 23:14:10,955 | INFO | phase12a_probe | scvi_matched A vs B bit_identical=True max_abs=0.000e+00 | A vs C bit_identical=False max_abs=9.074e+00
+2026-09-09 23:14:10,955 | INFO | phase12a_probe | === totalvi: run A (model_seed=0) ===
+2026-09-09 23:15:59,056 | INFO | phase12a_probe | === totalvi: run B (identical call) ===
+2026-09-09 23:17:41,056 | INFO | phase12a_probe | === totalvi: run C (model_seed=0, run_replicate_seed=9000) ===
+2026-09-09 23:19:26,863 | INFO | phase12a_probe | totalvi A vs B bit_identical=True max_abs=0.000e+00 | A vs C bit_identical=False max_abs=6.912e+00

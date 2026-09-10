@@ -6,6 +6,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .venv/
+.venv_docx/
 .env
 
 # Large data objects are downloaded, not versioned
@@ -32,3 +33,26 @@ results/perturbations/*.npz
 !results/logs/.gitkeep
 !results/models/.gitkeep
 !results/perturbations/.gitkeep
+
+# Heavy phase artifacts (keep reports/tables/figures/logs; exclude binaries)
+results/**/embeddings/
+results/**/posterior/
+results/**/processed/
+results/**/models/
+results/**/raw_audit/
+results/**/probabilities/
+*.npz
+*.h5ad
+*.pt
+*.pth
+*.ckpt
+*.Rds
+*.rds
+*.mtx
+*.h5
+*.pkl
+*.pickle
+
+# Office lock / temp files
+~$*
+*.tmp

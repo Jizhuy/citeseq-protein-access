@@ -1,0 +1,8 @@
+{
+  "stage": "seeds",
+  "n_jobs": 60,
+  "n_completed_now": 60,
+  "n_failed": 0,
+  "failures": [],
+  "timestamp_utc": "2026-09-09T05:51:43.747345+00:00"
+}

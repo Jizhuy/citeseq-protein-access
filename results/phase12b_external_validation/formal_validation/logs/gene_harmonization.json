@@ -1,0 +1,11 @@
+{
+  "n_external_ensembl_ids": 32738,
+  "n_mapped_to_any_symbol": 32709,
+  "n_mapped_to_current_universe": 12831,
+  "n_uniquely_mapped_symbols_in_intersection": 12776,
+  "n_duplicated_symbols_aggregated": 55,
+  "n_extra_ensembl_rows_summed": 55,
+  "n_shared_current_external_genes": 12776,
+  "mapping_pct_of_external": 99.911,
+  "intersection_pct_of_current": 80.902
+}

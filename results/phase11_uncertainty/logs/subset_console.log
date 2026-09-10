@@ -1,0 +1,32 @@
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+PHASE 10B common l2 classes: 19
+PHASE 10B target eval cells: 3291
+  scvi_matched subsample0: n_src=3418 acc=0.7879
+  scvi_matched subsample1: n_src=3428 acc=0.7815
+  scvi_matched subsample2: n_src=3454 acc=0.7843
+  scvi_matched subsample3: n_src=3452 acc=0.7685
+  scvi_matched subsample4: n_src=3436 acc=0.7691
+  [scvi_matched] median variation_ratio=0.0000 median true-prob SD=0.0570
+  totalvi subsample0: n_src=3418 acc=0.7803
+  totalvi subsample1: n_src=3428 acc=0.8098
+  totalvi subsample2: n_src=3454 acc=0.8137
+  totalvi subsample3: n_src=3452 acc=0.8165
+  totalvi subsample4: n_src=3436 acc=0.7952
+  [totalvi] median variation_ratio=0.0000 median true-prob SD=0.0732
+  [scvi_matched] cells common to PHASE 10 A and PHASE 10B: 3291
+  [totalvi] cells common to PHASE 10 A and PHASE 10B: 3291
+
+stage subset complete

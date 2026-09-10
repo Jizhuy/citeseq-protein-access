@@ -1,0 +1,15 @@
+model,x,y,spearman_rho,spearman_p,n,mean_variation_ratio_top20,mean_variation_ratio_bottom20,mean_true_prob_sd_top20,mean_true_prob_sd_bottom20,variation_ratio_enrichment
+scvi_matched,full_source_u_pred,subset_variation_ratio,0.5627692477195657,2.521148687331519e-274,3291,,,,,
+scvi_matched,full_source_u_pred,subset_true_class_probability_sd,0.7549331488418612,0.0,3291,,,,,
+scvi_matched,full_source_u_pred,subset_probability_entropy,0.8674849583730169,0.0,3291,,,,,
+scvi_matched,full_source_ensemble_disagreement,subset_variation_ratio,0.5823933994582988,3.180168323916396e-298,3291,,,,,
+scvi_matched,full_source_ensemble_disagreement,subset_true_class_probability_sd,0.771077986270401,0.0,3291,,,,,
+scvi_matched,full_source_ensemble_disagreement,subset_probability_entropy,0.8898897776123661,0.0,3291,,,,,
+scvi_matched,stratified_top20_vs_bottom20_full_source_u_pred,subset_instability,,,658,0.2261398176291793,0.0006079027355623099,0.1249041219321714,0.005679580257543798,372.00000000000006
+totalvi,full_source_u_pred,subset_variation_ratio,0.6266359385787545,0.0,3291,,,,,
+totalvi,full_source_u_pred,subset_true_class_probability_sd,0.7308253381469468,0.0,3291,,,,,
+totalvi,full_source_u_pred,subset_probability_entropy,0.8585007260231187,0.0,3291,,,,,
+totalvi,full_source_ensemble_disagreement,subset_variation_ratio,0.5843773326788448,9.881087763010656e-301,3291,,,,,
+totalvi,full_source_ensemble_disagreement,subset_true_class_probability_sd,0.7332916255092614,0.0,3291,,,,,
+totalvi,full_source_ensemble_disagreement,subset_probability_entropy,0.8601905100275274,0.0,3291,,,,,
+totalvi,stratified_top20_vs_bottom20_full_source_u_pred,subset_instability,,,658,0.2665653495440729,0.0,0.14827137052147576,0.007290675204132817,inf

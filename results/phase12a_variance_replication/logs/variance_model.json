@@ -1,0 +1,11 @@
+{
+  "variance_model": "Balanced two-factor random-effects ANOVA with n replicates per cell (Searle, Casella & McCulloch, Variance Components, ch. 4). Method-of-moments estimators from expected mean squares. Interaction and pure residual are separately identified only because n > 1; with n = 1 (the PHASE 11B design) MS_E is undefined and the two collapse into one term.",
+  "truncation_bias": "Method-of-moments component estimates are unbiased on the raw scale but fluctuate around zero for a null factor. After truncation at zero a null factor therefore receives a strictly positive fraction, and with a single 5x5x2 table that upward bias is large: on pure noise the residual typically retains only about half of the truncated total. Fractions are descriptive; the F-tests, not the fractions, decide whether a component is real.",
+  "design": {
+    "source_subsets": 5,
+    "model_seeds": 5,
+    "replicates": 2,
+    "observations_per_model": 50
+  },
+  "timestamp_utc": "2026-09-10T03:51:56.667055+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "rule": ">=20 labeled SOURCE and >=10 labeled TARGET in EVERY fold",
+  "primary_eligible_classes": [
+    "B",
+    "CD14_Mono",
+    "CD4T_Mem",
+    "CD4T_Naive",
+    "CD8T_Mem",
+    "CD8T_Naive",
+    "NK"
+  ],
+  "removed_classes": [],
+  "removal_detail": []
+}

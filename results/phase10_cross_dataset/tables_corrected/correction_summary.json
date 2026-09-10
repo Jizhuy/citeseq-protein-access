@@ -1,0 +1,10 @@
+{
+  "n_rows_changed": 16,
+  "models_affected": [
+    "totalvi"
+  ],
+  "max_abs_delta": 0.003852572998958248,
+  "note": "scVI unaffected: scArches freezes the reference embedding (drift 0.0).",
+  "historical_tables_modified": false,
+  "retraining_performed": false
+}

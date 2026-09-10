@@ -238,7 +238,25 @@ def _fit_with_oom_retry(train_fn, batch_size: int, logger) -> tuple[Any, int, bo
         return train_fn(128), 128, True
 
 
-def train_scvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Path, logger) -> dict[str, Any]:
+def _apply_run_seed(run_seed: int | None) -> None:
+    """Re-seed between module construction and optimisation (PHASE 12A §2).
+
+    Weight initialisation happens in the model constructor, so seeding here
+    leaves the initial parameters fixed while redrawing everything the trainer
+    consumes: the train/validation split (scvi's DataSplitter reads
+    ``settings.seed`` at setup), minibatch shuffling, and dropout masks.
+
+    ``run_seed=None`` is the PHASE 10/11B path and changes nothing.
+    """
+    if run_seed is None:
+        return
+    from src.utils.seed import set_global_seed
+
+    set_global_seed(int(run_seed))
+
+
+def train_scvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Path, logger,
+                      run_seed: int | None = None) -> dict[str, Any]:
     import scvi
     from scvi.model import SCVI
 
@@ -260,6 +278,7 @@ def train_scvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Path,
             use_observed_lib_size=hparams["use_observed_lib_size"],
             latent_distribution=hparams["latent_distribution"],
         )
+        _apply_run_seed(run_seed)
         timer = Timer()
         timer.start()
         model.train(**_train_kwargs(hparams["max_epochs"], bs, hparams["early_stopping"]))
@@ -296,7 +315,8 @@ def train_scvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Path,
     }
 
 
-def train_totalvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Path, logger) -> dict[str, Any]:
+def train_totalvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Path, logger,
+                         run_seed: int | None = None) -> dict[str, Any]:
     from scvi.model import TOTALVI
 
     _require_cuda()
@@ -328,6 +348,7 @@ def train_totalvi_source(adata: ad.AnnData, hparams: dict[str, Any], out_dir: Pa
             dropout_rate_encoder=hparams["dropout_rate_encoder"],
             dropout_rate_decoder=hparams["dropout_rate_decoder"],
         )
+        _apply_run_seed(run_seed)
         timer = Timer()
         timer.start()
         extra = {"lr": hparams["lr"], "reduce_lr_on_plateau": hparams["reduce_lr_on_plateau"]}
@@ -705,7 +726,7 @@ def run_one_model(
         q["gpu"].get("peak_cuda_allocated_mb") or float("nan"),
     )
     return {
-        "source_latent": src["latent"],
+        "source_latent": source_latent,
         "target_latent": q["latent"],
         "manifest": manifest,
         "tag": tag,

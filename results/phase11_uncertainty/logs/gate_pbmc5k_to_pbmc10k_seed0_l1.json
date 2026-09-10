@@ -1,0 +1,238 @@
+{
+  "direction": "pbmc5k_to_pbmc10k",
+  "seed": 0,
+  "label_level": "l1",
+  "n_source_eval": 3392,
+  "n_target_eval": 6102,
+  "n_classes": 8,
+  "timestamp_utc": "2026-09-08T12:32:17.392473+00:00",
+  "models": {
+    "scvi_matched": {
+      "phase10_macro_f1": 0.8027547691537762,
+      "phase11_macro_f1": 0.8027547691537762,
+      "abs_delta_macro_f1": 0.0,
+      "phase10_accuracy": 0.8656178302196001,
+      "phase11_accuracy": 0.8656178302196001,
+      "abs_delta_accuracy": 0.0,
+      "reproduced": true,
+      "balanced_accuracy": 0.7643320569898133,
+      "weighted_f1": 0.8505855957075484,
+      "error_prevalence": 0.13438216978039988,
+      "error_auroc_u_pred": 0.8570284722158088,
+      "error_auprc_u_pred": 0.42102406610380033,
+      "error_auroc_entropy": 0.8497524958210582,
+      "error_auroc_neg_margin": 0.8592167600964157,
+      "nll": 0.37225271063075377,
+      "brier": 0.19832738775418307,
+      "ece_equal_frequency": 0.025733645955330807,
+      "ece_equal_width": 0.025034963254340927,
+      "n_reliability_bins_eq_freq": 15,
+      "reliability_bin_counts": [
+        407,
+        407,
+        407,
+        406,
+        407,
+        407,
+        407,
+        406,
+        407,
+        407,
+        407,
+        406,
+        407,
+        407,
+        407
+      ],
+      "aurc": 0.03145815924456892,
+      "coverage_grid": [
+        {
+          "coverage": 1.0,
+          "n_retained": 6102,
+          "accuracy": 0.8656178302196001,
+          "risk": 0.13438216978039985,
+          "macro_f1": 0.8027547691537762,
+          "balanced_accuracy": 0.7643320569898133
+        },
+        {
+          "coverage": 0.9,
+          "n_retained": 5492,
+          "accuracy": 0.9013109978150037,
+          "risk": 0.09868900218499632,
+          "macro_f1": 0.8085407380267038,
+          "balanced_accuracy": 0.7591470108345502
+        },
+        {
+          "coverage": 0.8,
+          "n_retained": 4882,
+          "accuracy": 0.9328144203195412,
+          "risk": 0.0671855796804588,
+          "macro_f1": 0.7640635868807202,
+          "balanced_accuracy": 0.7102377483904807
+        },
+        {
+          "coverage": 0.7,
+          "n_retained": 4271,
+          "accuracy": 0.9583235776164832,
+          "risk": 0.041676422383516765,
+          "macro_f1": 0.694611506748044,
+          "balanced_accuracy": 0.6613351614053862
+        },
+        {
+          "coverage": 0.6,
+          "n_retained": 3661,
+          "accuracy": 0.9767822999180552,
+          "risk": 0.023217700081944792,
+          "macro_f1": 0.6891969630122008,
+          "balanced_accuracy": 0.6581833964646464
+        },
+        {
+          "coverage": 0.5,
+          "n_retained": 3051,
+          "accuracy": 0.98656178302196,
+          "risk": 0.01343821697804004,
+          "macro_f1": 0.7055009580323177,
+          "balanced_accuracy": 0.6680272108843537
+        }
+      ],
+      "error_enrichment": {
+        "error_rate_top_10pct": 0.4557377049180328,
+        "error_rate_top_20pct": 0.40327868852459015,
+        "error_rate_bottom_20pct": 0.000819672131147541,
+        "error_enrichment_top10_over_bottom20": 556.0
+      },
+      "median_u_pred": 0.03926083445549011,
+      "probs_roundtrip_ok": true,
+      "probs_path": "/home/jizhu/research/multiomics_robustness/results/phase11_uncertainty/arrays/gate_scvi_matched_pbmc5k_to_pbmc10k_seed0_l1.npz",
+      "probs_sum_to_one": true,
+      "classes_sorted": [
+        "B",
+        "CD4 T",
+        "CD8 T",
+        "DC",
+        "Mono",
+        "NK",
+        "other",
+        "other T"
+      ],
+      "classes_match_plan": true
+    },
+    "totalvi": {
+      "phase10_macro_f1": 0.8770161907588205,
+      "phase11_macro_f1": 0.8770161907588205,
+      "abs_delta_macro_f1": 0.0,
+      "phase10_accuracy": 0.9196984595214684,
+      "phase11_accuracy": 0.9196984595214683,
+      "abs_delta_accuracy": 1.1102230246251565e-16,
+      "reproduced": true,
+      "balanced_accuracy": 0.8439783605222605,
+      "weighted_f1": 0.9159628813807615,
+      "error_prevalence": 0.08030154047853164,
+      "error_auroc_u_pred": 0.8505956623561756,
+      "error_auprc_u_pred": 0.34065424546429457,
+      "error_auroc_entropy": 0.8405403144864503,
+      "error_auroc_neg_margin": 0.8517411668872825,
+      "nll": 0.27744128357006315,
+      "brier": 0.13398118905074213,
+      "ece_equal_frequency": 0.03867122278921491,
+      "ece_equal_width": 0.037482025143905605,
+      "n_reliability_bins_eq_freq": 15,
+      "reliability_bin_counts": [
+        407,
+        407,
+        407,
+        406,
+        407,
+        407,
+        407,
+        406,
+        407,
+        407,
+        407,
+        406,
+        407,
+        407,
+        407
+      ],
+      "aurc": 0.01827632790495189,
+      "coverage_grid": [
+        {
+          "coverage": 1.0,
+          "n_retained": 6102,
+          "accuracy": 0.9196984595214683,
+          "risk": 0.08030154047853166,
+          "macro_f1": 0.8770161907588205,
+          "balanced_accuracy": 0.8439783605222605
+        },
+        {
+          "coverage": 0.9,
+          "n_retained": 5492,
+          "accuracy": 0.9519300801165331,
+          "risk": 0.04806991988346687,
+          "macro_f1": 0.907402922150585,
+          "balanced_accuracy": 0.8704443721951183
+        },
+        {
+          "coverage": 0.8,
+          "n_retained": 4882,
+          "accuracy": 0.9686603850880786,
+          "risk": 0.03133961491192139,
+          "macro_f1": 0.9218428865644805,
+          "balanced_accuracy": 0.8819130381009561
+        },
+        {
+          "coverage": 0.7,
+          "n_retained": 4271,
+          "accuracy": 0.976586279559822,
+          "risk": 0.023413720440177976,
+          "macro_f1": 0.9153863759212981,
+          "balanced_accuracy": 0.8696572953761359
+        },
+        {
+          "coverage": 0.6,
+          "n_retained": 3661,
+          "accuracy": 0.9797869434580716,
+          "risk": 0.020213056541928398,
+          "macro_f1": 0.8623989110801589,
+          "balanced_accuracy": 0.8100587215425011
+        },
+        {
+          "coverage": 0.5,
+          "n_retained": 3051,
+          "accuracy": 0.9875450671910849,
+          "risk": 0.012454932808915076,
+          "macro_f1": 0.8049554423003151,
+          "balanced_accuracy": 0.7831330128205128
+        }
+      ],
+      "error_enrichment": {
+        "error_rate_top_10pct": 0.3704918032786885,
+        "error_rate_top_20pct": 0.2762295081967213,
+        "error_rate_bottom_20pct": 0.001639344262295082,
+        "error_enrichment_top10_over_bottom20": 226.0
+      },
+      "median_u_pred": 0.04616555571556091,
+      "probs_roundtrip_ok": true,
+      "probs_path": "/home/jizhu/research/multiomics_robustness/results/phase11_uncertainty/arrays/gate_totalvi_pbmc5k_to_pbmc10k_seed0_l1.npz",
+      "probs_sum_to_one": true,
+      "classes_sorted": [
+        "B",
+        "CD4 T",
+        "CD8 T",
+        "DC",
+        "Mono",
+        "NK",
+        "other",
+        "other T"
+      ],
+      "classes_match_plan": true
+    }
+  },
+  "repro_ok": true,
+  "leakage_check": {
+    "target_labels_used_in_fit": false,
+    "source_target_cell_overlap": 0,
+    "note": "Classifier fit uses source latents and source labels only."
+  },
+  "process_rss_mb": 1042.5546875
+}

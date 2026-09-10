@@ -1,0 +1,12 @@
+current_label,external_label,harmonized_coarse_label,harmonization_confidence,notes
+l1:B | l2:B naive/memory/intermediate/Plasmablast,B,B,high,Fine B subtypes absent externally
+l1:Mono | l2:CD14 Mono,CD14_Mono,Mono_CD14,high,No CD16 Mono externally
+l1:CD4 T | l2:CD4 Naive,CD4T_Naive,CD4_Naive,high,
+l1:CD4 T | l2:CD4 TCM/TEM/CTL/Treg,CD4T_Mem,CD4_Memory,medium,Aggregates several Seurat l2 classes
+l1:CD8 T | l2:CD8 Naive,CD8T_Naive,CD8_Naive,high,
+l1:CD8 T | l2:CD8 TCM/TEM,CD8T_Mem,CD8_Memory,medium,May include/exclude MAIT differently
+l1:NK | l2:NK/NK_CD56bright/NK Proliferating,NK,NK,high,Coarse only
+l1:other T | l2:gdT/MAIT/dnT,(absent),other_T_or_unlabeled,low,No dedicated labels
+l1:DC | l2:cDC1/cDC2/pDC/ASDC,(absent),DC,n/a,Absent
+l1:Mono | l2:CD16 Mono,(absent),Mono_CD16,n/a,Absent
+l1:other | l2:Platelet/HSPC/Eryth/ILC,(absent),other,n/a,Absent

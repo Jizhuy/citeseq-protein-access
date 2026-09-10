@@ -1,0 +1,169 @@
+2026-09-09 15:51:49,939 | INFO | phase11b | stage=crossed jobs=50 pending=50 start=2026-09-09T05:51:49.939552+00:00
+2026-09-09 15:51:56,528 | INFO | phase11b | crossed l2: 20 classes common to all 5 subsets: ['B intermediate', 'B memory', 'B naive', 'CD14 Mono', 'CD16 Mono', 'CD4 Naive', 'CD4 TCM', 'CD4 TEM', 'CD8 Naive', 'CD8 TCM', 'CD8 TEM', 'Eryth', 'ILC', 'MAIT', 'NK', 'NK_CD56bright', 'Treg', 'cDC2', 'dnT', 'gdT']
+2026-09-09 15:51:56,739 | INFO | phase11b | crossed l1: 8 classes common to all 5 subsets: ['B', 'CD4 T', 'CD8 T', 'DC', 'Mono', 'NK', 'other', 'other T']
+2026-09-09 15:51:56,907 | INFO | phase11b | loading direction_A (PBMC10k -> PBMC5k)
+2026-09-09 15:52:01,035 | INFO | phase11b | === direction_A__scvi_matched__subset0__seed00 (source n=3994 target n=3994) ===
+2026-09-09 15:54:04,626 | INFO | phase11b | direction_A__scvi_matched__subset0__seed00 done: src_ep=200 q_ep=200 runtime=121s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.07486 ram_avail=5414MB
+2026-09-09 15:54:04,776 | INFO | phase11b | === direction_A__scvi_matched__subset0__seed01 (source n=3994 target n=3994) ===
+2026-09-09 15:56:10,612 | INFO | phase11b | direction_A__scvi_matched__subset0__seed01 done: src_ep=200 q_ep=200 runtime=124s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.11617 ram_avail=5367MB
+2026-09-09 15:56:10,761 | INFO | phase11b | === direction_A__scvi_matched__subset0__seed02 (source n=3994 target n=3994) ===
+2026-09-09 15:58:38,839 | INFO | phase11b | direction_A__scvi_matched__subset0__seed02 done: src_ep=200 q_ep=200 runtime=146s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08116 ram_avail=4718MB
+2026-09-09 15:58:38,995 | INFO | phase11b | === direction_A__scvi_matched__subset0__seed03 (source n=3994 target n=3994) ===
+2026-09-09 16:00:57,690 | INFO | phase11b | direction_A__scvi_matched__subset0__seed03 done: src_ep=200 q_ep=200 runtime=137s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.07482 ram_avail=4701MB
+2026-09-09 16:00:57,844 | INFO | phase11b | === direction_A__scvi_matched__subset0__seed04 (source n=3994 target n=3994) ===
+2026-09-09 16:03:17,659 | INFO | phase11b | direction_A__scvi_matched__subset0__seed04 done: src_ep=200 q_ep=200 runtime=138s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.09437 ram_avail=4648MB
+2026-09-09 16:03:17,815 | INFO | phase11b | === direction_A__totalvi__subset0__seed00 (source n=3994 target n=3994) ===
+2026-09-09 16:07:08,807 | INFO | phase11b | direction_A__totalvi__subset0__seed00 done: src_ep=200 q_ep=200 runtime=228s drift_mean=0.016343 integrity=0.00e+00 u_latent=0.03144 ram_avail=5184MB
+2026-09-09 16:07:08,954 | INFO | phase11b | === direction_A__totalvi__subset0__seed01 (source n=3994 target n=3994) ===
+2026-09-09 16:10:37,908 | INFO | phase11b | direction_A__totalvi__subset0__seed01 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.019735 integrity=0.00e+00 u_latent=0.03373 ram_avail=5118MB
+2026-09-09 16:10:38,063 | INFO | phase11b | === direction_A__totalvi__subset0__seed02 (source n=3994 target n=3994) ===
+2026-09-09 16:14:07,567 | INFO | phase11b | direction_A__totalvi__subset0__seed02 done: src_ep=200 q_ep=200 runtime=207s drift_mean=0.017995 integrity=0.00e+00 u_latent=0.03476 ram_avail=5130MB
+2026-09-09 16:14:07,721 | INFO | phase11b | === direction_A__totalvi__subset0__seed03 (source n=3994 target n=3994) ===
+2026-09-09 16:17:36,490 | INFO | phase11b | direction_A__totalvi__subset0__seed03 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.016187 integrity=0.00e+00 u_latent=0.03157 ram_avail=5106MB
+2026-09-09 16:17:36,640 | INFO | phase11b | === direction_A__totalvi__subset0__seed04 (source n=3994 target n=3994) ===
+2026-09-09 16:21:11,806 | INFO | phase11b | direction_A__totalvi__subset0__seed04 done: src_ep=200 q_ep=200 runtime=212s drift_mean=0.018417 integrity=0.00e+00 u_latent=0.03795 ram_avail=5060MB
+2026-09-09 16:21:12,147 | INFO | phase11b | === direction_A__scvi_matched__subset1__seed00 (source n=3994 target n=3994) ===
+2026-09-09 16:23:17,422 | INFO | phase11b | direction_A__scvi_matched__subset1__seed00 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08924 ram_avail=5207MB
+2026-09-09 16:23:17,575 | INFO | phase11b | === direction_A__scvi_matched__subset1__seed01 (source n=3994 target n=3994) ===
+2026-09-09 16:25:22,202 | INFO | phase11b | direction_A__scvi_matched__subset1__seed01 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.12683 ram_avail=5199MB
+2026-09-09 16:25:22,347 | INFO | phase11b | === direction_A__scvi_matched__subset1__seed02 (source n=3994 target n=3994) ===
+2026-09-09 16:27:27,657 | INFO | phase11b | direction_A__scvi_matched__subset1__seed02 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.11099 ram_avail=5197MB
+2026-09-09 16:27:27,812 | INFO | phase11b | === direction_A__scvi_matched__subset1__seed03 (source n=3994 target n=3994) ===
+2026-09-09 16:29:30,729 | INFO | phase11b | direction_A__scvi_matched__subset1__seed03 done: src_ep=200 q_ep=200 runtime=121s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.10306 ram_avail=5168MB
+2026-09-09 16:29:30,873 | INFO | phase11b | === direction_A__scvi_matched__subset1__seed04 (source n=3994 target n=3994) ===
+2026-09-09 16:31:36,349 | INFO | phase11b | direction_A__scvi_matched__subset1__seed04 done: src_ep=200 q_ep=200 runtime=124s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.10015 ram_avail=5198MB
+2026-09-09 16:31:36,500 | INFO | phase11b | === direction_A__totalvi__subset1__seed00 (source n=3994 target n=3994) ===
+2026-09-09 16:35:08,966 | INFO | phase11b | direction_A__totalvi__subset1__seed00 done: src_ep=200 q_ep=200 runtime=209s drift_mean=0.017329 integrity=0.00e+00 u_latent=0.03893 ram_avail=5155MB
+2026-09-09 16:35:09,118 | INFO | phase11b | === direction_A__totalvi__subset1__seed01 (source n=3994 target n=3994) ===
+2026-09-09 16:38:44,316 | INFO | phase11b | direction_A__totalvi__subset1__seed01 done: src_ep=200 q_ep=200 runtime=212s drift_mean=0.017672 integrity=0.00e+00 u_latent=0.03782 ram_avail=5176MB
+2026-09-09 16:38:44,466 | INFO | phase11b | === direction_A__totalvi__subset1__seed02 (source n=3994 target n=3994) ===
+2026-09-09 16:42:16,091 | INFO | phase11b | direction_A__totalvi__subset1__seed02 done: src_ep=200 q_ep=200 runtime=209s drift_mean=0.017711 integrity=0.00e+00 u_latent=0.03642 ram_avail=5147MB
+2026-09-09 16:42:16,243 | INFO | phase11b | === direction_A__totalvi__subset1__seed03 (source n=3994 target n=3994) ===
+2026-09-09 16:45:43,117 | INFO | phase11b | direction_A__totalvi__subset1__seed03 done: src_ep=200 q_ep=200 runtime=204s drift_mean=0.020543 integrity=0.00e+00 u_latent=0.02987 ram_avail=5182MB
+2026-09-09 16:45:43,268 | INFO | phase11b | === direction_A__totalvi__subset1__seed04 (source n=3994 target n=3994) ===
+2026-09-09 16:49:19,527 | INFO | phase11b | direction_A__totalvi__subset1__seed04 done: src_ep=200 q_ep=200 runtime=213s drift_mean=0.015598 integrity=0.00e+00 u_latent=0.03435 ram_avail=5224MB
+2026-09-09 16:49:19,882 | INFO | phase11b | === direction_A__scvi_matched__subset2__seed00 (source n=3994 target n=3994) ===
+2026-09-09 16:51:24,558 | INFO | phase11b | direction_A__scvi_matched__subset2__seed00 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.09432 ram_avail=5116MB
+2026-09-09 16:51:24,706 | INFO | phase11b | === direction_A__scvi_matched__subset2__seed01 (source n=3994 target n=3994) ===
+2026-09-09 16:53:28,003 | INFO | phase11b | direction_A__scvi_matched__subset2__seed01 done: src_ep=200 q_ep=200 runtime=121s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.06792 ram_avail=5121MB
+2026-09-09 16:53:28,154 | INFO | phase11b | === direction_A__scvi_matched__subset2__seed02 (source n=3994 target n=3994) ===
+2026-09-09 16:55:33,059 | INFO | phase11b | direction_A__scvi_matched__subset2__seed02 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.10740 ram_avail=5051MB
+2026-09-09 16:55:33,210 | INFO | phase11b | === direction_A__scvi_matched__subset2__seed03 (source n=3994 target n=3994) ===
+2026-09-09 16:57:36,504 | INFO | phase11b | direction_A__scvi_matched__subset2__seed03 done: src_ep=200 q_ep=200 runtime=121s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.09023 ram_avail=5059MB
+2026-09-09 16:57:36,650 | INFO | phase11b | === direction_A__scvi_matched__subset2__seed04 (source n=3994 target n=3994) ===
+2026-09-09 16:59:42,094 | INFO | phase11b | direction_A__scvi_matched__subset2__seed04 done: src_ep=200 q_ep=200 runtime=124s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08004 ram_avail=5059MB
+2026-09-09 16:59:42,238 | INFO | phase11b | === direction_A__totalvi__subset2__seed00 (source n=3994 target n=3994) ===
+2026-09-09 17:03:11,310 | INFO | phase11b | direction_A__totalvi__subset2__seed00 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.019790 integrity=0.00e+00 u_latent=0.03593 ram_avail=5145MB
+2026-09-09 17:03:11,462 | INFO | phase11b | === direction_A__totalvi__subset2__seed01 (source n=3994 target n=3994) ===
+2026-09-09 17:06:39,501 | INFO | phase11b | direction_A__totalvi__subset2__seed01 done: src_ep=200 q_ep=200 runtime=205s drift_mean=0.017794 integrity=0.00e+00 u_latent=0.03124 ram_avail=5086MB
+2026-09-09 17:06:39,658 | INFO | phase11b | === direction_A__totalvi__subset2__seed02 (source n=3994 target n=3994) ===
+2026-09-09 17:10:09,375 | INFO | phase11b | direction_A__totalvi__subset2__seed02 done: src_ep=200 q_ep=200 runtime=207s drift_mean=0.016237 integrity=0.00e+00 u_latent=0.03539 ram_avail=5091MB
+2026-09-09 17:10:09,534 | INFO | phase11b | === direction_A__totalvi__subset2__seed03 (source n=3994 target n=3994) ===
+2026-09-09 17:13:37,950 | INFO | phase11b | direction_A__totalvi__subset2__seed03 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.018323 integrity=0.00e+00 u_latent=0.03433 ram_avail=5086MB
+2026-09-09 17:13:38,106 | INFO | phase11b | === direction_A__totalvi__subset2__seed04 (source n=3994 target n=3994) ===
+2026-09-09 17:17:06,563 | INFO | phase11b | direction_A__totalvi__subset2__seed04 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.018150 integrity=0.00e+00 u_latent=0.03708 ram_avail=5090MB
+2026-09-09 17:17:06,893 | INFO | phase11b | === direction_A__scvi_matched__subset3__seed00 (source n=3994 target n=3994) ===
+2026-09-09 17:19:11,529 | INFO | phase11b | direction_A__scvi_matched__subset3__seed00 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.11830 ram_avail=5092MB
+2026-09-09 17:19:11,687 | INFO | phase11b | === direction_A__scvi_matched__subset3__seed01 (source n=3994 target n=3994) ===
+2026-09-09 17:21:15,224 | INFO | phase11b | direction_A__scvi_matched__subset3__seed01 done: src_ep=200 q_ep=200 runtime=122s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.10314 ram_avail=5090MB
+2026-09-09 17:21:15,373 | INFO | phase11b | === direction_A__scvi_matched__subset3__seed02 (source n=3994 target n=3994) ===
+2026-09-09 17:23:20,493 | INFO | phase11b | direction_A__scvi_matched__subset3__seed02 done: src_ep=200 q_ep=200 runtime=123s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.09640 ram_avail=5090MB
+2026-09-09 17:23:20,648 | INFO | phase11b | === direction_A__scvi_matched__subset3__seed03 (source n=3994 target n=3994) ===
+2026-09-09 17:25:24,165 | INFO | phase11b | direction_A__scvi_matched__subset3__seed03 done: src_ep=200 q_ep=200 runtime=122s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08118 ram_avail=5097MB
+2026-09-09 17:25:24,326 | INFO | phase11b | === direction_A__scvi_matched__subset3__seed04 (source n=3994 target n=3994) ===
+2026-09-09 17:27:30,103 | INFO | phase11b | direction_A__scvi_matched__subset3__seed04 done: src_ep=200 q_ep=200 runtime=124s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.11086 ram_avail=5094MB
+2026-09-09 17:27:30,258 | INFO | phase11b | === direction_A__totalvi__subset3__seed00 (source n=3994 target n=3994) ===
+2026-09-09 17:31:03,187 | INFO | phase11b | direction_A__totalvi__subset3__seed00 done: src_ep=200 q_ep=200 runtime=210s drift_mean=0.017615 integrity=0.00e+00 u_latent=0.03570 ram_avail=5068MB
+2026-09-09 17:31:03,331 | INFO | phase11b | === direction_A__totalvi__subset3__seed01 (source n=3994 target n=3994) ===
+2026-09-09 17:34:32,468 | INFO | phase11b | direction_A__totalvi__subset3__seed01 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.015635 integrity=0.00e+00 u_latent=0.03440 ram_avail=5064MB
+2026-09-09 17:34:32,607 | INFO | phase11b | === direction_A__totalvi__subset3__seed02 (source n=3994 target n=3994) ===
+2026-09-09 17:38:01,311 | INFO | phase11b | direction_A__totalvi__subset3__seed02 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.015184 integrity=0.00e+00 u_latent=0.03836 ram_avail=5045MB
+2026-09-09 17:38:01,466 | INFO | phase11b | === direction_A__totalvi__subset3__seed03 (source n=3994 target n=3994) ===
+2026-09-09 17:41:30,485 | INFO | phase11b | direction_A__totalvi__subset3__seed03 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.018734 integrity=0.00e+00 u_latent=0.03607 ram_avail=5037MB
+2026-09-09 17:41:30,634 | INFO | phase11b | === direction_A__totalvi__subset3__seed04 (source n=3994 target n=3994) ===
+2026-09-09 17:44:58,862 | INFO | phase11b | direction_A__totalvi__subset3__seed04 done: src_ep=200 q_ep=200 runtime=205s drift_mean=0.021148 integrity=0.00e+00 u_latent=0.03849 ram_avail=5059MB
+2026-09-09 17:44:59,194 | INFO | phase11b | === direction_A__scvi_matched__subset4__seed00 (source n=3994 target n=3994) ===
+2026-09-09 17:47:02,939 | INFO | phase11b | direction_A__scvi_matched__subset4__seed00 done: src_ep=200 q_ep=200 runtime=122s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08304 ram_avail=5086MB
+2026-09-09 17:47:03,092 | INFO | phase11b | === direction_A__scvi_matched__subset4__seed01 (source n=3994 target n=3994) ===
+2026-09-09 17:49:06,506 | INFO | phase11b | direction_A__scvi_matched__subset4__seed01 done: src_ep=200 q_ep=200 runtime=121s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.08834 ram_avail=5029MB
+2026-09-09 17:49:06,657 | INFO | phase11b | === direction_A__scvi_matched__subset4__seed02 (source n=3994 target n=3994) ===
+2026-09-09 17:51:10,933 | INFO | phase11b | direction_A__scvi_matched__subset4__seed02 done: src_ep=200 q_ep=200 runtime=122s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.09022 ram_avail=5140MB
+2026-09-09 17:51:11,092 | INFO | phase11b | === direction_A__scvi_matched__subset4__seed03 (source n=3994 target n=3994) ===
+2026-09-09 17:53:13,519 | INFO | phase11b | direction_A__scvi_matched__subset4__seed03 done: src_ep=200 q_ep=200 runtime=120s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.09134 ram_avail=5049MB
+2026-09-09 17:53:13,669 | INFO | phase11b | === direction_A__scvi_matched__subset4__seed04 (source n=3994 target n=3994) ===
+2026-09-09 17:55:17,675 | INFO | phase11b | direction_A__scvi_matched__subset4__seed04 done: src_ep=200 q_ep=200 runtime=122s drift_mean=0.000000 integrity=0.00e+00 u_latent=0.11292 ram_avail=5038MB
+2026-09-09 17:55:17,822 | INFO | phase11b | === direction_A__totalvi__subset4__seed00 (source n=3994 target n=3994) ===
+2026-09-09 17:58:48,088 | INFO | phase11b | direction_A__totalvi__subset4__seed00 done: src_ep=200 q_ep=200 runtime=207s drift_mean=0.019524 integrity=0.00e+00 u_latent=0.03638 ram_avail=5078MB
+2026-09-09 17:58:48,237 | INFO | phase11b | === direction_A__totalvi__subset4__seed01 (source n=3994 target n=3994) ===
+2026-09-09 18:02:19,510 | INFO | phase11b | direction_A__totalvi__subset4__seed01 done: src_ep=200 q_ep=200 runtime=208s drift_mean=0.018782 integrity=0.00e+00 u_latent=0.03412 ram_avail=5067MB
+2026-09-09 18:02:19,659 | INFO | phase11b | === direction_A__totalvi__subset4__seed02 (source n=3994 target n=3994) ===
+2026-09-09 18:05:50,229 | INFO | phase11b | direction_A__totalvi__subset4__seed02 done: src_ep=200 q_ep=200 runtime=208s drift_mean=0.017594 integrity=0.00e+00 u_latent=0.03379 ram_avail=5078MB
+2026-09-09 18:05:50,383 | INFO | phase11b | === direction_A__totalvi__subset4__seed03 (source n=3994 target n=3994) ===
+2026-09-09 18:09:18,985 | INFO | phase11b | direction_A__totalvi__subset4__seed03 done: src_ep=200 q_ep=200 runtime=206s drift_mean=0.016444 integrity=0.00e+00 u_latent=0.03507 ram_avail=5075MB
+2026-09-09 18:09:19,144 | INFO | phase11b | === direction_A__totalvi__subset4__seed04 (source n=3994 target n=3994) ===
+2026-09-09 18:12:48,862 | INFO | phase11b | direction_A__totalvi__subset4__seed04 done: src_ep=200 q_ep=200 runtime=207s drift_mean=0.017053 integrity=0.00e+00 u_latent=0.03964 ram_avail=5071MB
+2026-09-09 18:12:49,165 | INFO | phase11b | stage crossed finished: 50 completed, 0 failed
+2026-09-09 22:42:00,012 | INFO | phase11b_crossed | === crossed stage score (2026-09-09T12:42:00.012271+00:00) ===
+2026-09-09 22:42:06,576 | INFO | phase11b_crossed | crossed setup: 20 common l2 classes, 3305 fixed target cells
+2026-09-09 22:42:07,000 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed00 macroF1=0.6213 AUROC=0.8476
+2026-09-09 22:42:07,387 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed01 macroF1=0.5741 AUROC=0.8389
+2026-09-09 22:42:07,806 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed02 macroF1=0.6088 AUROC=0.8381
+2026-09-09 22:42:08,194 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed03 macroF1=0.6242 AUROC=0.8286
+2026-09-09 22:42:08,611 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed04 macroF1=0.6176 AUROC=0.8276
+2026-09-09 22:42:09,119 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed00 macroF1=0.6059 AUROC=0.8235
+2026-09-09 22:42:09,528 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed01 macroF1=0.6107 AUROC=0.8591
+2026-09-09 22:42:09,982 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed02 macroF1=0.6144 AUROC=0.8519
+2026-09-09 22:42:10,493 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed03 macroF1=0.6113 AUROC=0.8381
+2026-09-09 22:42:10,946 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed04 macroF1=0.6085 AUROC=0.8376
+2026-09-09 22:42:11,296 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed00 macroF1=0.6020 AUROC=0.8428
+2026-09-09 22:42:11,669 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed01 macroF1=0.6023 AUROC=0.8476
+2026-09-09 22:42:12,016 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed02 macroF1=0.6081 AUROC=0.8361
+2026-09-09 22:42:12,409 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed03 macroF1=0.5629 AUROC=0.8390
+2026-09-09 22:42:12,769 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed04 macroF1=0.5921 AUROC=0.8356
+2026-09-09 22:42:13,143 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed00 macroF1=0.6154 AUROC=0.8333
+2026-09-09 22:42:13,536 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed01 macroF1=0.5824 AUROC=0.8356
+2026-09-09 22:42:13,987 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed02 macroF1=0.6084 AUROC=0.8522
+2026-09-09 22:42:14,461 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed03 macroF1=0.6268 AUROC=0.8461
+2026-09-09 22:42:14,917 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed04 macroF1=0.6213 AUROC=0.8194
+2026-09-09 22:42:15,293 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed00 macroF1=0.6080 AUROC=0.8426
+2026-09-09 22:42:15,656 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed01 macroF1=0.5951 AUROC=0.8432
+2026-09-09 22:42:16,017 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed02 macroF1=0.6057 AUROC=0.8267
+2026-09-09 22:42:16,381 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed03 macroF1=0.5815 AUROC=0.8337
+2026-09-09 22:42:16,762 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed04 macroF1=0.5808 AUROC=0.8430
+2026-09-09 22:42:17,197 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed00 macroF1=0.6206 AUROC=0.8405
+2026-09-09 22:42:17,724 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed01 macroF1=0.6223 AUROC=0.8552
+2026-09-09 22:42:18,244 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed02 macroF1=0.6012 AUROC=0.8355
+2026-09-09 22:42:18,724 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed03 macroF1=0.6121 AUROC=0.8407
+2026-09-09 22:42:19,179 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed04 macroF1=0.6056 AUROC=0.8409
+2026-09-09 22:42:19,549 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed00 macroF1=0.5917 AUROC=0.8414
+2026-09-09 22:42:19,937 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed01 macroF1=0.6205 AUROC=0.8460
+2026-09-09 22:42:20,295 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed02 macroF1=0.5912 AUROC=0.8162
+2026-09-09 22:42:20,660 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed03 macroF1=0.6067 AUROC=0.8366
+2026-09-09 22:42:21,028 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed04 macroF1=0.5942 AUROC=0.8241
+2026-09-09 22:42:21,424 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed00 macroF1=0.6401 AUROC=0.8380
+2026-09-09 22:42:21,842 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed01 macroF1=0.5892 AUROC=0.8410
+2026-09-09 22:42:22,271 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed02 macroF1=0.6163 AUROC=0.8495
+2026-09-09 22:42:22,737 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed03 macroF1=0.6286 AUROC=0.8365
+2026-09-09 22:42:23,216 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed04 macroF1=0.6328 AUROC=0.8378
+2026-09-09 22:42:23,573 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed00 macroF1=0.5777 AUROC=0.8483
+2026-09-09 22:42:23,920 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed01 macroF1=0.6283 AUROC=0.8417
+2026-09-09 22:42:24,272 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed02 macroF1=0.5923 AUROC=0.8441
+2026-09-09 22:42:24,640 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed03 macroF1=0.5933 AUROC=0.8418
+2026-09-09 22:42:24,992 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed04 macroF1=0.6028 AUROC=0.8276
+2026-09-09 22:42:25,426 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed00 macroF1=0.5955 AUROC=0.8454
+2026-09-09 22:42:25,862 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed01 macroF1=0.5981 AUROC=0.8380
+2026-09-09 22:42:26,266 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed02 macroF1=0.5991 AUROC=0.8489
+2026-09-09 22:42:26,702 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed03 macroF1=0.6204 AUROC=0.8555
+2026-09-09 22:42:27,156 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed04 macroF1=0.5861 AUROC=0.8229
+2026-09-09 22:42:27,314 | INFO | phase11b_crossed | score done: 50 rows
+2026-09-09 22:42:27,315 | INFO | phase11b_crossed | === crossed stage variance (2026-09-09T12:42:27.315130+00:00) ===
+2026-09-09 22:42:27,337 | INFO | phase11b_crossed | variance done: 21 rows
+2026-09-09 22:42:27,337 | INFO | phase11b_crossed | === crossed stage percell (2026-09-09T12:42:27.337867+00:00) ===
+2026-09-09 22:42:31,966 | INFO | phase11b_crossed | crossed setup: 20 common l2 classes, 3305 fixed target cells
+2026-09-09 22:42:32,496 | INFO | phase11b_crossed | scvi_matched full-source ensemble over 20 seeds aligned to 3305 crossed cells (ensemble accuracy 0.8254)
+2026-09-09 22:42:32,517 | INFO | phase11b_crossed | scvi_matched per-cell decomposition done (median source frac 0.106, seed frac 0.007)
+2026-09-09 22:42:33,043 | INFO | phase11b_crossed | totalvi full-source ensemble over 20 seeds aligned to 3305 crossed cells (ensemble accuracy 0.8339)
+2026-09-09 22:42:33,063 | INFO | phase11b_crossed | totalvi per-cell decomposition done (median source frac 0.053, seed frac 0.020)
+2026-09-09 22:42:33,300 | INFO | phase11b_crossed | percell done
+2026-09-09 22:42:33,302 | INFO | phase11b_crossed | === crossed stage assoc (2026-09-09T12:42:33.302010+00:00) ===
+2026-09-09 22:42:33,378 | INFO | phase11b_crossed | assoc done

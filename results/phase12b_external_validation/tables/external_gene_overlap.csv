@@ -1,0 +1,13 @@
+metric,value
+current_n_genes,15792
+external_n_genes,32738
+current_id_system,gene_symbol
+external_id_system,Ensembl_ENSG_hg19_CellRanger2.1.0
+exact_intersection,0
+intersection_fraction_of_current,0.0
+intersection_fraction_of_external,0.0
+current_frac_ENSG,0.0
+external_frac_ENSG,1.0
+mapping_required,YES
+example_current,"AL627309.1,AL669831.5,LINC00115,FAM41C,NOC2L"
+example_external,"ENSG00000243485,ENSG00000237613,ENSG00000186092,ENSG00000238009,ENSG00000239945"

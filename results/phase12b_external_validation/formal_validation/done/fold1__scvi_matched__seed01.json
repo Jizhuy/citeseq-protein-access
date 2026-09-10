@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "tag": "fold1__scvi_matched__seed01",
+  "timestamp_utc": "2026-09-10T06:08:36.091328+00:00",
+  "primary": {
+    "fold": 1,
+    "source_donors": "Donor01;Donor02;Donor05;Donor06;Donor07;Donor08;Donor09;Donor10",
+    "target_donors": "Donor03;Donor04",
+    "model": "scvi_matched",
+    "seed": 1,
+    "n_source_all": 12971,
+    "n_target_all": 3204,
+    "n_source_labeled": 4180,
+    "n_target_labeled": 1027,
+    "n_source_labeled_eval": 4180,
+    "n_target_labeled_eval": 1027,
+    "n_genes": 12776,
+    "n_proteins": 12,
+    "macro_f1": 0.8071182731988237,
+    "balanced_accuracy": 0.7962417515895689,
+    "accuracy": 0.7721518987341772,
+    "weighted_f1": 0.7712394569093821,
+    "error_prevalence": 0.22784810126582278,
+    "predictive_error_auroc": 0.8143100419266875,
+    "predictive_error_auprc": 0.5025338407462222,
+    "latent_error_auroc": 0.6560933811879587,
+    "latent_error_auprc": 0.3318929809962229,
+    "nll": 0.5589579343795776,
+    "brier": 0.31290358304977417,
+    "ece_equal_frequency": 0.030982086872056266,
+    "ece_equal_width": 0.02775731833675241,
+    "aurc": 0.07581268969183223,
+    "spearman_u_pred_u_latent": 0.5296746600342935,
+    "spearman_u_latent_neglog_p_true": 0.49979653309656424,
+    "runtime_sec": 139.61316863499815,
+    "peak_gpu_mb": 246.10205078125,
+    "peak_rss_mb": 4635.09375,
+    "integrity_ok": true,
+    "latent_drift_mean_cell": 0.0,
+    "batch_key": "batch(=run_identifier)",
+    "timestamp_utc": "2026-09-10T06:08:36.088691+00:00"
+  },
+  "ram_before": {
+    "available_mb": 3100.3046875,
+    "percent": 60.2,
+    "process_rss_mb": 4561.73046875
+  },
+  "ram_after": {
+    "available_mb": 3010.64453125,
+    "percent": 61.4,
+    "process_rss_mb": 4635.09375
+  }
+}

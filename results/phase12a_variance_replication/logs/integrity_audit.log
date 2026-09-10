@@ -1,0 +1,101 @@
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+A. done_markers=50 expected=50
+B. phase11b crossed present=50/50; total_p11b_done=130
+C. design observations=100 (expect 100)
+D. complete artifact runs=0/50
+G. reload integrity pass=50/50
+H. finite latent/posterior loads=0/50
+I. matching post-adapt latent dims=50/50
+seed bookkeeping (run_seed!=model_seed where recorded)=50/50
+E. failure files=0
+F. orphan replicate01 dirs without done-marker=0
+
+=== REPLICATE VALIDITY (§4) ===
+sample_manifest_keys: ['adapted_query_model_dir', 'adapted_query_model_saved', 'artifact_integrity', 'direction', 'direction_key', 'gpu_peak_allocated_mb', 'gpu_peak_reserved_mb', 'max_target_posterior_variance', 'median_target_posterior_variance', 'median_u_latent_target', 'model', 'model_seed', 'n_trainable_query_params', 'phase', 'posterior_quantity', 'query_device', 'query_epochs', 'query_runtime_seconds', 'ram_after', 'ram_before', 'replicate', 'run_replicate_seed', 'source_device', 'source_embedding_used_for_metrics', 'source_latent_drift_pre_to_post_adaptation', 'source_model_dir', 'source_n', 'source_runtime_seconds', 'source_training_epochs', 'subset_seed']
+scvi_matched subset0 seed0: model_seed 0->0; run_seed None->91000; expected_run1=91000
+totalvi subset0 seed0: model_seed 0->0; run_seed None->91000; expected_run1=91000
+scvi_matched subset0 seed1: model_seed 1->1; run_seed None->91001; expected_run1=91001
+totalvi subset0 seed1: model_seed 1->1; run_seed None->91001; expected_run1=91001
+scvi_matched subset1 seed0: model_seed 0->0; run_seed None->91010; expected_run1=91010
+totalvi subset1 seed0: model_seed 0->0; run_seed None->91010; expected_run1=91010
+scvi_matched subset1 seed1: model_seed 1->1; run_seed None->91011; expected_run1=91011
+totalvi subset1 seed1: model_seed 1->1; run_seed None->91011; expected_run1=91011
+
+=== ISSUES ===
+! D:direction_A__scvi_matched__subset0__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset0__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset0__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset0__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset0__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset0__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset0__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset0__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset0__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset0__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset1__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset1__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset1__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset1__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset1__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset1__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset1__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset1__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset1__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset1__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset2__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset2__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset2__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset2__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset2__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset2__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset2__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset2__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset2__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset2__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset3__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset3__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset3__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset3__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset3__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset3__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset3__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset3__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset3__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset3__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset4__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset4__seed00__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset4__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset4__seed01__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset4__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset4__seed02__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset4__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset4__seed03__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__scvi_matched__subset4__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D:direction_A__totalvi__subset4__seed04__rep01: missing query/adapted model; load error: Object arrays cannot be loaded when allow_pickle=False
+! D: only 0/50 runs fully intact
+! H: finite checks passed for 0/50
+
+=== OK ===
++ A: exactly 50 valid replicate-1 done-markers
++ B: all 50 PHASE 11B crossed done-markers intact
++ C: 5 x 5 x 2 x 2 = 100 observations
++ G: adapted-model reload validation passed for all 50
++ I: source/target post-adaptation latent dims match
++ E: no failed runs remain
++ F: no incomplete orphan replicate directories
++ J: PHASE 11B done-markers intact (n=130)
++ §4: model_seed fixed; run_replicate_seed differs for replicate 1
+wrote /home/jizhu/research/multiomics_robustness/results/phase12a_variance_replication/logs/integrity_audit.json

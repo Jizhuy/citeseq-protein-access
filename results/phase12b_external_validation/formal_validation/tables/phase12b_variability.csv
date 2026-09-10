@@ -1,0 +1,15 @@
+model,metric,overall_mean,between_fold_sd,within_fold_seed_sd,fold_fraction_if_identifiable,seed_fraction_if_identifiable,limitations
+scvi_matched,macro_f1,0.7998201961469218,0.013179619080102038,0.009270044309311417,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+scvi_matched,predictive_error_auroc,0.8011960487278382,0.019181732098842445,0.010488049053099562,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+scvi_matched,latent_error_auroc,0.6049427370706109,0.014932249891493587,0.04720623723152556,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+scvi_matched,nll,0.5799089062213898,0.04916859542128882,0.011913406477767972,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+scvi_matched,brier,0.32698500514030454,0.029446363953467457,0.006808806750750673,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+scvi_matched,ece_equal_frequency,0.03435512817853362,0.00707188662765602,0.008072800128362853,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+scvi_matched,aurc,0.08667285617657292,0.01922141621534045,0.0040969516539676384,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,macro_f1,0.8883042103541375,0.011469438656236544,0.006244265779651727,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,predictive_error_auroc,0.8381371252952912,0.014649157551242149,0.012220494512412838,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,latent_error_auroc,0.6496995858977295,0.01291974903961812,0.022724496944860645,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,nll,0.36727583050727847,0.03496666349408528,0.010999944705483548,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,brier,0.2017385357618332,0.020961114145116665,0.006571462160825327,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,ece_equal_frequency,0.034160619574382635,0.002160678053344311,0.0061677786640680935,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit
+totalvi,aurc,0.03619139701601509,0.007265163485485316,0.0021097702206129224,,,descriptive only; 5 folds x 10 seeds; not a formal REML fit

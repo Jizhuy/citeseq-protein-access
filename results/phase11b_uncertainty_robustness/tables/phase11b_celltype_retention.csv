@@ -1,0 +1,517 @@
+direction,model,coverage,cell_type,original_n,retained_n,retention_rate
+direction_A,scvi_matched,1.0,CD14 Mono,937,937.0,1.0
+direction_A,scvi_matched,1.0,CD4 Naive,378,378.0,1.0
+direction_A,scvi_matched,1.0,CD4 TCM,327,327.0,1.0
+direction_A,scvi_matched,1.0,CD4 TEM,272,272.0,1.0
+direction_A,scvi_matched,1.0,NK,251,251.0,1.0
+direction_A,scvi_matched,1.0,CD8 TEM,147,147.0,1.0
+direction_A,scvi_matched,1.0,CD16 Mono,131,131.0,1.0
+direction_A,scvi_matched,1.0,B naive,128,128.0,1.0
+direction_A,scvi_matched,1.0,cDC2,125,125.0,1.0
+direction_A,scvi_matched,1.0,ILC,98,98.0,1.0
+direction_A,scvi_matched,1.0,Eryth,86,86.0,1.0
+direction_A,scvi_matched,1.0,B memory,79,79.0,1.0
+direction_A,scvi_matched,1.0,gdT,71,71.0,1.0
+direction_A,scvi_matched,1.0,B intermediate,66,66.0,1.0
+direction_A,scvi_matched,1.0,Treg,59,59.0,1.0
+direction_A,scvi_matched,1.0,CD8 Naive,48,48.0,1.0
+direction_A,scvi_matched,1.0,CD4 CTL,41,41.0,1.0
+direction_A,scvi_matched,1.0,CD8 TCM,34,34.0,1.0
+direction_A,scvi_matched,1.0,NK_CD56bright,30,30.0,1.0
+direction_A,scvi_matched,1.0,MAIT,24,24.0,1.0
+direction_A,scvi_matched,1.0,pDC,23,23.0,1.0
+direction_A,scvi_matched,1.0,dnT,14,14.0,1.0
+direction_A,scvi_matched,0.9,CD14 Mono,937,935.4,0.9982924226254002
+direction_A,scvi_matched,0.9,CD4 Naive,378,294.7,0.7796296296296296
+direction_A,scvi_matched,0.9,CD4 TCM,327,277.0,0.8470948012232415
+direction_A,scvi_matched,0.9,CD4 TEM,272,228.3,0.8393382352941177
+direction_A,scvi_matched,0.9,NK,251,249.8,0.9952191235059762
+direction_A,scvi_matched,0.9,CD8 TEM,147,110.85,0.7540816326530612
+direction_A,scvi_matched,0.9,CD16 Mono,131,128.05,0.9774809160305344
+direction_A,scvi_matched,0.9,B naive,128,121.8,0.9515625
+direction_A,scvi_matched,0.9,cDC2,125,124.25,0.994
+direction_A,scvi_matched,0.9,ILC,98,70.85,0.7229591836734693
+direction_A,scvi_matched,0.9,Eryth,86,84.15,0.9784883720930233
+direction_A,scvi_matched,0.9,B memory,79,77.55,0.9816455696202532
+direction_A,scvi_matched,0.9,gdT,71,53.6,0.7549295774647887
+direction_A,scvi_matched,0.9,B intermediate,66,62.4,0.9454545454545454
+direction_A,scvi_matched,0.9,Treg,59,39.5,0.6694915254237288
+direction_A,scvi_matched,0.9,CD8 Naive,48,42.45,0.884375
+direction_A,scvi_matched,0.9,CD4 CTL,41,27.5,0.6707317073170732
+direction_A,scvi_matched,0.9,CD8 TCM,34,23.95,0.7044117647058823
+direction_A,scvi_matched,0.9,NK_CD56bright,30,27.75,0.925
+direction_A,scvi_matched,0.9,MAIT,24,20.5,0.8541666666666666
+direction_A,scvi_matched,0.9,pDC,23,23.0,1.0
+direction_A,scvi_matched,0.9,dnT,14,8.65,0.6178571428571429
+direction_A,scvi_matched,0.8,CD14 Mono,937,925.4,0.9876200640341515
+direction_A,scvi_matched,0.8,CD4 Naive,378,213.7,0.5653439153439153
+direction_A,scvi_matched,0.8,CD4 TCM,327,231.4,0.707645259938838
+direction_A,scvi_matched,0.8,CD4 TEM,272,175.85,0.6465073529411764
+direction_A,scvi_matched,0.8,NK,251,248.5,0.9900398406374502
+direction_A,scvi_matched,0.8,CD8 TEM,147,87.7,0.5965986394557823
+direction_A,scvi_matched,0.8,CD16 Mono,131,121.6,0.9282442748091603
+direction_A,scvi_matched,0.8,B naive,128,111.3,0.86953125
+direction_A,scvi_matched,0.8,cDC2,125,119.75,0.958
+direction_A,scvi_matched,0.8,ILC,98,52.3,0.5336734693877551
+direction_A,scvi_matched,0.8,Eryth,86,73.7,0.8569767441860465
+direction_A,scvi_matched,0.8,B memory,79,68.4,0.8658227848101266
+direction_A,scvi_matched,0.8,gdT,71,40.4,0.5690140845070423
+direction_A,scvi_matched,0.8,B intermediate,66,50.3,0.7621212121212121
+direction_A,scvi_matched,0.8,Treg,59,28.15,0.4771186440677966
+direction_A,scvi_matched,0.8,CD8 Naive,48,37.9,0.7895833333333333
+direction_A,scvi_matched,0.8,CD4 CTL,41,18.75,0.4573170731707317
+direction_A,scvi_matched,0.8,CD8 TCM,34,17.3,0.5088235294117647
+direction_A,scvi_matched,0.8,NK_CD56bright,30,24.65,0.8216666666666667
+direction_A,scvi_matched,0.8,MAIT,24,18.55,0.7729166666666667
+direction_A,scvi_matched,0.8,pDC,23,22.95,0.9978260869565218
+direction_A,scvi_matched,0.8,dnT,14,6.45,0.46071428571428574
+direction_A,scvi_matched,0.7,CD14 Mono,937,913.1,0.9744930629669157
+direction_A,scvi_matched,0.7,CD4 Naive,378,140.25,0.37103174603174605
+direction_A,scvi_matched,0.7,CD4 TCM,327,181.4,0.5547400611620795
+direction_A,scvi_matched,0.7,CD4 TEM,272,125.0,0.45955882352941174
+direction_A,scvi_matched,0.7,NK,251,244.95,0.9758964143426294
+direction_A,scvi_matched,0.7,CD8 TEM,147,64.4,0.43809523809523815
+direction_A,scvi_matched,0.7,CD16 Mono,131,116.2,0.8870229007633588
+direction_A,scvi_matched,0.7,B naive,128,99.45,0.776953125
+direction_A,scvi_matched,0.7,cDC2,125,116.15,0.9292
+direction_A,scvi_matched,0.7,ILC,98,35.6,0.363265306122449
+direction_A,scvi_matched,0.7,Eryth,86,61.35,0.7133720930232559
+direction_A,scvi_matched,0.7,B memory,79,57.4,0.7265822784810126
+direction_A,scvi_matched,0.7,gdT,71,28.9,0.4070422535211267
+direction_A,scvi_matched,0.7,B intermediate,66,37.4,0.5666666666666667
+direction_A,scvi_matched,0.7,Treg,59,17.25,0.2923728813559322
+direction_A,scvi_matched,0.7,CD8 Naive,48,32.8,0.6833333333333332
+direction_A,scvi_matched,0.7,CD4 CTL,41,10.8,0.2634146341463415
+direction_A,scvi_matched,0.7,CD8 TCM,34,12.1,0.3558823529411765
+direction_A,scvi_matched,0.7,NK_CD56bright,30,21.05,0.7016666666666667
+direction_A,scvi_matched,0.7,MAIT,24,15.7,0.6541666666666667
+direction_A,scvi_matched,0.7,pDC,23,22.6,0.982608695652174
+direction_A,scvi_matched,0.7,dnT,14,4.15,0.29642857142857143
+direction_A,scvi_matched,0.6,CD14 Mono,937,895.3,0.955496264674493
+direction_A,scvi_matched,0.6,CD4 Naive,378,79.4,0.21005291005291007
+direction_A,scvi_matched,0.6,CD4 TCM,327,130.1,0.39785932721712536
+direction_A,scvi_matched,0.6,CD4 TEM,272,69.75,0.25643382352941174
+direction_A,scvi_matched,0.6,NK,251,241.55,0.9623505976095618
+direction_A,scvi_matched,0.6,CD8 TEM,147,44.4,0.3020408163265306
+direction_A,scvi_matched,0.6,CD16 Mono,131,108.7,0.8297709923664123
+direction_A,scvi_matched,0.6,B naive,128,84.75,0.662109375
+direction_A,scvi_matched,0.6,cDC2,125,112.3,0.8984
+direction_A,scvi_matched,0.6,ILC,98,20.75,0.21173469387755103
+direction_A,scvi_matched,0.6,Eryth,86,45.45,0.5284883720930232
+direction_A,scvi_matched,0.6,B memory,79,45.4,0.5746835443037974
+direction_A,scvi_matched,0.6,gdT,71,18.45,0.25985915492957745
+direction_A,scvi_matched,0.6,B intermediate,66,23.3,0.353030303030303
+direction_A,scvi_matched,0.6,Treg,59,9.5,0.16101694915254236
+direction_A,scvi_matched,0.6,CD8 Naive,48,26.05,0.5427083333333333
+direction_A,scvi_matched,0.6,CD4 CTL,41,5.25,0.12804878048780488
+direction_A,scvi_matched,0.6,CD8 TCM,34,7.3,0.21470588235294116
+direction_A,scvi_matched,0.6,NK_CD56bright,30,16.5,0.55
+direction_A,scvi_matched,0.6,MAIT,24,12.65,0.5270833333333333
+direction_A,scvi_matched,0.6,pDC,23,22.0,0.9565217391304348
+direction_A,scvi_matched,0.6,dnT,14,2.15,0.15357142857142855
+direction_A,scvi_matched,0.5,CD14 Mono,937,864.8,0.9229455709711846
+direction_A,scvi_matched,0.5,CD4 Naive,378,32.5,0.08597883597883597
+direction_A,scvi_matched,0.5,CD4 TCM,327,78.35,0.2396024464831804
+direction_A,scvi_matched,0.5,CD4 TEM,272,22.95,0.08437499999999999
+direction_A,scvi_matched,0.5,NK,251,233.5,0.9302788844621513
+direction_A,scvi_matched,0.5,CD8 TEM,147,24.6,0.1673469387755102
+direction_A,scvi_matched,0.5,CD16 Mono,131,99.05,0.7561068702290076
+direction_A,scvi_matched,0.5,B naive,128,66.65,0.520703125
+direction_A,scvi_matched,0.5,cDC2,125,106.5,0.852
+direction_A,scvi_matched,0.5,ILC,98,9.65,0.09846938775510204
+direction_A,scvi_matched,0.5,Eryth,86,27.8,0.3232558139534884
+direction_A,scvi_matched,0.5,B memory,79,30.3,0.38354430379746834
+direction_A,scvi_matched,0.5,gdT,71,9.95,0.14014084507042252
+direction_A,scvi_matched,0.5,B intermediate,66,11.25,0.17045454545454544
+direction_A,scvi_matched,0.5,Treg,59,3.35,0.05677966101694915
+direction_A,scvi_matched,0.5,CD8 Naive,48,16.0,0.3333333333333333
+direction_A,scvi_matched,0.5,CD4 CTL,41,0.8,0.01951219512195122
+direction_A,scvi_matched,0.5,CD8 TCM,34,2.55,0.075
+direction_A,scvi_matched,0.5,NK_CD56bright,30,12.0,0.4
+direction_A,scvi_matched,0.5,MAIT,24,9.55,0.3979166666666667
+direction_A,scvi_matched,0.5,pDC,23,21.05,0.9152173913043479
+direction_A,scvi_matched,0.5,dnT,14,0.85,0.060714285714285714
+direction_A,totalvi,1.0,CD14 Mono,937,937.0,1.0
+direction_A,totalvi,1.0,CD4 Naive,378,378.0,1.0
+direction_A,totalvi,1.0,CD4 TCM,327,327.0,1.0
+direction_A,totalvi,1.0,CD4 TEM,272,272.0,1.0
+direction_A,totalvi,1.0,NK,251,251.0,1.0
+direction_A,totalvi,1.0,CD8 TEM,147,147.0,1.0
+direction_A,totalvi,1.0,CD16 Mono,131,131.0,1.0
+direction_A,totalvi,1.0,B naive,128,128.0,1.0
+direction_A,totalvi,1.0,cDC2,125,125.0,1.0
+direction_A,totalvi,1.0,ILC,98,98.0,1.0
+direction_A,totalvi,1.0,Eryth,86,86.0,1.0
+direction_A,totalvi,1.0,B memory,79,79.0,1.0
+direction_A,totalvi,1.0,gdT,71,71.0,1.0
+direction_A,totalvi,1.0,B intermediate,66,66.0,1.0
+direction_A,totalvi,1.0,Treg,59,59.0,1.0
+direction_A,totalvi,1.0,CD8 Naive,48,48.0,1.0
+direction_A,totalvi,1.0,CD4 CTL,41,41.0,1.0
+direction_A,totalvi,1.0,CD8 TCM,34,34.0,1.0
+direction_A,totalvi,1.0,NK_CD56bright,30,30.0,1.0
+direction_A,totalvi,1.0,MAIT,24,24.0,1.0
+direction_A,totalvi,1.0,pDC,23,23.0,1.0
+direction_A,totalvi,1.0,dnT,14,14.0,1.0
+direction_A,totalvi,0.9,CD14 Mono,937,931.7,0.9943436499466383
+direction_A,totalvi,0.9,CD4 Naive,378,332.9,0.8806878306878306
+direction_A,totalvi,0.9,CD4 TCM,327,273.85,0.8374617737003058
+direction_A,totalvi,0.9,CD4 TEM,272,238.65,0.877389705882353
+direction_A,totalvi,0.9,NK,251,250.1,0.996414342629482
+direction_A,totalvi,0.9,CD8 TEM,147,109.4,0.7442176870748299
+direction_A,totalvi,0.9,CD16 Mono,131,126.95,0.9690839694656489
+direction_A,totalvi,0.9,B naive,128,123.7,0.96640625
+direction_A,totalvi,0.9,cDC2,125,123.1,0.9848
+direction_A,totalvi,0.9,ILC,98,66.3,0.676530612244898
+direction_A,totalvi,0.9,Eryth,86,79.8,0.927906976744186
+direction_A,totalvi,0.9,B memory,79,72.7,0.920253164556962
+direction_A,totalvi,0.9,gdT,71,46.05,0.6485915492957746
+direction_A,totalvi,0.9,B intermediate,66,56.1,0.85
+direction_A,totalvi,0.9,Treg,59,37.75,0.6398305084745762
+direction_A,totalvi,0.9,CD8 Naive,48,40.55,0.8447916666666666
+direction_A,totalvi,0.9,CD4 CTL,41,27.65,0.674390243902439
+direction_A,totalvi,0.9,CD8 TCM,34,16.85,0.49558823529411766
+direction_A,totalvi,0.9,NK_CD56bright,30,24.25,0.8083333333333333
+direction_A,totalvi,0.9,MAIT,24,21.1,0.8791666666666668
+direction_A,totalvi,0.9,pDC,23,22.85,0.9934782608695653
+direction_A,totalvi,0.9,dnT,14,9.7,0.6928571428571428
+direction_A,totalvi,0.8,CD14 Mono,937,921.3,0.9832443970117395
+direction_A,totalvi,0.8,CD4 Naive,378,270.2,0.7148148148148148
+direction_A,totalvi,0.8,CD4 TCM,327,217.0,0.6636085626911316
+direction_A,totalvi,0.8,CD4 TEM,272,201.25,0.7398897058823529
+direction_A,totalvi,0.8,NK,251,249.55,0.9942231075697212
+direction_A,totalvi,0.8,CD8 TEM,147,87.1,0.592517006802721
+direction_A,totalvi,0.8,CD16 Mono,131,119.7,0.9137404580152672
+direction_A,totalvi,0.8,B naive,128,116.25,0.908203125
+direction_A,totalvi,0.8,cDC2,125,117.6,0.9408
+direction_A,totalvi,0.8,ILC,98,47.1,0.4806122448979592
+direction_A,totalvi,0.8,Eryth,86,59.55,0.6924418604651162
+direction_A,totalvi,0.8,B memory,79,59.85,0.7575949367088608
+direction_A,totalvi,0.8,gdT,71,32.0,0.4507042253521127
+direction_A,totalvi,0.8,B intermediate,66,40.65,0.6159090909090909
+direction_A,totalvi,0.8,Treg,59,24.9,0.4220338983050847
+direction_A,totalvi,0.8,CD8 Naive,48,34.5,0.71875
+direction_A,totalvi,0.8,CD4 CTL,41,19.75,0.4817073170731707
+direction_A,totalvi,0.8,CD8 TCM,34,9.95,0.29264705882352937
+direction_A,totalvi,0.8,NK_CD56bright,30,18.05,0.6016666666666667
+direction_A,totalvi,0.8,MAIT,24,18.75,0.78125
+direction_A,totalvi,0.8,pDC,23,22.65,0.9847826086956522
+direction_A,totalvi,0.8,dnT,14,7.35,0.525
+direction_A,totalvi,0.7,CD14 Mono,937,905.15,0.966008537886873
+direction_A,totalvi,0.7,CD4 Naive,378,200.95,0.5316137566137565
+direction_A,totalvi,0.7,CD4 TCM,327,160.65,0.4912844036697248
+direction_A,totalvi,0.7,CD4 TEM,272,160.85,0.591360294117647
+direction_A,totalvi,0.7,NK,251,248.3,0.9892430278884463
+direction_A,totalvi,0.7,CD8 TEM,147,64.8,0.4408163265306122
+direction_A,totalvi,0.7,CD16 Mono,131,113.05,0.8629770992366412
+direction_A,totalvi,0.7,B naive,128,106.05,0.828515625
+direction_A,totalvi,0.7,cDC2,125,112.05,0.8964
+direction_A,totalvi,0.7,ILC,98,29.25,0.29846938775510207
+direction_A,totalvi,0.7,Eryth,86,44.85,0.5215116279069768
+direction_A,totalvi,0.7,B memory,79,47.15,0.5968354430379746
+direction_A,totalvi,0.7,gdT,71,21.9,0.3084507042253521
+direction_A,totalvi,0.7,B intermediate,66,26.3,0.3984848484848485
+direction_A,totalvi,0.7,Treg,59,14.35,0.24322033898305084
+direction_A,totalvi,0.7,CD8 Naive,48,28.05,0.584375
+direction_A,totalvi,0.7,CD4 CTL,41,13.15,0.3207317073170732
+direction_A,totalvi,0.7,CD8 TCM,34,4.6,0.13529411764705881
+direction_A,totalvi,0.7,NK_CD56bright,30,13.25,0.44166666666666665
+direction_A,totalvi,0.7,MAIT,24,15.9,0.6625
+direction_A,totalvi,0.7,pDC,23,22.5,0.9782608695652174
+direction_A,totalvi,0.7,dnT,14,4.9,0.35000000000000003
+direction_A,totalvi,0.6,CD14 Mono,937,881.05,0.9402881536819636
+direction_A,totalvi,0.6,CD4 Naive,378,128.8,0.3407407407407408
+direction_A,totalvi,0.6,CD4 TCM,327,107.75,0.32951070336391436
+direction_A,totalvi,0.6,CD4 TEM,272,114.95,0.42261029411764706
+direction_A,totalvi,0.6,NK,251,245.85,0.9794820717131474
+direction_A,totalvi,0.6,CD8 TEM,147,44.65,0.30374149659863947
+direction_A,totalvi,0.6,CD16 Mono,131,106.6,0.8137404580152672
+direction_A,totalvi,0.6,B naive,128,91.4,0.7140625
+direction_A,totalvi,0.6,cDC2,125,106.2,0.8496
+direction_A,totalvi,0.6,ILC,98,16.5,0.1683673469387755
+direction_A,totalvi,0.6,Eryth,86,29.7,0.3453488372093023
+direction_A,totalvi,0.6,B memory,79,34.25,0.43354430379746833
+direction_A,totalvi,0.6,gdT,71,14.1,0.19859154929577463
+direction_A,totalvi,0.6,B intermediate,66,14.5,0.2196969696969697
+direction_A,totalvi,0.6,Treg,59,7.45,0.12627118644067797
+direction_A,totalvi,0.6,CD8 Naive,48,20.95,0.43645833333333334
+direction_A,totalvi,0.6,CD4 CTL,41,7.4,0.1804878048780488
+direction_A,totalvi,0.6,CD8 TCM,34,1.75,0.051470588235294115
+direction_A,totalvi,0.6,NK_CD56bright,30,9.5,0.31666666666666665
+direction_A,totalvi,0.6,MAIT,24,12.8,0.5333333333333333
+direction_A,totalvi,0.6,pDC,23,22.05,0.9586956521739131
+direction_A,totalvi,0.6,dnT,14,2.8,0.19999999999999998
+direction_A,totalvi,0.5,CD14 Mono,937,843.95,0.9006937033084312
+direction_A,totalvi,0.5,CD4 Naive,378,63.0,0.16666666666666666
+direction_A,totalvi,0.5,CD4 TCM,327,60.8,0.18593272171253822
+direction_A,totalvi,0.5,CD4 TEM,272,62.2,0.22867647058823531
+direction_A,totalvi,0.5,NK,251,240.25,0.9571713147410359
+direction_A,totalvi,0.5,CD8 TEM,147,25.9,0.17619047619047618
+direction_A,totalvi,0.5,CD16 Mono,131,99.25,0.7576335877862596
+direction_A,totalvi,0.5,B naive,128,72.55,0.566796875
+direction_A,totalvi,0.5,cDC2,125,101.4,0.8112
+direction_A,totalvi,0.5,ILC,98,7.25,0.07397959183673469
+direction_A,totalvi,0.5,Eryth,86,16.3,0.18953488372093025
+direction_A,totalvi,0.5,B memory,79,22.15,0.28037974683544303
+direction_A,totalvi,0.5,gdT,71,7.15,0.10070422535211268
+direction_A,totalvi,0.5,B intermediate,66,6.55,0.09924242424242424
+direction_A,totalvi,0.5,Treg,59,2.85,0.048305084745762714
+direction_A,totalvi,0.5,CD8 Naive,48,11.8,0.24583333333333335
+direction_A,totalvi,0.5,CD4 CTL,41,2.8,0.06829268292682926
+direction_A,totalvi,0.5,CD8 TCM,34,0.65,0.01911764705882353
+direction_A,totalvi,0.5,NK_CD56bright,30,5.95,0.19833333333333333
+direction_A,totalvi,0.5,MAIT,24,8.95,0.3729166666666666
+direction_A,totalvi,0.5,pDC,23,21.3,0.9260869565217391
+direction_A,totalvi,0.5,dnT,14,1.0,0.07142857142857142
+direction_B,scvi_matched,1.0,CD14 Mono,1237,1237.0,1.0
+direction_B,scvi_matched,1.0,CD4 Naive,795,795.0,1.0
+direction_B,scvi_matched,1.0,NK,760,760.0,1.0
+direction_B,scvi_matched,1.0,CD4 TCM,580,580.0,1.0
+direction_B,scvi_matched,1.0,MAIT,356,356.0,1.0
+direction_B,scvi_matched,1.0,CD8 Naive,320,320.0,1.0
+direction_B,scvi_matched,1.0,B naive,315,315.0,1.0
+direction_B,scvi_matched,1.0,CD4 TEM,281,281.0,1.0
+direction_B,scvi_matched,1.0,CD8 TEM,246,246.0,1.0
+direction_B,scvi_matched,1.0,Treg,241,241.0,1.0
+direction_B,scvi_matched,1.0,Eryth,144,144.0,1.0
+direction_B,scvi_matched,1.0,cDC2,135,135.0,1.0
+direction_B,scvi_matched,1.0,CD16 Mono,103,103.0,1.0
+direction_B,scvi_matched,1.0,B memory,99,99.0,1.0
+direction_B,scvi_matched,1.0,CD8 TCM,77,77.0,1.0
+direction_B,scvi_matched,1.0,B intermediate,68,68.0,1.0
+direction_B,scvi_matched,1.0,ILC,65,65.0,1.0
+direction_B,scvi_matched,1.0,gdT,59,59.0,1.0
+direction_B,scvi_matched,1.0,NK_CD56bright,35,35.0,1.0
+direction_B,scvi_matched,1.0,CD4 CTL,24,24.0,1.0
+direction_B,scvi_matched,1.0,pDC,24,24.0,1.0
+direction_B,scvi_matched,0.9,CD14 Mono,1237,1236.65,0.9997170573969282
+direction_B,scvi_matched,0.9,CD4 Naive,795,770.1,0.9686792452830189
+direction_B,scvi_matched,0.9,NK,760,752.45,0.9900657894736843
+direction_B,scvi_matched,0.9,CD4 TCM,580,468.4,0.8075862068965517
+direction_B,scvi_matched,0.9,MAIT,356,197.85,0.5557584269662921
+direction_B,scvi_matched,0.9,CD8 Naive,320,290.95,0.90921875
+direction_B,scvi_matched,0.9,B naive,315,312.5,0.9920634920634921
+direction_B,scvi_matched,0.9,CD4 TEM,281,205.4,0.7309608540925268
+direction_B,scvi_matched,0.9,CD8 TEM,246,214.75,0.8729674796747967
+direction_B,scvi_matched,0.9,Treg,241,202.35,0.8396265560165975
+direction_B,scvi_matched,0.9,Eryth,144,143.55,0.9968750000000001
+direction_B,scvi_matched,0.9,cDC2,135,133.8,0.9911111111111112
+direction_B,scvi_matched,0.9,CD16 Mono,103,102.4,0.9941747572815535
+direction_B,scvi_matched,0.9,B memory,99,86.9,0.8777777777777779
+direction_B,scvi_matched,0.9,CD8 TCM,77,38.7,0.5025974025974026
+direction_B,scvi_matched,0.9,B intermediate,68,61.4,0.9029411764705882
+direction_B,scvi_matched,0.9,ILC,65,39.65,0.61
+direction_B,scvi_matched,0.9,gdT,59,40.05,0.6788135593220338
+direction_B,scvi_matched,0.9,NK_CD56bright,35,29.0,0.8285714285714286
+direction_B,scvi_matched,0.9,CD4 CTL,24,17.2,0.7166666666666667
+direction_B,scvi_matched,0.9,pDC,24,23.95,0.9979166666666667
+direction_B,scvi_matched,0.8,CD14 Mono,1237,1206.85,0.975626515763945
+direction_B,scvi_matched,0.8,CD4 Naive,795,741.5,0.9327044025157233
+direction_B,scvi_matched,0.8,NK,760,746.35,0.9820394736842105
+direction_B,scvi_matched,0.8,CD4 TCM,580,327.15,0.564051724137931
+direction_B,scvi_matched,0.8,MAIT,356,117.9,0.33117977528089887
+direction_B,scvi_matched,0.8,CD8 Naive,320,236.45,0.73890625
+direction_B,scvi_matched,0.8,B naive,315,307.4,0.9758730158730158
+direction_B,scvi_matched,0.8,CD4 TEM,281,151.1,0.5377224199288256
+direction_B,scvi_matched,0.8,CD8 TEM,246,190.6,0.7747967479674797
+direction_B,scvi_matched,0.8,Treg,241,155.85,0.6466804979253111
+direction_B,scvi_matched,0.8,Eryth,144,123.75,0.859375
+direction_B,scvi_matched,0.8,cDC2,135,126.9,0.9400000000000001
+direction_B,scvi_matched,0.8,CD16 Mono,103,100.9,0.979611650485437
+direction_B,scvi_matched,0.8,B memory,99,62.4,0.6303030303030303
+direction_B,scvi_matched,0.8,CD8 TCM,77,23.7,0.3077922077922078
+direction_B,scvi_matched,0.8,B intermediate,68,40.0,0.5882352941176471
+direction_B,scvi_matched,0.8,ILC,65,24.3,0.3738461538461539
+direction_B,scvi_matched,0.8,gdT,59,28.4,0.4813559322033898
+direction_B,scvi_matched,0.8,NK_CD56bright,35,23.6,0.6742857142857144
+direction_B,scvi_matched,0.8,CD4 CTL,24,12.0,0.5
+direction_B,scvi_matched,0.8,pDC,24,23.9,0.9958333333333332
+direction_B,scvi_matched,0.7,CD14 Mono,1237,1166.55,0.9430476960388036
+direction_B,scvi_matched,0.7,CD4 Naive,795,694.8,0.8739622641509434
+direction_B,scvi_matched,0.7,NK,760,737.4,0.9702631578947368
+direction_B,scvi_matched,0.7,CD4 TCM,580,198.9,0.34293103448275863
+direction_B,scvi_matched,0.7,MAIT,356,57.55,0.16165730337078651
+direction_B,scvi_matched,0.7,CD8 Naive,320,176.1,0.5503125
+direction_B,scvi_matched,0.7,B naive,315,300.15,0.9528571428571427
+direction_B,scvi_matched,0.7,CD4 TEM,281,98.2,0.34946619217081853
+direction_B,scvi_matched,0.7,CD8 TEM,246,161.3,0.6556910569105692
+direction_B,scvi_matched,0.7,Treg,241,109.2,0.45311203319502075
+direction_B,scvi_matched,0.7,Eryth,144,98.75,0.6857638888888888
+direction_B,scvi_matched,0.7,cDC2,135,118.1,0.8748148148148148
+direction_B,scvi_matched,0.7,CD16 Mono,103,98.75,0.9587378640776699
+direction_B,scvi_matched,0.7,B memory,99,42.75,0.4318181818181818
+direction_B,scvi_matched,0.7,CD8 TCM,77,12.65,0.16428571428571428
+direction_B,scvi_matched,0.7,B intermediate,68,23.75,0.3492647058823529
+direction_B,scvi_matched,0.7,ILC,65,12.65,0.19461538461538463
+direction_B,scvi_matched,0.7,gdT,59,18.2,0.3084745762711864
+direction_B,scvi_matched,0.7,NK_CD56bright,35,18.9,0.5399999999999999
+direction_B,scvi_matched,0.7,CD4 CTL,24,6.7,0.2791666666666667
+direction_B,scvi_matched,0.7,pDC,24,23.65,0.9854166666666666
+direction_B,scvi_matched,0.6,CD14 Mono,1237,1110.7,0.8978981406628941
+direction_B,scvi_matched,0.6,CD4 Naive,795,621.05,0.781194968553459
+direction_B,scvi_matched,0.6,NK,760,719.65,0.9469078947368421
+direction_B,scvi_matched,0.6,CD4 TCM,580,96.9,0.1670689655172414
+direction_B,scvi_matched,0.6,MAIT,356,18.85,0.05294943820224719
+direction_B,scvi_matched,0.6,CD8 Naive,320,112.35,0.35109375
+direction_B,scvi_matched,0.6,B naive,315,288.55,0.9160317460317461
+direction_B,scvi_matched,0.6,CD4 TEM,281,49.4,0.17580071174377224
+direction_B,scvi_matched,0.6,CD8 TEM,246,121.45,0.49369918699186993
+direction_B,scvi_matched,0.6,Treg,241,63.9,0.26514522821576764
+direction_B,scvi_matched,0.6,Eryth,144,73.0,0.5069444444444444
+direction_B,scvi_matched,0.6,cDC2,135,108.85,0.8062962962962963
+direction_B,scvi_matched,0.6,CD16 Mono,103,96.4,0.9359223300970875
+direction_B,scvi_matched,0.6,B memory,99,26.85,0.27121212121212124
+direction_B,scvi_matched,0.6,CD8 TCM,77,4.85,0.06298701298701298
+direction_B,scvi_matched,0.6,B intermediate,68,10.65,0.15661764705882353
+direction_B,scvi_matched,0.6,ILC,65,4.8,0.07384615384615384
+direction_B,scvi_matched,0.6,gdT,59,9.35,0.15847457627118644
+direction_B,scvi_matched,0.6,NK_CD56bright,35,13.8,0.3942857142857143
+direction_B,scvi_matched,0.6,CD4 CTL,24,3.3,0.13749999999999998
+direction_B,scvi_matched,0.6,pDC,24,23.35,0.9729166666666668
+direction_B,scvi_matched,0.5,CD14 Mono,1237,1039.2,0.8400970088924818
+direction_B,scvi_matched,0.5,CD4 Naive,795,490.6,0.6171069182389938
+direction_B,scvi_matched,0.5,NK,760,686.6,0.903421052631579
+direction_B,scvi_matched,0.5,CD4 TCM,580,33.55,0.05784482758620689
+direction_B,scvi_matched,0.5,MAIT,356,4.5,0.012640449438202247
+direction_B,scvi_matched,0.5,CD8 Naive,320,52.8,0.16499999999999998
+direction_B,scvi_matched,0.5,B naive,315,269.55,0.8557142857142858
+direction_B,scvi_matched,0.5,CD4 TEM,281,14.6,0.05195729537366548
+direction_B,scvi_matched,0.5,CD8 TEM,246,71.0,0.2886178861788618
+direction_B,scvi_matched,0.5,Treg,241,26.7,0.11078838174273858
+direction_B,scvi_matched,0.5,Eryth,144,43.4,0.3013888888888889
+direction_B,scvi_matched,0.5,cDC2,135,99.8,0.7392592592592593
+direction_B,scvi_matched,0.5,CD16 Mono,103,93.8,0.9106796116504854
+direction_B,scvi_matched,0.5,B memory,99,14.55,0.14696969696969697
+direction_B,scvi_matched,0.5,CD8 TCM,77,1.05,0.013636363636363637
+direction_B,scvi_matched,0.5,B intermediate,68,4.05,0.05955882352941176
+direction_B,scvi_matched,0.5,ILC,65,1.3,0.02
+direction_B,scvi_matched,0.5,gdT,59,2.5,0.0423728813559322
+direction_B,scvi_matched,0.5,NK_CD56bright,35,9.3,0.26571428571428574
+direction_B,scvi_matched,0.5,CD4 CTL,24,1.45,0.06041666666666667
+direction_B,scvi_matched,0.5,pDC,24,21.7,0.9041666666666667
+direction_B,totalvi,1.0,CD14 Mono,1237,1237.0,1.0
+direction_B,totalvi,1.0,CD4 Naive,795,795.0,1.0
+direction_B,totalvi,1.0,NK,760,760.0,1.0
+direction_B,totalvi,1.0,CD4 TCM,580,580.0,1.0
+direction_B,totalvi,1.0,MAIT,356,356.0,1.0
+direction_B,totalvi,1.0,CD8 Naive,320,320.0,1.0
+direction_B,totalvi,1.0,B naive,315,315.0,1.0
+direction_B,totalvi,1.0,CD4 TEM,281,281.0,1.0
+direction_B,totalvi,1.0,CD8 TEM,246,246.0,1.0
+direction_B,totalvi,1.0,Treg,241,241.0,1.0
+direction_B,totalvi,1.0,Eryth,144,144.0,1.0
+direction_B,totalvi,1.0,cDC2,135,135.0,1.0
+direction_B,totalvi,1.0,CD16 Mono,103,103.0,1.0
+direction_B,totalvi,1.0,B memory,99,99.0,1.0
+direction_B,totalvi,1.0,CD8 TCM,77,77.0,1.0
+direction_B,totalvi,1.0,B intermediate,68,68.0,1.0
+direction_B,totalvi,1.0,ILC,65,65.0,1.0
+direction_B,totalvi,1.0,gdT,59,59.0,1.0
+direction_B,totalvi,1.0,NK_CD56bright,35,35.0,1.0
+direction_B,totalvi,1.0,CD4 CTL,24,24.0,1.0
+direction_B,totalvi,1.0,pDC,24,24.0,1.0
+direction_B,totalvi,0.9,CD14 Mono,1237,1234.15,0.9976960388035571
+direction_B,totalvi,0.9,CD4 Naive,795,751.95,0.9458490566037736
+direction_B,totalvi,0.9,NK,760,732.3,0.9635526315789473
+direction_B,totalvi,0.9,CD4 TCM,580,509.95,0.8792241379310345
+direction_B,totalvi,0.9,MAIT,356,202.95,0.5700842696629214
+direction_B,totalvi,0.9,CD8 Naive,320,236.8,0.74
+direction_B,totalvi,0.9,B naive,315,312.25,0.9912698412698413
+direction_B,totalvi,0.9,CD4 TEM,281,258.85,0.9211743772241994
+direction_B,totalvi,0.9,CD8 TEM,246,220.35,0.8957317073170732
+direction_B,totalvi,0.9,Treg,241,187.35,0.7773858921161826
+direction_B,totalvi,0.9,Eryth,144,143.1,0.9937499999999999
+direction_B,totalvi,0.9,cDC2,135,133.15,0.9862962962962963
+direction_B,totalvi,0.9,CD16 Mono,103,101.95,0.9898058252427184
+direction_B,totalvi,0.9,B memory,99,89.05,0.8994949494949495
+direction_B,totalvi,0.9,CD8 TCM,77,44.4,0.5766233766233766
+direction_B,totalvi,0.9,B intermediate,68,58.65,0.8624999999999999
+direction_B,totalvi,0.9,ILC,65,48.3,0.7430769230769231
+direction_B,totalvi,0.9,gdT,59,34.7,0.588135593220339
+direction_B,totalvi,0.9,NK_CD56bright,35,29.05,0.8300000000000001
+direction_B,totalvi,0.9,CD4 CTL,24,14.85,0.61875
+direction_B,totalvi,0.9,pDC,24,23.9,0.9958333333333332
+direction_B,totalvi,0.8,CD14 Mono,1237,1205.7,0.9746968472109944
+direction_B,totalvi,0.8,CD4 Naive,795,677.3,0.8519496855345912
+direction_B,totalvi,0.8,NK,760,695.15,0.9146710526315789
+direction_B,totalvi,0.8,CD4 TCM,580,413.65,0.7131896551724137
+direction_B,totalvi,0.8,MAIT,356,120.25,0.3377808988764045
+direction_B,totalvi,0.8,CD8 Naive,320,181.7,0.5678124999999999
+direction_B,totalvi,0.8,B naive,315,307.1,0.974920634920635
+direction_B,totalvi,0.8,CD4 TEM,281,227.5,0.8096085409252669
+direction_B,totalvi,0.8,CD8 TEM,246,198.05,0.8050813008130082
+direction_B,totalvi,0.8,Treg,241,130.95,0.5433609958506224
+direction_B,totalvi,0.8,Eryth,144,125.1,0.8687499999999999
+direction_B,totalvi,0.8,cDC2,135,128.4,0.9511111111111111
+direction_B,totalvi,0.8,CD16 Mono,103,100.3,0.9737864077669902
+direction_B,totalvi,0.8,B memory,99,73.3,0.7404040404040404
+direction_B,totalvi,0.8,CD8 TCM,77,29.9,0.3883116883116883
+direction_B,totalvi,0.8,B intermediate,68,41.1,0.6044117647058824
+direction_B,totalvi,0.8,ILC,65,35.4,0.5446153846153846
+direction_B,totalvi,0.8,gdT,59,22.2,0.376271186440678
+direction_B,totalvi,0.8,NK_CD56bright,35,23.35,0.6671428571428571
+direction_B,totalvi,0.8,CD4 CTL,24,10.9,0.45416666666666666
+direction_B,totalvi,0.8,pDC,24,23.7,0.9874999999999999
+direction_B,totalvi,0.7,CD14 Mono,1237,1165.4,0.9421180274858529
+direction_B,totalvi,0.7,CD4 Naive,795,587.8,0.7393710691823899
+direction_B,totalvi,0.7,NK,760,654.0,0.8605263157894737
+direction_B,totalvi,0.7,CD4 TCM,580,309.55,0.5337068965517242
+direction_B,totalvi,0.7,MAIT,356,63.15,0.1773876404494382
+direction_B,totalvi,0.7,CD8 Naive,320,127.7,0.3990625
+direction_B,totalvi,0.7,B naive,315,299.2,0.9498412698412698
+direction_B,totalvi,0.7,CD4 TEM,281,191.2,0.6804270462633452
+direction_B,totalvi,0.7,CD8 TEM,246,175.65,0.7140243902439024
+direction_B,totalvi,0.7,Treg,241,84.1,0.34896265560165973
+direction_B,totalvi,0.7,Eryth,144,105.0,0.7291666666666666
+direction_B,totalvi,0.7,cDC2,135,122.5,0.9074074074074074
+direction_B,totalvi,0.7,CD16 Mono,103,98.6,0.9572815533980582
+direction_B,totalvi,0.7,B memory,99,59.5,0.601010101010101
+direction_B,totalvi,0.7,CD8 TCM,77,18.65,0.24220779220779218
+direction_B,totalvi,0.7,B intermediate,68,27.1,0.3985294117647059
+direction_B,totalvi,0.7,ILC,65,23.85,0.36692307692307696
+direction_B,totalvi,0.7,gdT,59,13.2,0.22372881355932203
+direction_B,totalvi,0.7,NK_CD56bright,35,17.8,0.5085714285714286
+direction_B,totalvi,0.7,CD4 CTL,24,7.75,0.3229166666666667
+direction_B,totalvi,0.7,pDC,24,23.3,0.9708333333333333
+direction_B,totalvi,0.6,CD14 Mono,1237,1116.75,0.902789005658852
+direction_B,totalvi,0.6,CD4 Naive,795,470.35,0.5916352201257862
+direction_B,totalvi,0.6,NK,760,605.2,0.7963157894736843
+direction_B,totalvi,0.6,CD4 TCM,580,205.85,0.3549137931034483
+direction_B,totalvi,0.6,MAIT,356,29.75,0.08356741573033707
+direction_B,totalvi,0.6,CD8 Naive,320,79.25,0.24765625
+direction_B,totalvi,0.6,B naive,315,289.9,0.9203174603174602
+direction_B,totalvi,0.6,CD4 TEM,281,152.1,0.5412811387900356
+direction_B,totalvi,0.6,CD8 TEM,246,149.3,0.6069105691056911
+direction_B,totalvi,0.6,Treg,241,47.15,0.19564315352697095
+direction_B,totalvi,0.6,Eryth,144,85.0,0.5902777777777778
+direction_B,totalvi,0.6,cDC2,135,115.55,0.8559259259259259
+direction_B,totalvi,0.6,CD16 Mono,103,96.6,0.9378640776699029
+direction_B,totalvi,0.6,B memory,99,46.1,0.46565656565656566
+direction_B,totalvi,0.6,CD8 TCM,77,11.65,0.1512987012987013
+direction_B,totalvi,0.6,B intermediate,68,15.15,0.22279411764705884
+direction_B,totalvi,0.6,ILC,65,14.4,0.22153846153846155
+direction_B,totalvi,0.6,gdT,59,7.3,0.12372881355932203
+direction_B,totalvi,0.6,NK_CD56bright,35,13.1,0.3742857142857143
+direction_B,totalvi,0.6,CD4 CTL,24,4.65,0.19375
+direction_B,totalvi,0.6,pDC,24,22.9,0.9541666666666666
+direction_B,totalvi,0.5,CD14 Mono,1237,1054.1,0.8521422797089733
+direction_B,totalvi,0.5,CD4 Naive,795,333.9,0.42
+direction_B,totalvi,0.5,NK,760,542.9,0.7143421052631579
+direction_B,totalvi,0.5,CD4 TCM,580,115.0,0.19827586206896552
+direction_B,totalvi,0.5,MAIT,356,11.2,0.031460674157303366
+direction_B,totalvi,0.5,CD8 Naive,320,44.4,0.13874999999999998
+direction_B,totalvi,0.5,B naive,315,276.45,0.8776190476190476
+direction_B,totalvi,0.5,CD4 TEM,281,105.3,0.3747330960854092
+direction_B,totalvi,0.5,CD8 TEM,246,117.5,0.47764227642276424
+direction_B,totalvi,0.5,Treg,241,23.8,0.0987551867219917
+direction_B,totalvi,0.5,Eryth,144,62.05,0.43090277777777775
+direction_B,totalvi,0.5,cDC2,135,108.35,0.8025925925925925
+direction_B,totalvi,0.5,CD16 Mono,103,94.0,0.912621359223301
+direction_B,totalvi,0.5,B memory,99,34.0,0.3434343434343434
+direction_B,totalvi,0.5,CD8 TCM,77,6.75,0.08766233766233766
+direction_B,totalvi,0.5,B intermediate,68,7.5,0.11029411764705882
+direction_B,totalvi,0.5,ILC,65,8.1,0.12461538461538461
+direction_B,totalvi,0.5,gdT,59,3.5,0.059322033898305086
+direction_B,totalvi,0.5,NK_CD56bright,35,9.05,0.2585714285714286
+direction_B,totalvi,0.5,CD4 CTL,24,2.35,0.09791666666666667
+direction_B,totalvi,0.5,pDC,24,21.8,0.9083333333333333

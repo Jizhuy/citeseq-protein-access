@@ -1,0 +1,9 @@
+direction,model,metric,mean,std,min,max
+direction_A,scvi_matched,accuracy,0.0,0.0,0.0,0.0
+direction_A,scvi_matched,macro_f1,0.0,0.0,0.0,0.0
+direction_A,totalvi,accuracy,0.0,0.0,0.0,0.0
+direction_A,totalvi,macro_f1,0.0,0.0,0.0,0.0
+direction_B,scvi_matched,accuracy,0.0,0.0,0.0,0.0
+direction_B,scvi_matched,macro_f1,0.0,0.0,0.0,0.0
+direction_B,totalvi,accuracy,0.0,0.0,0.0,0.0
+direction_B,totalvi,macro_f1,0.0,0.0,0.0,0.0

@@ -1,0 +1,188 @@
+{
+  "repro_check": [
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "scvi_matched",
+      "model_seed": 0,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6510217830627849,
+      "phase11_macro_f1": 0.6510217830627849,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "scvi_matched",
+      "model_seed": 1,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6441927129587905,
+      "phase11_macro_f1": 0.6441927129587905,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "scvi_matched",
+      "model_seed": 2,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6850659240505798,
+      "phase11_macro_f1": 0.6850659240505798,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "scvi_matched",
+      "model_seed": 3,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6651163604208098,
+      "phase11_macro_f1": 0.6651163604208098,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "scvi_matched",
+      "model_seed": 4,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6577255382600048,
+      "phase11_macro_f1": 0.6577255382600048,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "totalvi",
+      "model_seed": 0,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6357672182574826,
+      "phase11_macro_f1": 0.6357672182574826,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "totalvi",
+      "model_seed": 1,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6553804895452042,
+      "phase11_macro_f1": 0.6553804895452042,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "totalvi",
+      "model_seed": 2,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6646659421957736,
+      "phase11_macro_f1": 0.6646659421957736,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "totalvi",
+      "model_seed": 3,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6402745954658015,
+      "phase11_macro_f1": 0.6402745954658015,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc10k_to_pbmc5k",
+      "model": "totalvi",
+      "model_seed": 4,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6678916332453284,
+      "phase11_macro_f1": 0.6678916332453284,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "scvi_matched",
+      "model_seed": 0,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6402484093156036,
+      "phase11_macro_f1": 0.6402484093156036,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "scvi_matched",
+      "model_seed": 1,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.5707669476871889,
+      "phase11_macro_f1": 0.5707669476871889,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "scvi_matched",
+      "model_seed": 2,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6114909059169635,
+      "phase11_macro_f1": 0.6114909059169635,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "scvi_matched",
+      "model_seed": 3,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.5844995089746119,
+      "phase11_macro_f1": 0.5844995089746119,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "scvi_matched",
+      "model_seed": 4,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6208253115953314,
+      "phase11_macro_f1": 0.6208253115953314,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "totalvi",
+      "model_seed": 0,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6157476799755611,
+      "phase11_macro_f1": 0.6157476799755611,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "totalvi",
+      "model_seed": 1,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6101999641645781,
+      "phase11_macro_f1": 0.6101999641645781,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "totalvi",
+      "model_seed": 2,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6869075207835412,
+      "phase11_macro_f1": 0.6869075207835412,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "totalvi",
+      "model_seed": 3,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6714806524889094,
+      "phase11_macro_f1": 0.6714806524889094,
+      "abs_delta": 0.0
+    },
+    {
+      "direction": "pbmc5k_to_pbmc10k",
+      "model": "totalvi",
+      "model_seed": 4,
+      "label_level": "l2",
+      "phase10_macro_f1": 0.6596235270807813,
+      "phase11_macro_f1": 0.6596235270807813,
+      "abs_delta": 0.0
+    }
+  ],
+  "all_reproduced": true,
+  "tolerance": 1e-06,
+  "latent_status": "PHASE 10 persisted only the pre-adaptation source reference model (model.pt). The scArches-adapted query model, which defines the post-adaptation coordinate system used for every PHASE 10 metric, was deleted after its latents were written. Posterior variance for target cells in that coordinate system is therefore not recoverable without re-running query adaptation, which would be retraining.",
+  "timestamp_utc": "2026-09-08T12:58:31.063405+00:00"
+}

@@ -1,0 +1,8 @@
+external_label,n_cells,proportion,rare,annotation_source,label_derivation,n_cells_baseline
+CD4T_Naive,4778,0.2916615797826883,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),1378
+CD4T_Mem,3035,0.18526431449151506,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),903
+CD8T_Naive,2648,0.16164082529605664,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),908
+CD8T_Mem,1778,0.10853375656208034,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),505
+CD14_Mono,1653,0.100903430594555,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),927
+NK,1409,0.08600903430594554,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),336
+B,1081,0.06598705896715908,False,author Celltype_Annotation,ADT protein-marker gated (Lawlor Methods),250

@@ -1,0 +1,302 @@
+{
+  "direction": "pbmc5k_to_pbmc10k",
+  "seed": 0,
+  "label_level": "l2",
+  "n_source_eval": 3355,
+  "n_target_eval": 5964,
+  "n_classes": 21,
+  "timestamp_utc": "2026-09-08T12:29:11.614706+00:00",
+  "models": {
+    "scvi_matched": {
+      "phase10_macro_f1": 0.6402484093156036,
+      "phase11_macro_f1": 0.6402484093156036,
+      "abs_delta_macro_f1": 0.0,
+      "phase10_accuracy": 0.7811871227364185,
+      "phase11_accuracy": 0.7811871227364185,
+      "abs_delta_accuracy": 0.0,
+      "reproduced": true,
+      "balanced_accuracy": 0.6441514414553172,
+      "weighted_f1": 0.763553363529872,
+      "error_prevalence": 0.21881287726358148,
+      "error_auroc_u_pred": 0.8626811370733036,
+      "error_auprc_u_pred": 0.6073083790827701,
+      "error_auroc_entropy": 0.867063706466864,
+      "error_auroc_neg_margin": 0.8492827707917523,
+      "nll": 0.5953170548513134,
+      "brier": 0.2985765812861604,
+      "ece_equal_frequency": 0.01961116137958709,
+      "ece_equal_width": 0.01804367560795857,
+      "n_reliability_bins_eq_freq": 15,
+      "reliability_bin_counts": [
+        398,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        398
+      ],
+      "aurc": 0.05932861206790746,
+      "coverage_grid": [
+        {
+          "coverage": 1.0,
+          "n_retained": 5964,
+          "accuracy": 0.7811871227364185,
+          "risk": 0.21881287726358145,
+          "macro_f1": 0.6402484093156036,
+          "balanced_accuracy": 0.6441514414553172
+        },
+        {
+          "coverage": 0.9,
+          "n_retained": 5368,
+          "accuracy": 0.8312220566318927,
+          "risk": 0.16877794336810725,
+          "macro_f1": 0.6570565809986239,
+          "balanced_accuracy": 0.6614303755674948
+        },
+        {
+          "coverage": 0.8,
+          "n_retained": 4771,
+          "accuracy": 0.8734018025571159,
+          "risk": 0.12659819744288414,
+          "macro_f1": 0.679880699670853,
+          "balanced_accuracy": 0.6799781574607144
+        },
+        {
+          "coverage": 0.7,
+          "n_retained": 4175,
+          "accuracy": 0.9094610778443114,
+          "risk": 0.0905389221556886,
+          "macro_f1": 0.697881427976897,
+          "balanced_accuracy": 0.6849240899514006
+        },
+        {
+          "coverage": 0.6,
+          "n_retained": 3578,
+          "accuracy": 0.9441028507546115,
+          "risk": 0.05589714924538847,
+          "macro_f1": 0.7372281840504615,
+          "balanced_accuracy": 0.7081496164388591
+        },
+        {
+          "coverage": 0.5,
+          "n_retained": 2982,
+          "accuracy": 0.971495640509725,
+          "risk": 0.028504359490274966,
+          "macro_f1": 0.7243273217329655,
+          "balanced_accuracy": 0.6919277036654532
+        }
+      ],
+      "error_enrichment": {
+        "error_rate_top_10pct": 0.6694630872483222,
+        "error_rate_top_20pct": 0.5875943000838223,
+        "error_rate_bottom_20pct": 0.0008382229673093043,
+        "error_enrichment_top10_over_bottom20": 798.6694630872483
+      },
+      "median_u_pred": 0.13394170999526978,
+      "probs_roundtrip_ok": true,
+      "probs_path": "/home/jizhu/research/multiomics_robustness/results/phase11_uncertainty/arrays/gate_scvi_matched_pbmc5k_to_pbmc10k_seed0_l2.npz",
+      "probs_sum_to_one": true,
+      "classes_sorted": [
+        "B intermediate",
+        "B memory",
+        "B naive",
+        "CD14 Mono",
+        "CD16 Mono",
+        "CD4 CTL",
+        "CD4 Naive",
+        "CD4 TCM",
+        "CD4 TEM",
+        "CD8 Naive",
+        "CD8 TCM",
+        "CD8 TEM",
+        "Eryth",
+        "ILC",
+        "MAIT",
+        "NK",
+        "NK_CD56bright",
+        "Treg",
+        "cDC2",
+        "gdT",
+        "pDC"
+      ],
+      "classes_match_plan": true
+    },
+    "totalvi": {
+      "phase10_macro_f1": 0.6157476799755611,
+      "phase11_macro_f1": 0.6157476799755611,
+      "abs_delta_macro_f1": 0.0,
+      "phase10_accuracy": 0.7845405767940979,
+      "phase11_accuracy": 0.7845405767940979,
+      "abs_delta_accuracy": 0.0,
+      "reproduced": true,
+      "balanced_accuracy": 0.6269622332487363,
+      "weighted_f1": 0.7621321542809399,
+      "error_prevalence": 0.21545942320590208,
+      "error_auroc_u_pred": 0.873314578009369,
+      "error_auprc_u_pred": 0.6139366488085434,
+      "error_auroc_entropy": 0.8823849919709141,
+      "error_auroc_neg_margin": 0.858841599563577,
+      "nll": 0.558148884399083,
+      "brier": 0.28769000291148733,
+      "ece_equal_frequency": 0.03724701841512356,
+      "ece_equal_width": 0.03995579245764484,
+      "n_reliability_bins_eq_freq": 15,
+      "reliability_bin_counts": [
+        398,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        397,
+        398,
+        398
+      ],
+      "aurc": 0.05597298960138324,
+      "coverage_grid": [
+        {
+          "coverage": 1.0,
+          "n_retained": 5964,
+          "accuracy": 0.7845405767940979,
+          "risk": 0.21545942320590206,
+          "macro_f1": 0.6157476799755611,
+          "balanced_accuracy": 0.6269622332487363
+        },
+        {
+          "coverage": 0.9,
+          "n_retained": 5368,
+          "accuracy": 0.8347615499254843,
+          "risk": 0.16523845007451565,
+          "macro_f1": 0.6201863769928417,
+          "balanced_accuracy": 0.6330199478695302
+        },
+        {
+          "coverage": 0.8,
+          "n_retained": 4771,
+          "accuracy": 0.8813665898134563,
+          "risk": 0.11863341018654372,
+          "macro_f1": 0.6292896630808746,
+          "balanced_accuracy": 0.6387431022568212
+        },
+        {
+          "coverage": 0.7,
+          "n_retained": 4175,
+          "accuracy": 0.9262275449101797,
+          "risk": 0.07377245508982033,
+          "macro_f1": 0.6566553167598095,
+          "balanced_accuracy": 0.6570426392223409
+        },
+        {
+          "coverage": 0.6,
+          "n_retained": 3578,
+          "accuracy": 0.9555617663499162,
+          "risk": 0.044438233650083814,
+          "macro_f1": 0.6683116811574659,
+          "balanced_accuracy": 0.6548501636086852
+        },
+        {
+          "coverage": 0.5,
+          "n_retained": 2982,
+          "accuracy": 0.971495640509725,
+          "risk": 0.028504359490274966,
+          "macro_f1": 0.6738391320279375,
+          "balanced_accuracy": 0.6529256580132018
+        }
+      ],
+      "error_enrichment": {
+        "error_rate_top_10pct": 0.6677852348993288,
+        "error_rate_top_20pct": 0.6026823134953898,
+        "error_rate_bottom_20pct": 0.004191114836546521,
+        "error_enrichment_top10_over_bottom20": 159.33355704697985
+      },
+      "median_u_pred": 0.14904221892356873,
+      "probs_roundtrip_ok": true,
+      "probs_path": "/home/jizhu/research/multiomics_robustness/results/phase11_uncertainty/arrays/gate_totalvi_pbmc5k_to_pbmc10k_seed0_l2.npz",
+      "probs_sum_to_one": true,
+      "classes_sorted": [
+        "B intermediate",
+        "B memory",
+        "B naive",
+        "CD14 Mono",
+        "CD16 Mono",
+        "CD4 CTL",
+        "CD4 Naive",
+        "CD4 TCM",
+        "CD4 TEM",
+        "CD8 Naive",
+        "CD8 TCM",
+        "CD8 TEM",
+        "Eryth",
+        "ILC",
+        "MAIT",
+        "NK",
+        "NK_CD56bright",
+        "Treg",
+        "cDC2",
+        "gdT",
+        "pDC"
+      ],
+      "classes_match_plan": true
+    }
+  },
+  "repro_ok": true,
+  "leakage_check": {
+    "target_labels_used_in_fit": false,
+    "source_target_cell_overlap": 0,
+    "note": "Classifier fit uses source latents and source labels only."
+  },
+  "process_rss_mb": 1039.546875,
+  "posterior_api_probe": {
+    "direction": "pbmc5k_to_pbmc10k",
+    "model": "scvi_matched",
+    "seed": 0,
+    "model_dir": "/home/jizhu/research/multiomics_robustness/results/phase10_cross_dataset/models/pbmc5k_to_pbmc10k/scvi_matched/seed0_cuda",
+    "files_present": [
+      "model.pt",
+      "query_training_history.csv",
+      "source_training_history.csv"
+    ],
+    "adapted_query_model_saved": false,
+    "loaded": true,
+    "latent_distribution": "normal",
+    "n_latent": 20,
+    "return_dist_supported": true,
+    "qzm_shape": [
+      3994,
+      20
+    ],
+    "qzv_shape": [
+      3994,
+      20
+    ],
+    "qzv_all_positive": true,
+    "qzv_mean": 0.0733615830540657,
+    "qzv_min": 0.0006006446201354265,
+    "qzv_max": 0.4124130308628082,
+    "qzm_equals_give_mean": true,
+    "source_model_matches_saved_source_model_latent": true,
+    "source_model_matches_saved_adapted_latent": true,
+    "adapted_vs_source_model_mean_shift": 0.0,
+    "adapted_vs_source_model_median_shift": 0.0,
+    "source_latent_norm_mean": 4.548969268798828,
+    "relative_shift": 0.0,
+    "cuda_peak_allocated_mb": 161.6630859375,
+    "cuda_peak_reserved_mb": 162.0,
+    "process_rss_mb": 1624.00390625
+  }
+}

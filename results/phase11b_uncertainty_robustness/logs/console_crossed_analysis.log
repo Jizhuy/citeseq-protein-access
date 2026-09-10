@@ -1,0 +1,78 @@
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  warnings.warn(msg, FutureWarning)
+/home/jizhu/miniconda3/envs/multiomics_robustness/lib/python3.11/site-packages/anndata/utils.py:434: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  warnings.warn(msg, FutureWarning)
+2026-09-09 22:42:00,012 | INFO | phase11b_crossed | === crossed stage score (2026-09-09T12:42:00.012271+00:00) ===
+2026-09-09 22:42:06,576 | INFO | phase11b_crossed | crossed setup: 20 common l2 classes, 3305 fixed target cells
+2026-09-09 22:42:07,000 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed00 macroF1=0.6213 AUROC=0.8476
+2026-09-09 22:42:07,387 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed01 macroF1=0.5741 AUROC=0.8389
+2026-09-09 22:42:07,806 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed02 macroF1=0.6088 AUROC=0.8381
+2026-09-09 22:42:08,194 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed03 macroF1=0.6242 AUROC=0.8286
+2026-09-09 22:42:08,611 | INFO | phase11b_crossed | direction_A__scvi_matched__subset0__seed04 macroF1=0.6176 AUROC=0.8276
+2026-09-09 22:42:09,119 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed00 macroF1=0.6059 AUROC=0.8235
+2026-09-09 22:42:09,528 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed01 macroF1=0.6107 AUROC=0.8591
+2026-09-09 22:42:09,982 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed02 macroF1=0.6144 AUROC=0.8519
+2026-09-09 22:42:10,493 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed03 macroF1=0.6113 AUROC=0.8381
+2026-09-09 22:42:10,946 | INFO | phase11b_crossed | direction_A__totalvi__subset0__seed04 macroF1=0.6085 AUROC=0.8376
+2026-09-09 22:42:11,296 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed00 macroF1=0.6020 AUROC=0.8428
+2026-09-09 22:42:11,669 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed01 macroF1=0.6023 AUROC=0.8476
+2026-09-09 22:42:12,016 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed02 macroF1=0.6081 AUROC=0.8361
+2026-09-09 22:42:12,409 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed03 macroF1=0.5629 AUROC=0.8390
+2026-09-09 22:42:12,769 | INFO | phase11b_crossed | direction_A__scvi_matched__subset1__seed04 macroF1=0.5921 AUROC=0.8356
+2026-09-09 22:42:13,143 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed00 macroF1=0.6154 AUROC=0.8333
+2026-09-09 22:42:13,536 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed01 macroF1=0.5824 AUROC=0.8356
+2026-09-09 22:42:13,987 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed02 macroF1=0.6084 AUROC=0.8522
+2026-09-09 22:42:14,461 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed03 macroF1=0.6268 AUROC=0.8461
+2026-09-09 22:42:14,917 | INFO | phase11b_crossed | direction_A__totalvi__subset1__seed04 macroF1=0.6213 AUROC=0.8194
+2026-09-09 22:42:15,293 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed00 macroF1=0.6080 AUROC=0.8426
+2026-09-09 22:42:15,656 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed01 macroF1=0.5951 AUROC=0.8432
+2026-09-09 22:42:16,017 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed02 macroF1=0.6057 AUROC=0.8267
+2026-09-09 22:42:16,381 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed03 macroF1=0.5815 AUROC=0.8337
+2026-09-09 22:42:16,762 | INFO | phase11b_crossed | direction_A__scvi_matched__subset2__seed04 macroF1=0.5808 AUROC=0.8430
+2026-09-09 22:42:17,197 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed00 macroF1=0.6206 AUROC=0.8405
+2026-09-09 22:42:17,724 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed01 macroF1=0.6223 AUROC=0.8552
+2026-09-09 22:42:18,244 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed02 macroF1=0.6012 AUROC=0.8355
+2026-09-09 22:42:18,724 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed03 macroF1=0.6121 AUROC=0.8407
+2026-09-09 22:42:19,179 | INFO | phase11b_crossed | direction_A__totalvi__subset2__seed04 macroF1=0.6056 AUROC=0.8409
+2026-09-09 22:42:19,549 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed00 macroF1=0.5917 AUROC=0.8414
+2026-09-09 22:42:19,937 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed01 macroF1=0.6205 AUROC=0.8460
+2026-09-09 22:42:20,295 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed02 macroF1=0.5912 AUROC=0.8162
+2026-09-09 22:42:20,660 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed03 macroF1=0.6067 AUROC=0.8366
+2026-09-09 22:42:21,028 | INFO | phase11b_crossed | direction_A__scvi_matched__subset3__seed04 macroF1=0.5942 AUROC=0.8241
+2026-09-09 22:42:21,424 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed00 macroF1=0.6401 AUROC=0.8380
+2026-09-09 22:42:21,842 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed01 macroF1=0.5892 AUROC=0.8410
+2026-09-09 22:42:22,271 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed02 macroF1=0.6163 AUROC=0.8495
+2026-09-09 22:42:22,737 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed03 macroF1=0.6286 AUROC=0.8365
+2026-09-09 22:42:23,216 | INFO | phase11b_crossed | direction_A__totalvi__subset3__seed04 macroF1=0.6328 AUROC=0.8378
+2026-09-09 22:42:23,573 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed00 macroF1=0.5777 AUROC=0.8483
+2026-09-09 22:42:23,920 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed01 macroF1=0.6283 AUROC=0.8417
+2026-09-09 22:42:24,272 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed02 macroF1=0.5923 AUROC=0.8441
+2026-09-09 22:42:24,640 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed03 macroF1=0.5933 AUROC=0.8418
+2026-09-09 22:42:24,992 | INFO | phase11b_crossed | direction_A__scvi_matched__subset4__seed04 macroF1=0.6028 AUROC=0.8276
+2026-09-09 22:42:25,426 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed00 macroF1=0.5955 AUROC=0.8454
+2026-09-09 22:42:25,862 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed01 macroF1=0.5981 AUROC=0.8380
+2026-09-09 22:42:26,266 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed02 macroF1=0.5991 AUROC=0.8489
+2026-09-09 22:42:26,702 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed03 macroF1=0.6204 AUROC=0.8555
+2026-09-09 22:42:27,156 | INFO | phase11b_crossed | direction_A__totalvi__subset4__seed04 macroF1=0.5861 AUROC=0.8229
+2026-09-09 22:42:27,314 | INFO | phase11b_crossed | score done: 50 rows
+2026-09-09 22:42:27,315 | INFO | phase11b_crossed | === crossed stage variance (2026-09-09T12:42:27.315130+00:00) ===
+2026-09-09 22:42:27,337 | INFO | phase11b_crossed | variance done: 21 rows
+2026-09-09 22:42:27,337 | INFO | phase11b_crossed | === crossed stage percell (2026-09-09T12:42:27.337867+00:00) ===
+2026-09-09 22:42:31,966 | INFO | phase11b_crossed | crossed setup: 20 common l2 classes, 3305 fixed target cells
+2026-09-09 22:42:32,496 | INFO | phase11b_crossed | scvi_matched full-source ensemble over 20 seeds aligned to 3305 crossed cells (ensemble accuracy 0.8254)
+2026-09-09 22:42:32,517 | INFO | phase11b_crossed | scvi_matched per-cell decomposition done (median source frac 0.106, seed frac 0.007)
+2026-09-09 22:42:33,043 | INFO | phase11b_crossed | totalvi full-source ensemble over 20 seeds aligned to 3305 crossed cells (ensemble accuracy 0.8339)
+2026-09-09 22:42:33,063 | INFO | phase11b_crossed | totalvi per-cell decomposition done (median source frac 0.053, seed frac 0.020)
+2026-09-09 22:42:33,300 | INFO | phase11b_crossed | percell done
+2026-09-09 22:42:33,302 | INFO | phase11b_crossed | === crossed stage assoc (2026-09-09T12:42:33.302010+00:00) ===
+2026-09-09 22:42:33,378 | INFO | phase11b_crossed | assoc done

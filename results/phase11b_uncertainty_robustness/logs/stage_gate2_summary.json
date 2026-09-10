@@ -1,0 +1,8 @@
+{
+  "stage": "gate2",
+  "n_jobs": 2,
+  "n_completed_now": 2,
+  "n_failed": 0,
+  "failures": [],
+  "timestamp_utc": "2026-09-08T13:40:57.648760+00:00"
+}
