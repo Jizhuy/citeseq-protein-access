@@ -1,0 +1,181 @@
+setting,representation,cell_type,f1,n_test
+development_HC,RNA_PCA_10,ASDC,1.0,1
+development_HC,RNA_PCA_10,B intermediate,0.71875,34
+development_HC,RNA_PCA_10,B memory,0.8539325842696629,45
+development_HC,RNA_PCA_10,B naive,0.9502762430939227,88
+development_HC,RNA_PCA_10,CD14 Mono,0.9621125143513203,426
+development_HC,RNA_PCA_10,CD16 Mono,0.954954954954955,58
+development_HC,RNA_PCA_10,CD4 CTL,0.26666666666666666,9
+development_HC,RNA_PCA_10,CD4 Naive,0.836852207293666,241
+development_HC,RNA_PCA_10,CD4 Proliferating,0.6666666666666666,2
+development_HC,RNA_PCA_10,CD4 TCM,0.7606382978723404,178
+development_HC,RNA_PCA_10,CD4 TEM,0.7804878048780488,113
+development_HC,RNA_PCA_10,CD8 Naive,0.656934306569343,69
+development_HC,RNA_PCA_10,CD8 Proliferating,0.0,3
+development_HC,RNA_PCA_10,CD8 TCM,0.14285714285714285,25
+development_HC,RNA_PCA_10,CD8 TEM,0.7675675675675676,83
+development_HC,RNA_PCA_10,Eryth,0.7191011235955056,51
+development_HC,RNA_PCA_10,HSPC,1.0,1
+development_HC,RNA_PCA_10,ILC,0.35294117647058826,24
+development_HC,RNA_PCA_10,MAIT,0.9166666666666666,71
+development_HC,RNA_PCA_10,NK,0.9765013054830287,187
+development_HC,RNA_PCA_10,NK Proliferating,0.2222222222222222,6
+development_HC,RNA_PCA_10,NK_CD56bright,0.8,11
+development_HC,RNA_PCA_10,Plasmablast,1.0,3
+development_HC,RNA_PCA_10,Platelet,0.8,2
+development_HC,RNA_PCA_10,Treg,0.509090909090909,62
+development_HC,RNA_PCA_10,cDC1,0.0,3
+development_HC,RNA_PCA_10,cDC2,0.9454545454545454,54
+development_HC,RNA_PCA_10,dnT,0.20689655172413793,25
+development_HC,RNA_PCA_10,gdT,0.22727272727272727,35
+development_HC,RNA_PCA_10,pDC,1.0,11
+development_HC,protein_PCA_10,ASDC,0.0,1
+development_HC,protein_PCA_10,B intermediate,0.26666666666666666,34
+development_HC,protein_PCA_10,B memory,0.3855421686746988,45
+development_HC,protein_PCA_10,B naive,0.7559808612440191,88
+development_HC,protein_PCA_10,CD14 Mono,0.9053763440860215,426
+development_HC,protein_PCA_10,CD16 Mono,0.5979381443298969,58
+development_HC,protein_PCA_10,CD4 CTL,0.5714285714285714,9
+development_HC,protein_PCA_10,CD4 Naive,0.8625954198473282,241
+development_HC,protein_PCA_10,CD4 Proliferating,0.0,2
+development_HC,protein_PCA_10,CD4 TCM,0.6492146596858639,178
+development_HC,protein_PCA_10,CD4 TEM,0.5320197044334976,113
+development_HC,protein_PCA_10,CD8 Naive,0.9315068493150684,69
+development_HC,protein_PCA_10,CD8 Proliferating,0.0,3
+development_HC,protein_PCA_10,CD8 TCM,0.5,25
+development_HC,protein_PCA_10,CD8 TEM,0.8522727272727273,83
+development_HC,protein_PCA_10,Eryth,0.1724137931034483,51
+development_HC,protein_PCA_10,HSPC,1.0,1
+development_HC,protein_PCA_10,ILC,0.29411764705882354,24
+development_HC,protein_PCA_10,MAIT,0.8843537414965986,71
+development_HC,protein_PCA_10,NK,0.9689119170984456,187
+development_HC,protein_PCA_10,NK Proliferating,0.0,6
+development_HC,protein_PCA_10,NK_CD56bright,0.7368421052631579,11
+development_HC,protein_PCA_10,Plasmablast,0.0,3
+development_HC,protein_PCA_10,Platelet,0.6666666666666666,2
+development_HC,protein_PCA_10,Treg,0.7796610169491526,62
+development_HC,protein_PCA_10,cDC1,0.0,3
+development_HC,protein_PCA_10,cDC2,0.6122448979591837,54
+development_HC,protein_PCA_10,dnT,0.25,25
+development_HC,protein_PCA_10,gdT,0.4074074074074074,35
+development_HC,protein_PCA_10,pDC,0.7777777777777778,11
+development_HC,concat_PCA_10_10,ASDC,1.0,1
+development_HC,concat_PCA_10_10,B intermediate,0.7213114754098361,34
+development_HC,concat_PCA_10_10,B memory,0.8172043010752689,45
+development_HC,concat_PCA_10_10,B naive,0.9666666666666667,88
+development_HC,concat_PCA_10_10,CD14 Mono,0.9655963302752294,426
+development_HC,concat_PCA_10_10,CD16 Mono,0.954954954954955,58
+development_HC,concat_PCA_10_10,CD4 CTL,0.9,9
+development_HC,concat_PCA_10_10,CD4 Naive,0.8988326848249028,241
+development_HC,concat_PCA_10_10,CD4 Proliferating,0.0,2
+development_HC,concat_PCA_10_10,CD4 TCM,0.8045325779036827,178
+development_HC,concat_PCA_10_10,CD4 TEM,0.8266666666666667,113
+development_HC,concat_PCA_10_10,CD8 Naive,0.971830985915493,69
+development_HC,concat_PCA_10_10,CD8 Proliferating,0.0,3
+development_HC,concat_PCA_10_10,CD8 TCM,0.7916666666666666,25
+development_HC,concat_PCA_10_10,CD8 TEM,0.9186046511627907,83
+development_HC,concat_PCA_10_10,Eryth,0.7191011235955056,51
+development_HC,concat_PCA_10_10,HSPC,1.0,1
+development_HC,concat_PCA_10_10,ILC,0.4,24
+development_HC,concat_PCA_10_10,MAIT,0.951048951048951,71
+development_HC,concat_PCA_10_10,NK,0.9816272965879265,187
+development_HC,concat_PCA_10_10,NK Proliferating,0.2857142857142857,6
+development_HC,concat_PCA_10_10,NK_CD56bright,0.9,11
+development_HC,concat_PCA_10_10,Plasmablast,0.75,3
+development_HC,concat_PCA_10_10,Platelet,1.0,2
+development_HC,concat_PCA_10_10,Treg,0.7563025210084033,62
+development_HC,concat_PCA_10_10,cDC1,0.0,3
+development_HC,concat_PCA_10_10,cDC2,0.9541284403669725,54
+development_HC,concat_PCA_10_10,dnT,0.4444444444444444,25
+development_HC,concat_PCA_10_10,gdT,0.6666666666666666,35
+development_HC,concat_PCA_10_10,pDC,1.0,11
+development_HC,MOFA+,ASDC,0.0,1
+development_HC,MOFA+,B intermediate,0.26666666666666666,34
+development_HC,MOFA+,B memory,0.32941176470588235,45
+development_HC,MOFA+,B naive,0.7536231884057971,88
+development_HC,MOFA+,CD14 Mono,0.9104638619201726,426
+development_HC,MOFA+,CD16 Mono,0.6593406593406593,58
+development_HC,MOFA+,CD4 CTL,0.375,9
+development_HC,MOFA+,CD4 Naive,0.8664122137404581,241
+development_HC,MOFA+,CD4 Proliferating,0.0,2
+development_HC,MOFA+,CD4 TCM,0.6520547945205479,178
+development_HC,MOFA+,CD4 TEM,0.5728155339805825,113
+development_HC,MOFA+,CD8 Naive,0.9251700680272109,69
+development_HC,MOFA+,CD8 Proliferating,0.4,3
+development_HC,MOFA+,CD8 TCM,0.47368421052631576,25
+development_HC,MOFA+,CD8 TEM,0.8654970760233918,83
+development_HC,MOFA+,Eryth,0.16666666666666666,51
+development_HC,MOFA+,HSPC,1.0,1
+development_HC,MOFA+,ILC,0.2857142857142857,24
+development_HC,MOFA+,MAIT,0.8689655172413793,71
+development_HC,MOFA+,NK,0.9714285714285714,187
+development_HC,MOFA+,NK Proliferating,0.0,6
+development_HC,MOFA+,NK_CD56bright,0.8,11
+development_HC,MOFA+,Plasmablast,0.0,3
+development_HC,MOFA+,Platelet,1.0,2
+development_HC,MOFA+,Treg,0.7868852459016393,62
+development_HC,MOFA+,cDC1,0.0,3
+development_HC,MOFA+,cDC2,0.7216494845360825,54
+development_HC,MOFA+,dnT,0.1935483870967742,25
+development_HC,MOFA+,gdT,0.75,35
+development_HC,MOFA+,pDC,0.88,11
+development_HC,scVI_matched,ASDC,1.0,1
+development_HC,scVI_matched,B intermediate,0.8059701492537313,34
+development_HC,scVI_matched,B memory,0.898876404494382,45
+development_HC,scVI_matched,B naive,0.9717514124293786,88
+development_HC,scVI_matched,CD14 Mono,0.9606481481481481,426
+development_HC,scVI_matched,CD16 Mono,0.954954954954955,58
+development_HC,scVI_matched,CD4 CTL,0.9473684210526315,9
+development_HC,scVI_matched,CD4 Naive,0.8875739644970414,241
+development_HC,scVI_matched,CD4 Proliferating,0.0,2
+development_HC,scVI_matched,CD4 TCM,0.7803468208092486,178
+development_HC,scVI_matched,CD4 TEM,0.8771929824561403,113
+development_HC,scVI_matched,CD8 Naive,0.9315068493150684,69
+development_HC,scVI_matched,CD8 Proliferating,0.0,3
+development_HC,scVI_matched,CD8 TCM,0.5581395348837209,25
+development_HC,scVI_matched,CD8 TEM,0.903954802259887,83
+development_HC,scVI_matched,Eryth,0.7346938775510204,51
+development_HC,scVI_matched,HSPC,1.0,1
+development_HC,scVI_matched,ILC,0.43478260869565216,24
+development_HC,scVI_matched,MAIT,0.912751677852349,71
+development_HC,scVI_matched,NK,0.9739583333333334,187
+development_HC,scVI_matched,NK Proliferating,0.25,6
+development_HC,scVI_matched,NK_CD56bright,0.9,11
+development_HC,scVI_matched,Plasmablast,0.5714285714285714,3
+development_HC,scVI_matched,Platelet,1.0,2
+development_HC,scVI_matched,Treg,0.7,62
+development_HC,scVI_matched,cDC1,0.0,3
+development_HC,scVI_matched,cDC2,0.9158878504672897,54
+development_HC,scVI_matched,dnT,0.34285714285714286,25
+development_HC,scVI_matched,gdT,0.4444444444444444,35
+development_HC,scVI_matched,pDC,1.0,11
+development_HC,totalVI,ASDC,1.0,1
+development_HC,totalVI,B intermediate,0.8059701492537313,34
+development_HC,totalVI,B memory,0.8837209302325582,45
+development_HC,totalVI,B naive,0.9666666666666667,88
+development_HC,totalVI,CD14 Mono,0.9595375722543352,426
+development_HC,totalVI,CD16 Mono,0.954954954954955,58
+development_HC,totalVI,CD4 CTL,0.8571428571428571,9
+development_HC,totalVI,CD4 Naive,0.8884540117416829,241
+development_HC,totalVI,CD4 Proliferating,0.6666666666666666,2
+development_HC,totalVI,CD4 TCM,0.7810650887573964,178
+development_HC,totalVI,CD4 TEM,0.8347826086956521,113
+development_HC,totalVI,CD8 Naive,0.9583333333333334,69
+development_HC,totalVI,CD8 Proliferating,0.0,3
+development_HC,totalVI,CD8 TCM,0.6818181818181818,25
+development_HC,totalVI,CD8 TEM,0.8928571428571429,83
+development_HC,totalVI,Eryth,0.7368421052631579,51
+development_HC,totalVI,HSPC,1.0,1
+development_HC,totalVI,ILC,0.45454545454545453,24
+development_HC,totalVI,MAIT,0.9261744966442953,71
+development_HC,totalVI,NK,0.9712793733681462,187
+development_HC,totalVI,NK Proliferating,0.4444444444444444,6
+development_HC,totalVI,NK_CD56bright,0.9,11
+development_HC,totalVI,Plasmablast,1.0,3
+development_HC,totalVI,Platelet,1.0,2
+development_HC,totalVI,Treg,0.736,62
+development_HC,totalVI,cDC1,0.0,3
+development_HC,totalVI,cDC2,0.918918918918919,54
+development_HC,totalVI,dnT,0.5263157894736842,25
+development_HC,totalVI,gdT,0.6206896551724138,35
+development_HC,totalVI,pDC,1.0,11

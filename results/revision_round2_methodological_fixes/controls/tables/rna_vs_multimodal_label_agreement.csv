@@ -1,0 +1,7 @@
+metric,value,note
+n_cells,10849.0,
+n_rna_only_high_confidence,9494.0,
+n_historical_high_confidence,9494.0,
+l1_agreement,1.0,
+l2_agreement,1.0,
+protein_used_in_label_assignment,0.0,code-audited RNA-only SCANVI surgery

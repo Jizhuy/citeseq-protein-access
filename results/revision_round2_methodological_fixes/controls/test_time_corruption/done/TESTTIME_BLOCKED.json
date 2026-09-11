@@ -1,0 +1,18 @@
+{
+  "ok": false,
+  "blocked": true,
+  "reason": "adapted_models_missing",
+  "n_found": 0,
+  "n_expected": 80,
+  "n_missing": 80,
+  "missing_head": [
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed00/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed01/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed02/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed03/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed04/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed05/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed06/adapted_query_model",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/phase11b_uncertainty_robustness/models/direction_A/scvi_matched/seed07/adapted_query_model"
+  ]
+}

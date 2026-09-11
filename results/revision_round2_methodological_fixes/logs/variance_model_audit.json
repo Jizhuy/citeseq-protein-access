@@ -1,0 +1,63 @@
+{
+  "historical_fit": "SEPARATE per-model MoM + separate delta cube (NOT pooled without model term)",
+  "was_mathematically_wrong": false,
+  "was_ambiguously_described_possibly": true,
+  "within_model_formula": "Y_ijr = mu + S_i + G_j + (SG)_ij + eps_ijr  (fit separately per model)",
+  "delta_formula": "Delta_ijr = Y_totalVI - Y_scVI = mu_d + S_i_d + G_j_d + (SG)_ij_d + eps_ijr_d",
+  "estimator_primary": "MoM from EMS",
+  "reml_vs_mom": "For this balanced equal-replication design, MoM EMS estimators are the REML estimators under normality; numerical REML MixedLM with only 5\u00d75 levels is exploratory and often singular.",
+  "variance_model_note": "Balanced two-factor random-effects ANOVA with n replicates per cell (Searle, Casella & McCulloch, Variance Components, ch. 4). Method-of-moments estimators from expected mean squares. Interaction and pure residual are separately identified only because n > 1; with n = 1 (the PHASE 11B design) MS_E is undefined and the two collapse into one term.",
+  "simulation_check": {
+    "source_subset": {
+      "true": 0.02,
+      "mean_raw": 0.01922679792736951,
+      "sd_raw": 0.01651878921514566,
+      "mean_nonneg": 0.01929932122287509
+    },
+    "model_seed": {
+      "true": 0.01,
+      "mean_raw": 0.010436623920246104,
+      "sd_raw": 0.009685165167597496,
+      "mean_nonneg": 0.010698787683047621
+    },
+    "interaction": {
+      "true": 0.005,
+      "mean_raw": 0.005670415114096678,
+      "sd_raw": 0.00826129010693891,
+      "mean_nonneg": 0.0068393967720673165
+    },
+    "residual": {
+      "true": 0.03,
+      "mean_raw": 0.02932510504413358,
+      "sd_raw": 0.00823920961400382,
+      "mean_nonneg": 0.02932510504413358
+    }
+  },
+  "npz_keys": [
+    "scvi_matched__macro_f1",
+    "scvi_matched__error_auroc",
+    "scvi_matched__error_auprc",
+    "scvi_matched__nll",
+    "scvi_matched__brier",
+    "scvi_matched__ece",
+    "scvi_matched__aurc",
+    "totalvi__macro_f1",
+    "totalvi__error_auroc",
+    "totalvi__error_auprc",
+    "totalvi__nll",
+    "totalvi__brier",
+    "totalvi__ece",
+    "totalvi__aurc",
+    "delta__macro_f1",
+    "delta__error_auroc",
+    "delta__error_auprc",
+    "delta__nll",
+    "delta__brier",
+    "delta__ece",
+    "delta__aurc"
+  ],
+  "n_within_rows": 14,
+  "n_delta_rows": 7,
+  "historical_macro_f1_residual_fraction_scvi": 0.6223204717759862,
+  "corrected_macro_f1_residual_fraction_scvi": 0.6223204717759862
+}

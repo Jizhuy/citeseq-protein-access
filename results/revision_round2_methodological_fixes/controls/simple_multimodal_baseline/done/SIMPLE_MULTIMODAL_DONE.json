@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "outputs": [
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_development.csv",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_transfer.csv",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_lawlor.csv",
+    "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_per_class.csv"
+  ],
+  "primary_concat": "10+10"
+}

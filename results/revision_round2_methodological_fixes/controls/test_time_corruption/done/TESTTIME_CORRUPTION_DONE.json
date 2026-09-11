@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "branch": "A",
+  "phase_models": "results/phase11b_uncertainty_robustness/models",
+  "timestamp_utc": "2026-09-11T08:49:24Z",
+  "n_unit_done": 80,
+  "n_rows_all_runs": 1514,
+  "seeds_completed": {
+    "direction_A": 20,
+    "direction_B": 20
+  },
+  "tables": [
+    "test_time_corruption_all_runs.csv",
+    "test_time_corruption_summary.csv",
+    "test_time_corruption_delta_from_clean.csv",
+    "test_time_corruption_per_class.csv",
+    "test_time_reliability_metrics.csv",
+    "training_vs_testtime_corruption.csv",
+    "clean_baseline_vs_phase10.csv"
+  ],
+  "integrity": {
+    "param_hash_unchanged_all_runs": true,
+    "rna_unchanged_all_runs": true,
+    "scvi_invariance_max_abs": 0.0,
+    "clean_vs_historical": "80/80 CONSISTENT",
+    "note": "frozen_model_integrity.md '78 hash failures' is NaN-coercion artifact; all_runs has 0 mismatches"
+  },
+  "smoke": "PASS"
+}

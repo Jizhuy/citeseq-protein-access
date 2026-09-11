@@ -1,0 +1,11 @@
+direction,representation,adaptation,macro_f1,accuracy,balanced_accuracy,n_train,n_test,n_classes,dim,macro_f1_sd,n_seeds
+direction_A,concat_PCA_10_10,none_inductive_source_fit_only,0.7349518614878228,0.8423864648263579,0.7219564502085709,6040.0,3369.0,22.0,20,,
+direction_A,RNA_PCA_10,none_inductive_source_fit_only,0.6993979577287647,0.8189373701395073,0.7066104248810678,6040.0,3369.0,22.0,10,,
+direction_A,protein_PCA_10,none_inductive_source_fit_only,0.4880477123577018,0.678242802018403,0.4967366904461406,6040.0,3369.0,22.0,10,,
+direction_A,scVI_matched,scArches_unsupervised_transductive,0.6556225306321046,,,,,,20,0.017547741829175866,20.0
+direction_A,totalVI,scArches_unsupervised_transductive,0.6523826130649477,,,,,,20,0.0146268067389937,20.0
+direction_B,concat_PCA_10_10,none_inductive_source_fit_only,0.7339271245531078,0.8449027498323273,0.736875524154092,3355.0,5964.0,21.0,20,,
+direction_B,RNA_PCA_10,none_inductive_source_fit_only,0.6264535668943285,0.7806841046277666,0.6402708804290059,3355.0,5964.0,21.0,10,,
+direction_B,protein_PCA_10,none_inductive_source_fit_only,0.47856927660531295,0.6343058350100603,0.524199216471115,3355.0,5964.0,21.0,10,,
+direction_B,scVI_matched,scArches_unsupervised_transductive,0.6014870341974976,,,,,,20,0.019538428032617017,20.0
+direction_B,totalVI,scArches_unsupervised_transductive,0.6539659703017383,,,,,,20,0.02542912475862475,20.0

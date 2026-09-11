@@ -56,3 +56,9 @@ results/**/probabilities/
 # Office lock / temp files
 ~$*
 *.tmp
+
+# local analysis env for revision round 2
+.venv_rev2/
+
+# local python-docx install for manuscript build
+.deps_docx/

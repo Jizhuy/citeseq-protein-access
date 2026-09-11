@@ -1,0 +1,17 @@
+{
+  "title_ok": true,
+  "unpublished": true,
+  "no_genome_biology_target": true,
+  "no_zenodo": true,
+  "no_phase": true,
+  "no_human_confirm": true,
+  "concat_present": true,
+  "rna_audit": true,
+  "lawlor_donors": true,
+  "protein_pca_lawlor": true,
+  "transductive": true,
+  "n_images": 6,
+  "n_tables": 6,
+  "n_paragraphs": 140,
+  "no_1920_on_lawlor": false
+}
