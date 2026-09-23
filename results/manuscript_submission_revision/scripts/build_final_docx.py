@@ -484,7 +484,7 @@ def validate(docx_path: Path, abstract_wc: int, caveats: list[str]) -> dict:
         "bootstrap_interval_minus_0_060_present": ("-0.060" in text or "−0.060" in text),
         "strict_train_only_present": "strict train-only" in lower,
         "totalvi_primary_0_741": "0.741" in text,
-        "github_url_present": ("https://github.com/Jizhuy/robust-multiomics-integration" in text),
+        "github_url_present": ("https://github.com/Jizhuy/citeseq-protein-access" in text),
         "data_availability_before_references": text.find("Data Availability") != -1
         and text.find("References") != -1
         and text.find("Data Availability") < text.find("References"),

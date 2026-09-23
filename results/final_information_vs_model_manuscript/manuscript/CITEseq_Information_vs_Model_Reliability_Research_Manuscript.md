@@ -209,7 +209,7 @@ Five deterministic folds held out **two** donors each so that every donor was a 
 
 ### Software and reproducibility
 
-Analyses used Python **3.11.7**, scvi-tools **1.3.3**, scikit-learn **1.5.2**, scanpy **1.10.3**, anndata **0.11.4**, PyTorch **2.14.0** (CUDA builds used for PHASE 10 server runs). Environment files: `environment.yml`, `requirements.txt`. Code: https://github.com/Jizhuy/robust-multiomics-integration. An immutable archival release and DOI will accompany the submitted version.
+Analyses used Python **3.11.7**, scvi-tools **1.3.3**, scikit-learn **1.5.2**, scanpy **1.10.3**, anndata **0.11.4**, PyTorch **2.14.0** (CUDA builds used for PHASE 10 server runs). Environment files: `environment.yml`, `requirements.txt`. Code: https://github.com/Jizhuy/citeseq-protein-access. An immutable archival release and DOI will accompany the submitted version.
 
 ## Data Availability
 
@@ -219,7 +219,7 @@ PBMC10k/PBMC5k analyses used the public scvi-tools CITE-seq example AnnData file
 
 ## Code Availability
 
-Analysis code and reproducible workflows are publicly available at https://github.com/Jizhuy/robust-multiomics-integration.git. An immutable archival release and DOI will accompany the submitted version of the manuscript.
+Analysis code and reproducible workflows are publicly available at https://github.com/Jizhuy/citeseq-protein-access.git. An immutable archival release and DOI will accompany the submitted version of the manuscript.
 
 ## Acknowledgements
 
