@@ -62,3 +62,8 @@ results/**/probabilities/
 
 # local python-docx install for manuscript build
 .deps_docx/
+
+# local tooling / caches
+venv/
+cache/
+tmp/

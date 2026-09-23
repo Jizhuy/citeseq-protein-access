@@ -1,0 +1,11 @@
+direction,representation,adaptation,target_data_access,macro_f1,macro_f1_sd,accuracy,balanced_accuracy,n_train,n_test,n_classes,dim,n_seeds,note
+direction_A,RNA_PCA_10,none_inductive_source_fit_only,source_only,0.6993979577287647,,0.8189373701395073,0.7066104248810678,6040.0,3369.0,22.0,10,1,source-fitted inductive RNA PCA
+direction_A,concat_PCA_10_10,none_inductive_source_fit_only,source_only,0.7349518614878228,,0.8423864648263579,0.7219564502085709,6040.0,3369.0,22.0,20,1,source-fitted inductive concat PCA baseline (preserved)
+direction_A,concat_PCA_10_10,transductive_joint_unsupervised_feature_fit,source_plus_unlabeled_target_features,0.6363128714435655,,0.7319679430097952,0.6359781884062813,6040.0,3369.0,22.0,20,1,target-data-access-matched transductive concat; NOT algorithmically matched to scArches
+direction_B,RNA_PCA_10,none_inductive_source_fit_only,source_only,0.6264535668943285,,0.7806841046277666,0.6402708804290059,3355.0,5964.0,21.0,10,1,source-fitted inductive RNA PCA
+direction_B,concat_PCA_10_10,none_inductive_source_fit_only,source_only,0.7339271245531078,,0.8449027498323273,0.736875524154092,3355.0,5964.0,21.0,20,1,source-fitted inductive concat PCA baseline (preserved)
+direction_B,concat_PCA_10_10,transductive_joint_unsupervised_feature_fit,source_plus_unlabeled_target_features,0.767040624986435,,0.8749161636485581,0.7738411235916803,3355.0,5964.0,21.0,20,1,target-data-access-matched transductive concat; NOT algorithmically matched to scArches
+direction_A,scVI_matched,scArches_unsupervised_transductive,unlabeled_target_features_via_scArches,0.6556225306321046,0.017547741829175866,,,,,,20,20,Frozen PHASE11B 20-seed means; not recomputed
+direction_A,totalVI,scArches_unsupervised_transductive,unlabeled_target_features_via_scArches,0.6523826130649477,0.0146268067389937,,,,,,20,20,Frozen PHASE11B 20-seed means; not recomputed
+direction_B,scVI_matched,scArches_unsupervised_transductive,unlabeled_target_features_via_scArches,0.6014870341974976,0.019538428032617017,,,,,,20,20,Frozen PHASE11B 20-seed means; not recomputed
+direction_B,totalVI,scArches_unsupervised_transductive,unlabeled_target_features_via_scArches,0.6539659703017383,0.02542912475862475,,,,,,20,20,Frozen PHASE11B 20-seed means; not recomputed

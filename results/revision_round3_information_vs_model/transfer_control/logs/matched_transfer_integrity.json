@@ -1,0 +1,42 @@
+[
+  {
+    "direction": "direction_A",
+    "inductive": {
+      "fit_cells": "source_only",
+      "scaler_fit": "source_only",
+      "target_labels_used_before_eval": false,
+      "n_joint_cells": 6855
+    },
+    "transductive": {
+      "fit_cells": "source_plus_unlabeled_target",
+      "scaler_fit": "source_plus_unlabeled_target",
+      "target_labels_used_before_eval": false,
+      "n_joint_cells": 10849,
+      "n_source": 6855,
+      "n_target": 3994,
+      "rna_hvgs": 2000,
+      "dim": 20
+    },
+    "n_classes": 22
+  },
+  {
+    "direction": "direction_B",
+    "inductive": {
+      "fit_cells": "source_only",
+      "scaler_fit": "source_only",
+      "target_labels_used_before_eval": false,
+      "n_joint_cells": 3994
+    },
+    "transductive": {
+      "fit_cells": "source_plus_unlabeled_target",
+      "scaler_fit": "source_plus_unlabeled_target",
+      "target_labels_used_before_eval": false,
+      "n_joint_cells": 10849,
+      "n_source": 3994,
+      "n_target": 6855,
+      "rna_hvgs": 2000,
+      "dim": 20
+    },
+    "n_classes": 21
+  }
+]

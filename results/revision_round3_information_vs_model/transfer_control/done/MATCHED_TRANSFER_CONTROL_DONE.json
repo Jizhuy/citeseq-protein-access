@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "timestamp": "2026-09-22T14:34:50Z",
+  "table": "/Users/venus/Desktop/2026\u5317\u4eac\u5927\u5b66\u79d1\u5b66\u7814\u7a76/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/revision_round3_information_vs_model/transfer_control/tables/matched_transfer_control.csv",
+  "cases": {
+    "direction_A": {
+      "transductive_concat": 0.6363128714435655,
+      "totalVI": 0.6523826130649477,
+      "scVI": 0.6556225306321046,
+      "totalVI_minus_transductive_concat": 0.016069741621382194,
+      "totalVI_minus_scVI": -0.0032399175671569136
+    },
+    "direction_B": {
+      "transductive_concat": 0.767040624986435,
+      "totalVI": 0.6539659703017383,
+      "scVI": 0.6014870341974976,
+      "totalVI_minus_transductive_concat": -0.11307465468469668,
+      "totalVI_minus_scVI": 0.0524789361042407
+    }
+  },
+  "integrity": "target_labels_withheld_until_eval"
+}
