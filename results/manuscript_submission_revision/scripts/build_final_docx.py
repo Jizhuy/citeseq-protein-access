@@ -12,9 +12,9 @@ REPO = Path(__file__).resolve().parents[3]
 REV = Path(__file__).resolve().parents[1]
 MANUSCRIPT_ROOT = REPO.parent
 MD = REV / "manuscript" / "CITEseq_Protein_Access_Model_Associated_Gains.md"
-FIGS = MANUSCRIPT_ROOT / "presubmission_revision" / "figures"
+FIGS = REV / "figures"
 TEMPLATE = MANUSCRIPT_ROOT / "CITEseq_Information_vs_Model_Reliability_Research_Manuscript_Final_Formatted.docx"
-OUT_DOCX = REV / "manuscript" / "CITEseq_Protein_Access_Model_Gains.docx"
+OUT_DOCX = REV / "manuscript" / "CITEseq_Protein_Access_Model_Gains_Submission_Ready.docx"
 DEPS = REPO / ".deps_docx"
 LOGS = REV / "logs"
 
@@ -26,7 +26,7 @@ from docx.oxml.ns import qn  # noqa: E402
 from docx.shared import Cm, Inches, Pt, RGBColor  # noqa: E402
 
 NAVY = RGBColor(0x1B, 0x3A, 0x5F)
-TITLE = "Evaluating protein-access and model-associated gains in CITE-seq representation learning under distribution shift"
+TITLE = "Evaluating protein-access and residual totalVI-associated gains in CITE-seq representation learning under distribution shift"
 AUTHOR_HEADER = "Jizhu Yang — Protein-access vs residual totalVI-associated contrast"
 FALLBACK_FIGS = (
     MANUSCRIPT_ROOT
@@ -35,6 +35,7 @@ FALLBACK_FIGS = (
     / "final_information_vs_model_manuscript"
     / "figures"
 )
+PARENT_FIGS = MANUSCRIPT_ROOT / "presubmission_revision" / "figures"
 FIG_MAP = {
     1: "Figure1_central_logic.png",
     2: "Figure2_protein_access_vs_model.png",
@@ -473,11 +474,16 @@ def validate(docx_path: Path, abstract_wc: int, caveats: list[str]) -> dict:
         "lawlor_means_0_794_0_884": ("0.794" in text and "0.884" in text),
         "old_lawlor_0_800_0_888_absent": ("0.800" not in text and "0.888" not in text),
         "sign_test_p_00195": "0.00195" in text,
-        "g_assoc_crosses_zero": "-0.012" in text,
+        "g_assoc_crosses_zero": (
+            ("-0.060" in text or "−0.060" in text)
+            and ("crosses zero" in lower or "crossed zero" in lower)
+        ),
         "case_c_absent": "Case C" not in text,
         "application_absent": "application" not in lower,
-        "bootstrap_interval_0_043_present": "0.043" in text,
-        "bootstrap_interval_minus_0_012_present": "-0.012" in text,
+        "bootstrap_interval_0_042_present": "0.042" in text,
+        "bootstrap_interval_minus_0_060_present": ("-0.060" in text or "−0.060" in text),
+        "strict_train_only_present": "strict train-only" in lower,
+        "totalvi_primary_0_741": "0.741" in text,
         "github_url_present": ("https://github.com/Jizhuy/robust-multiomics-integration" in text),
         "data_availability_before_references": text.find("Data Availability") != -1
         and text.find("References") != -1
@@ -513,8 +519,10 @@ def main() -> None:
         "g_access_present",
         "case_c_absent",
         "application_absent",
-        "bootstrap_interval_0_043_present",
-        "bootstrap_interval_minus_0_012_present",
+        "bootstrap_interval_0_042_present",
+        "bootstrap_interval_minus_0_060_present",
+        "strict_train_only_present",
+        "totalvi_primary_0_741",
         "github_url_present",
         "lawlor_means_0_794_0_884",
         "old_lawlor_0_800_0_888_absent",

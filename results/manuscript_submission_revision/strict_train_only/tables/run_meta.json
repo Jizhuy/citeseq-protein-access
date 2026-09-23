@@ -1,0 +1,11 @@
+{
+  "n_train": 7573,
+  "n_test": 1921,
+  "n_genes": 15792,
+  "n_proteins": 14,
+  "scvi_tools": "1.3.3",
+  "torch": "2.14.0",
+  "device": "mps",
+  "seed": 0,
+  "protocol": "strict_train_only_HC_7573_1921"
+}

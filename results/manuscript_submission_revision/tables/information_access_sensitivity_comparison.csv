@@ -1,0 +1,9 @@
+# Metric,Transductive_historical,Strict_train_only_PRIMARY,Delta_new_minus_old,Role
+RNA_PCA,0.666,0.667,+0.001,PCA train-only both settings
+concat_PCA,0.745,0.745,0.000,PCA train-only both settings
+scVI_matched,0.722,0.709,-0.013,Deep-model access changed
+totalVI,0.779,0.741,-0.038,Deep-model access changed
+G_access,+0.079 [0.043; 0.132],+0.078 [0.042; 0.131],~0,Protein-access contrast
+G_assoc,+0.034 [-0.012; 0.073],-0.004 [-0.060; 0.030],~-0.038,Residual totalVI-associated contrast
+Gap_total,+0.113 [0.084; 0.154],+0.074 [0.029; 0.130],~-0.039,RNA-to-totalVI gap
+R_access,~0.70 [0.405; 1.114],~1.05 [0.680; 2.304],secondary only,Descriptive ratio not recovery fraction

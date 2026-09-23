@@ -1,0 +1,21 @@
+[2026-09-23T12:43:26.481006+00:00] Loading /Users/venus/Desktop/2026北京大学科学研究/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/data/processed/pbmc_cite_combined_inner_annotated.h5ad
+[2026-09-23T12:43:42.565652+00:00] {"n_train": 7573, "n_test": 1921, "n_genes": 15792, "n_proteins": 14, "scvi_tools": "1.3.3", "torch": "2.14.0", "device": "mps", "seed": 0, "protocol": "strict_train_only_HC_7573_1921"}
+[2026-09-23T12:43:42.566106+00:00] Fitting RNA/protein/concat PCA on train only
+[2026-09-23T12:48:28.805354+00:00] PCA F1 RNA=0.667006 protein=0.512031 concat=0.744847
+[2026-09-23T12:48:29.143556+00:00] Training scVI_matched on n=7573 device=mps
+[2026-09-23T12:58:44.345207+00:00] Saved scVI_matched to /Users/venus/Desktop/2026北京大学科学研究/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/manuscript_submission_revision/strict_train_only/models/scvi_matched_trainonly_seed0
+[2026-09-23T12:58:44.976106+00:00] Encoding scVI_matched test (no query train)
+[2026-09-23T13:00:07.274852+00:00] Loading /Users/venus/Desktop/2026北京大学科学研究/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/data/processed/pbmc_cite_combined_inner_annotated.h5ad
+[2026-09-23T13:00:16.296861+00:00] {"n_train": 7573, "n_test": 1921, "n_genes": 15792, "n_proteins": 14, "scvi_tools": "1.3.3", "torch": "2.14.0", "device": "mps", "seed": 0, "protocol": "strict_train_only_HC_7573_1921"}
+[2026-09-23T13:00:16.297069+00:00] Fitting RNA/protein/concat PCA on train only
+[2026-09-23T13:05:59.110378+00:00] PCA F1 RNA=0.667006 protein=0.512031 concat=0.744847
+[2026-09-23T13:05:59.120134+00:00] Loading existing scVI_matched train-only model
+[2026-09-23T13:06:00.572205+00:00] Encoding scVI_matched test (frozen weights; no query train)
+[2026-09-23T13:06:01.428875+00:00] Training totalVI on n=7573 device=mps
+[2026-09-23T13:13:07.610604+00:00] Saved totalVI to /Users/venus/Desktop/2026北京大学科学研究/Deep Generative Modeling for Single-Cell Multi-Omics Integration/multiomics_robustness/results/manuscript_submission_revision/strict_train_only/models/totalvi_trainonly_seed0
+[2026-09-23T13:13:09.021051+00:00] Encoding totalVI test (frozen weights; no query train)
+[2026-09-23T13:18:20.292908+00:00] Deep F1 scVI_matched=0.708819 totalVI=0.740928
+[2026-09-23T13:18:20.308345+00:00] Contrasts: {'F1_RNA_PCA': 0.6670060757070913, 'F1_protein_PCA': 0.5120313029255007, 'F1_concat': 0.7448473850136017, 'F1_scVI_matched': 0.7088188874254828, 'F1_totalVI': 0.7409276304149729, 'G_access': 0.07784130930651045, 'G_assoc': -0.003919754598628811, 'Gap_total': 0.07392155470788164, 'R_access': 1.0530258679504056}
+[2026-09-23T13:18:20.323652+00:00] Running global paired bootstrap B=10000
+[2026-09-23T13:23:37.141711+00:00] Running class-stratified paired bootstrap B=10000
+[2026-09-23T13:28:09.000496+00:00] DONE
