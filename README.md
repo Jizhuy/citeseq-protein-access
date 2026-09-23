@@ -1,187 +1,235 @@
-# Robust and Uncertainty-Aware Deep Generative Modeling for Single-Cell Multi-Omics Integration
+# Robust Multi-Omics Integration
 
-Stage 5A–5C research repository. The current implementation covers **PHASE 1–8**: validated PBMC CITE-seq data, scVI default, totalVI, a matched scVI fairness control, independent Seurat v4 annotation, MOFA+, RNA PCA, and a protein sparsity / corruption stress test. True missing-modality experiments are not run yet.
-
-## 1. Research motivation
-
-Deep generative models such as scVI and totalVI are widely used to represent single-cell RNA and CITE-seq protein measurements. Published benchmarks, including Hu et al. (2024), compare prediction and integration accuracy under relatively standard conditions. They do not fully answer whether those representations remain biologically reliable when protein measurements become sparse, when the protein modality is missing for many cells, or when datasets shift.
-
-This project is a controlled stress test of existing models, not a new architecture and not a reproduction of the 2024 benchmark.
-
-## 2. Main research questions
-
-**RQ1.** Does RNA + protein multimodal modeling yield a more biologically meaningful latent representation than RNA-only modeling?
-
-Comparisons planned after PHASE 3:
-
-- PCA (RNA; multimodal concatenation only if RNA cannot trivially dominate protein)
-- scVI (RNA only)
-- MOFA+ (RNA + protein, with MOFA+-appropriate preprocessing)
-- totalVI (RNA + protein counts)
-
-**RQ2.** How does increasing protein sparsity/noise affect latent quality and downstream biological metrics?
-
-**RQ3.** How does increasing the fraction of cells with a fully missing protein modality affect latent structure, cell-type conservation, and protein imputation?
-
-Later stages (not implemented):
-
-- cross-dataset generalization
-- uncertainty calibration
-- RNA + ATAC with MultiVI
-
-## 3. Dataset
-
-Development data are the public 10x PBMC CITE-seq datasets distributed by scvi-tools:
-
-- PBMC10k protein v3 (`pbmc_10k_protein_v3.h5ad`)
-- PBMC5k protein v3 (`pbmc_5k_protein_v3.h5ad`)
-
-Validated dimensions after PHASE 2:
-
-| Object | Cells | Genes | Proteins |
-| --- | ---: | ---: | ---: |
-| PBMC10k | 6855 | 16727 | 14 |
-| PBMC5k | 3994 | 16581 | 29 |
-| Combined inner (default analysis set) | 10849 | 15792 | 14 shared |
-| Combined outer | 10849 | 15792 | 29 union |
-
-The PBMC10k protein panel is a **strict subset** of PBMC5k (14 shared, 0 unique to 10k, 15 unique to 5k). The inner-join object is the default modeling set. Unique proteins are retained in `pbmc5k_cite.h5ad` and `pbmc_cite_combined_outer.h5ad` with NaN, not zero, for unmeasured entries.
-
-The official files contain **no cell-type annotation**. `obs["cell_type"]` is `unknown` until an external labeled reference is added. Do not use that placeholder as a biological label.
-
-The loader uses the same URLs as `scvi.data.pbmcs_10x_cite_seq`, but does **not** call that helper as the primary API. The helper intersects genes silently and, for an outer protein join, fills missing proteins with zero. This repository:
-
-1. loads each file separately
-2. documents RNA and protein overlap
-3. writes an inner-join analysis object (shared genes and shared proteins)
-4. writes an outer-join object in which unmeasured proteins are NaN, with `obsm["protein_observed_mask"]`
-
-Raw RNA counts stay in `X` and `layers["counts"]`. Protein counts stay in `obsm["protein_counts"]`.
-
-See `data/README.md` for the on-disk layout.
-
-## 4. Methods
-
-PHASE 1–2 implement data provenance and validation only.
-
-Planned model roles (later phases):
-
-| Model | Modalities | Latent object | Notes |
-| --- | --- | --- | --- |
-| PCA | RNA, optionally concatenated protein | linear factors | RNA dimension must not be allowed to dominate protein |
-| scVI | RNA counts | `z_RNA` | batch covariate if present |
-| totalVI | RNA + protein counts | `z_joint` | count-based VAE |
-| MOFA+ | processed RNA + protein | factors | not mathematically equivalent to totalVI |
-
-UMAP is for visualization. Quantitative representation metrics will use the latent factors, not UMAP coordinates.
-
-## 5. Experimental design
-
-1. **Baseline (PHASE 3–6):** train scVI, totalVI, MOFA+, and PCA on the same inner-join PBMC object; compare ARI, NMI, silhouette, and batch ASW separately. Do not collapse batch-removal and biology scores into one number.
-2. **Sparsity stress (PHASE 7):** copy the AnnData; mask 0/10/25/50/75% of nonzero protein counts to zero using a shared mask across models.
-3. **Missing modality (PHASE 8):** hide entire protein profiles for 0/25/50/75/90% of cells; evaluate imputation only against held-out ground truth.
-4. **RNA-correlated vs uncorrelated proteins:** after imputation exists, compare accuracy by RNA–protein association. Do not copy a published threshold without documenting it.
-
-Statistical rules:
-
-- never evaluate protein prediction only on training cells
-- preserve ground-truth matrices before perturbation
-- use the same train/test split and perturbation mask across methods
-- report mean, SD, and per-seed values (5 seeds)
-
-## 6. Reproducibility
-
-- Config: `config/config.yaml`
-- Seeds: Python, NumPy, and PyTorch via `src/utils/seed.py`
-- Environment snapshot: `results/logs/environment.json` after `01_prepare_data.py`
-- Train/test split: `results/tables/combined_inner_train_test_split.csv`
-
-Pinned packages will be written to `environment.yml` and `requirements.txt` after the working environment is confirmed.
-
-### Environment notes (this machine)
-
-Inspected before any training:
-
-- OS: macOS 14 (Darwin 23.6.0), Apple M1 Pro, 16 GB RAM
-- NVIDIA CUDA: **not available** (`nvidia-smi` missing; no CUDA GPU)
-- Apple Metal: Metal 3, 14-core GPU
-- Intended accelerator for later training: PyTorch MPS, falling back to CPU
-- Conda environment: `multiomics_robustness`, Python 3.11.7
-- scvi-tools pinned at 1.3.3 (not the latest 1.5.x, which requires Python 3.12+)
+Repository: [https://github.com/Jizhuy/robust-multiomics-integration.git](https://github.com/Jizhuy/robust-multiomics-integration.git)
 
 ```bash
-conda activate multiomics_robustness
-cd multiomics_robustness
-python scripts/01_prepare_data.py
+git clone git@github.com:Jizhuy/robust-multiomics-integration.git
 ```
 
-## 7. How to run each stage
+## Overview
 
-```bash
-conda activate multiomics_robustness
-cd multiomics_robustness
+This project evaluates how much of the observed performance improvement in CITE-seq representation learning is associated with **access to paired protein measurements**, and how much remains as a **residual model-associated advantage** beyond a simple multimodal representation—especially under distribution shift, protein degradation, and external validation.
 
-# PHASE 1-2
-python scripts/01_prepare_data.py
+It is an empirical reliability study of existing representations (PCA baselines, MOFA+, scVI, totalVI), not a new architecture.
 
-# PHASE 3: RNA-only scVI baseline
-python scripts/02_run_baseline.py --model scvi --seed 0
+## Scientific question
 
-# PHASE 4: RNA+protein totalVI baseline (does not train MOFA+)
-python scripts/02_run_baseline.py --model totalvi --seed 0
+Central comparison on a frozen development cohort (held-out classification macro-F1):
 
-# PHASE 5A–5B: matched scVI fairness control + annotation infrastructure
-python scripts/05_run_fairness_and_annotation.py
-python scripts/02_run_baseline.py --model scvi_matched --seed 0
+**RNA PCA → RNA + protein concat PCA → totalVI**
 
-# PHASE 6: independent Seurat v4 annotation + biological evaluation
-python scripts/06_run_phase6.py
+with supporting RNA-only (scVI) and protein-only (protein PCA / MOFA+) references.
 
-# PHASE 7: MOFA+ multimodal factor baseline + RNA PCA control
-python scripts/07_run_mofa.py
+Terminology used throughout:
 
-# PHASE 8: protein sparsity / corruption stress test (smoke, then full)
-python scripts/08_run_sparsity_stress.py --smoke
-python scripts/08_run_sparsity_stress.py --full
+| Term | Meaning |
+| --- | --- |
+| **Protein-access gain** (`G_access`) | `F1_concat − F1_RNA_PCA` |
+| **Residual model-associated gain** (`G_assoc`) | `F1_totalVI − F1_concat` |
+| **Feature-access-matched transductive concat** | Transfer control that matches access to unlabeled target features only |
 
-# PHASE 9 (placeholder; true missing modality — do not run yet)
-python scripts/04_run_missing_modality.py
+Avoid reading these as information-theoretic quantities, pure architecture effects, or causal model attributions.
+
+## Main findings
+
+### Development cohort (frozen point estimates)
+
+| Representation | Macro-F1 |
+| --- | ---: |
+| RNA PCA | 0.666 |
+| Protein PCA | 0.512 |
+| Concat PCA | 0.745 |
+| MOFA+ | 0.549 |
+| scVI | 0.722 |
+| totalVI | 0.779 |
+
+Primary descriptive contrasts (cell-level conditional paired bootstrap, *B* = 10,000):
+
+| Contrast | Point | 95% interval | Notes |
+| --- | ---: | --- | --- |
+| `G_access` = concat − RNA PCA | **+0.079** | [0.043, 0.132] | Bootstrap proportion > 0: **1.0** |
+| `G_assoc` = totalVI − concat | **+0.034** | [−0.012, 0.073] | Interval **crosses zero** |
+| RNA PCA → totalVI gap | **+0.113** | [0.084, 0.154] | |
+| Descriptive recovery ratio ≈ `G_access / gap` | **~0.70** | [0.405, 1.114] | Descriptive only—not variance explained, not causal |
+
+### Transfer under distribution shift
+
+| Setting | Direction A | Direction B |
+| --- | ---: | ---: |
+| Source-only inductive concat | 0.735 | 0.734 |
+| Feature-access-matched transductive concat | 0.636 | 0.767 |
+| scVI | 0.656 | 0.601 |
+| totalVI | 0.652 | 0.654 |
+| totalVI − feature-access concat | ≈ +0.016 | ≈ −0.113 |
+
+Direction B totalVI − scVI ≈ **+0.052** (19/20 seeds favor totalVI).
+
+Matching access to unlabeled target features does **not** yield a stable totalVI advantage across transfer directions. The concat control matches **feature access only**; it does **not** match learning objective, adaptation algorithm, or optimization procedure, and is not algorithmically identical to scArches.
+
+### Protein degradation
+
+**Training-time degradation** (corrupt originally nonzero protein entries; preexisting zeros unchanged; retrain totalVI; five mask/retraining computational replicates at each nonzero level; `model_seed` fixed at 0; clean level *n* = 1):
+
+| Corruption | totalVI macro-F1 |
+| ---: | --- |
+| 0.00 | 0.779 |
+| 0.10 | 0.771 ± 0.010 |
+| 0.25 | 0.758 ± 0.012 |
+| 0.40 | 0.760 ± 0.012 |
+| 0.55 | 0.750 ± 0.016 |
+| 0.70 | 0.736 ± 0.020 |
+| 0.85 | 0.755 ± 0.011 |
+
+The high-corruption rebound (0.70 → 0.85) occurs within mask/retraining variability and is **not** evidence of improved performance under more severe corruption. These are computational replicates, not biological replicates.
+
+**Post-adaptation target-only degradation** (Direction B totalVI): 0.654 → 0.621 (clean scVI reference: 0.601).
+
+### Uncertainty and stochasticity
+
+- Classifier predictive uncertainty: `U_pred = 1 − max_k p_k`
+- Latent posterior variance: mean posterior variance across latent dimensions (**not** labeled epistemic uncertainty here)
+- Predictive AUROC is about **0.84–0.86** internally
+- Predictive and latent uncertainty respond differently under degradation
+- Selective prediction reduces retained-set error but changes cell-type composition
+- Stochastic training variation is large enough that small residual model-associated differences need repeated-run context
+
+### External Lawlor validation
+
+- **10 biological donors**; primary biological unit = donor
+- totalVI − scVI donor-level present-class macro-F1 difference ≈ **+0.090** (**10/10** donors favor totalVI)
+- Deep averages ≈ scVI **0.800**, totalVI **0.888**
+- Stronger simple protein-aligned baselines: protein PCA ≈ **0.927**, concat PCA ≈ **0.945**
+- Lawlor labels are **protein-gated**
+
+Interpretation: Lawlor supports cross-donor value of **protein-aligned multimodal information**. It does **not** establish universal totalVI or architecture superiority.
+
+Consistency note: Lawlor latent-AUROC computational consistency is **38/50**. The **19/20** seed count belongs only to PBMC Direction B transfer—do not interchange these.
+
+## Datasets
+
+| Cohort | Role | Source |
+| --- | --- | --- |
+| PBMC10k / PBMC5k | Development | Public 10x Genomics CITE-seq PBMC datasets (via project loaders; no unverified GEO/SRA claimed here) |
+| Lawlor Baseline CITE-seq | External | HCA `efea6426-510a-4b60-9a19-277e52bfa815`; ENA `PRJEB40376` / `ERP124005` |
+
+Processed development objects and manifests live under [`data/`](data/). See [`data/README.md`](data/README.md).
+
+## Methods / evaluated representations
+
+| Representation | Modalities | Role |
+| --- | --- | --- |
+| RNA PCA | RNA | Unimodal baseline |
+| Protein PCA | Protein | Unimodal protein baseline |
+| Concat PCA | RNA + protein (standardized concat) | Multimodal access baseline |
+| MOFA+ | RNA + protein | Factor model reference |
+| scVI | RNA | RNA-only VAE |
+| totalVI | RNA + protein | Joint CITE-seq VAE |
+
+Downstream probe: logistic regression on held-out cells (development) or transfer targets; primary metric macro-F1 on present classes as specified per analysis.
+
+## Reliability analyses
+
+1. **Protein-access vs residual model-associated contrasts** + cell-level paired bootstrap  
+2. **Inductive vs feature-access-matched transductive concat** under PBMC transfer  
+3. **Training-time and post-adaptation protein degradation**  
+4. **Predictive / latent uncertainty** and selective prediction  
+5. **Training stochasticity** (seed replication)  
+6. **Lawlor donor-held-out external validation** (protein-gated labels)
+
+Bootstrap intervals are **conditional** on the frozen development embeddings / fits. They are not biological confidence intervals over independent cohorts.
+
+## Repository structure
+
 ```
-
-## 8. Output structure
-
-```
+scripts/                         # Phase runners (data, models, transfer, uncertainty, Lawlor)
+src/                             # Shared library code
+data/                            # Manifests and processed analysis objects
+config/                          # Run configs
 results/
-  tables/     baseline_results.csv, three-model comparison, latent geometry, training histories
-  figures/    scVI / scVI_matched / totalVI UMAPs and training curves
-  embeddings/ scvi_seed0_*, scvi_matched_seed0_*, totalvi_seed0_*
-  models/     scvi_seed0/, scvi_matched_seed0/, totalvi_seed0/
-  logs/       manifests, fairness_control_interpretation.md, annotation_source_audit.md
-  exploratory/ protein-marker summaries only; not validated labels
-data/
-  raw/        original scvi-tools h5ad files
-  processed/  validated AnnData objects with raw counts preserved
-  annotations/ external label template; no fabricated rows
+  revision_round2_methodological_fixes/   # Multimodal baselines, Lawlor audits, degradation controls
+  revision_round3_information_vs_model/   # Feature-access-matched transfer control
+  presubmission_revision/                 # Paired bootstrap + degradation replicate summary
+  phase10_cross_dataset/                  # Transfer tables
+  phase11_uncertainty/                    # Uncertainty tables
+  phase12a_variance_replication/          # Stochasticity / variance replication
+  phase12b_external_validation/           # Lawlor provenance and formal validation
+  final_information_vs_model_manuscript/  # Current manuscript package + figures
+requirements.txt / environment.yml        # Pinned environment
 ```
 
-## Repository layout
+Historical phase outputs under `results/` are retained for provenance; prefer revision-round and presubmission paths for the current scientific framing.
 
-Analysis logic lives in `src/`. Scripts are thin wrappers. Notebooks are exploratory only.
+## Key reproducibility scripts
 
+| Analysis | Script |
+| --- | --- |
+| Internal representation comparison (concat / PCA / MOFA+ framing) | [`results/revision_round2_methodological_fixes/scripts/revision2_simple_multimodal_baseline.py`](results/revision_round2_methodological_fixes/scripts/revision2_simple_multimodal_baseline.py) |
+| Transfer (historical phase runner) | [`scripts/10_run_cross_dataset.py`](scripts/10_run_cross_dataset.py) |
+| Feature-access-matched concat transfer | [`results/revision_round3_information_vs_model/transfer_control/scripts/revision3_matched_concat_transfer.py`](results/revision_round3_information_vs_model/transfer_control/scripts/revision3_matched_concat_transfer.py) |
+| Training-time protein sparsity / corruption | [`scripts/08_run_sparsity_stress.py`](scripts/08_run_sparsity_stress.py) |
+| Post-adaptation target protein corruption | [`results/revision_round2_methodological_fixes/scripts/revision2_testtime_corruption.py`](results/revision_round2_methodological_fixes/scripts/revision2_testtime_corruption.py) |
+| Uncertainty | [`scripts/11_run_uncertainty.py`](scripts/11_run_uncertainty.py) |
+| Stochasticity / variance replication | [`scripts/12a_run_replicates.py`](scripts/12a_run_replicates.py) |
+| Lawlor donor-level analysis | [`results/revision_round2_methodological_fixes/scripts/03_lawlor_donor_level.py`](results/revision_round2_methodological_fixes/scripts/03_lawlor_donor_level.py) |
+| Lawlor pairwise consistency | [`results/revision_round2_methodological_fixes/scripts/02_lawlor_pairwise_consistency.py`](results/revision_round2_methodological_fixes/scripts/02_lawlor_pairwise_consistency.py) |
+| Presubmission paired bootstrap | [`results/presubmission_revision/bootstrap/presubmission_core_contrast_bootstrap.py`](results/presubmission_revision/bootstrap/presubmission_core_contrast_bootstrap.py) |
+| Degradation replicate summary | [`results/presubmission_revision/degradation_audit/DEGRADATION_REPLICATE_AUDIT.md`](results/presubmission_revision/degradation_audit/DEGRADATION_REPLICATE_AUDIT.md) |
+
+Frozen tables for the matched transfer control: [`results/revision_round3_information_vs_model/transfer_control/tables/matched_transfer_control.csv`](results/revision_round3_information_vs_model/transfer_control/tables/matched_transfer_control.csv).
+
+Bootstrap summary: [`results/presubmission_revision/bootstrap/core_contrast_bootstrap_summary.csv`](results/presubmission_revision/bootstrap/core_contrast_bootstrap_summary.csv).
+
+## Environment
+
+Verified development environment (see headers in [`requirements.txt`](requirements.txt) and [`environment.yml`](environment.yml)):
+
+- Python **3.11.7**
+- scvi-tools **1.3.3**
+- scikit-learn **1.5.2**
+- PyTorch **2.14.0** (Apple MPS available in the documented macOS setup; CUDA unavailable on that machine)
+
+Linux CUDA variant: [`environment-linux-cuda.yml`](environment-linux-cuda.yml).
+
+```bash
+conda create -n multiomics_robustness python=3.11.7 pip -y
+conda activate multiomics_robustness
+pip install -r requirements.txt
 ```
-multiomics_robustness/
-├── README.md
-├── environment.yml
-├── requirements.txt
-├── config/
-├── data/
-├── src/
-│   ├── data/
-│   ├── models/
-│   ├── evaluation/
-│   ├── experiments/
-│   └── utils/
-├── scripts/
-├── results/
-└── notebooks/
-```
+
+## Reproducing the analyses
+
+There is **no single end-to-end one-command pipeline**. Analyses were built in stages; frozen outputs under `results/` are the scientific record.
+
+Typical workflow:
+
+1. **Data** — prepare / validate CITE-seq objects (`scripts/01_prepare_data.py`; see `data/`).
+2. **Baselines & models** — historical phase runners under `scripts/` (`02`–`08`, `10`–`12b`) write embeddings and tables into `results/`.
+3. **Current framing controls** — run revision scripts above for concat baselines, matched transfer, and test-time corruption (require prior embeddings / annotated objects).
+4. **Presubmission summaries** — bootstrap script reconstructs held-out predictions from frozen development embeddings (does **not** retrain VAEs); degradation audit aggregates historical sparsity tables.
+
+Expect nontrivial runtime and GPU/MPS use for VAE stages. Prefer reading frozen CSVs/figures when verifying manuscript numbers.
+
+## Data availability
+
+- **PBMC10k / PBMC5k**: public 10x Genomics CITE-seq PBMC datasets used by the project loaders.
+- **Lawlor**: HCA dataset [`efea6426-510a-4b60-9a19-277e52bfa815`](https://explore.data.humancellatlas.org/projects/efea6426-510a-4b60-9a19-277e52bfa815); ENA [`PRJEB40376`](https://www.ebi.ac.uk/ena/browser/view/PRJEB40376) / `ERP124005`.
+- Processed analysis objects and checksums: `data/` and `results/phase12b_external_validation/`.
+
+## Code availability
+
+Source and analysis scripts: this repository  
+[https://github.com/Jizhuy/robust-multiomics-integration.git](https://github.com/Jizhuy/robust-multiomics-integration.git)
+
+## Manuscript status
+
+**Working title:** Evaluating protein-access and model-associated gains in CITE-seq representation learning under distribution shift
+
+**Status:** Pre-submission research manuscript
+
+Current package (figures, tables, draft): [`results/final_information_vs_model_manuscript/`](results/final_information_vs_model_manuscript/)
+
+## Citation / contact
+
+Author / maintainer: **Jizhuy** ([yangjizhu@outlook.com](mailto:yangjizhu@outlook.com))
+
+If you use this repository, please cite the manuscript once deposited and link this GitHub URL.
