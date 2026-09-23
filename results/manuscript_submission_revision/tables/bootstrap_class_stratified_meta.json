@@ -1,0 +1,8 @@
+{
+  "n_boot": 10000,
+  "strat_seed": 20260924,
+  "design": "within-class with-replacement resampling of held-out cells; paired predictions",
+  "interval": "percentile 2.5/97.5",
+  "cache": "results/manuscript_submission_revision/tables/development_heldout_predictions.npz",
+  "note": "Sensitivity only; primary remains global paired bootstrap."
+}

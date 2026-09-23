@@ -1,0 +1,19 @@
+{
+  "n_hc": 9494,
+  "n_train": 7573,
+  "n_test": 1921,
+  "n_classes_test": 30,
+  "f1_rna": 0.6679469895760929,
+  "f1_concat": 0.7448967230318437,
+  "f1_totalVI": 0.7792121076915633,
+  "target_rna": 0.666,
+  "target_concat": 0.745,
+  "target_totalVI": 0.779,
+  "match_rna": true,
+  "match_concat": true,
+  "match_totalVI": true,
+  "concat_source": "frozen_npy",
+  "classifier": "LogisticRegression max_iter=2000 lbfgs",
+  "seed": 0,
+  "note": "Predictions reconstructed from frozen/train-only latents; VAEs not retrained."
+}

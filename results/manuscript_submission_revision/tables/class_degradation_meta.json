@@ -1,0 +1,8 @@
+{
+  "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/test_time_corruption_per_class.csv",
+  "direction": "direction_B",
+  "model": "totalvi",
+  "comparison": "mean F1 over seeds at corruption 0.85 vs 0.00",
+  "cd8_naive_delta": -0.26416859252263003,
+  "note": "Computational seed means; not biological replicates."
+}

@@ -1,0 +1,21 @@
+{
+  "design": "zero protein channels before CLR/z/PCA; RNA PCA fixed from clean data",
+  "scope": "development HC; protein/concat PCA only; totalVI NOT retrained",
+  "protein_columns": [
+    "CD3_TotalSeqB",
+    "CD4_TotalSeqB",
+    "CD8a_TotalSeqB",
+    "CD14_TotalSeqB",
+    "CD15_TotalSeqB",
+    "CD16_TotalSeqB",
+    "CD56_TotalSeqB",
+    "CD19_TotalSeqB",
+    "CD25_TotalSeqB",
+    "CD45RA_TotalSeqB",
+    "CD45RO_TotalSeqB",
+    "PD-1_TotalSeqB",
+    "TIGIT_TotalSeqB",
+    "CD127_TotalSeqB"
+  ],
+  "seed": 0
+}

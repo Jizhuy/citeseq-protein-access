@@ -1,0 +1,2 @@
+metric,n_donors,mean_paired_delta,median_paired_delta,sd_paired_delta,iqr_paired_delta,min_paired_delta,max_paired_delta,n_donors_favor_totalVI,n_donors_favor_scVI,exact_sign_test_pvalue,scvi_mean,totalvi_mean,note
+present_class_macro_f1,10,0.09019813835781422,0.0889695184356569,0.009562310028054648,0.012569589312733054,0.0768395629659266,0.1096044650094543,10,0,0.001953125,0.7935938882180864,0.8837920265759006,Biological unit = donor. Seed averaging is within-donor computational aggregation.

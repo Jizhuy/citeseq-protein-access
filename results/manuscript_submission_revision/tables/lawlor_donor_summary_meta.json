@@ -1,0 +1,42 @@
+{
+  "sign_test": "exact binomial two-sided on sign of donor paired deltas",
+  "summary": {
+    "metric": "present_class_macro_f1",
+    "n_donors": 10,
+    "mean_paired_delta": 0.09019813835781422,
+    "median_paired_delta": 0.0889695184356569,
+    "sd_paired_delta": 0.009562310028054648,
+    "iqr_paired_delta": 0.012569589312733054,
+    "min_paired_delta": 0.0768395629659266,
+    "max_paired_delta": 0.1096044650094543,
+    "n_donors_favor_totalVI": 10,
+    "n_donors_favor_scVI": 0,
+    "exact_sign_test_pvalue": 0.001953125,
+    "scvi_mean": 0.7935938882180864,
+    "totalvi_mean": 0.8837920265759006,
+    "note": "Biological unit = donor. Seed averaging is within-donor computational aggregation."
+  },
+  "pca_fold_means": [
+    {
+      "representation": "RNA_PCA_10",
+      "mean": 0.6982471184648921,
+      "std": 0.02327123856535758,
+      "min": 0.6732833425110633,
+      "max": 0.7264858068221026
+    },
+    {
+      "representation": "concat_PCA_10_10",
+      "mean": 0.9451233098142717,
+      "std": 0.00954705159664042,
+      "min": 0.9304298527853738,
+      "max": 0.9547376574620902
+    },
+    {
+      "representation": "protein_PCA_10",
+      "mean": 0.9267434311536282,
+      "std": 0.007734976180707614,
+      "min": 0.9154815675776246,
+      "max": 0.936673480911714
+    }
+  ]
+}
