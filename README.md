@@ -1,148 +1,173 @@
-# CITE-seq Protein Access and Representation Learning
+# CITE-seq Multimodal Reliability
 
-**Evaluating protein-access and residual totalVI-associated gains in CITE-seq representation learning under distribution shift**
+Reproducibility repository for:
+
+*Evaluating protein-access gains and residual totalVI-associated contrasts in CITE-seq representation learning under distribution shift*
 
 **Author:** Jizhu Yang
 
-**Repository:** [https://github.com/Jizhuy/citeseq-protein-access](https://github.com/Jizhuy/citeseq-protein-access)
+This repository contains code, frozen result tables, publication figures, and supplementary materials supporting an empirical evaluation of protein-access gains and residual totalVI-associated contrasts under matched information access, distribution shift, protein degradation, uncertainty analysis, training stochasticity, and donor-level external validation.
+
+This repository (`Jizhuy/citeseq-protein-access`) hosts a synchronized copy of the finalized publication and reproducibility materials. The journal-submitted Code Availability URL cites the companion repository `https://github.com/Jizhuy/citeseq-multimodal-reliability`, which remains the manuscript-cited location and is unchanged by this synchronization. Pre-synchronization development history for this repository is preserved on branch `archive/legacy-pre-publication-sync-2026-10-27` and tag `legacy-pre-sync-2026-10-27`.
 
 ---
 
-## Clone this repository
+## 1. Overview
 
-HTTPS:
+Paired CITE-seq measurements of RNA and surface protein are often used to motivate multimodal deep generative models. A gain from such a model can come from two different sources: having access to protein measurements at all, or the specific multimodal model. This study separates the two with descriptive contrasts evaluated by a common downstream classifier (cell-type macro-F1), and stress-tests them under distribution shift, protein degradation, uncertainty analysis, training stochasticity, and donor-level external validation.
 
-```bash
-git clone https://github.com/Jizhuy/citeseq-protein-access.git
-cd citeseq-protein-access
-```
+**Model positioning.**
 
-SSH:
+- This study evaluates existing representations and evaluation controls. It does **not** introduce a new neural architecture.
+- totalVI is an established, published model.
+- scVI_matched is a capacity-matched configuration of the published scVI model (RNA only).
+- G_assoc is a descriptive model-associated contrast, **not** a causal architecture effect.
 
-```bash
-git clone git@github.com:Jizhuy/citeseq-protein-access.git
-cd citeseq-protein-access
-```
+## 2. Scientific question
 
----
+How much of the macro-F1 advantage of a multimodal deep representation (totalVI) over an RNA-only reference is explained by **protein access** alone, as captured by a simple concatenated RNA–protein PCA, and how much remains as a **residual totalVI-associated contrast** once information access is matched?
 
-## Overview
+| Contrast | Definition |
+| --- | --- |
+| G_access | F1(concat RNA–protein PCA) − F1(RNA PCA) |
+| G_assoc | F1(totalVI) − F1(concat RNA–protein PCA) |
+| Gap_total | F1(totalVI) − F1(RNA PCA) |
+| R_access | G_access / Gap_total (secondary descriptive ratio; not bounded to [0, 1]) |
 
-Paired CITE-seq measurements of RNA and surface protein can improve single-cell representation learning, but it is often unclear how much of the gain comes from **protein access** versus a more complex multimodal model.
+## 3. Primary results
 
-This repository accompanies a research manuscript that separates:
-
-1. **Protein-access gain** — improvement from adding paired protein features to a simple multimodal baseline  
-2. **Residual totalVI-associated contrast** — any remaining difference between totalVI and that simple RNA–protein baseline  
-
-Analyses stress-test these contrasts under:
-
-- strict train-only internal evaluation  
-- bidirectional transfer with feature-access-matched controls  
-- protein degradation  
-- uncertainty diagnostics and selective prediction  
-- training stochasticity  
-- Lawlor donor-level external validation  
-
-This is an empirical reliability study of existing representations (PCA baselines, MOFA+, scVI_matched, totalVI), **not** a new architecture paper.
-
----
-
-## Primary scientific finding
-
-Under a **strict train-only** internal protocol (7,573 high-confidence training cells / 1,921 held-out cells):
+Primary analysis: **strict train-only** internal evaluation on the PBMC development cohort (7,573 high-confidence training cells / 1,921 held-out high-confidence cells). Every representation, including scVI_matched and totalVI, was fitted on training cells only.
 
 | Representation | Macro-F1 |
 | --- | ---: |
 | RNA PCA | 0.667 |
-| Concat RNA–protein PCA | 0.745 |
+| Concat RNA-protein PCA | 0.745 |
 | scVI_matched | 0.709 |
 | totalVI | 0.741 |
 
-| Contrast | Estimate | 95% conditional paired-bootstrap CI |
+| Contrast | Estimate | 95% interval |
 | --- | ---: | --- |
-| **G_access** (concat − RNA PCA) | **+0.078** | [0.042, 0.131] |
-| **G_assoc** (totalVI − concat) | **−0.004** | [−0.060, 0.030] |
-| **Gap_total** (totalVI − RNA PCA) | **+0.074** | [0.029, 0.130] |
+| G_access | +0.078 | [0.042, 0.131] |
+| G_assoc | -0.004 | [-0.060, 0.030] |
+| Gap_total | +0.074 | [0.029, 0.130] |
 
-**Interpretation.** Protein-access gain is substantial and resampling-stable. After matching information access, the residual totalVI-associated contrast is **near null and imprecisely estimated** (interval crosses zero). The descriptive ratio `R_access ≈ 1.05` is reported only as a secondary quantity and is **not** a bounded recovery fraction.
+Intervals are cell-level conditional paired-bootstrap percentile intervals (B = 10,000). They are not biological confidence intervals. For G_assoc, prop>0 = 0.355. R_access ≈ 1.05 is reported only as a secondary descriptive ratio.
 
-Secondary / historical: protein PCA = 0.512; MOFA+ = 0.549 (not re-fit under strict train-only).
+Under strict train-only matched information access, the protein-access contrast was substantial and resampling-stable, whereas the residual totalVI-associated contrast was near null and imprecisely estimated.
 
----
+Other headline results (frozen values; see [`docs/RESULT_MANIFEST.md`](docs/RESULT_MANIFEST.md) for file-level sources):
 
-## Analysis components
-
-| Component | Role |
+| Analysis | Result |
 | --- | --- |
-| RNA PCA / protein PCA / concat PCA | Simple baselines (train-only) |
-| scVI_matched | Capacity-matched RNA-only deep representation (train-only) |
-| totalVI | Multimodal deep representation (train-only) |
-| Transfer + feature-access-matched concat | Distribution-shift stress test |
-| Protein degradation | Antibody-signal dependence |
-| Uncertainty / selective prediction | Reliability diagnostics |
-| Training stochasticity | Precision of small contrasts |
-| Lawlor donor validation | Biological donor unit (*n* = 10) |
+| Transfer, Direction A (PBMC10k → PBMC5k) | inductive concat 0.735; feature-access-matched transductive concat 0.636; scVI_matched 0.656; totalVI 0.652 |
+| Transfer, Direction B (PBMC5k → PBMC10k) | inductive concat 0.734; feature-access-matched transductive concat 0.767; scVI_matched 0.601; totalVI 0.654 |
+| Lawlor donor-level external validation (10 donors; donor-mean present-class macro-F1) | RNA PCA 0.690; protein PCA 0.923; concat PCA 0.942; scVI_matched 0.794; totalVI 0.884 |
+| Lawlor totalVI − scVI_matched | mean donor Δ ≈ +0.090; 10/10 donors favour totalVI; exact two-sided sign test P = 0.00195 |
 
-### Lawlor donor-level summary (unchanged)
+Lawlor labels are protein-gated. This favours protein-aligned baselines; the result supports the value of the multimodal measurement, not universal totalVI superiority.
 
-| Representation | Donor-mean present-class macro-F1 |
-| --- | ---: |
-| RNA PCA | 0.690 |
-| Protein PCA | 0.923 |
-| Concat PCA | 0.942 |
-| scVI_matched | 0.794 |
-| totalVI | 0.884 |
+## 4. Study design
 
-Paired totalVI − scVI_matched: mean Δ ≈ +0.090; 10/10 donors; exact two-sided sign test *P* = 0.00195. Protein-gated labels favor protein-aligned baselines; this supports multimodal measurement value, not universal totalVI superiority.
+| Component | Role | Status |
+| --- | --- | --- |
+| Strict train-only internal analysis | **PRIMARY** analysis | COMPLETE — PRIMARY ANALYSIS |
+| Historical feature-transductive internal analysis | Secondary information-access sensitivity (deep models fitted on features of all development cells) | Secondary only |
+| Bidirectional cross-dataset transfer (scArches query adaptation, 20 seeds) | Distribution-shift stress test | Complete |
+| Feature-access-matched transductive concat PCA | Transfer control matching target-feature access | Complete |
+| Training-time protein degradation | Antibody-signal dependence (historical feature-transductive pipeline; 5 mask replicates per level) | Complete |
+| Post-adaptation test-time protein corruption | Degradation after query adaptation (20 seeds) | Complete |
+| Uncertainty and selective prediction | Predictive uncertainty, latent posterior dispersion, risk–coverage | Complete |
+| Training stochasticity | Replicated crossed design: source subset × model seed × run replicate | Complete |
+| Lawlor donor-level external validation | Biological unit: 10 donors | Complete |
 
----
+**Transfer note.** scArches query adaptation uses unlabeled target features, so it is transductive adaptation. The transductive concat baseline matches that target-feature access but not the learning objective or the architecture.
 
-## Canonical manuscript package
+**Not run** (stated explicitly, not implied as complete):
 
-All primary figures, tables, supplements, and audits for the current manuscript live under:
+- totalVI retraining under complete marker-channel dropout (the marker-channel dropout sensitivity is PCA-only);
+- an additional newly trained multimodal comparator;
+- a second external, non-protein-gated validation cohort.
 
-[`results/manuscript_submission_revision/`](results/manuscript_submission_revision/)
+Earlier development stages are described neutrally here: the *historical scVI baseline* (initial scVI, scVI_matched and totalVI fits on the development cohort), the *GPU transfer experiments* (cross-dataset scArches transfer runs), and the *stochasticity experiment* (replicated crossed design).
 
-| Item | Path |
-| --- | --- |
-| Manuscript (Markdown) | [`manuscript/CITEseq_Protein_Access_Model_Associated_Gains.md`](results/manuscript_submission_revision/manuscript/CITEseq_Protein_Access_Model_Associated_Gains.md) |
-| Manuscript (DOCX) | [`manuscript/CITEseq_Protein_Access_Model_Gains_Submission_Ready.docx`](results/manuscript_submission_revision/manuscript/CITEseq_Protein_Access_Model_Gains_Submission_Ready.docx) |
-| Strict train-only results | [`strict_train_only/`](results/manuscript_submission_revision/strict_train_only/) |
-| Supplementary methods / results | [`supplement/`](results/manuscript_submission_revision/supplement/) |
-| Reproducibility notes | [`REPRODUCIBILITY_README.md`](results/manuscript_submission_revision/REPRODUCIBILITY_README.md) |
-| Internal audit | [`STRICT_TRAIN_ONLY_INTERNAL_AUDIT.md`](results/manuscript_submission_revision/STRICT_TRAIN_ONLY_INTERNAL_AUDIT.md) |
-
----
-
-## Repository layout (selected)
+## 5. Repository structure
 
 ```
-scripts/                              # Phase runners
-src/                                  # Shared library code
-data/                                 # Processed objects / manifests (large files not versioned)
-results/
-  manuscript_submission_revision/     # PRIMARY submission package
-  revision_round3_information_vs_model/
-  revision_round2_methodological_fixes/
-  presubmission_revision/             # Historical bootstrap / degradation
-environment.yml
-requirements.txt
-README.md
+citeseq-protein-access/   # synchronized publication tree (companion: citeseq-multimodal-reliability)
+├── README.md, CITATION.cff, LICENSE, .gitignore
+├── environment.yml, requirements.txt      # pinned software environment
+├── config/                                # analysis configuration (no machine paths)
+├── data/annotations/                      # reference-transfer cell labels (derived); raw data not included
+├── src/                                   # minimal library code used by the scripts
+│   ├── data/  models/  evaluation/  experiments/  annotation/  utils/
+├── scripts/                               # analysis entry points (see section 6)
+├── results/
+│   ├── primary/                           # strict train-only internal analysis (PRIMARY)
+│   ├── transfer/                          # bidirectional transfer + feature-access-matched control
+│   ├── degradation/                       # training-time and post-adaptation protein degradation
+│   ├── uncertainty/                       # reliability, selective prediction, statistical units
+│   ├── stochasticity/                     # replicated crossed design and variance decomposition
+│   ├── donor_validation/                  # Lawlor donor-level external validation
+│   └── supplementary/                     # controls, marker-channel dropout, environment,
+│       └── information_access_sensitivity/  # SECONDARY information-access sensitivity
+├── figures/
+│   ├── Figure_1.tiff … Figure_6.tiff      # final main figures (600 dpi)
+│   ├── Supplementary_Figure_S1.{pdf,png,svg}
+│   └── source/                            # vector sources of Figures 1-6
+├── supplementary/
+│   ├── Supplementary_Information.pdf
+│   └── Supplementary_Data.zip
+└── docs/                                  # reproducibility, data availability, manifests, audits
 ```
 
----
+Each `results/<analysis>/README.md` states the role and status of its tables.
 
-## Environment
+## 6. Reproducing analyses
 
-Pinned (see `environment.yml` / `requirements.txt`):
+Frozen tables under `results/` are the reference outputs; you do not need to rerun anything to inspect a reported value. Full reruns need the public datasets (section 7) and substantial compute (CUDA GPU or Apple MPS for the VAE models).
 
-- Python **3.11.7**
-- scvi-tools **1.3.3**
-- scikit-learn **1.5.2**
-- PyTorch **2.14.0**
-- scanpy **1.10.3**
-- anndata **0.11.4**
+| Analysis | Script(s) | Output |
+| --- | --- | --- |
+| Data preparation | `scripts/prepare_data.py` | `data/processed/` |
+| Reference cell-type labels | `scripts/run_reference_annotation.py` | `data/annotations/pbmc_reference_annotations.csv`, annotated `.h5ad` |
+| **Strict train-only internal (PRIMARY)** | `scripts/run_strict_train_only_internal.py` | `results/primary/strict_train_only/` |
+| Simple PCA baselines (development, transfer, Lawlor) | `scripts/run_simple_multimodal_baselines.py` | `results/supplementary/controls/` |
+| Bidirectional transfer (20 seeds) | `scripts/run_bidirectional_transfer.py`, `scripts/analyze_bidirectional_transfer.py` | `results/transfer/replicate_runs/` |
+| Feature-access-matched transfer control | `scripts/run_matched_concat_transfer.py` | `results/transfer/matched_concat_control/` |
+| Historical feature-transductive models | `scripts/run_feature_transductive_models.py` | `results/models/`, `results/embeddings/` (not shipped) |
+| Training-time protein degradation | `scripts/run_protein_degradation.py` | `results/tables/` → frozen copies in `results/degradation/training_time/` |
+| Post-adaptation protein corruption | `scripts/run_test_time_protein_corruption.py` | `results/degradation/test_time_corruption/` |
+| Uncertainty / selective prediction | `scripts/run_uncertainty_selective_prediction.py`, `scripts/summarize_selective_macro_f1.py` | `results/uncertainty/` |
+| Training stochasticity | `scripts/run_training_stochasticity.py`, `scripts/analyze_crossed_design.py`, `scripts/analyze_training_stochasticity.py`, `scripts/run_variance_decomposition.py` | `results/stochasticity/` |
+| Lawlor donor validation | `scripts/run_lawlor_donor_validation.py`, `scripts/analyze_lawlor_donor_validation.py`, `scripts/run_lawlor_donor_level.py`, `scripts/run_lawlor_pairwise_consistency.py`, `scripts/run_lawlor_pca_per_donor.py`, `scripts/summarize_lawlor_donor_statistics.py` | `results/donor_validation/` |
+| Class-stratified bootstrap (secondary sensitivity) | `scripts/cache_feature_transductive_predictions.py`, `scripts/run_class_stratified_bootstrap.py` | `results/supplementary/information_access_sensitivity/` |
+| Marker-channel dropout (PCA only) | `scripts/run_marker_channel_dropout.py` | `results/supplementary/marker_channel_dropout/` |
+| Summary tables from frozen per-run tables (no model run) | `scripts/build_training_time_degradation_summary.py`, `scripts/build_pbmc_reliability_summary.py` | `results/degradation/training_time/`, `results/uncertainty/calibration/` |
+| Figures 1-6, Supplementary Figure S1 | `scripts/generate_figure1_representation_framework.py`, `scripts/generate_publication_figures.py`, `scripts/generate_supplementary_figure_s1.py` | `figures/` |
+
+The figure scripts read only frozen tables and can be run without data or GPU:
+
+```bash
+conda activate multiomics_robustness
+python scripts/generate_publication_figures.py
+```
+
+The full order of execution, seeds, compute notes and the analysis taxonomy are in [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
+
+## 7. Datasets
+
+| Cohort | Role | Provenance |
+| --- | --- | --- |
+| PBMC10k and PBMC5k CITE-seq | Development (internal) and bidirectional transfer | Public scvi-tools / 10x Genomics CITE-seq example data (`pbmc_10k_protein_v3.h5ad`, `pbmc_5k_protein_v3.h5ad`). No GEO/SRA accession is claimed. |
+| Lawlor et al. PBMC CITE-seq (Baseline condition) | Donor-level external validation | Human Cell Atlas project `efea6426-510a-4b60-9a19-277e52bfa815`; ENA `PRJEB40376` / `ERP124005` |
+
+## 8. Data availability
+
+Raw public datasets are **not redistributed** in this repository. Download instructions, expected file names and local placement are in [`docs/DATA_AVAILABILITY.md`](docs/DATA_AVAILABILITY.md). No private biological data are included.
+
+## 9. Software environment
+
+Verified versions: Python 3.11.7, scvi-tools 1.3.3, scikit-learn 1.5.2, scanpy 1.10.3, anndata 0.11.4, PyTorch 2.14.0, numpy 1.26.4, pandas 2.2.2, scipy 1.13.1, mofapy2 0.7.5.
 
 ```bash
 conda create -n multiomics_robustness python=3.11.7 pip -y
@@ -150,45 +175,34 @@ conda activate multiomics_robustness
 pip install -r requirements.txt
 ```
 
----
+`environment.yml` lists the core pins; `requirements.txt` is the full pinned tree. `results/supplementary/environment/runtime_environment.json` records the versions observed at run time.
 
-## Key scripts
+## 10. Supplementary material
 
-| Analysis | Script |
+| Item | Path |
 | --- | --- |
-| Strict train-only internal (**PRIMARY**) | `results/manuscript_submission_revision/scripts/run_strict_train_only_internal.py` |
-| Feature-access-matched transfer | `results/revision_round3_information_vs_model/transfer_control/scripts/revision3_matched_concat_transfer.py` |
-| Class-stratified bootstrap | `results/manuscript_submission_revision/scripts/run_class_stratified_bootstrap.py` |
-| Lawlor donor summaries | `results/manuscript_submission_revision/scripts/lawlor_donor_summary_stats.py` |
-| Final DOCX builder | `results/manuscript_submission_revision/scripts/build_final_docx.py` |
-| Environment printer | `scripts/print_environment.py` |
+| Supplementary Information | [`supplementary/Supplementary_Information.pdf`](supplementary/Supplementary_Information.pdf) |
+| Supplementary Data (frozen tables) | [`supplementary/Supplementary_Data.zip`](supplementary/Supplementary_Data.zip). The Supplementary Information refers to this archive by its journal-package file name (`05_GPB_Supplementary_Data.zip`); the contents are identical. |
+| Supplementary Figure S1 (study-design schematic; icons are illustrative; no results are plotted) | [`figures/Supplementary_Figure_S1.pdf`](figures/Supplementary_Figure_S1.pdf) |
+| Figure ↔ manuscript mapping (Figures 1–6, S1) | [`figures/README.md`](figures/README.md) |
+| Result ↔ file ↔ script ↔ table/figure index | [`docs/RESULT_MANIFEST.md`](docs/RESULT_MANIFEST.md) |
+| Known numerical presentation notes | [`docs/KNOWN_NUMERICAL_PRESENTATION_NOTES.md`](docs/KNOWN_NUMERICAL_PRESENTATION_NOTES.md) |
+| Migration manifest and audit | [`docs/MIGRATION_MANIFEST.md`](docs/MIGRATION_MANIFEST.md), [`docs/MIGRATION_AUDIT.md`](docs/MIGRATION_AUDIT.md) |
 
-There is no single one-command end-to-end pipeline. Prefer frozen tables under `results/`. Full VAE training requires substantial compute (GPU/CUDA or MPS).
+## 11. Citation
 
----
+Please cite the repository using [`CITATION.cff`](CITATION.cff):
 
-## Datasets
+Jizhu Yang. *Evaluating protein-access gains and residual totalVI-associated contrasts in CITE-seq representation learning under distribution shift.* Manuscript-cited code repository: https://github.com/Jizhuy/citeseq-multimodal-reliability (this repository holds a synchronized copy of the same materials).
 
-| Cohort | Role | Provenance |
-| --- | --- | --- |
-| PBMC10k / PBMC5k | Development / transfer | Public scvi-tools / 10x CITE-seq example AnnData (no unverified GEO/SRA claimed) |
-| Lawlor blood CITE-seq | External donor validation | HCA `efea6426-510a-4b60-9a19-277e52bfa815`; ENA `PRJEB40376` / `ERP124005` |
+No archival DOI has been issued yet.
 
----
+## 12. License
 
-## Data and code availability
+MIT License — see [`LICENSE`](LICENSE).
 
-- **Code:** https://github.com/Jizhuy/citeseq-protein-access  
-- **Lawlor:** HCA / ENA accessions above  
-- **PBMC:** scvi-tools example CITE-seq files  
+The MIT License applies to the code and repository-authored materials in this repository unless otherwise stated. It does not relicense, and implies no ownership of, the third-party public datasets analysed here (PBMC10k/PBMC5k, the Seurat v4 reference, Lawlor et al.). Those datasets remain subject to their original source terms; see [`docs/DATA_AVAILABILITY.md`](docs/DATA_AVAILABILITY.md).
 
-An immutable archival release and DOI will accompany the submitted version of the manuscript.
+## 13. Contact
 
----
-
-## Citation
-
-Jizhu Yang. *Evaluating protein-access and residual totalVI-associated gains in CITE-seq representation learning under distribution shift.* Pre-submission research manuscript.  
-Repository: https://github.com/Jizhuy/citeseq-protein-access
-
-**Contact:** [yangjizhu@outlook.com](mailto:yangjizhu@outlook.com)
+Jizhu Yang — [yangjizhu@outlook.com](mailto:yangjizhu@outlook.com) (public repository contact)

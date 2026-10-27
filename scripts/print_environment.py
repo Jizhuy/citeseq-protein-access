@@ -9,7 +9,7 @@ from pathlib import Path
 
 OUT = (
     Path(__file__).resolve().parents[1]
-    / "results/manuscript_submission_revision/tables"
+    / "results/supplementary/environment"
 )
 OUT.mkdir(parents=True, exist_ok=True)
 

@@ -1,69 +1,41 @@
-.DS_Store
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+
+# Python / notebooks / OS
 __pycache__/
 *.py[cod]
-*.egg-info/
 .ipynb_checkpoints/
-.pytest_cache/
-.mypy_cache/
-.venv/
-.venv_docx/
-.env
+.DS_Store
 
-# Large data objects are downloaded, not versioned
-data/raw/*.h5ad
-data/processed/*.h5ad
-data/processed/*.csv
-data/processed/*.json
-data/processed/*.npz
-
-# Experiment outputs
-results/tables/*.csv
-results/tables/*.json
-results/figures/*.png
-results/figures/*.pdf
-results/embeddings/*
-results/logs/*
-results/models/*
-results/perturbations/*.npz
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!results/tables/.gitkeep
-!results/figures/.gitkeep
-!results/embeddings/.gitkeep
-!results/logs/.gitkeep
-!results/models/.gitkeep
-!results/perturbations/.gitkeep
-
-# Heavy phase artifacts (keep reports/tables/figures/logs; exclude binaries)
-results/**/embeddings/
-results/**/posterior/
-results/**/processed/
-results/**/models/
-results/**/raw_audit/
-results/**/probabilities/
-*.npz
+# Large single-cell data and model artefacts (not redistributed)
 *.h5ad
+*.h5
+*.ckpt
 *.pt
 *.pth
-*.ckpt
-*.Rds
-*.rds
-*.mtx
-*.h5
-*.pkl
-*.pickle
-
-# Office lock / temp files
-~$*
-*.tmp
-
-# local analysis env for revision round 2
-.venv_rev2/
-
-# local python-docx install for manuscript build
-.deps_docx/
-
-# local tooling / caches
-venv/
+models/
+!src/models/
+checkpoints/
 cache/
 tmp/
+temp/
+*.log
+
+# Raw / processed / external input data (see docs/DATA_AVAILABILITY.md)
+data/raw/
+data/processed/
+data/external/
+
+# Regenerated intermediates written by the config-driven pipeline
+results/tables/
+results/embeddings/
+results/logs/
+results/figures/
+
+# Private submission material must never be committed
+journal_submission/
+cover_letters/
+private_metadata/

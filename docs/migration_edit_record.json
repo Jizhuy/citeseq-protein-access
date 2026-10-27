@@ -1,0 +1,2639 @@
+{
+ "rows": [
+  {
+   "source": "scripts/01_prepare_data.py",
+   "target": "scripts/prepare_data.py",
+   "action": "RENAMED ONLY",
+   "reason": "[A] Data preparation (PBMC10k/PBMC5k combined inner-join object).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/06_run_phase6.py",
+   "target": "scripts/run_reference_annotation.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Reference-based (Seurat v4 / scArches) cell-type labels used by every analysis.",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/02_run_baseline.py",
+   "target": "scripts/run_feature_transductive_models.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Historical feature-transductive scVI / scVI_matched / totalVI fits on all development cells: reference model for training-time degradation and inputs to the secondary information-access sensitivity.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/run_strict_train_only_internal.py",
+   "target": "scripts/run_strict_train_only_internal.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] PRIMARY strict train-only internal analysis and its bootstraps.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/revision2_simple_multimodal_baseline.py",
+   "target": "scripts/run_simple_multimodal_baselines.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] RNA/protein/concat PCA baselines (development, transfer, Lawlor).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/11b_run_grid.py",
+   "target": "scripts/run_bidirectional_transfer.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] 20-seed bidirectional transfer runs (scVI_matched, totalVI) and crossed design replicate 0.",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/11b_analyze.py",
+   "target": "scripts/analyze_bidirectional_transfer.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Scores transfer runs; 20-seed primary and selective-prediction tables.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round3_information_vs_model/transfer_control/scripts/revision3_matched_concat_transfer.py",
+   "target": "scripts/run_matched_concat_transfer.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Feature-access-matched concat PCA transfer control (Table 3 / Figure 3).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/08_run_sparsity_stress.py",
+   "target": "scripts/run_protein_degradation.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Training-time protein degradation (Table 4 / Figure 4).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/revision2_testtime_corruption.py",
+   "target": "scripts/run_test_time_protein_corruption.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/07_09_units_aurc_reliability.py",
+   "target": "scripts/run_uncertainty_selective_prediction.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Statistical-unit ledger, selective prediction, reliability metrics (Figure 5).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/11b_crossed.py",
+   "target": "scripts/analyze_crossed_design.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Scores the crossed source-subset x model-seed design (replicate 0).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/12a_run_replicates.py",
+   "target": "scripts/run_training_stochasticity.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Trains replicate 1 of the crossed stochasticity design.",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/12a_analyze.py",
+   "target": "scripts/analyze_training_stochasticity.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Replicated variance components (Table 5).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/04_variance_decomposition_corrected.py",
+   "target": "scripts/run_variance_decomposition.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Corrected variance decomposition used in Figure 5 / Table 5.",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/12b_run_gate.py",
+   "target": "scripts/run_lawlor_donor_validation.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Lawlor donor-held-out training runs (scVI_matched, totalVI).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/12b_analyze.py",
+   "target": "scripts/analyze_lawlor_donor_validation.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Aggregates Lawlor runs.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/03_lawlor_donor_level.py",
+   "target": "scripts/run_lawlor_donor_level.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Donor-level Lawlor metrics (biological unit n = 10).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/02_lawlor_pairwise_consistency.py",
+   "target": "scripts/run_lawlor_pairwise_consistency.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Fold-by-seed computational consistency (38/50).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/lawlor_pca_per_donor.py",
+   "target": "scripts/run_lawlor_pca_per_donor.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Per-donor PCA baselines; all-method donor table (Figure 6).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/lawlor_donor_summary_stats.py",
+   "target": "scripts/summarize_lawlor_donor_statistics.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Donor paired-difference summary and exact sign test (Table 6).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/scripts/generate_gpb_figures.py",
+   "target": "scripts/generate_publication_figures.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Figures 2-6 from frozen tables (plotting only).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/generate_figure1_representation_framework.py",
+   "target": "scripts/generate_figure1_representation_framework.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Figure 1 schematic (no data).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/print_environment.py",
+   "target": "scripts/print_environment.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[A] Records runtime package versions.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/run_class_stratified_bootstrap.py",
+   "target": "scripts/run_class_stratified_bootstrap.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] Class-stratified bootstrap of the historical feature-transductive analysis (SR1b).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/presubmission_revision/bootstrap/presubmission_core_contrast_bootstrap.py",
+   "target": "scripts/run_feature_transductive_bootstrap.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] Historical feature-transductive core-contrast bootstrap (SR1b).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/cache_development_predictions.py",
+   "target": "scripts/cache_feature_transductive_predictions.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] Caches feature-transductive held-out predictions for SR1b.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/marker_channel_dropout_pca.py",
+   "target": "scripts/run_marker_channel_dropout.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] PCA-only marker-channel dropout (SR5).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/summarize_class_degradation.py",
+   "target": "scripts/summarize_class_degradation.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] Per-class Direction B degradation (SR2).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/manuscript_submission_revision/scripts/summarize_selective_macroF1.py",
+   "target": "scripts/summarize_selective_macro_f1.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] Selective-prediction macro-F1 by coverage (SR3).",
+   "group": "scripts"
+  },
+  {
+   "source": "scripts/generate_figure1_study_framework.py",
+   "target": "scripts/generate_supplementary_figure_s1.py",
+   "action": "PATH NORMALIZED",
+   "reason": "[B] Supplementary Figure S1 study-design schematic (no data).",
+   "group": "scripts"
+  },
+  {
+   "source": "results/phase12b_external_validation/raw_audit/convert_baseline_sparse.R",
+   "target": "scripts/prepare_lawlor_baseline_matrices.R",
+   "action": "RENAMED ONLY",
+   "reason": "[B] Subsets Lawlor HCA matrices to Baseline Demuxlet singlets.",
+   "group": "scripts"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/scripts/revision2_p1_common.py",
+   "target": "src/utils/analysis_common.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Shared PCA/classifier helpers imported by the strict train-only, baseline and transfer-control scripts.",
+   "group": "src"
+  },
+  {
+   "source": "src/__init__.py",
+   "target": "src/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/__init__.py",
+   "target": "src/experiments/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase8_sparsity.py",
+   "target": "src/experiments/protein_sparsity_stress.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/utils/__init__.py",
+   "target": "src/utils/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/utils/io.py",
+   "target": "src/utils/io.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/utils/logging_utils.py",
+   "target": "src/utils/logging_utils.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/utils/device.py",
+   "target": "src/utils/device.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/utils/seed.py",
+   "target": "src/utils/seed.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/__init__.py",
+   "target": "src/evaluation/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/phase6.py",
+   "target": "src/evaluation/annotation_evaluation.py",
+   "action": "RENAMED ONLY",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/phase8_plots.py",
+   "target": "src/evaluation/protein_sparsity_plots.py",
+   "action": "RENAMED ONLY",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/models/__init__.py",
+   "target": "src/models/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/models/run_totalvi_corrupted.py",
+   "target": "src/models/run_totalvi_corrupted.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/data/__init__.py",
+   "target": "src/data/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/data/perturbations.py",
+   "target": "src/data/perturbations.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/data/load_citeseq.py",
+   "target": "src/data/load_citeseq.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/data/preprocess.py",
+   "target": "src/data/preprocess.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/models/run_totalvi.py",
+   "target": "src/models/run_totalvi.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/models/run_scvi.py",
+   "target": "src/models/run_scvi.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/resource_metrics.py",
+   "target": "src/evaluation/resource_metrics.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/representation_metrics.py",
+   "target": "src/evaluation/representation_metrics.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/plots.py",
+   "target": "src/evaluation/plots.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/data/qc_plots.py",
+   "target": "src/data/qc_plots.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase12b_external.py",
+   "target": "src/experiments/lawlor_external.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase10_cross_dataset.py",
+   "target": "src/experiments/cross_dataset_transfer.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase11_uncertainty.py",
+   "target": "src/experiments/uncertainty.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/models/run_scvi_matched.py",
+   "target": "src/models/run_scvi_matched.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase11b_stats.py",
+   "target": "src/experiments/transfer_replicate_stats.py",
+   "action": "RENAMED ONLY",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase11b_robustness.py",
+   "target": "src/experiments/transfer_replicates.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/phase10_plots.py",
+   "target": "src/evaluation/transfer_plots.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase10b_source_size.py",
+   "target": "src/experiments/source_size_subsampling.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/phase10b_plots.py",
+   "target": "src/evaluation/source_size_plots.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase6_run.py",
+   "target": "src/experiments/reference_annotation.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/evaluation/phase6_plots.py",
+   "target": "src/evaluation/annotation_plots.py",
+   "action": "RENAMED ONLY",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/annotation/__init__.py",
+   "target": "src/annotation/__init__.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Package initialiser required by migrated modules.",
+   "group": "src"
+  },
+  {
+   "source": "src/annotation/seurat_v4.py",
+   "target": "src/annotation/seurat_v4.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/annotation/annotation_qc.py",
+   "target": "src/annotation/annotation_qc.py",
+   "action": "COPIED UNCHANGED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase12a_stats.py",
+   "target": "src/experiments/stochasticity_stats.py",
+   "action": "RENAMED ONLY",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase11b_analysis.py",
+   "target": "src/experiments/transfer_replicate_analysis.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "src/experiments/phase12a_replication.py",
+   "target": "src/experiments/stochasticity_replication.py",
+   "action": "PATH NORMALIZED",
+   "reason": "Imported (directly or transitively) by a migrated script.",
+   "group": "src"
+  },
+  {
+   "source": "data/annotations/README.md",
+   "target": "data/annotations/README.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reference-transfer cell labels (derived, required input).",
+   "group": "data"
+  },
+  {
+   "source": "data/annotations/pbmc_reference_annotations.csv",
+   "target": "data/annotations/pbmc_reference_annotations.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reference-transfer cell labels (derived, required input).",
+   "group": "data"
+  },
+  {
+   "source": "data/annotations/pbmc_cell_annotations_template.csv",
+   "target": "data/annotations/pbmc_cell_annotations_template.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reference-transfer cell labels (derived, required input).",
+   "group": "data"
+  },
+  {
+   "source": "config/protein_gene_map.yaml",
+   "target": "config/protein_gene_map.yaml",
+   "action": "SYNTAX FIXED",
+   "reason": "Protein-to-gene map used by the loader. The free-text `notes` item was quoted because its trailing colon made the source file invalid YAML (load_yaml would fail); no mapping entry changed.",
+   "group": "config"
+  },
+  {
+   "source": "environment.yml",
+   "target": "environment.yml",
+   "action": "COPIED UNCHANGED",
+   "reason": "Pinned environment (Python 3.11.7, scvi-tools 1.3.3, ...); versions preserved.",
+   "group": "config"
+  },
+  {
+   "source": "requirements.txt",
+   "target": "requirements.txt",
+   "action": "COPIED UNCHANGED",
+   "reason": "Full pinned package tree (includes mofapy2 0.7.5, statsmodels); versions preserved.",
+   "group": "config"
+  },
+  {
+   "source": "config/config.yaml",
+   "target": "config/config.yaml",
+   "action": "PATH NORMALIZED",
+   "reason": "Removed obsolete project stage/phase keys and the unused missing_modality block; renamed the query-adaptation key; no parameter value changed.",
+   "group": "config"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/strict_train_only_point_estimates.csv",
+   "target": "results/primary/strict_train_only/tables/strict_train_only_point_estimates.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/strict_train_only_bootstrap_summary.csv",
+   "target": "results/primary/strict_train_only/tables/strict_train_only_bootstrap_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/strict_train_only_bootstrap_global_vs_stratified.csv",
+   "target": "results/primary/strict_train_only/tables/strict_train_only_bootstrap_global_vs_stratified.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/strict_train_only_bootstrap_class_stratified.csv",
+   "target": "results/primary/strict_train_only/tables/strict_train_only_bootstrap_class_stratified.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/strict_train_only_bootstrap_draws.csv",
+   "target": "results/primary/strict_train_only/tables/strict_train_only_bootstrap_draws.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/strict_train_only_heldout_predictions.npz",
+   "target": "results/primary/strict_train_only/tables/strict_train_only_heldout_predictions.npz",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/strict_train_only/tables/run_meta.json",
+   "target": "results/primary/strict_train_only/tables/run_meta.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "PRIMARY strict train-only output (Tables 1-2, Figure 2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/STRICT_TRAIN_ONLY_INTERNAL_AUDIT.md",
+   "target": "results/primary/STRICT_TRAIN_ONLY_INTERNAL_AUDIT.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Leakage/protocol audit of the primary analysis.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round3_information_vs_model/transfer_control/tables/matched_transfer_control.csv",
+   "target": "results/transfer/matched_concat_control/tables/matched_transfer_control.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Feature-access-matched transfer control (Table 3, Figure 3).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round3_information_vs_model/transfer_control/logs/matched_transfer_integrity.json",
+   "target": "results/transfer/matched_concat_control/logs/matched_transfer_integrity.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "Feature-access-matched transfer control (Table 3, Figure 3).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round3_information_vs_model/transfer_control/logs/matched_transfer_control_design.md",
+   "target": "results/transfer/matched_concat_control/logs/matched_transfer_control_design.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Feature-access-matched transfer control (Table 3, Figure 3).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_20seed_primary.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_20seed_primary.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_20seed_summary.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_20seed_summary.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_cell_bootstrap.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_cell_bootstrap.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_cell_instability.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_cell_instability.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_celltype_retention.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_celltype_retention.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_celltype_variance.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_celltype_variance.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_crossed_design.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_crossed_design.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_crossed_matrices.npz",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_crossed_matrices.npz",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_ensemble.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_ensemble.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_ensemble_convergence.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_ensemble_convergence.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_ensemble_percell.npz",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_ensemble_percell.npz",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_instability_quantiles.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_instability_quantiles.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_latent_drift.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_latent_drift.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_phase10_replication.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_cross_dataset_replication.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_phase10_replication_summary.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_cross_dataset_replication_summary.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_posterior_mc_check.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_posterior_mc_check.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_retention_imbalance.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_retention_imbalance.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_run_manifest_summary.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_run_manifest_summary.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_seed_delta.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_seed_delta.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_seed_delta_summary.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_seed_delta_summary.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_selective_prediction.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_selective_prediction.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_source_support_association.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_source_support_association.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_uncertainty_instability_assoc.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_uncertainty_instability_assoc.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase11b_uncertainty_robustness/tables/phase11b_variance_components.csv",
+   "target": "results/transfer/replicate_runs/tables/transfer_replicates_variance_components.csv",
+   "action": "RENAMED ONLY",
+   "reason": "20-seed transfer replicate tables (deep-model transfer values, uncertainty, crossed design replicate 0).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/rna_only_label_distribution.csv",
+   "target": "results/supplementary/controls/tables/rna_only_label_distribution.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/rna_only_per_class_metrics.csv",
+   "target": "results/supplementary/controls/tables/rna_only_per_class_metrics.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/rna_only_representation_benchmark.csv",
+   "target": "results/supplementary/controls/tables/rna_only_representation_benchmark.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/rna_vs_multimodal_label_agreement.csv",
+   "target": "results/supplementary/controls/tables/rna_vs_multimodal_label_agreement.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/rna_vs_multimodal_label_confusion.csv",
+   "target": "results/supplementary/controls/tables/rna_vs_multimodal_label_confusion.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_development.csv",
+   "target": "results/supplementary/controls/tables/simple_multimodal_development.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_lawlor.csv",
+   "target": "results/supplementary/controls/tables/simple_multimodal_lawlor.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_lawlor_per_donor.csv",
+   "target": "results/supplementary/controls/tables/simple_multimodal_lawlor_per_donor.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_per_class.csv",
+   "target": "results/supplementary/controls/tables/simple_multimodal_per_class.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/tables/simple_multimodal_transfer.csv",
+   "target": "results/supplementary/controls/tables/simple_multimodal_transfer.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Simple RNA/protein/concat PCA baselines and RNA-only label control.",
+   "group": "results"
+  },
+  {
+   "source": "results/presubmission_revision/degradation_audit/training_time_degradation_summary.csv",
+   "target": "results/degradation/training_time/training_time_degradation_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time degradation summary (Table 4, Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/presubmission_revision/degradation_audit/training_time_degradation_replicates.csv",
+   "target": "results/degradation/training_time/training_time_degradation_replicates.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time degradation summary (Table 4, Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/presubmission_revision/degradation_audit/DEGRADATION_REPLICATE_AUDIT.md",
+   "target": "results/degradation/training_time/DEGRADATION_REPLICATE_AUDIT.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time degradation summary (Table 4, Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/tables/protein_sparsity_primary_delta.csv",
+   "target": "results/degradation/training_time/protein_sparsity_primary_delta.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time protein-sparsity stress output underlying Table 4.",
+   "group": "results"
+  },
+  {
+   "source": "results/tables/protein_sparsity_primary_delta_summary.csv",
+   "target": "results/degradation/training_time/protein_sparsity_primary_delta_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time protein-sparsity stress output underlying Table 4.",
+   "group": "results"
+  },
+  {
+   "source": "results/tables/protein_sparsity_realized_levels.csv",
+   "target": "results/degradation/training_time/protein_sparsity_realized_levels.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time protein-sparsity stress output underlying Table 4.",
+   "group": "results"
+  },
+  {
+   "source": "results/tables/protein_sparsity_robustness.csv",
+   "target": "results/degradation/training_time/protein_sparsity_robustness.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Training-time protein-sparsity stress output underlying Table 4.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/clean_baseline_vs_phase10.csv",
+   "target": "results/degradation/test_time_corruption/tables/clean_baseline_vs_cross_dataset.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/test_time_corruption_all_runs.csv",
+   "target": "results/degradation/test_time_corruption/tables/test_time_corruption_all_runs.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/test_time_corruption_delta_from_clean.csv",
+   "target": "results/degradation/test_time_corruption/tables/test_time_corruption_delta_from_clean.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/test_time_corruption_per_class.csv",
+   "target": "results/degradation/test_time_corruption/tables/test_time_corruption_per_class.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/test_time_corruption_summary.csv",
+   "target": "results/degradation/test_time_corruption/tables/test_time_corruption_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/test_time_reliability_metrics.csv",
+   "target": "results/degradation/test_time_corruption/tables/test_time_reliability_metrics.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/controls/test_time_corruption/tables/training_vs_testtime_corruption.csv",
+   "target": "results/degradation/test_time_corruption/tables/training_vs_testtime_corruption.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Post-adaptation test-time protein corruption (Figure 4).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/class_degradation_dirB_focus_subsets.csv",
+   "target": "results/degradation/class_level/class_degradation_dirB_focus_subsets.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Per-class degradation (SR2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/class_degradation_dirB_totalVI_p085_delta.csv",
+   "target": "results/degradation/class_level/class_degradation_dirB_totalVI_p085_delta.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Per-class degradation (SR2).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/class_degradation_meta.json",
+   "target": "results/degradation/class_level/class_degradation_meta.json",
+   "action": "PATH NORMALIZED",
+   "reason": "Per-class degradation (SR2). Development-repository path references (provenance/log text only) replaced by repository-relative paths or a neutral description; no value changed.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/calibration/full_reliability_metrics.csv",
+   "target": "results/uncertainty/calibration/full_reliability_metrics.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reliability / selective-prediction metrics (Figure 5).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/calibration/lawlor_reliability_summary_by_model.csv",
+   "target": "results/uncertainty/calibration/lawlor_reliability_summary_by_model.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reliability / selective-prediction metrics (Figure 5).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/calibration/pbmc_20seed_reliability_summary.csv",
+   "target": "results/uncertainty/calibration/pbmc_20seed_reliability_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reliability / selective-prediction metrics (Figure 5).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/calibration/selective_prediction_corrected.csv",
+   "target": "results/uncertainty/calibration/selective_prediction_corrected.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Reliability / selective-prediction metrics (Figure 5).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/statistical_unit_ledger.csv",
+   "target": "results/uncertainty/statistics/statistical_unit_ledger.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Statistical-unit ledger (computational vs biological units).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/selective_prediction_macroF1_by_coverage.csv",
+   "target": "results/uncertainty/selective_prediction/selective_prediction_macroF1_by_coverage.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Selective prediction macro-F1 (SR3).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/selective_prediction_dirB_totalVI_cov50_vs_100.csv",
+   "target": "results/uncertainty/selective_prediction/selective_prediction_dirB_totalVI_cov50_vs_100.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Selective prediction macro-F1 (SR3).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/delta_variance_components_corrected.csv",
+   "target": "results/stochasticity/variance_decomposition/statistics/delta_variance_components_corrected.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Variance decomposition (Table 5, Figure 5).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/variance_components_corrected.csv",
+   "target": "results/stochasticity/variance_decomposition/statistics/variance_components_corrected.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Variance decomposition (Table 5, Figure 5).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/logs/variance_model_audit.md",
+   "target": "results/stochasticity/variance_decomposition/logs/variance_model_audit.md",
+   "action": "PATH NORMALIZED",
+   "reason": "Variance-model audit. Development-repository path references (provenance/log text only) replaced by repository-relative paths or a neutral description; no value changed.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/logs/variance_model_audit.json",
+   "target": "results/stochasticity/variance_decomposition/logs/variance_model_audit.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "Variance-model audit.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/celltype_replicated_variance.csv",
+   "target": "results/stochasticity/replicate_runs/tables/celltype_replicated_variance.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/interaction_power_check.csv",
+   "target": "results/stochasticity/replicate_runs/tables/interaction_power_check.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/method_novelty_matrix.csv",
+   "target": "results/stochasticity/replicate_runs/tables/method_novelty_matrix.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/per_cell_replicated_variance.csv",
+   "target": "results/stochasticity/replicate_runs/tables/per_cell_replicated_variance.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/replicated_crossed_design.csv",
+   "target": "results/stochasticity/replicate_runs/tables/replicated_crossed_design.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/replicated_cubes.npz",
+   "target": "results/stochasticity/replicate_runs/tables/replicated_cubes.npz",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/replicated_delta_variance_components.csv",
+   "target": "results/stochasticity/replicate_runs/tables/replicated_delta_variance_components.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12a_variance_replication/tables/replicated_variance_components.csv",
+   "target": "results/stochasticity/replicate_runs/tables/replicated_variance_components.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Replicated crossed-design tables (training stochasticity).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/lawlor_donor_delta.csv",
+   "target": "results/donor_validation/statistics/lawlor_donor_delta.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor-level statistics (biological unit n = 10).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/lawlor_donor_seedmean.csv",
+   "target": "results/donor_validation/statistics/lawlor_donor_seedmean.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor-level statistics (biological unit n = 10).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/lawlor_pairwise_consistency_corrected.csv",
+   "target": "results/donor_validation/statistics/lawlor_pairwise_consistency_corrected.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor-level statistics (biological unit n = 10).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/lawlor_per_donor_metrics.csv",
+   "target": "results/donor_validation/statistics/lawlor_per_donor_metrics.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor-level statistics (biological unit n = 10).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/statistics/lawlor_within_donor_seed_sd.csv",
+   "target": "results/donor_validation/statistics/lawlor_within_donor_seed_sd.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor-level statistics (biological unit n = 10).",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/logs/lawlor_inconsistency_audit.md",
+   "target": "results/donor_validation/logs/lawlor_inconsistency_audit.md",
+   "action": "PATH NORMALIZED",
+   "reason": "Lawlor metric-definition / consistency audit. Development-repository path references (provenance/log text only) replaced by repository-relative paths or a neutral description; no value changed.",
+   "group": "results"
+  },
+  {
+   "source": "results/revision_round2_methodological_fixes/logs/lawlor_macro_f1_primary_definition.md",
+   "target": "results/donor_validation/logs/lawlor_macro_f1_primary_definition.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor metric-definition / consistency audit.",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_all_methods_donor_level_summary.csv",
+   "target": "results/donor_validation/summary/lawlor_all_methods_donor_level_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_all_methods_per_donor.csv",
+   "target": "results/donor_validation/summary/lawlor_all_methods_per_donor.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_donor_paired_deltas_present_class.csv",
+   "target": "results/donor_validation/summary/lawlor_donor_paired_deltas_present_class.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_donor_summary_meta.json",
+   "target": "results/donor_validation/summary/lawlor_donor_summary_meta.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_donor_summary_stats.csv",
+   "target": "results/donor_validation/summary/lawlor_donor_summary_stats.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_pca_per_donor.csv",
+   "target": "results/donor_validation/summary/lawlor_pca_per_donor.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/lawlor_simple_baseline_fold_means.csv",
+   "target": "results/donor_validation/summary/lawlor_simple_baseline_fold_means.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor donor summaries (Table 6, Figure 6).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_celltype_results.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_celltype_results.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_donor_folds.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_donor_folds.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_download_checksums.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_download_checksums.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_label_support_by_fold.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_label_support_by_fold.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_model_deltas.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_model_deltas.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_primary_protein_panel.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_primary_protein_panel.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_primary_runs.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_primary_runs.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_replication_summary.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_replication_summary.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/tables/phase12b_variability.csv",
+   "target": "results/donor_validation/lawlor_runs/tables/lawlor_variability.csv",
+   "action": "RENAMED ONLY",
+   "reason": "Aggregated Lawlor run tables (per-run intermediates not migrated).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/logs/primary_class_set.json",
+   "target": "results/donor_validation/lawlor_runs/logs/primary_class_set.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor preparation provenance, fold rule and class set.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/logs/data_prep_provenance.md",
+   "target": "results/donor_validation/lawlor_runs/logs/data_prep_provenance.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor preparation provenance, fold rule and class set.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/logs/donor_fold_rule.md",
+   "target": "results/donor_validation/lawlor_runs/logs/donor_fold_rule.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor preparation provenance, fold rule and class set.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/logs/data_prep_summary.json",
+   "target": "results/donor_validation/lawlor_runs/logs/data_prep_summary.json",
+   "action": "PATH NORMALIZED",
+   "reason": "Lawlor preparation provenance, fold rule and class set. Development-repository path references (provenance/log text only) replaced by repository-relative paths or a neutral description; no value changed.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/formal_validation/logs/analysis_summary.json",
+   "target": "results/donor_validation/lawlor_runs/logs/analysis_summary.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor preparation provenance, fold rule and class set.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_donor_condition_counts.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_donor_condition_counts.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_file_inventory.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_file_inventory.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_gene_overlap.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_gene_overlap.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_label_distribution.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_label_distribution.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_label_distribution_by_condition.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_label_distribution_by_condition.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_label_harmonization.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_label_harmonization.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/external_protein_overlap.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/external_protein_overlap.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/tables/gene_mapping_external.csv",
+   "target": "results/donor_validation/lawlor_dataset_audit/gene_mapping_external.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor dataset audit (donor/condition counts, panel and gene overlap).",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/logs/data_provenance.md",
+   "target": "results/donor_validation/lawlor_dataset_audit/data_provenance.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor provenance and independence audit.",
+   "group": "results"
+  },
+  {
+   "source": "results/phase12b_external_validation/logs/independence_audit.md",
+   "target": "results/donor_validation/lawlor_dataset_audit/independence_audit.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "Lawlor provenance and independence audit.",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/information_access_sensitivity_comparison.csv",
+   "target": "results/supplementary/information_access_sensitivity/information_access_sensitivity_comparison.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "SECONDARY: historical feature-transductive vs strict train-only comparison (SR1b).",
+   "group": "results"
+  },
+  {
+   "source": "results/presubmission_revision/bootstrap/core_contrast_bootstrap_summary.csv",
+   "target": "results/supplementary/information_access_sensitivity/feature_transductive_bootstrap/core_contrast_bootstrap_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "SECONDARY: historical feature-transductive bootstrap (SR1b).",
+   "group": "results"
+  },
+  {
+   "source": "results/presubmission_revision/bootstrap/core_contrast_bootstrap_audit.md",
+   "target": "results/supplementary/information_access_sensitivity/feature_transductive_bootstrap/core_contrast_bootstrap_audit.md",
+   "action": "COPIED UNCHANGED",
+   "reason": "SECONDARY: historical feature-transductive bootstrap (SR1b).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/bootstrap_global_vs_class_stratified.csv",
+   "target": "results/supplementary/information_access_sensitivity/class_stratified_bootstrap/bootstrap_global_vs_class_stratified.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "SECONDARY: historical feature-transductive class-stratified bootstrap (SR1b).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/bootstrap_class_stratified_summary.csv",
+   "target": "results/supplementary/information_access_sensitivity/class_stratified_bootstrap/bootstrap_class_stratified_summary.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "SECONDARY: historical feature-transductive class-stratified bootstrap (SR1b).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/bootstrap_class_stratified_meta.json",
+   "target": "results/supplementary/information_access_sensitivity/class_stratified_bootstrap/bootstrap_class_stratified_meta.json",
+   "action": "PATH NORMALIZED",
+   "reason": "SECONDARY: historical feature-transductive class-stratified bootstrap (SR1b). Development-repository path references (provenance/log text only) replaced by repository-relative paths or a neutral description; no value changed.",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/development_heldout_predictions_audit.json",
+   "target": "results/supplementary/information_access_sensitivity/class_stratified_bootstrap/development_heldout_predictions_audit.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "SECONDARY: historical feature-transductive class-stratified bootstrap (SR1b).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/marker_channel_dropout_pca_development.csv",
+   "target": "results/supplementary/marker_channel_dropout/marker_channel_dropout_pca_development.csv",
+   "action": "COPIED UNCHANGED",
+   "reason": "PCA-only marker-channel dropout (SR5).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/marker_channel_dropout_meta.json",
+   "target": "results/supplementary/marker_channel_dropout/marker_channel_dropout_meta.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "PCA-only marker-channel dropout (SR5).",
+   "group": "results"
+  },
+  {
+   "source": "results/manuscript_submission_revision/tables/runtime_environment.json",
+   "target": "results/supplementary/environment/runtime_environment.json",
+   "action": "COPIED UNCHANGED",
+   "reason": "Recorded runtime package versions.",
+   "group": "results"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures/Figure_1.tiff",
+   "target": "figures/Figure_1.tiff",
+   "action": "COPIED UNCHANGED",
+   "reason": "Final main figure (600 dpi TIFF).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures/Figure_2.tiff",
+   "target": "figures/Figure_2.tiff",
+   "action": "COPIED UNCHANGED",
+   "reason": "Final main figure (600 dpi TIFF).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures/Figure_3.tiff",
+   "target": "figures/Figure_3.tiff",
+   "action": "COPIED UNCHANGED",
+   "reason": "Final main figure (600 dpi TIFF).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures/Figure_4.tiff",
+   "target": "figures/Figure_4.tiff",
+   "action": "COPIED UNCHANGED",
+   "reason": "Final main figure (600 dpi TIFF).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures/Figure_5.tiff",
+   "target": "figures/Figure_5.tiff",
+   "action": "COPIED UNCHANGED",
+   "reason": "Final main figure (600 dpi TIFF).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures/Figure_6.tiff",
+   "target": "figures/Figure_6.tiff",
+   "action": "COPIED UNCHANGED",
+   "reason": "Final main figure (600 dpi TIFF).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure2_protein_access_vs_model.pdf",
+   "target": "figures/source/Figure2_protein_access_vs_model.pdf",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure2_protein_access_vs_model.png",
+   "target": "figures/source/Figure2_protein_access_vs_model.png",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure3_transfer_fairness.pdf",
+   "target": "figures/source/Figure3_transfer_fairness.pdf",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure3_transfer_fairness.png",
+   "target": "figures/source/Figure3_transfer_fairness.png",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure4_protein_degradation.pdf",
+   "target": "figures/source/Figure4_protein_degradation.pdf",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure4_protein_degradation.png",
+   "target": "figures/source/Figure4_protein_degradation.png",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure5_uncertainty_stochasticity.pdf",
+   "target": "figures/source/Figure5_uncertainty_stochasticity.pdf",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure5_uncertainty_stochasticity.png",
+   "target": "figures/source/Figure5_uncertainty_stochasticity.png",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure6_lawlor_external.pdf",
+   "target": "figures/source/Figure6_lawlor_external.pdf",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/figures_source/Figure6_lawlor_external.png",
+   "target": "figures/source/Figure6_lawlor_external.png",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figures 2-6.",
+   "group": "figures"
+  },
+  {
+   "source": "results/model_framework_revision/figures/Figure1_representation_framework.pdf",
+   "target": "figures/source/Figure1_representation_framework.pdf",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figure 1.",
+   "group": "figures"
+  },
+  {
+   "source": "results/model_framework_revision/supplementary/SupplementaryFigureS1_study_design.pdf",
+   "target": "figures/Supplementary_Figure_S1.pdf",
+   "action": "RENAMED ONLY",
+   "reason": "Supplementary Figure S1 (study-design schematic).",
+   "group": "figures"
+  },
+  {
+   "source": "results/model_framework_revision/figures/Figure1_representation_framework.png",
+   "target": "figures/source/Figure1_representation_framework.png",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figure 1.",
+   "group": "figures"
+  },
+  {
+   "source": "results/model_framework_revision/supplementary/SupplementaryFigureS1_study_design.png",
+   "target": "figures/Supplementary_Figure_S1.png",
+   "action": "RENAMED ONLY",
+   "reason": "Supplementary Figure S1 (study-design schematic).",
+   "group": "figures"
+  },
+  {
+   "source": "results/model_framework_revision/figures/Figure1_representation_framework.svg",
+   "target": "figures/source/Figure1_representation_framework.svg",
+   "action": "COPIED UNCHANGED",
+   "reason": "Vector source of main Figure 1.",
+   "group": "figures"
+  },
+  {
+   "source": "results/model_framework_revision/supplementary/SupplementaryFigureS1_study_design.svg",
+   "target": "figures/Supplementary_Figure_S1.svg",
+   "action": "RENAMED ONLY",
+   "reason": "Supplementary Figure S1 (study-design schematic).",
+   "group": "figures"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/supplement/04_GPB_Supplementary_Information.pdf",
+   "target": "supplementary/Supplementary_Information.pdf",
+   "action": "RENAMED ONLY",
+   "reason": "Supplementary Information (journal-neutral filename).",
+   "group": "supplementary"
+  },
+  {
+   "source": "results/GPB_submission_FINAL_v2/supplement/05_GPB_Supplementary_Data.zip",
+   "target": "supplementary/Supplementary_Data.zip",
+   "action": "RENAMED ONLY",
+   "reason": "Supplementary Data archive (frozen tables).",
+   "group": "supplementary"
+  }
+ ],
+ "code_edits": [
+  {
+   "target": "scripts/prepare_data.py",
+   "edits": []
+  },
+  {
+   "target": "scripts/run_reference_annotation.py",
+   "edits": [
+    {
+     "module": "experiments.phase6_run -> experiments.reference_annotation",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_feature_transductive_models.py",
+   "edits": [
+    {
+     "old": "\"MOFA+/PCA/sparsity/missing-modality. For MOFA+ run scripts/07_run_mofa.py.\"",
+     "new": "\"MOFA+/PCA/sparsity/missing-modality are not run by this script.\""
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_strict_train_only_internal.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nsys.path.insert(0, str(ROOT / \"results/revision_round2_methodological_fixes/scripts\"))\nfrom revision2_p1_common import (",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nsys.path.insert(0, str(ROOT))\nfrom src.utils.analysis_common import ("
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parents[1] / \"strict_train_only\"",
+     "new": "OUT = ROOT / \"results\" / \"primary\" / \"strict_train_only\""
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_simple_multimodal_baselines.py",
+   "edits": [
+    {
+     "old": "sys.path.insert(0, str(HERE))\nfrom revision2_p1_common import (",
+     "new": "sys.path.insert(0, str(HERE.parent))\nfrom src.utils.analysis_common import ("
+    },
+    {
+     "helper_import_rewrites": 3
+    },
+    {
+     "dir": "results/phase12b_external_validation/formal_validation -> results/donor_validation/lawlor_runs",
+     "count": 3
+    },
+    {
+     "dir": "results/phase12b_external_validation/raw_audit -> data/external/lawlor",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12b_external_validation/tables -> results/donor_validation/lawlor_dataset_audit",
+     "count": 1
+    },
+    {
+     "dir": "results/phase11b_uncertainty_robustness -> results/transfer/replicate_runs",
+     "count": 1
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/statistics/lawlor_ -> results/donor_validation/statistics/lawlor_",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 2
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_bidirectional_transfer.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase10b_source_size -> experiments.source_size_subsampling",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    },
+    {
+     "script_ref": "11b_run_grid.py -> run_bidirectional_transfer.py",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "target": "scripts/analyze_bidirectional_transfer.py",
+   "edits": [
+    {
+     "module": "experiments.phase11_uncertainty -> experiments.uncertainty",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_analysis -> experiments.transfer_replicate_analysis",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 17
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_matched_concat_transfer.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[4]\nP1_SCRIPTS = ROOT / \"results/revision_round2_methodological_fixes/scripts\"\nsys.path.insert(0, str(P1_SCRIPTS))",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nsys.path.insert(0, str(ROOT))\nsys.path.insert(0, str(ROOT / \"scripts\"))"
+    },
+    {
+     "old": "from revision2_simple_multimodal_baseline import (",
+     "new": "from run_simple_multimodal_baselines import ("
+    },
+    {
+     "helper_import_rewrites": 1
+    },
+    {
+     "dir": "results/phase11b_uncertainty_robustness -> results/transfer/replicate_runs",
+     "count": 1
+    },
+    {
+     "dir": "results/revision_round3_information_vs_model/transfer_control -> results/transfer/matched_concat_control",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_protein_degradation.py",
+   "edits": [
+    {
+     "module": "experiments.phase8_sparsity -> experiments.protein_sparsity_stress",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_test_time_protein_corruption.py",
+   "edits": [
+    {
+     "old": "sys.path.insert(0, str(HERE))\nfrom revision2_p1_common import CTRL, LOGS, ROOT, TABLES, done_ok, write_done",
+     "new": "sys.path.insert(0, str(HERE.parent))\nfrom src.utils.analysis_common import CTRL, LOGS, ROOT, TABLES, done_ok, write_done"
+    },
+    {
+     "old": "OUT = CTRL / \"test_time_corruption\"",
+     "new": "OUT = ROOT / \"results\" / \"degradation\" / \"test_time_corruption\""
+    },
+    {
+     "old": "See `tables/clean_baseline_vs_phase10.csv`.",
+     "new": "See `tables/clean_baseline_vs_cross_dataset.csv`."
+    },
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "dir": "results/phase11b_uncertainty_robustness -> results/transfer/replicate_runs",
+     "count": 2
+    },
+    {
+     "dir": "results/tables/protein_sparsity_primary_delta_summary.csv -> results/degradation/training_time/protein_sparsity_primary_delta_summary.csv",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 2
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_uncertainty_selective_prediction.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nOUT = ROOT / \"results\" / \"revision_round2_methodological_fixes\"",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nOUT = ROOT / \"results\" / \"uncertainty\""
+    },
+    {
+     "old": "`src/experiments/phase11_uncertainty.py::risk_coverage`",
+     "new": "`src/experiments/uncertainty.py::risk_coverage`"
+    },
+    {
+     "dir": "results/phase12b_external_validation/formal_validation -> results/donor_validation/lawlor_runs",
+     "count": 1
+    },
+    {
+     "dir": "results/phase11b_uncertainty_robustness -> results/transfer/replicate_runs",
+     "count": 1
+    },
+    {
+     "dir": "results/phase11_uncertainty -> results/uncertainty/single_seed_runs",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/analyze_crossed_design.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase10b_source_size -> experiments.source_size_subsampling",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11_uncertainty -> experiments.uncertainty",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_analysis -> experiments.transfer_replicate_analysis",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_stats -> experiments.transfer_replicate_stats",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 11
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_training_stochasticity.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase10b_source_size -> experiments.source_size_subsampling",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase12a_replication -> experiments.stochasticity_replication",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12a_variance_replication -> results/stochasticity/replicate_runs",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    },
+    {
+     "script_ref": "12a_run_replicates.py -> run_training_stochasticity.py",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "target": "scripts/analyze_training_stochasticity.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase10b_source_size -> experiments.source_size_subsampling",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11_uncertainty -> experiments.uncertainty",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase12a_replication -> experiments.stochasticity_replication",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase12a_stats -> experiments.stochasticity_stats",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 3
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_variance_decomposition.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "ROOT = Path(__file__).resolve().parents[1]"
+    },
+    {
+     "old": "PHASE12A = ROOT / \"results\" / \"phase12a_variance_replication\"\nOUT = ROOT / \"results\" / \"revision_round2_methodological_fixes\"",
+     "new": "PHASE12A = ROOT / \"results\" / \"stochasticity\" / \"replicate_runs\"\nOUT = ROOT / \"results\" / \"stochasticity\" / \"variance_decomposition\""
+    },
+    {
+     "old": "`src/experiments/phase12a_stats.py`",
+     "new": "`src/experiments/stochasticity_stats.py`"
+    },
+    {
+     "module": "experiments.phase12a_stats -> experiments.stochasticity_stats",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12a_variance_replication -> results/stochasticity/replicate_runs",
+     "count": 1
+    },
+    {
+     "script_ref": "12a_analyze.py -> analyze_training_stochasticity.py",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_lawlor_donor_validation.py",
+   "edits": [
+    {
+     "old": "# Prefer WSL CUDA libs and private TMPDIR before importing torch/scvi.",
+     "new": "# Optional CUDA library directory (CUDA_LIB_DIR, e.g. the WSL driver directory) and private\n# TMPDIR before importing torch/scvi."
+    },
+    {
+     "old": "os.environ[\"PATH\"] = \"/usr/lib/wsl/lib:\" + os.environ.get(\"PATH\", \"\")\nif \"LD_LIBRARY_PATH\" in os.environ:\n    os.environ[\"LD_LIBRARY_PATH\"] = \"/usr/lib/wsl/lib:\" + os.environ[\"LD_LIBRARY_PATH\"]\nelse:\n    os.environ[\"LD_LIBRARY_PATH\"] = \"/usr/lib/wsl/lib\"",
+     "new": "_CUDA_LIB_DIR = os.environ.get(\"CUDA_LIB_DIR\")\nif _CUDA_LIB_DIR:\n    os.environ[\"PATH\"] = _CUDA_LIB_DIR + \":\" + os.environ.get(\"PATH\", \"\")\n    if \"LD_LIBRARY_PATH\" in os.environ:\n        os.environ[\"LD_LIBRARY_PATH\"] = _CUDA_LIB_DIR + \":\" + os.environ[\"LD_LIBRARY_PATH\"]\n    else:\n        os.environ[\"LD_LIBRARY_PATH\"] = _CUDA_LIB_DIR"
+    },
+    {
+     "old": "python -m scripts.12b_run_gate",
+     "new": "python scripts/run_lawlor_donor_validation.py",
+     "count": 5
+    },
+    {
+     "module": "experiments.phase12b_external -> experiments.lawlor_external",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/analyze_lawlor_donor_validation.py",
+   "edits": [
+    {
+     "module": "experiments.phase12b_external -> experiments.lawlor_external",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 6
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_lawlor_donor_level.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nPHASE12B = ROOT / \"results\" / \"phase12b_external_validation\" / \"formal_validation\"\nOUT = ROOT / \"results\" / \"revision_round2_methodological_fixes\"",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nPHASE12B = ROOT / \"results\" / \"donor_validation\" / \"lawlor_runs\"\nOUT = ROOT / \"results\" / \"donor_validation\""
+    },
+    {
+     "dir": "results/phase12b_external_validation/raw_audit -> data/external/lawlor",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12b_external_validation/tables -> results/donor_validation/lawlor_dataset_audit",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_lawlor_pairwise_consistency.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nOUT = ROOT / \"results\" / \"revision_round2_methodological_fixes\"",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nOUT = ROOT / \"results\" / \"donor_validation\""
+    },
+    {
+     "old": "    / \"phase12b_external_validation\"\n    / \"formal_validation\"\n",
+     "new": "    / \"donor_validation\"\n    / \"lawlor_runs\"\n"
+    },
+    {
+     "old": "canonical phase12b_primary_runs.csv",
+     "new": "canonical lawlor_primary_runs.csv"
+    },
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_lawlor_pca_per_donor.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nsys.path.insert(0, str(ROOT / \"results/revision_round2_methodological_fixes/scripts\"))\nfrom revision2_p1_common import (",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nsys.path.insert(0, str(ROOT))\nfrom src.utils.analysis_common import ("
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parents[1] / \"tables\"",
+     "new": "OUT = ROOT / \"results\" / \"donor_validation\" / \"summary\""
+    },
+    {
+     "dir": "results/phase12b_external_validation/formal_validation -> results/donor_validation/lawlor_runs",
+     "count": 2
+    },
+    {
+     "dir": "results/phase12b_external_validation/raw_audit -> data/external/lawlor",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12b_external_validation/tables -> results/donor_validation/lawlor_dataset_audit",
+     "count": 1
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/controls -> results/supplementary/controls",
+     "count": 1
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/statistics/lawlor_ -> results/donor_validation/statistics/lawlor_",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/summarize_lawlor_donor_statistics.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "ROOT = Path(__file__).resolve().parents[1]"
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parents[1] / \"tables\"",
+     "new": "OUT = ROOT / \"results\" / \"donor_validation\" / \"summary\""
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/controls -> results/supplementary/controls",
+     "count": 1
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/statistics/lawlor_ -> results/donor_validation/statistics/lawlor_",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/generate_publication_figures.py",
+   "edits": [
+    "module docstring rewritten (paths/neutral naming only)",
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nPARENT = ROOT.parent\nOUT = ROOT / \"results/GPB_submission_FINAL_v2/figures_source\"\nREV = ROOT / \"results/manuscript_submission_revision\"\nREV2 = ROOT / \"results/revision_round2_methodological_fixes\"\nREV3 = ROOT / \"results/revision_round3_information_vs_model\"\nDEG = PARENT / \"presubmission_revision/degradation_audit\"",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nRES = ROOT / \"results\"\nOUT = ROOT / \"figures\" / \"source\""
+    },
+    {
+     "old": "REV3 / \"transfer_control/tables/matched_transfer_control.csv\"",
+     "new": "RES / \"transfer/matched_concat_control/tables/matched_transfer_control.csv\""
+    },
+    {
+     "old": "DEG / \"training_time_degradation_summary.csv\"",
+     "new": "RES / \"degradation/training_time/training_time_degradation_summary.csv\""
+    },
+    {
+     "old": "REV2 / \"statistics/delta_variance_components_corrected.csv\"",
+     "new": "RES / \"stochasticity/variance_decomposition/statistics/delta_variance_components_corrected.csv\""
+    },
+    {
+     "old": "REV2 / \"calibration/lawlor_reliability_summary_by_model.csv\"",
+     "new": "RES / \"uncertainty/calibration/lawlor_reliability_summary_by_model.csv\""
+    },
+    {
+     "old": "REV2 / \"calibration/pbmc_20seed_reliability_summary.csv\"",
+     "new": "RES / \"uncertainty/calibration/pbmc_20seed_reliability_summary.csv\""
+    },
+    {
+     "old": "REV2 / \"controls/test_time_corruption/tables/test_time_corruption_summary.csv\"",
+     "new": "RES / \"degradation/test_time_corruption/tables/test_time_corruption_summary.csv\""
+    },
+    {
+     "old": "REV / \"tables/lawlor_all_methods_donor_level_summary.csv\"",
+     "new": "RES / \"donor_validation/summary/lawlor_all_methods_donor_level_summary.csv\""
+    },
+    {
+     "old": "REV / \"tables/lawlor_all_methods_per_donor.csv\"",
+     "new": "RES / \"donor_validation/summary/lawlor_all_methods_per_donor.csv\""
+    }
+   ]
+  },
+  {
+   "target": "scripts/generate_figure1_representation_framework.py",
+   "edits": [
+    {
+     "old": "OUT_DIR = ROOT / \"results\" / \"model_framework_revision\" / \"figures\"",
+     "new": "OUT_DIR = ROOT / \"figures\" / \"source\""
+    },
+    {
+     "old": "results/model_framework_revision/figures/",
+     "new": "figures/source/"
+    },
+    {
+     "script_ref": "generate_figure1_representation_framework.py -> generate_figure1_representation_framework.py",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/print_environment.py",
+   "edits": [
+    {
+     "old": "    / \"results/manuscript_submission_revision/tables\"",
+     "new": "    / \"results/supplementary/environment\""
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_class_stratified_bootstrap.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nOUT = Path(__file__).resolve().parents[1] / \"tables\"\nFIG = Path(__file__).resolve().parents[1] / \"figures\"",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nOUT = ROOT / \"results\" / \"supplementary\" / \"information_access_sensitivity\" / \"class_stratified_bootstrap\"\nFIG = OUT / \"figures_preview\""
+    },
+    {
+     "dir": "results/presubmission_revision/bootstrap -> results/supplementary/information_access_sensitivity/feature_transductive_bootstrap",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_feature_transductive_bootstrap.py",
+   "edits": [
+    {
+     "old": "# Repo root: results/presubmission_revision/bootstrap/ -> ../../../\nPROJ = Path(__file__).resolve().parents[3]\nP1 = PROJ / \"results/revision_round2_methodological_fixes/scripts\"\nsys.path.insert(0, str(P1))",
+     "new": "PROJ = Path(__file__).resolve().parents[1]\nsys.path.insert(0, str(PROJ))"
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parent\n",
+     "new": "OUT = PROJ / \"results\" / \"supplementary\" / \"information_access_sensitivity\" / \"feature_transductive_bootstrap\"\nOUT.mkdir(parents=True, exist_ok=True)\n"
+    },
+    {
+     "helper_import_rewrites": 1
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/controls -> results/supplementary/controls",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "target": "scripts/cache_feature_transductive_predictions.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]\nBOOT_MOD = ROOT / \"results/presubmission_revision/bootstrap/presubmission_core_contrast_bootstrap.py\"\nOUT = Path(__file__).resolve().parents[1] / \"tables\"",
+     "new": "ROOT = Path(__file__).resolve().parents[1]\nBOOT_MOD = ROOT / \"scripts/run_feature_transductive_bootstrap.py\"\nOUT = ROOT / \"results\" / \"supplementary\" / \"information_access_sensitivity\" / \"class_stratified_bootstrap\""
+    }
+   ]
+  },
+  {
+   "target": "scripts/run_marker_channel_dropout.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "ROOT = Path(__file__).resolve().parents[1]"
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parents[1] / \"tables\"",
+     "new": "OUT = ROOT / \"results\" / \"supplementary\" / \"marker_channel_dropout\""
+    }
+   ]
+  },
+  {
+   "target": "scripts/summarize_class_degradation.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "ROOT = Path(__file__).resolve().parents[1]"
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parents[1] / \"tables\"\nFIG = Path(__file__).resolve().parents[1] / \"figures\"",
+     "new": "OUT = ROOT / \"results\" / \"degradation\" / \"class_level\"\nFIG = OUT / \"figures_preview\""
+    },
+    {
+     "dir": "results/revision_round2_methodological_fixes/controls/test_time_corruption -> results/degradation/test_time_corruption",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/summarize_selective_macro_f1.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "ROOT = Path(__file__).resolve().parents[1]"
+    },
+    {
+     "old": "OUT = Path(__file__).resolve().parents[1] / \"tables\"",
+     "new": "OUT = ROOT / \"results\" / \"uncertainty\" / \"selective_prediction\""
+    },
+    {
+     "dir": "results/phase11b_uncertainty_robustness -> results/transfer/replicate_runs",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "scripts/generate_supplementary_figure_s1.py",
+   "edits": [
+    "module docstring rewritten (paths/neutral naming only)",
+    {
+     "old": "OUT_DIR = ROOT / \"results\" / \"framework_revision\" / \"figures\"\nSTEM = \"Figure1_study_framework\"",
+     "new": "OUT_DIR = ROOT / \"figures\"\nSTEM = \"Supplementary_Figure_S1\""
+    }
+   ]
+  },
+  {
+   "target": "src/utils/analysis_common.py",
+   "edits": [
+    {
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "ROOT = Path(__file__).resolve().parents[2]"
+    },
+    {
+     "old": "CTRL = ROOT / \"results\" / \"revision_round2_methodological_fixes\" / \"controls\"",
+     "new": "CTRL = ROOT / \"results\" / \"supplementary\" / \"controls\""
+    }
+   ]
+  },
+  {
+   "target": "src/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/protein_sparsity_stress.py",
+   "edits": [
+    {
+     "module": "evaluation.phase6 -> evaluation.annotation_evaluation",
+     "count": 1
+    },
+    {
+     "module": "evaluation.phase8_plots -> evaluation.protein_sparsity_plots",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 4
+    },
+    {
+     "stage_label_figure_prefixes": 7
+    }
+   ]
+  },
+  {
+   "target": "src/utils/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/utils/io.py",
+   "edits": [
+    {
+     "old": "\"\"\"Return the repository root (`multiomics_robustness/`).\"\"\"",
+     "new": "\"\"\"Return the repository root.\"\"\""
+    }
+   ]
+  },
+  {
+   "target": "src/utils/logging_utils.py",
+   "edits": []
+  },
+  {
+   "target": "src/utils/device.py",
+   "edits": []
+  },
+  {
+   "target": "src/utils/seed.py",
+   "edits": []
+  },
+  {
+   "target": "src/evaluation/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/evaluation/annotation_evaluation.py",
+   "edits": []
+  },
+  {
+   "target": "src/evaluation/protein_sparsity_plots.py",
+   "edits": []
+  },
+  {
+   "target": "src/models/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/models/run_totalvi_corrupted.py",
+   "edits": [
+    {
+     "stage_label_filenames": 1
+    }
+   ]
+  },
+  {
+   "target": "src/data/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/data/perturbations.py",
+   "edits": []
+  },
+  {
+   "target": "src/data/load_citeseq.py",
+   "edits": []
+  },
+  {
+   "target": "src/data/preprocess.py",
+   "edits": []
+  },
+  {
+   "target": "src/models/run_totalvi.py",
+   "edits": []
+  },
+  {
+   "target": "src/models/run_scvi.py",
+   "edits": []
+  },
+  {
+   "target": "src/evaluation/resource_metrics.py",
+   "edits": []
+  },
+  {
+   "target": "src/evaluation/representation_metrics.py",
+   "edits": []
+  },
+  {
+   "target": "src/evaluation/plots.py",
+   "edits": []
+  },
+  {
+   "target": "src/data/qc_plots.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/lawlor_external.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11_uncertainty -> experiments.uncertainty",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_stats -> experiments.transfer_replicate_stats",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12b_external_validation/formal_validation -> results/donor_validation/lawlor_runs",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 3
+    },
+    {
+     "config_key": "phase10 -> query_adaptation",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "src/experiments/cross_dataset_transfer.py",
+   "edits": [
+    {
+     "old": "logs / f\"phase10_summary_seeds{",
+     "new": "logs / f\"cross_dataset_summary_seeds{"
+    },
+    {
+     "module": "evaluation.phase6 -> evaluation.annotation_evaluation",
+     "count": 1
+    },
+    {
+     "module": "evaluation.phase10_plots -> evaluation.transfer_plots",
+     "count": 1
+    },
+    {
+     "dir": "results/phase10_cross_dataset -> results/transfer/cross_dataset_runs",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    },
+    {
+     "config_key": "phase10 -> query_adaptation",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "src/experiments/uncertainty.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "dir": "results/phase10_cross_dataset -> results/transfer/cross_dataset_runs",
+     "count": 1
+    },
+    {
+     "dir": "results/phase11_uncertainty -> results/uncertainty/single_seed_runs",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "src/models/run_scvi_matched.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/transfer_replicate_stats.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/transfer_replicates.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_stats -> experiments.transfer_replicate_stats",
+     "count": 1
+    },
+    {
+     "dir": "results/phase11b_uncertainty_robustness -> results/transfer/replicate_runs",
+     "count": 2
+    },
+    {
+     "config_key": "phase10 -> query_adaptation",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "src/evaluation/transfer_plots.py",
+   "edits": [
+    {
+     "stage_label_figure_prefixes": 8
+    }
+   ]
+  },
+  {
+   "target": "src/experiments/source_size_subsampling.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "evaluation.phase6 -> evaluation.annotation_evaluation",
+     "count": 1
+    },
+    {
+     "module": "evaluation.phase10b_plots -> evaluation.source_size_plots",
+     "count": 1
+    },
+    {
+     "dir": "results/phase10b_source_size -> results/transfer/source_size_runs",
+     "count": 1
+    },
+    {
+     "dir": "results/phase10_cross_dataset -> results/transfer/cross_dataset_runs",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 3
+    },
+    {
+     "config_key": "phase10 -> query_adaptation",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "src/evaluation/source_size_plots.py",
+   "edits": [
+    {
+     "stage_label_figure_prefixes": 7
+    }
+   ]
+  },
+  {
+   "target": "src/experiments/reference_annotation.py",
+   "edits": [
+    {
+     "module": "evaluation.phase6_plots -> evaluation.annotation_plots",
+     "count": 1
+    },
+    {
+     "module": "evaluation.phase6 -> evaluation.annotation_evaluation",
+     "count": 1
+    },
+    {
+     "stage_label_filenames": 1
+    },
+    {
+     "stage_label_figure_prefixes": 7
+    }
+   ]
+  },
+  {
+   "target": "src/evaluation/annotation_plots.py",
+   "edits": []
+  },
+  {
+   "target": "src/annotation/__init__.py",
+   "edits": []
+  },
+  {
+   "target": "src/annotation/seurat_v4.py",
+   "edits": []
+  },
+  {
+   "target": "src/annotation/annotation_qc.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/stochasticity_stats.py",
+   "edits": []
+  },
+  {
+   "target": "src/experiments/transfer_replicate_analysis.py",
+   "edits": [
+    {
+     "module": "experiments.phase10_cross_dataset -> experiments.cross_dataset_transfer",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11_uncertainty -> experiments.uncertainty",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "module": "experiments.phase11b_stats -> experiments.transfer_replicate_stats",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "target": "src/experiments/stochasticity_replication.py",
+   "edits": [
+    {
+     "module": "experiments.phase11b_robustness -> experiments.transfer_replicates",
+     "count": 1
+    },
+    {
+     "dir": "results/phase12a_variance_replication -> results/stochasticity/replicate_runs",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "file": "config/protein_gene_map.yaml",
+   "edits": [
+    {
+     "targeted": "quoted free-text notes item (YAML syntax only)",
+     "old": "  - PBMC5k-only proteins observed in PHASE 2 and left unmapped on purpose:\n    CD11b, CD137, CD197, CD20, CD274, CD278, CD27, CD28, CD335, CD34,\n    CD62L, CD69, CD80, CD86, HLA-DR.\n    Do not invent gene mappings for these until a documented source is added.\n",
+     "new": "  - \"PBMC5k-only proteins observed during data preparation and left unmapped on purpose:\n    CD11b, CD137, CD197, CD20, CD274, CD278, CD27, CD28, CD335, CD34,\n    CD62L, CD69, CD80, CD86, HLA-DR.\n    Do not invent gene mappings for these until a documented source is added.\"\n"
+    }
+   ]
+  }
+ ]
+}

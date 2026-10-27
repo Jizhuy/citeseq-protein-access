@@ -46,7 +46,7 @@ def train_corrupted_totalvi(
     logs_dir = resolve_path(cfg["paths"]["logs_dir"])
     logger = logger or get_logger(
         "phase8_totalvi",
-        logs_dir / f"phase8_totalvi_{int(round(fraction * 100)):03d}_seed{perturbation_seed}.log",
+        logs_dir / f"protein_sparsity_totalvi_{int(round(fraction * 100)):03d}_seed{perturbation_seed}.log",
     )
     set_global_seed(model_seed)
     env = detect_compute_environment()

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite this repository."
+type: software
+title: "Evaluating protein-access gains and residual totalVI-associated contrasts in CITE-seq representation learning under distribution shift"
+authors:
+  - family-names: Yang
+    given-names: Jizhu
+    email: yangjizhu@outlook.com
+repository-code: "https://github.com/Jizhuy/citeseq-multimodal-reliability"
+license: MIT
+abstract: >-
+  Reproducibility code, results, and supplementary materials for evaluating
+  protein-access gains and residual totalVI-associated contrasts in CITE-seq
+  representation learning under distribution shift.
+keywords:
+  - CITE-seq
+  - single-cell multi-omics
+  - totalVI
+  - representation learning
+  - distribution shift
+  - reproducibility

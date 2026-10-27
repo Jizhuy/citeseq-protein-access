@@ -25,7 +25,7 @@ protein_to_gene:
 
 notes:
   - CD3 is mapped to CD3G, not the CD3D/CD3E complex, following the totalVI script.
-  - PBMC5k-only proteins observed in PHASE 2 and left unmapped on purpose:
+  - "PBMC5k-only proteins observed during data preparation and left unmapped on purpose:
     CD11b, CD137, CD197, CD20, CD274, CD278, CD27, CD28, CD335, CD34,
     CD62L, CD69, CD80, CD86, HLA-DR.
-    Do not invent gene mappings for these until a documented source is added.
+    Do not invent gene mappings for these until a documented source is added."
